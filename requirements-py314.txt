@@ -1,0 +1,23 @@
+# Experimental dependency set for CPython 3.14.
+# These intentionally resolve to current compatible releases; unlike requirements.txt,
+# they are not the project's previously verified, pinned environment.
+fastapi
+uvicorn
+streamlit
+pydantic
+requests
+pandas
+numpy
+scikit-learn
+pytest
+httpx
+matplotlib
+psutil
+nltk
+rank-bm25
+faiss-cpu>=1.14.2
+transformers
+sentence-transformers
+huggingface-hub
+safetensors
+Markdown
