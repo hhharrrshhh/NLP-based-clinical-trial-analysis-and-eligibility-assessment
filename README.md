@@ -32,7 +32,7 @@ Startup reuses healthy existing services. Shutdown checks process identity and s
 Clone the source repository, then create an isolated Python 3.11 environment. The committed public registry snapshot is enough to open the application; downloading CHIA or retraining a model is not required for startup.
 
 ```powershell
-git clone https://github.com/Bitu-Singh-Rathoud/NLP.git
+git clone https://github.com/hhharrrshhh/NLP-based-clinical-trial-analysis-and-eligibility-assessment.git
 cd NLP
 py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
