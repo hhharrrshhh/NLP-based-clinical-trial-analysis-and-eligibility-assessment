@@ -6,7 +6,12 @@ import requests
 import streamlit as st
 
 st.set_page_config(page_title="TrialOps | Protocol Intelligence", page_icon="🧬", layout="wide", initial_sidebar_state="expanded")
-API = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
+# Streamlit Community Cloud exposes app secrets through st.secrets, not os.environ.
+try:
+    configured_api = st.secrets.get("API_BASE_URL", os.getenv("API_BASE_URL", ""))
+except Exception:
+    configured_api = os.getenv("API_BASE_URL", "")
+API = str(configured_api or "http://127.0.0.1:8000").rstrip("/")
 
 st.markdown("""<style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');

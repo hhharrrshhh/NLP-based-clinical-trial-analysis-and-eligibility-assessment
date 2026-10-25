@@ -11,7 +11,7 @@ $pythonPath = Join-Path $projectRoot '.venv\Scripts\python.exe'
 $reportsPath = Join-Path $projectRoot 'reports'
 $statePath = Join-Path $reportsPath 'server_state.json'
 if (-not (Test-Path -LiteralPath $pythonPath -PathType Leaf)) {
-    throw "Missing $pythonPath. Create the Python 3.11 virtual environment and install requirements.txt first."
+    throw "Missing $pythonPath. Create the project's virtual environment with the setup instructions in README.md first."
 }
 New-Item -ItemType Directory -Path $reportsPath -Force | Out-Null
 
