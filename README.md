@@ -61,6 +61,10 @@ $env:API_BASE_URL='http://127.0.0.1:8000'
 
 The scripts do not load `.env` automatically. Set environment variables in PowerShell. Compose reads `.env` if one is created from `.env.example`; credentials must never be committed.
 
+## Experimental Python 3.14 setup
+
+The previously verified Windows environment uses Python 3.11. If you already have Python 3.14 installed, an **experimental** dependency set is available without changing the original pinned requirements: see [Python 3.14 setup instructions](docs/python314.md). Run ` .\\scripts\\setup-py314.ps1` from PowerShell to create `.venv` and install the newer dependencies. This path has not yet been validated on every application workflow; run the test and smoke commands in the guide before relying on it. Python 3.11 remains the reproducible default.
+
 ## Problem and research objectives
 
 Eligibility language combines measurements, negation, logical scope, temporal conditions, exceptions and investigator judgment. NER identifies spans but does not establish executable semantics. This project separates source retrieval, entity detection, supported grammar parsing, review, and deterministic comparison so uncertainty remains visible.
