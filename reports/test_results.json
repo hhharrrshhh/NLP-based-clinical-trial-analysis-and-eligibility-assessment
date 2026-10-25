@@ -1,0 +1,97 @@
+{
+  "run_at_utc": "2026-10-18T09:12:12.819994+00:00",
+  "status": "passed",
+  "source_sha256": "54d25a21ccf23f54dd223fe367bee9905c6b5fbaa3740d19c4b4081070d7c0c1",
+  "source_unchanged_during_verification": true,
+  "pytest": {
+    "tests": 150,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 150
+  },
+  "commands": [
+    {
+      "name": "pytest",
+      "command": [
+        "C:\\Users\\LENOVO\\OneDrive\\Documents\\ChatGPT\\NLP\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=reports/pytest.xml"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "elapsed_seconds": 12.441,
+      "log": "reports/verification_pytest.log"
+    },
+    {
+      "name": "dependencies",
+      "command": [
+        "C:\\Users\\LENOVO\\OneDrive\\Documents\\ChatGPT\\NLP\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "elapsed_seconds": 1.95,
+      "log": "reports/verification_dependencies.log"
+    },
+    {
+      "name": "legacy_separate",
+      "command": [
+        "C:\\Users\\LENOVO\\OneDrive\\Documents\\ChatGPT\\NLP\\.venv\\Scripts\\python.exe",
+        "legacy/TrialOps_Adaptive_Demo/trialops_adaptive_demo.py",
+        "--test"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "elapsed_seconds": 0.143,
+      "log": "reports/verification_legacy_separate.log"
+    },
+    {
+      "name": "compile",
+      "command": [
+        "C:\\Users\\LENOVO\\OneDrive\\Documents\\ChatGPT\\NLP\\.venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "backend",
+        "frontend",
+        "experiments",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "elapsed_seconds": 0.156,
+      "log": "reports/verification_compile.log"
+    },
+    {
+      "name": "integration_smoke",
+      "command": [
+        "C:\\Users\\LENOVO\\OneDrive\\Documents\\ChatGPT\\NLP\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.integration_smoke"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "elapsed_seconds": 1.378,
+      "log": "reports/verification_integration_smoke.log"
+    },
+    {
+      "name": "ui_smoke",
+      "command": [
+        "C:\\Users\\LENOVO\\OneDrive\\Documents\\ChatGPT\\NLP\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.ui_smoke"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "elapsed_seconds": 6.51,
+      "log": "reports/verification_ui_smoke.log"
+    }
+  ],
+  "live_checks_requested": true,
+  "legacy_isolation": "Active pytest discovers tests/ only; untouched legacy sanity checks execute separately and remain visible."
+}

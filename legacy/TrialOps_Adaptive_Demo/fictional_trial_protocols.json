@@ -1,0 +1,26 @@
+[
+  {
+    "trial_id": "INDIA_DEMO_A",
+    "trial_country": "India",
+    "source": "FICTIONAL educational trial — NOT actual CTRI, ICMR or medical standards",
+    "constraints": {
+      "age_years": {"min": 18, "max": 65},
+      "bmi_kg_m2": {"min": 20, "max": 34},
+      "hba1c_percent": {"min": 7.0, "max": 10.5},
+      "reported_type2_diabetes": true,
+      "reported_severe_kidney_disease": false
+    }
+  },
+  {
+    "trial_id": "USA_DEMO_B",
+    "trial_country": "United States",
+    "source": "FICTIONAL educational trial — NOT actual ClinicalTrials.gov, FDA or medical standards",
+    "constraints": {
+      "age_years": {"min": 21, "max": 70},
+      "bmi_kg_m2": {"min": 22, "max": 38},
+      "hba1c_percent": {"min": 6.5, "max": 11.5},
+      "reported_type2_diabetes": true,
+      "reported_severe_kidney_disease": false
+    }
+  }
+]

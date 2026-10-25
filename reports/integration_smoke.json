@@ -1,0 +1,103 @@
+{
+  "run_at_utc": "2026-10-18T09:12:06.260840+00:00",
+  "status": "passed",
+  "method": "Live HTTP requests against separate backend and frontend processes",
+  "api_url": "http://127.0.0.1:8000",
+  "ui_url": "http://127.0.0.1:8501",
+  "study_count": 58,
+  "calls": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "status_code": 200,
+      "latency_ms": 18.232,
+      "response_sha256": "44999457343aae1c162dd74b4d2e18a233b613806f950d41406b9754f0fa9d3d"
+    },
+    {
+      "method": "GET",
+      "path": "/studies",
+      "status_code": 200,
+      "latency_ms": 27.494,
+      "response_sha256": "c865bb3f1a9e974b8156e0f6271637b2c4098a133253f07aab90c25b8315e2ae"
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard",
+      "status_code": 200,
+      "latency_ms": 355.514,
+      "response_sha256": "9631b2fd4aa29b5ffd0b6feaed719af0dd9ad6a57372f8569caa2380896e9d2e"
+    },
+    {
+      "method": "POST",
+      "path": "/extract",
+      "status_code": 200,
+      "latency_ms": 112.836,
+      "response_sha256": "f8e7ffcd5d1155d93f6f2afb01ed49a7d71ad11bf9dcd8198af5b258f0b0bd14"
+    },
+    {
+      "method": "POST",
+      "path": "/compare",
+      "status_code": 200,
+      "latency_ms": 41.029,
+      "response_sha256": "55eb657214d5d6038287a479b8b0458de26ce55316213e0450fac3739dc23863"
+    },
+    {
+      "method": "POST",
+      "path": "/evaluate",
+      "status_code": 200,
+      "latency_ms": 10.271,
+      "response_sha256": "97c600be0b22debf88f4403404ba6ad2c281c2945a6d6da1f65bfc3468c0304d"
+    },
+    {
+      "method": "POST",
+      "path": "/ask",
+      "status_code": 200,
+      "latency_ms": 43.462,
+      "response_sha256": "4cfac67a76e9cba7331aec01c0f291d90e26e576bc8ed6f120334b060091f87b"
+    },
+    {
+      "method": "POST",
+      "path": "/ask",
+      "status_code": 200,
+      "latency_ms": 132.16,
+      "response_sha256": "c18b705efebaeb295d3deeda5b4c83359295282910785c7967594794a0e1f115"
+    },
+    {
+      "method": "GET",
+      "path": "/reports/NCT00261352?format=json",
+      "status_code": 200,
+      "latency_ms": 15.68,
+      "response_sha256": "57d9e5f65c0fe7e9a84d07cd7d984d3f76d7fe862a334d6f1828614a70452d6e"
+    },
+    {
+      "method": "GET",
+      "path": "/reports/NCT00261352?format=csv",
+      "status_code": 200,
+      "latency_ms": 13.98,
+      "response_sha256": "c7424356a37b5d0a8f6b928a81897adc1b6aa39c1247bb4115a709093fa4e4b6"
+    },
+    {
+      "method": "GET",
+      "path": "/reports/NCT00261352?format=html",
+      "status_code": 200,
+      "latency_ms": 15.454,
+      "response_sha256": "55f8a7233b9dd848ac4168888867fa100c77b7af318ad07227dfdc49f4856add"
+    },
+    {
+      "method": "GET",
+      "path": "/metrics",
+      "status_code": 200,
+      "latency_ms": 31.044,
+      "response_sha256": "2a6725c4e04515a646d6eef5215637e33599b7a2ad904ef1873b408070cdc6b4"
+    }
+  ],
+  "transformer_status": "ok",
+  "retrieval_modes": [
+    "hybrid"
+  ],
+  "source_offsets_verified": 5,
+  "synthetic_profile_status": "INSUFFICIENT_INFORMATION",
+  "local_generation_status": "generated_draft",
+  "generated_prose_verified": false,
+  "review_note": "No source rules approved by this smoke script; test_api.py verifies approval mechanics with an isolated test database."
+}

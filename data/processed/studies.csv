@@ -1,0 +1,538 @@
+study_id,title,conditions,countries,status,phase,minimum_age,maximum_age,sex,description,source_url,last_update,retrieved_at,registry
+NCT00081328,Treatment Options for Type 2 Diabetes in Adolescents and Youth (TODAY),"[""Diabetes Mellitus, Type II""]","[""United States""]",COMPLETED,"[""PHASE3""]",10 Years,17 Years,ALL,"The National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) of the National Institutes of Health (NIH) has sponsored a consortium of investigators to conduct a clinical treatment trial, Treatment Options for type 2 Diabetes in Adolescents and Youth (TODAY).
+
+The primary objective of the TODAY trial is to compare the efficacy of three treatment arms on time to treatment failure based on glycemic control. The secondary aims are to:
+
+* compare and evaluate the safety of the three treatment arms;
+* compare the effects of the three treatments on the pathophysiology of type 2 diabetes (T2D) with regards to beta cell function and insulin resistance, body composition, nutrition, physical activity and aerobic fitness, cardiovascular risk factors, microvascular complications, quality of life, and psychological outcomes;
+* evaluate the influence of individual and family behaviors on treatment response; and
+* compare the relative cost effectiveness of the three treatment arms.
+
+The three treatment regimens are: (1) metformin alone, (2) metformin plus rosiglitazone, and (3) metformin plus an intensive lifestyle intervention called the TODAY Lifestyle Program (TLP). The study recruits patients over a three-year period and follows patients for a minimum of two years. Patients are randomized within two years of the diagnosis of T2D.
+
+T2DM has dramatically increased throughout the world in many ethnic groups and among people with diverse social and economic backgrounds. Over the last decade, the increase in the number of children and youth with T2DM has been labeled an ""epidemic"". Before the 1990s, it was rare for most pediatric centers to have patients with T2DM. By 1994, T2DM patients represented up to 16% of new cases of diabetes in children in urban areas, and by 1999, depending on geographic location, the range of percent of new cases due to T2DM was between 8-45% and disproportionately represented in minority populations.
+
+T2DM in children and youth, as in adults, is due to the combination of insulin resistance and relative β-cell failure. It appears that there are a host of genetic and environmental risk factors for insulin resistance and limited β-cell reserve. The epidemic of pediatric T2DM is coincident with the rise in the number of children who are overweight or at risk for overweight and with a decrease in the physical activity pattern of youth. There has been a strong association between T2DM and the onset of puberty, a positive family history of T2DM, and elements of the metabolic syndrome such as acanthosis nigricans and polycystic ovarian syndrome (PCOS).
+
+Preceding the development of frank diabetes, children and youth experience a period of prediabetes. Prediabetes is defined as either elevated fasting glucose or impaired glucose tolerance. Despite the dramatic increase in the number of cases of prediabetes and T2DM in pediatric populations, there have been no published large-scale studies investigating the pathophysiology, treatment, and complications of these disorders in children and youth. The long-term complications and costs associated with T2DM make such studies imperative. Between 1997 and 2002, the estimated cost of diabetes with regard to direct medical cost increased from $44 billion to $92 billion, and the total cost increased from $98 billion to $132 billion. The vast majority of monies are spent on the long-term complications of this disorder. Since the long-term microvascular and cardiovascular complications relate to duration of diabetes and to control of glycemia, it could be hypothesized that the increasing number of children and youth diagnosed with T2DM, if not effectively treated, could dramatically add to the economic burden of this disease over the ensuing decades.
+
+Except in American Indian youth, there are no population-based data available with regard to prevalence of T2DM. Instead, only clinic-based reports indicate that there has been a tremendous increase in the number of children and adolescents with T2DM. T2DM occurs almost exclusively in children and youth who are overweight or at risk for overweight (BMI \> 85th percentile for age). At the time of diagnosis, most pediatric patients are in the midst of Tanner Stage 2-4 puberty. Puberty contributes to insulin resistance due to augmentation of growth hormone secretion, and if these normal pubertal physiologic changes are not compensated for by increased insulin secretion, frank diabetes will develop. Half to three-quarters of patients have a parent and close to ninety percent have at least one first or second degree relative with T2DM. The clinical presentation of T2DM in youth ranges from mild asymptomatic hyperglycemia to severe ketoacidosis. In those who present with clinical symptoms due to hyperglycemia, glycosuria and weight loss are present in 20-40%, ketonuria is present in 33% and ketoacidosis is found in 5-10%. Patients without clinical symptoms are diagnosed as the result of routine blood or urine testing during a health care visit or by investigating a variety of complaints such as chronic infection, sleep apnea, hyperlipidemia, hypertension, and hirsutism or irregular periods associated with PCOS. It may be difficult to distinguish T1DM from T2DM at presentation. The absence of autoantibodies is a prerequisite for the diagnosis of T2DM. In addition, evidence of residual insulin secretion is suggestive of T2DM rather than T1DM.
+
+Patients with T2DM have dual abnormalities of insulin resistance and insulin deficiency. It is hypothesized that to achieve the level of glycemic control required to optimize long-term outcome and decrease or prevent microvascular complications, treatment regimens should theoretically be designed to improve insulin resistance and preserve residual β-cell function. The available anti-diabetic agents have not been adequately evaluated in pediatric patients. This is particularly relevant with regard to using combination therapy to improve glycemic control or lifestyle interventions aimed at obesity and sedentary behavior.",https://clinicaltrials.gov/study/NCT00081328,2021-07-30,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT00261352,GALLANT 14 Tesaglitazar vs. Metformin and Fenofibrate,"[""Type 2 Diabetes""]","[""Brazil"", ""Canada"", ""Finland"", ""France"", ""Germany"", ""Hong Kong"", ""Hungary"", ""India"", ""Indonesia"", ""Malaysia"", ""Norway"", ""Philippines"", ""Portugal"", ""Russia"", ""Singapore"", ""South Africa"", ""Switzerland"", ""Taiwan""]",TERMINATED,"[""PHASE3""]",18 Years,,ALL,"This is a 24-week study to determine the lipid metabolic effects, safety, and tolerability of tesaglitazar compared with metformin and metformin in combination with fenofibrate in patients with type 2 diabetes and low high-density lipoprotein cholesterol (HDL-C). Improvement in dyslipidemia will be evaluated. The study comprises a 2-week enrollment period, 6-week run-in and a 24-week randomized, double blind, parallel group, multi-center, active controlled (metformin with or without fenofibrate) treatment period and a 3-week follow-up. From visit 2 (run-in), all patients will receive a standardized dose of statin (rosuvastatin)",https://clinicaltrials.gov/study/NCT00261352,2009-04-22,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT00309751,Study Comparing Pitavastatin and Atorvastatin in Patients With Type II Diabetes Mellitus and Combined Dyslipidemia,"[""Type II Diabetes Mellitus"", ""Dyslipidemia""]","[""Denmark"", ""Germany"", ""India"", ""Netherlands"", ""Poland"", ""United Kingdom""]",COMPLETED,"[""PHASE3""]",18 Years,75 Years,ALL,The purpose of this study is to compare the efficacy and safety of pitavastatin with that of atorvastatin in patients with type II diabetes mellitus (type II DM) and combined dyslipidemia.,https://clinicaltrials.gov/study/NCT00309751,2010-02-23,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT00344370,Follow-On Study of Pitavastatin Versus Atorvastatin in Patients With Type II Diabetes Mellitus and Combined Dyslipidemia,"[""Type II Diabetes Mellitus"", ""Dyslipidemia""]","[""Denmark"", ""Germany"", ""India"", ""Netherlands"", ""Poland"", ""United Kingdom""]",COMPLETED,"[""PHASE3""]",,,ALL,This is a sixteen-week double-blind active-controlled follow-on and 28-week single-blind extension study for patients who participated in study NK-104-305.,https://clinicaltrials.gov/study/NCT00344370,2010-02-02,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT00726505,Renal Mechanism of Action/Splay vs. TmG,"[""Diabetes, NOS""]","[""United States""]",TERMINATED,"[""PHASE1""]",18 Years,65 Years,ALL,The purpose of this study is to evaluate the effects of dapagliflozin to promote glucose loss in urine in healthy subjects and subjects with type 2 diabetes mellitus,https://clinicaltrials.gov/study/NCT00726505,2016-10-17,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT00727896,"""Information Technology Methodology for Patient Motivation in Diabetes Management.""","[""Type 2 Diabetes""]","[""India""]",COMPLETED,"[""PHASE1""]",30 Years,65 Years,ALL,"Type 2 diabetes is a chronic metabolic disorder requiring lifestyle modification and medicines, adherence to which has to be practised on a daily basis.
+
+Motivation of patients to adhere to treatment is difficult in clinical practice. It is well documented that majority of patients do not reach the glycaemic targets even in the centres of excellence. Regular short service messages (SMS) through cell phones could have a positive effect on behaviour and adherence to life style changes and compliance to drugs. It may be practical and feasible to use information technology as an effective and simple tool for motivating patients to adhere to the prescribed treatment regimen.
+
+In diabetic patients, frequent reminders regarding the need for adherence to LSM and drugs by the medical professionals will improve the compliance.
+
+In diabetic patients, frequent reminders by the medical professionals on the need for adherence to Life Style Modification (LSM) and drugs will improve the compliance. SMS may be an effective and cheap tool of communication. Improved compliance is likely to result in better glycaemic control.
+
+Out of total number of 200, consecutive randomization of 100 patients each to SMS or usual care arms will be done. Patients in the SMS group will get SMS once in 3 days as a reminder. Patients will be reviewed at 3, 6, 9 and 12 months from the date of randomization
+
+Fasting and 2hr postprandial glucose and HbA1c will be tested during each visit.
+
+At baseline and at the end of the study, lipids, and renal function test will also be done. A validated questionnaire will be used to assess physical activity, diet habits, adherence to drug prescriptions and frequency of monitoring of blood glucose. . Body weight, blood pressure, biochemical variables, scores for diet and physical activity and compliance to drugs, will be compared using students 't' test or chi-square test as relevant.",https://clinicaltrials.gov/study/NCT00727896,2011-06-27,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT00737152,Evaluate the Side Effects and Benefits of RAS 130 With or Without Diet and Exercise in Type II Diabetes Mellitus,"[""Type II Diabetes Mellitus""]","[""India"", ""United States""]",UNKNOWN,"[""PHASE2""]",30 Years,60 Years,ALL,"Rationale: RAS 130 is an anti-diabetic agent used to lower the blood glucose level in Type II Diabetes mellitus (non-insulin-dependent diabetes) patients with proper diet and exercise. RAS 130 works by restoring proper response to insulin in the body. RAS 130 acts primarily by increasing insulin sensitivity which improves glycemic index. It is presumed that RAS 130 does not cause cardiovascular side effects if it is given to Type II diabetes mellitus patients leading a healthy life style. Specifically, controlling diet is done according to American Diabetic Association \& American Heart Association guidelines and also through doing aerobic exercises. Guideline for aerobic exercise is given in the design of the study.
+
+Exercise is helpful in controlling body weight which can lower the risk for heart disease. Diabetes itself is one of the compounding factors for heart diseases. Exercise helps lowering the LDL cholesterol and raising the HDL cholesterol which is required to prevent heart diseases and achieve a better quality of life.
+
+Purpose: The aim of this study is to prospectively assess and evaluate the cardiovascular side effects and reduction of blood glucose levels in the Type II Diabetes mellitus patients treated with RAS 130, who either met, or failed to meet criteria for diet and exercise.
+
+Objectives:
+
+Primary Objective:
+
+To determine the relatedness of cardio toxicity as a side effect in subjects with DM II who are treated with RAS 130 who either met, or failed to meet the criteria for diet and exercise.
+
+Hypothesis I: There will be no evidence of cardiovascular side effects in subjects who are determined to have maintained proper diet and exercise ""healthy lifestyle"" throughout the study.
+
+Hypothesis II: There may be evidence of cardiovascular side effects in subjects who are determined to neglect proper diet and exercise ""unhealthy lifestyle"" throughout the study.
+
+Secondary Objective:
+
+To determine the effectiveness of RAS 130 on the reduction of blood glucose levels in subjects with DM II.
+
+Hypothesis III: RAS 130 will be effective in reducing blood glucose levels as a single agent.
+
+Hypothesis IV: RAS 130 will be effective in reducing blood glucose in combination with other anti- diabetic agents.",https://clinicaltrials.gov/study/NCT00737152,2011-07-20,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT00901979,A 12 Week Study in Patients With Type 2 Diabetes Mellitus (T2DM),"[""Type 2 Diabetes Mellitus""]","[""Canada"", ""Italy"", ""Poland"", ""Puerto Rico"", ""United States""]",COMPLETED,"[""PHASE2""]",18 Years,75 Years,ALL,This study will assess the effect of LCQ when added to metformin.,https://clinicaltrials.gov/study/NCT00901979,2013-01-09,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT00929539,Safety and Efficacy Study of JTT-130 in Obese Type 2 Diabetic Patients,"[""Type II Diabetes Mellitus""]","[""Czechia"", ""Hungary"", ""Netherlands"", ""Russia"", ""United States""]",COMPLETED,"[""PHASE2""]",18 Years,70 Years,ALL,The purpose of this study is to evaluate the effect of JTT-130 on diabetes as well as the safety and tolerability of JTT-130 in obese Type 2 diabetic patients.,https://clinicaltrials.gov/study/NCT00929539,2013-02-04,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT00947557,Safety and Efficacy of Dutogliptin in Patients With Type 2 Diabetes Mellitus (T2DM) on Background Therapy With Glimepiride With or Without Metformin,"[""Diabetes Mellitus, Type II""]","[""Belarus"", ""Colombia"", ""Hungary"", ""India"", ""Lithuania"", ""Peru"", ""Romania"", ""United States""]",TERMINATED,"[""PHASE3""]",18 Years,85 Years,ALL,This study will evaluate the safety and efficacy of dutogliptin in patients with type 2 diabetes mellitus (T2DM) who are receiving background therapy of glimepiride with or without metformin.,https://clinicaltrials.gov/study/NCT00947557,2011-09-21,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT00952445,A Safety and Efficacy Study of T0903131 (INT131) Besylate to Treat Type 2 Diabetes Mellitus,"[""Diabetes Mellitus, Type II""]","[""United States""]",COMPLETED,"[""PHASE2""]",30 Years,75 Years,ALL,The purpose of the study is to determine if repeated daily doses of T0903131 (INT131) Besylate over 4 weeks can lower fasting blood glucose in patients with Type 2 Diabetes Mellitus.,https://clinicaltrials.gov/study/NCT00952445,2022-10-19,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT00960791,"Study to Assess the Absorption, Distribution, Metabolism and Excretion of AZD1656 in Type 2 Diabetes Mellitus (T2DM)","[""Type II Diabetes Mellitus""]","[""United States""]",COMPLETED,"[""PHASE1""]",35 Years,65 Years,MALE,"The purpose of the study is to evaluate the absorption, distribution, metabolism and excretion of AZD1656 after administration of a single oral dose of 14C-labelled AZD1656 solution in male Type 2 Diabetes Mellitus patients.",https://clinicaltrials.gov/study/NCT00960791,2009-09-16,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT00970424,Safety and Efficacy of Dutogliptin in Patients With Type 2 Diabetes Mellitus (T2DM) on Background Therapy With Pioglitazone,"[""Diabetes Mellitus, Type II""]","[""Belarus"", ""Germany"", ""India"", ""Lithuania"", ""Romania"", ""United States""]",TERMINATED,"[""PHASE3""]",18 Years,85 Years,ALL,This study will evaluate the safety and efficacy of dutogliptin in patients with type 2 diabetes mellitus (T2DM) who are receiving background treatment with pioglitazone.,https://clinicaltrials.gov/study/NCT00970424,2011-09-21,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT00995787,Safety and Tolerability of AZD1656 in Type 2 Diabetes Mellitus (T2DM) Patients Treated With Metformin and Sulfonylurea,"[""Type II Diabetes Mellitus""]","[""United States""]",COMPLETED,"[""PHASE1""]",30 Years,75 Years,ALL,The primary aim of this study is to evaluate the safety and tolerability of AZD1656 in T2DM patients treated with metformin and sulfonylurea.,https://clinicaltrials.gov/study/NCT00995787,2010-02-26,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT00997152,Efficacy and Safety Study of JTT-654 in Type 2 Diabetic Patients,"[""Type II Diabetes Mellitus""]","[""United States""]",TERMINATED,"[""PHASE2""]",18 Years,70 Years,ALL,"The purpose of this study is to evaluate the effect of JTT-654 on diabetes as well as the safety, tolerability and pharmacokinetics of JTT-654 in type 2 diabetic patients.",https://clinicaltrials.gov/study/NCT00997152,2013-02-04,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT01194258,Safety/Efficacy Study of Subcutaneously Injected Prandial Insulins Compared to Insulin Lispro Alone in Patients With Type 2 Diabetes Mellitus,"[""Diabetes Mellitus, Type II""]","[""United States""]",COMPLETED,"[""PHASE2""]",18 Years,,ALL,"The purpose of the study was to compare Humalog (insulin lispro)-recombinant human hyaluronidase PH20 (rHuPH20) or Novolog (insulin aspart)-rHuPH20 to insulin lispro for the treatment of Type 2 diabetes mellitus (T2DM) in basal-bolus therapy.
+
+Criteria for randomization into the study included 1) fasting blood glucose and pre-dinner glucose values in the range of 70 to 140 milligrams per deciliter (mg/dL) approximately 60% of the time for 7 days prior to randomization; 2) 90 minute or 2-hour postprandial blood glucose \<220 mg/dL approximately 70% of the time for 7 days prior to randomization; and 3) successfully completing 3 days of 10-point glucose monitoring and have at least 4 self-monitored blood glucose values on all non-10-point monitoring days. Participants that did not meet 1 or more of these criteria during a 4- to 6-week Titration Period were not randomized.",https://clinicaltrials.gov/study/NCT01194258,2014-08-20,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT01252524,Effect of Calcium Polycarbophil on Type II Diabetes Mellitus Control: a Randomized Double-blind Study,"[""Diabetes Mellitus Type II""]","[""United States""]",COMPLETED,"[""NA""]",18 Years,,ALL,"The purpose of this study is to determine whether a form of fiber if effective in improving the treatment of type 2 diabetes. Measurements of other possible medical benefits will include blood pressure, cholesterol, weight, and the number/dosage of medications used for diabetes, hypertension, and high cholesterol.
+
+There have been several publications in the medical literature linking the use of various types of fiber and the beneficial effects on lipid panel, glycosylated hemoglobin A1c, weight, blood pressure, and cardiovascular events in patients with type 2 diabetes mellitus or those at risk for diabetes1-5. Most of these studies utilize fiber sources from dietary food intake or psyllium.
+
+However, diet modification and psyllium intake are difficult for patients to comply on daily basis and many patients do not continue to follow through on these interventions.
+
+Polycarbophil is a bulk forming agent which is used for similar indications as psyllium for the treatment of constipation and irritable bowel syndrome. Because polycarbophil comes in oral tablets and capsules, patients may adhere to regular intake better compared to psyllium. However, it is unknown whether polycarbophil has similar beneficial properties compared to psyllium and other fiber types. Taking polycarbophil prior to each meal may improve diabetes control by allowing patients to have smaller meals and decrease the absorption rate of carbohydrates in the intestine.
+
+The goal of this study is to determine whether taking calcium polycarbophil (also known as over-the-counter FiberconTM) regularly will improve the diabetes control. The proposed study will be a randomized, controlled, and double-blinded trial involving adult patients with type 2 diabetes mellitus. A total of 50 patients will be randomized to receive either calcium polycarbophil or placebo from the Family Medicine Center at East Carolina University and followed over 6 months. The primary outcome of the trial will be glycosylated hemoglobin A1c. Secondary outcome measures will include weight, blood pressure, and cholesterol level. Additional secondary outcome measures are the number and dosages of medications for diabetes mellitus, hypertension, and hyperlipidemia.
+
+The potential benefits of this study include improved control of diabetes mellitus, hypertension, and hyperlipidemia, reflected by the improved outcomes mentioned above. Because calcium polycarbophil (FiberconTM) is a commonly used over-the-counter fiber product for constipation, and the dosage used in this study is well within the typical use recommended by the manufacturers, the potential adverse effects of this product is thought to be identical to that described for FiberconTM. Patients will receive their usual medical care by their own primary physicians regardless of their participation in this study. After the randomization to the intervention or the control group, the study team will only monitor the outcome measures and will not alter the medical care that the patients receive.
+
+Study title:
+
+Effects of calcium polycarbophil on type II diabetes mellitus control: a randomized double-blinded study.
+
+Patient population:
+
+East Carolina University Family Medicine Center (ECU FMC) outpatient clinic patients Age above 18 Diagnosed with type II diabetes mellitus (DM) for at least 24 months. At least 4 office visits within the past 24 months for DM follow up at ECU FMC or Geriatrics Center.
+
+Hgb A1c within the past six months of 8% to 10%.
+
+Exclusion criteria:
+
+Dementia diagnosis or other psychiatric diagnoses that preclude the patient from being able to consent for this study by him/herself.
+
+Already taking fiber supplementation (polycarbophil, psyllium, methylcellulose) Severe problems with previous use of fiber supplementation (i.e. fecal impaction) Dysphagia or other swallowing disorders (unable to swallow pills or 8 oz of water) Pregnancy during the study period
+
+Consent:
+
+Will be obtained from the patients for the study and HIPAA.
+
+Study design:
+
+Randomize 50 patients to intervention or placebo:
+
+Intervention: 25 patients to receive calcium polycarbophil 625mg po TID before each meal with 8 oz glass of water for 6 months.
+
+Placebo control: 25 patients to receive placebo po TID before each meal with 8 oz glass of water for 6 months.
+
+Total of 50 participants projected from the following power calculation:
+
+Assuming a difference between groups in HbA1c of 0.5%, a standard deviation of 0.5, a power of 80% and an alpha of 0.05, an estimated 18 patients in each group (n = 36 pts) will be needed to detect a difference. Assuming a 25% dropout rate, the goal of 25 patients in each group (n=50 pts) will be needed.
+
+Patients, primary physicians, and the researchers will be blinded to therapy versus placebo. Randomization will be performed by the ECU FM pharmacist who will open a sealed envelope which will indicate whether the patient will receive the interventional medication or placebo. The tablets will be dispensed by the pharmacist without informing the patient, physicians, or research team member as to which group the patient was randomized.
+
+All patient will continue with their usual DM care. The patients must follow up at 3 months and 6 months.
+
+A research team member will perform telephone follow up at 1 week, 1 month, and 3 months for adverse events and compliance.
+
+The outcomes will be analyzed by intention to treat analysis and analysis using patients who are compliant with the trial protocol.
+
+Primary outcome:
+
+HgbA1c at the time of enrollment, 3 months, and 6 months.
+
+Secondary outcome:
+
+Data will be gathered at the time of enrollment, 3 months, and 6 months:
+
+Weight Blood Pressure Number and dosage of medications for diabetes, hypertension, and hyperlipidemia Serum LDL, HDL, triglycerides, total cholesterol Patient compliance with the study medication Adverse events including GI discomfort, constipation, excessive flatulence, fecal impaction, diarrhea, nausea, vomiting, hypoglycemia, etc.
+
+Potential adverse events:
+
+Side effects of Polycarbophil (MicroMedex 2.0): Abdominal fullness, flatus, vomiting, stomach cramps. Systemic adverse effects are not expected since calcium polycarbophil is not absorbed",https://clinicaltrials.gov/study/NCT01252524,2012-09-03,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT01257412,Evaluation of Efficacy and Safety of Dapagliflozin as Monotherapy in Subjects With Type 2 Diabetes Who Have Inadequate Glycaemic Control With Diet and Exercise Alone,"[""Type 2 Diabetes""]","[""India""]",SUSPENDED,"[""PHASE3""]",19 Years,,ALL,This study intends to compare the efficacy and safety of dapagliflozin versus placebo in treatment-naïve subjects with type 2 diabetes who have inadequate glycaemic control with diet and exercise alone.,https://clinicaltrials.gov/study/NCT01257412,2012-03-01,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT01406717,Safety and Efficacy of SPIL1033 in Subjects With Type 2 Diabetes Mellitus,"[""Type 2 Diabetes Mellitus""]","[""India""]",COMPLETED,"[""PHASE3""]",20 Years,,ALL,"SPIL1033 resembles a gut hormone, which increases the insulin secretion, thus helps in reducing blood glucose levels. The purpose of study is to establish safety and efficacy of SPIL1033
+
+SPIL1033 is subcutaneous injection is indicated as adjunctive therapy to improve glycemic control in patients with type 2 diabetes mellitus.
+
+In this study, efficacy and safety of SPIL1033 will be evaluated. Subjects will receive SPIL1033 or placebo, 5 mcg twice daily for the first 4 weeks and 10 mcg twice daily for the remaining 20 weeks.",https://clinicaltrials.gov/study/NCT01406717,2020-08-11,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT01523405,"A Non-Interventional Study To Evaluate Diabetes Related Quality Of Life, Frequency And Impact Of Hypoglycemia In T2DM","[""Type II Diabetes Mellitus""]","[""India""]",COMPLETED,[],18 Years,,ALL,"This is a non-interventional, cross sectional, multicentric study in T2DM patients which will involve a single visit for study related procedures. This study will be conducted in approximately 5,000 patients at around 300 hospitals/primary care clinics across India. Approximately 18-20 patients per site will be enrolled. This study has been designed to evaluate diabetes related quality of life (DQoL), frequency and impact of hypoglycaemia in relation to HbA1c control and to assess disease modifying variables-BMI and BP in T2DM patients on oral / injectable anti-diabetic drugs with/without insulin therapy.
+
+A Non-Interventional Study To Evaluate Diabetes Related Quality Of Life, Frequency And Impact Of Hypoglycemia In Type 2 Diabetes Patients On Pharmacotherapy (INSIGHT)",https://clinicaltrials.gov/study/NCT01523405,2014-09-08,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT01546844,Mobile Health Technology as an Intervention for Diabetes Self-Management,"[""Type II Diabetes Mellitus""]","[""United States""]",UNKNOWN,"[""NA""]",18 Years,,ALL,"This purpose of this is study is to evaluate the effectiveness of an interactive mobile health information service, Care4Life, in supporting patient self-management of Type II Diabetes Mellitus.
+
+This study evaluates the effectiveness of an interactive mobile health information service, Care4Life, in supporting patient self-management through its ability to facilitate patient education, behavior change, and improved adherence with standard care practices. The study population comprises adults who have been diagnosed with Type 2 diabetes mellitus (DM) and a hemoglobin A1c (HbA1c) test above 8% in the past year. All members of the study population are treated at primary care clinics under the auspices of the Utah Beacon Community Program, which aims to improve health through use of health information technology. We will compare outcomes in two groups within this population: patients with DM who enroll in Care4Life (in addition to receiving standard care) to patients with DM who receive standard care from their physician. We will compare these groups both within the clinic and at an aggregated, overall level.
+
+This study relies on the use of information and communications technology (ICT) in supporting patient-empowerment strategies. Features of successful diabetes care programs for improving adherence to standards of care, such as the use of diabetes self-management education, checklists that mirror guidelines, and automated reminders are well suited to delivery using an interactive mobile health platform.
+
+Research Questions
+
+This study will evaluate the efficacy of the Care4Life mHealth program by:
+
+1. Evaluating if a short message service via cell phone texting (SMS) protocol will lead to improvements in clinical, utilization and satisfaction outcomes for patients with DM compared to patient who receive standard care.
+2. Evaluating if an SMS protocol can be readily adopted by an adult population in both urban and rural areas with a time-consuming chronic illness.
+
+Targeted outcomes include:
+
+1. Improved measures of diabetes control, demonstrated as HbA1c percentage levels ≤ 8%; improved blood pressure (BP) control, demonstrated as BP ≤ 140/90 millimeters mercury (mm Hg); and lower body mass index (BMI) among users of the SMS-based tool.
+2. Improved knowledge of self-care and disease management practices among adult patients with diabetes treated in Beacon clinics in the Salt Lake Metropolitan Statistical Area (Salt Lake, Tooele, and Summit counties).
+3. Dissemination of results and proof of concept with the broader healthcare community in Utah.
+
+The mobile centric diabetes support service at the center of our study is Voxiva's Care4Life platform, which is an interactive mobile application designed to educate participants, encourage behavior change and promote adherence to their prescribed DM treatment protocol. It includes a series of SMS-based tools that have been developed in collaboration with the Instituto Carso de la Salud, located in Mexico. The service sends content relevant to the target participants and their standard treatment protocol. Care4Life delivers an individually tailored diabetes education and management plan based on data that are collected from patients at enrollment and added to the participant's personal health profile.
+
+The SMS protocol draws on the experience of a number of interventions that have been independently studied and shown to improve health outcomes. Care4Life functionality consists of the following components: (1) a diabetes diary that can be used to develop a history of glucose levels and trigger alerts and feedback based on the participant's results; (2) health education with content tailored to the participant's health profile; (3) medication adherence reminders and monitoring; (4) medical appointment reminders; (5) a database that allows a participant to record and monitor her/his weight, BMI, blood pressure and laboratory results; and (6) a health portal that allows a participant to review his/her data, obtain advice and guidance based on the information entered, and manage his/her preferences.",https://clinicaltrials.gov/study/NCT01546844,2012-09-05,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT01671189,Automated SMS-Based Appointment Validation Tool,"[""Diabetes Mellitus Type 2"", ""Adult-onset Diabetes""]","[""United States""]",UNKNOWN,"[""EARLY_PHASE1""]",18 Years,,ALL,"Medic Mobile conceptualized and proposed the creation of an SMS-based appointment validation tool to automate appointment confirmation and rescheduling. Working in parallel with the San Mateo Medical Center (SMMC) electronic medical records (EMR) system, the software tool will automate reminders that request text responses from patients to either confirm or request to reschedule their upcoming appointments. While simple in concept, this tool aims to free up scarce clinical resources which are currently allocated to daily patient phone call reminders. With funding from a Bay Area foundation, the investigators will develop and pilot this open-source software tool in a 12-month randomized-controlled trial, slated to begin in October 2012. The endpoints of the study will aim to demonstrate improvements in both appointment adherence and glycemic control.",https://clinicaltrials.gov/study/NCT01671189,2012-08-23,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT01713764,A Pilot Study of the Effects of Diet and Behavioral Interventions on Health in Diabetics,"[""Diabetes Type II""]","[""United States""]",COMPLETED,"[""PHASE2""]",18 Years,,ALL,"The study is a small pilot, designed to provide data regarding the feasibility and acceptability of conducting such a study on a larger scale. The present study is a randomized controlled clinical trial comparing two mindfulness-based lifestyle modification programs to help people manage diabetes and lose weight, one using on a low-carbohydrate diet (LC) and the other using a moderate-carbohydrate diet promoted by the American Diabetes Association (ADA). Intervention content will include information about nutrition (carbohydrate restriction or American Diabetes Association recommended diet) and emotion regulation and mindful eating strategies.
+
+Approximately 40 individuals with Type II diabetes or prediabetes will be randomized in a 1:1 ratio to treatment groups. Groups will meet for 12 weekly sessions, then approximately biweekly for 3 sessions, for a total of 15 1.5-2 hour sessions over 4.5 months. Participants will be evaluated at 0, 1 month, 3 months, and 6 months. Our outcome of interest is HbA1c (glycated hemoglobin, a measure indicative of blood glucose levels and tied to diabetes severity).",https://clinicaltrials.gov/study/NCT01713764,2013-12-30,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT01969084,The Effect of Linagliptin on Mitochondrial and Endothelial Function,"[""Type II Diabetes Mellitus""]","[""United States""]",COMPLETED,"[""PHASE4""]",30 Years,70 Years,ALL,"Investigators propose to examine the effect of 12 weeks of Linagliptin, a diabetes drug, treatment on inflammation as well as vascular and mitochondrial function in diabetic patients. Investigators hypothesize that Linagliptin will reduce the proinflammatory state, improve endothelial function, increase the blood flow at the muscle microcirculation level and improve mitochondrial function. In this study, investigators will perform tests that evaluate the function of small and large blood vessels by employing ultrasound and laser doppler techniques. In addition MRI scans that evaluate the mitochondrial function of the lower extremity muscles at rest and during exercise will also be employed. Forty subjects with Type 2 diabetes will be studied for twelve weeks and half of them will be randomly assigned to receive linagliptin while the other half will receive placebo. All tests will be performed at the beginning and the end of the study.",https://clinicaltrials.gov/study/NCT01969084,2016-11-18,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT01995539,Use of iPro™2 in Real Life Diabetes Management of Type 2 Patients in India,"[""Diabetes Mellitus, Type 2""]","[""India""]",COMPLETED,"[""NA""]",18 Years,70 Years,ALL,"The purpose of the India iPro2 study is to demonstrate that iPro2 Continuous Glucose Monitoring System (CGMS) evaluation enables Health Care Professional (HCP)s treating patients in India with type 2 diabetes to get a better understanding of their patient's metabolic fluctuations, and support appropriate therapeutic intervention.
+
+The study will be designed to demonstrate the value of iPro2 in real-world diabetes management in type 2 patients in India. It will be an interventional post-market, prospective, multi-center study with a data review performed after 30 subjects have completed the trial.
+
+During the course of the study, patients will undergo two iPro2 evaluations:
+
+* First iPro2 test (Visit 1 \[application\] \& 2 \[removal\])
+* Second iPro2 test (Visit 3 \[application\] \& 4 \[removal\])
+
+Patient and HCP questionnaires will be administered at Visit 1, 2, 3, 4 and 5. These questionnaires aim to assess the impact of an iPro2 evaluation on the physicians understanding of their patient's metabolic fluctuations and its support of therapeutic interventions. They will also investigate the subjects understanding (both pre \& post iPro2 evaluation) of the concept of glycemic variability and the importance of compliance to HCP recommendations.",https://clinicaltrials.gov/study/NCT01995539,2018-12-04,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT02065674,"Therapeutic Efficacy of ""Abroma Agusta"" in HbA1c % in NIDDM","[""Type II Diabetes Mellitus""]","[""India""]",AVAILABLE,[],30 Years,85 Years,ALL,"Objective: To ascertain whether homoeopathic medicine ABROMA AUGUSTA has a clinical role in changing the Glycated Hb Level in Diabetes mellitus Type II.
+
+Abstract:
+
+Background: Type 2 diabetes mellitus (T2DM) is one of the most important epidemic diseases in the world in this century, and accounts for 90% of cases of diabetes globally. Studies have suggested that Abroma Augusta plays a role in acute controlling blood glucose level. The aim of this study was to evaluate the efficacy of ""Abroma Augusta Ѳ"" in chronic control through GlycatedHb (HbA1c %) in Diabetes Mellitus Type 2 (NIDDM) as a pretest post-test study.
+
+Introduction:
+
+Diabetes mellitus type 2 (noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterized by hyperglycemia (high blood sugar) in the context of insulin resistance and relative lack of insulin. According to recent survey reports about 5% of the total world population is suffering from Diabetes Mellitus. The incidence rate is also reasonably high in India. Currently about 20% of Indian Population is at High risk to develop Diabetes Mellitus in future i.e. they are having abnormal glucose Tolerance test. Studies have revealed that diabetic women suffer more than men. Diabetes is the single most important metabolic disease which can affect nearly every organ system in the body. According to the World Health Organization estimates, India had 32 million diabetic subjects in the year 2000 and this number would increase to 80 million by the year 2030. The International Diabetes Federation (IDF) also reported that the total number of diabetic subjects in India is 41 million in 2006 and that this would rise to 70 million by the year 2025. A male who is diabetic has double the chances of heart failure. In case of women it grows to almost 5 times and it is 8 times more if the patient is a young female.
+
+The prevalence of diabetes is rapidly rising all over the globe at an alarming rate1 . Over the past 30 yr, the status of diabetes has changed from being considered as a mild disorder of the elderly to one of the major causes of morbidity and mortality affecting the youth and middle aged people. It is important to note that the rise in prevalence is seen in all six inhabited continents of the globe2 . Although there is an increase in the prevalence of type 1 diabetes also, the major driver of the epidemic is the more common form of diabetes, namely type 2 diabetes, which accounts for more than 90 per cent of all diabetes cases. Nowhere is the diabetes epidemic more pronounced than in India as the World Health Organization (WHO) reports show that 32 million people had diabetes in the year 2000. The International Diabetes Federation (IDF) estimates the total number of diabetic subjects to be around 40.9 million in India and this is further set to rise to 69.9 million by the year 2025.
+
+Long-term complications of diabetes develop gradually. The longer you have diabetes - and the less controlled your blood sugar - the higher the risk of complications. Eventually, diabetes complications may be disabling or even life-threatening. Possible complications include:
+
+* Cardiovascular disease.Diabetes dramatically increases the risk of various cardiovascular problems, including coronary artery disease with chest pain (angina), heart attack, stroke and narrowing of arteries (atherosclerosis).
+* Nerve damage (neuropathy). Excess sugar can injure the walls of the tiny blood vessels (capillaries) that nourish your nerves, especially in your legs. This can cause tingling, numbness, burning or pain that usually begins at the tips of the toes or fingers and gradually spreads upward. Left untreated, you could lose all sense of feeling in the affected limbs. Damage to the nerves related to digestion can cause problems with nausea, vomiting, diarrhea or constipation. For men, it may lead to erectile dysfunction.
+* Kidney damage (nephropathy). The kidneys contain millions of tiny blood vessel clusters (glomeruli) that filter waste from your blood. Diabetes can damage this delicate filtering system. Severe damage can lead to kidney failure or irreversible end-stage kidney disease, which may require dialysis or a kidney transplant.
+* Eye damage (retinopathy). Diabetes can damage the blood vessels of the retina (diabetic retinopathy), potentially leading to blindness. Diabetes also increases the risk of other serious vision conditions, such as cataracts and glaucoma.
+* Foot damage. Nerve damage in the feet or poor blood flow to the feet increases the risk of various foot complications. Left untreated, cuts and blisters can develop serious infections, which often heal poorly. These infections may ultimately require toe, foot or leg amputation.
+* Skin conditions. Diabetes may leave you more susceptible to skin problems, including bacterial and fungal infections.
+* Hearing impairment. Hearing problems are more common in people with diabetes.
+* Alzheimer's disease. Type 2 diabetes may increase the risk of Alzheimer's disease. The poorer your blood sugar control, the greater the risk appears to be. Although there are theories as to how these disorders might be connected, none has yet been proved.
+
+So Diabetes is associated with long term complications that affect almost every major part of the body. Type 2 diabetes is initially managed by increasing exercise and dietary changes. If blood sugar levels are not adequately lowered by these measures, medications or intervention is needed. In those on medication, there is absolute requirement of routinely check up of blood sugar levels.
+
+There is good number of Homoeopathic medicine to control blood sugar level. They are Cephalandra Indica, Syzegium, Gymnema Sylvestree, Abroma Augusta, Rhus Aromatica rtc. It is noticed that the blood sugar (HbA1c) is not controlled by other system of medicine; the patients come for Homoeopathic treatment and after homoeopathic treatment there is a remarkable improvement in FBS, PPBS as well as HbA1c along with the general improvement of health like tiredness, lethargy, numbness, polyurea, polydypsia and polyphagia etc. But there is no scientific validation for that. Among those Abroma Augusta is selected for this study and this study is conducted for achieving the scientific validation, the homoeopathic hypoglycemic ""Abroma Augusta"".
+
+ABROMA AUGUSTA Family: Sterculiaceae Bengali/vernacular name: Ulatkambal. Tribal name: Polumaoeba (Chakma); Daiya (Garo). English name: Devil's Cotton. Usually it has been used widely as an emmenagogue but its glycemic use is rare. Abroma Augusta commonly known as Olat Kambal. The plant of Abroma Augusta grows wild throughout the hotter part of India. In ancient times, it was used therapeutically as an emmenagogue in menstrual disorders. Late Dr. D.N.Roy of Calcutta proved this drug. A tincture of the drug is prepared from its leaves according to class III of American Homeopathic Pharmacopoea. It is used in diabetes insipidus with very gratifying results. Clinically it is indicated in Diabetes, albuminuria, enuresis, debility, vertigo, sleeplessness, carbuncle, amenorrhoea and dysmenorrhoea.
+
+Description of the plant: ABROMA AUGUSTA L. is a large shrub. Leaves large, 10-15 by 10-12.5 cm, repand - denticulate, upper smaller, narrower, entire. Flower is solitary, auxiliary, pendulous, peduncle up to 4 cm long; sepals 2.5 cm, lanceolate; petals scarcely exceeding the sepals, dark red.
+
+Chemical constituents:
+
+Leaves contain taraxerol, its acetate and β-sitosterol. Stem bark contains friedelin and β-sitosterol. Root and root bark contain gum, fixed oil, resin, alkaloids, abromine, choline and betaine, β-sitosterol, stigmasterol, digitonide, magenesium salts of hydroxyl acids and polysaccharide. Seeds contain 20.2% fixed oil with 71.5% linoleic acid. Augustic acid an oleanane derivative and a stigmasterol glycoside have been isolated from the roots. Heartwood contains β-sitosterol, glycol and octacosane-1, 28-diol (Ghani, 2003; Rastogi \& Mehrotra, 1993; Asolkar et al., 1992). Among them Taraxerol is the most important component which has hypoglycemic as well as anti-inflammatory action. It also contains flavinoid \& phenolic component and they are phyto- antioxidant.
+
+Homoeopathic uses: Fragmentary proving was conducted by Dr. D.N. Ray of Calcutta in 1919 and Dr. Jugal Kishore of New Delhi in 1972. It has been subsequently proved by CCRH and has shown its affinity for female reproductive organs producing symptoms of dysmenorrhoea and leucorrhoea, which have been confirmed during verification trials too.
+
+Diabetes mellitus - Urine profuse \< at night and of high specific gravity. Excessive thirst with dryness of mouth. Patient suffers from insomnia and prostration, and patient is averse to do any physical and intellectual labour. Mentally patient is of irritable nature, forgetful and morose.
+
+Dysmenorrhoea - Colicky pains in lower abdomen. Menses are irregular, lasting for short or long time. Blood is dark and clotted.
+
+There is lots of study on Aboma Augusta in modern system of Medicie as well as the Ayurveda on Rats and it was proved that this drug has not only the hypoglycemic effect (Taraxerol) but also has effect on antioxidant and lipid control. So this study was conducted to investigate the therapeutic efficacy on Human being.",https://clinicaltrials.gov/study/NCT02065674,2015-06-09,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT02091193,Effects of Krill Oil on Endothelial Function in Patients With Type 2 Diabetes Mellitus,"[""Type II Diabetes Mellitus""]","[""United States""]",COMPLETED,[],18 Years,,ALL,"The purpose of this study is to evaluate the effects of krill oil supplementation in patients with Type 2 diabetes mellitus on heart health and laboratory diabetic measurements.
+
+Patients who enroll in this study will be asked to visit the Western Connecticut Health Network Biomedical Research Institute on 3 separate occasions: for baseline testing, after 4 weeks of supplementing with krill oil, and after 4 weeks of supplementing with a placebo. Patients will be randomized into one of two groups to determine the order in which they receive the supplement and placebo. Every patient will receive both the krill oil and the placebo, but both the coordinator and the patient are blinded to which is which. At each visit, participants will undergo a non-invasive test which measures the function of the inner lining of blood vessels and they will also have blood drawn. Fasting is required before each appointment. The blood drawn is used to measure their Hemoglobin A1C, Glucose, HDL, LDL, total cholesterol, C-peptide and total antioxidant capacity.
+
+Risks to taking krill oil supplements are likely to include bad breath, heartburn, fishy taste, upset stomach, nausea, loose stools, gas, and bloating. Risks of EndoPAT testing are not permanent and may include pain, numbness, tingling, redness, and bruising at the site of the blood pressure cuff. Risks that are associated with drawing blood may include redness, swelling, pain or discomfort, bruising at the site of the needle stick, or in very rare cases, infection at the needle site. To minimize these risks, trained technologists and phlebotomists will be used for all procedures.
+
+This is not a treatment option; while involved in this study all participants will continue their regular treatment for Type 2 diabetes mellitus (as well as any other applicable conditions).",https://clinicaltrials.gov/study/NCT02091193,2016-08-10,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT02175121,"Safety, Tolerability, Pharmacokinetics And Pharmacodynamics Study Of PF-06291874 As Oral Monotherapy To Treat Adults With Type 2 Diabetes Mellitus","[""Diabetes Mellitus, Type II""]","[""United States""]",COMPLETED,"[""PHASE2""]",18 Years,70 Years,ALL,"This study is going to assess the safety and tolerability of PF-06291874 in adults with Type 2 Diabetes Mellitus as monotherapy, to evaluate the significance of overall glycemic control in these subjects.",https://clinicaltrials.gov/study/NCT02175121,2016-06-15,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT02326129,Novel Biomarker for Development of T2D,"[""Diabetes Type II""]","[""United States""]",COMPLETED,[],12 Years,21 Years,ALL,"The investigators wants to determine if 11β-HSD1 activity will be positively associated, and 5α-reductase activity negatively associated, with (a) degree of insulin resistance defined by the homeostatic model assessment of insulin resistance index (HOMA-IR) and (b) worsening glycemic control defined by higher HbA1c and impaired fasting glucose in a group of obese children and young adults with or without type 2 diabetes compared to lean children and young adults without diabetes. The investigators also want to identify key metabolic signatures associated with diabetes using metabolomic profiling.
+
+The overarching hypothesis is that increases in whole body 11β-HSD1 activity precede and presage the development of type 2 diabetes (T2D) in high-risk obese adolescents, serving as a critical determinant of insulin resistance and glucose intolerance. The increase in 11β-HSD1 activity, in combination with decreases in 5α-reductase activity, will increase tissue cortisol production, promoting the development of insulin resistance and the metabolic syndrome and predisposing to T2D. The investigators predict that increases in 11β-HSD1 activity will be detected in obese children prior to the development of insulin resistance and glucose intolerance and that the progressive increases in 11β-HSD1 will correlate with progressive decreases in insulin sensitivity and glucose tolerance. Given preliminary findings, the investigators also predict that increases in 11β-HSD1 will be greater and occur earlier in development in males than females. This could establish 11β-HSD1 activity as a novel, non-invasive biomarker for progression to, or for development of, glucose intolerance and T2D.
+
+The identification of 11β-HSD1 as a biomarker that predicts T2D would have critical clinical import, allowing us to identify obese children and adults at highest risk of metabolic decompensation. Studies of 11β-HSD1 in obese subjects with varying degrees of IR and glucose intolerance will also narrow critical gaps in the understanding of the pathogenesis of T2D.
+
+The investigators would like to also validate if urine metabolomic profiling can be used for identifying key metabolomic signatures associated with insulin resistance. To that end the investigators would like to examine detailed metabolomic profiles in 24 hour and spot urine samples.
+
+The study population will include 50 obese adolescents with T2D, 50 obese adolescents without T2D and 50 age, gender, race and pubertal status-matched normal weight controls. The subjects will be recruited at the Healthy Lifestyle Program at Duke, Diabetes Clinics at Lenox Baker Children's Hospital and Roxboro Clinics.
+
+Study activities include physical exam and medical history, vitals, laboratory tests (only for obese adolescents), urine testing for sugar (only for normal weight adolescents), 24 hour urine collection, spot urine collection, body fat content measurement, and food and activity questionnaire.",https://clinicaltrials.gov/study/NCT02326129,2023-08-07,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT02361489,Clinical Study to Compare Various Dosing and Titration Guidelines of Insulin Delivered Via V-Go ® in Patients With Type 2 Diabetes Initiating Basal Bolus Therapy in Primary Care Offices,"[""Diabetes Type II""]","[""United States""]",UNKNOWN,"[""PHASE4""]",21 Years,80 Years,ALL,"The aim of the study is to observe patients with Type 2 Diabetes on basal insulin alone or basal insulin with oral agents can be efficiently and safely started with meal time insulin using U100 rapid acting insulin analog and V-Go® Disposable Insulin Delivery Device (V-Go) using one of two dose titration algorithms to achieve improved A1C at 4 months.
+
+This study addresses the informational needs of Primary Care Physicians with regard to providing insulin dosing and titration information utilizing a V-Go disposable insulin delivery device. We look to compare two treatment arms of insulin dosing and titration in patients with Type 2 insulin-dependent diabetes - a fixed dose titration arm, and an arm where 50% of the insulin dose is given at the largest meal of the day. This study will provide practical information on glycemic control, dose requirements and safety in patients with Type 2 diabetes on basal insulin with or without oral anti-diabetic agents who are being primarily managed in the primary care office.",https://clinicaltrials.gov/study/NCT02361489,2015-02-11,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT02588859,Study to Understand Usage and Effect of Saxagliptin as First Add-On After Metformin in Indian Type 2 Diabetes Mellitus Patients,"[""Type 2 Diabetes""]","[""India""]",COMPLETED,[],,,ALL,"This is a multicentre, non-interventional, prospective, observational study which would be conducted in India to understand the usage and effect of saxagliptin as first add-on therapy after metformin. The study will enroll Type 2 Diabetes Mellitus (T2DM) patients who were inadequately controlled with metformin alone and have been recently prescribed saxagliptin as an add-on to metformin.
+
+This is a multicentre, non-interventional, prospective, observational study which would be conducted in India to understand the usage and effect of saxagliptin as first add-on therapy after metformin. The study will enroll Type 2 Diabetes Mellitus (T2DM) patients who were inadequately controlled with metformin alone and have been recently (i.e. within past 15 days) prescribed saxagliptin as an add-on to metformin.
+
+The Investigator/designee would get signed informed consent from potential subjects of the study. The patients who meet all inclusion and none of the exclusion criteria will be enrolled in the study. These patients will then be assigned a patient identification number for the study. The Investigator/designee will collect the information as per the study schedule. This will be considered as Visit 1 of the patients. The patients will be managed as per the routine clinical practice of the physician for their condition and this study will neither interfere/advise the Investigators/designee for any drug/medication to be prescribed to the patients nor prescribe any intervention to them.The enrolled patients would then be asked to visit their respective study sites after 3 months ( +7 days) for the Visit-2 of study.
+
+Around 50 study centers throughout India will be selected with a goal of enrolling up to 1500 patients (approximately 30 subjects each per site). The study will be initiated after obtaining written approval of Independent/Institutional Ethics Committee and written Informed consent of the patient.",https://clinicaltrials.gov/study/NCT02588859,2017-12-19,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT02786823,Effect of Folic Acid and Vitamin B12 Supplementation in Subjects With Type 2 Diabetes,"[""Diabetes Mellitus, Type 2""]","[""India""]",COMPLETED,"[""PHASE2"", ""PHASE3""]",30 Years,65 Years,ALL,"This study aims to evaluate the effect of Folic acid and Vitamin B12 supplementation on Biochemical parameters in subjects with type-2 Diabetes. 80 selected subjects will be divided into 4 groups of 20 each.
+
+* Group A: to receive Folic acid 5 mg once daily for 8 weeks along with standard oral anti-diabetic drugs;
+* Group B: to receive Vitamin B12 500 mcg once daily for 8 weeks along with standard oral anti-diabetic drugs;
+* Group C: to receive both Folic acid 5 mg once daily and Vitamin B12 500 mcg once daily for 8 weeks along with standard oral anti-diabetic drugs;
+* Group D: to receive no additional intervention apart from standard oral anti-diabetic drugs.
+
+The biochemical parameters will be evaluated before and after the intervention.
+
+This is a randomized, parallel group, open label study to evaluate the effect of Folic acid and Vitamin B12 supplementation on Biochemical parameters in subjects with type-2 Diabetes.
+
+80 selected subjects will be randomly assigned to 4 groups of 20 each as follows:
+
+* Group A: to receive Folic acid 5 mg once daily for 8 weeks along with standard oral anti-diabetic drugs;
+* Group B: to receive Vitamin B12 500 mcg once daily for 8 weeks along with standard oral anti-diabetic drugs;
+* Group C: to receive both Folic acid 5 mg once daily and Vitamin B12 500 mcg once daily for 8 weeks along with standard oral anti-diabetic drugs;
+* Group D: to receive no additional intervention apart from standard oral anti-diabetic drugs.
+
+The subjects will also be advised to be on a normal routine diet, not to skip any meal and not to change their exercise pattern (if any) during the study period.The compliance of the intervention will be monitored by instructing the patients to return all unused tablets at the end of the 8 weeks period of study.
+
+All the subjects will be asked to report after an overnight fasting of 12 hours on two occasions i.e. at the start of the study before allocation of group and 8 weeks after allocation. After measurement of body weight, height and blood pressure (by Mercury Sphygmomanometer), 5 milliliter of early morning fasting venous blood sample will be collected under aseptic measures on both the occasions. The samples collected will then be appropriately processed for the analysis of various biochemical parameters.
+
+The results of all the parameters evaluated will be recorded in the subject's Data Collection Form.The data will be analyzed using Statistical Package for the Social Sciences (SPSS) version 21.",https://clinicaltrials.gov/study/NCT02786823,2017-09-19,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT02853630,"A Clinical Trial to Study the Effects of Two Drugs, Vildagliptin and Metformin in Patients With Type 2 Diabetes Mellitus","[""TYpe 2 Diabetes Mellitus""]","[""India""]",COMPLETED,"[""PHASE4""]",20 Years,60 Years,ALL,"This study is a multicentre, randomized, open label on comparison of pancreatic beta cell recovery and preservation of Vildagliptin 100mg daily and Metformin (1000 - 2500mg) daily for 96 weeks in 203 patients with type 2 diabetes that will be conducted in four centers in Chennai. The primary outcome measures will be to compare the effects of Vildagliptin versus Metformin on Pancreatic beta cell function in type 2 diabetic patients as measure by Insulin secretion rate (ISR) relative to glucose0-2hr (pmol/min/m2/mmol/L). The secondary outcomes will be effect of Vildagliptin versus Metformin based treatment on glycaemic variables in terms of Percent HbA1c reduction, C-peptide responses, Insulin to glucose ratios, Reduction in fasting plasma glucose (FPG), 2hr postprandial glucose (PPG) from baseline, Improvement in insulin sensitivity, Improvement in oral disposition index, Percentage of patients reaching the glycemic target of (i) HbA1c ≤ 6.5% and (ii)HbA1c ≤ 7.0%, in the overall study population and General safety in terms of occurrence of adverse events
+
+The subjects will be invited to the study center from the local population who are willing to participate in the trial. Each subject will be informed both orally and in writing about the study prior to inclusion in the study and only the subjects who give written informed consent will be included. The selection of the subjects is based on the inclusion and exclusion criteria defined in the protocol. The selected subjects will be given a screening number and subjected to screening procedure to find out eligible candidates for enrollment. The screening procedure includes obtaining subject's anthropometric data, baseline symptomatology, medical history, physical examination, laboratory investigations like blood glucose (fasting, 30min \& 2hr after meal), HbA1c, \^Plasma insulin (fasting, 30min \& 2hr after meal), \^2hr C peptide, Serum Amylase, Lipase, Urea, Creatinine, Gamma-glutamyl transferase (GGT), Urine albumin/creatinine ratio and urine pregnancy (if applicable).
+
+The selected subjects after the screening procedure will be given a subject number and randomized between two arms. In Arm 1 they will be advised to take Vildagliptin 100mg daily for 96 weeks. In Arm 2 they are assigned Metformin (1000mg - 2500 mg/ day according to physician's preference for 96 weeks and all the subjects will be asked to come for follow up on week 12, week 24, week 48, week 72 and week 96. Subjects will be given sufficient quantity of study drugs. They will be instructed to take one tablet of Vildagliptin 50mg per day, 30 minutes after breakfast in the morning and second tablet at night, 30 minutes after dinner or Metformin tablets as per instructions given by the physician. Subjects will be instructed to maintain the record of dosing details in the patient diary.
+
+Blood samples will be taken for the investigations such as blood glucose (fasting, 30min \& 2hr after meal), HbA1c, Plasma insulin (fasting, 30min \& 2hr after meal), C peptide (2hr after meal), fasting serum Amylase, Lipase, Urea, Creatinine, GGT, Urine albumin/creatinine ratio and Urine pregnancy test(if required) as specified in visit chart below. There will be three telephonic visits on week 36, week 60 and week 84. During those visits subject will be inquired about the health status over the phone and the drugs for the next three months will be dispensed by courier or delivered at home by the coordinator.
+
+If the glycaemic control is constantly not satisfactory (HbA1c ≥ 8.5%) from visit 3, a rescue drug (Glimepiride) will be added to both arms and all the clinical and biochemical test will be done as per visit chart. With Glimepiride if the A1C is \>9% insulin will be added and the subject will be withdrawn from the study.",https://clinicaltrials.gov/study/NCT02853630,2019-04-02,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT02941367,Safety Assessment of Lyxumia (Lixisenatide) and Sulfonylurea as Add-on Treatment to Basal Insulin in Uncontrolled Patients With Type 2 Diabetes Mellitus Who Elect to Fast During Ramadan,"[""Diabetes Mellitus, Type 2""]","[""India"", ""Israel"", ""Kuwait"", ""Turkey (Türkiye)""]",COMPLETED,"[""PHASE4""]",18 Years,,ALL,"Primary Objective:
+
+To compare the safety, in terms of percentage of patients with symptomatic documented hypoglycemia during Ramadan fast, of lixisenatide versus sulfonylurea (SU).
+
+Secondary Objectives:
+
+* To assess effect of lixisenatide versus SU on:
+* Changes in glycemic control;
+* Changes in body weight.
+* To assess overall safety of lixisenatide and SU.
+
+The total study duration per patient will have a minimum 12 weeks and maximum 22 weeks (up to 2 weeks screening period + 8-12 weeks pre-Ramadan period + 29-30 days Ramadan + 0 4 weeks post-Ramadan period). This is a phase 3b study in Kingdom of Saudi Arabia and Bangladesh (instead of phase 4 for other countries).",https://clinicaltrials.gov/study/NCT02941367,2022-04-25,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT03071016,Usage of Dapagliflozin in the Management of Type-2 Diabetes Mellitus: A Real World Evidence Study in Indian Patients,"[""Type 2 Diabetes""]","[""India""]",COMPLETED,[],18 Years,99 Years,ALL,"This study is a non-interventional, multicentre, prospective, observational study to be conducted at 50 sites in India. The study targets to enrol 2000 patients with 40 patients per site. The study will be initiated after obtaining written approval of Independent Ethics Committee (IEC) /Institutional Review Board (IRB) and written informed consent of the patient.
+
+This study is a non-interventional, multicentre, prospective, observational study to be conducted at 50 sites in India. The study targets to enrol 2000 patients with 40 patients per site. The study would enrol T2DM patients who are/were inadequately controlled (HbA1c \>7%) with existing anti-diabetic medications and who have been prescribed dapagliflozin 3 months prior to study initiation. No study medication will be prescribed or administered as a part of study procedure. Patients, who have been treated as per Investigators' routine clinical practice and prescribed dapagliflozin 3 months before will be screened for enrolment in study. Dosage of dapagliflozin and other medications should be as per the routine clinical practice and prescribing information. The study will be initiated after obtaining written approval of Independent Ethics Committee (IEC) /Institutional Review Board (IRB).",https://clinicaltrials.gov/study/NCT03071016,2019-03-04,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT03374774,A Non-interventional Study of Ability and Willingness to Pay for BIAsp 30 in a Real World Population With Type 2 Diabetes Mellitus (T2DM),"[""Diabetes"", ""Diabetes Mellitus, Type 2""]","[""India""]",COMPLETED,[],18 Years,,ALL,"The purpose of this study is to collect information about the participant's ability and willingness to pay for NovoMix 30 using a modern device, which is prescribed to the participant by the study doctor for Type 2 Diabetes Mellitus according to routine clinical practice. The study aims to obtain data that can guide prescribers' understanding of the ability and willingness to pay for NovoMix 30 FlexPen or Penfill among participants in the growing middle class in India and Egypt. The decision to prescribe NovoMix 30 FlexPen or Penfill has been made independent from this study.",https://clinicaltrials.gov/study/NCT03374774,2018-08-31,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT03478202,GOLO Open-Label Pilot 1,"[""Diabetes Mellitus, Type II""]","[""United States""]",COMPLETED,"[""NA""]",18 Years,69 Years,ALL,"The objective of this open-label pilot study is to evaluate the effect of the commercially available GOLO for Life (GFL) weight management program on body weight in a type 2 diabetic patient population after approximately 3 months.
+
+Golo For Life (GFL) is a weight management program that helps people who are overweight or obese limit and portion their consumption of conventional foods and make healthier choices in their diets. GFL includes a point-based system from the four macronutrient food groups that is based on the individual's activity level and body mass. Additionally, GFL includes common-sense instructions, motivation and tips supporting compliance and requires a minimum of 15 minutes of exercise per day. GFL also includes a dietary supplement containing zinc and chromium, essential nutrients that support regulation of blood sugar.
+
+In case studies from clinician and wellness program use, GFL has shown the ability to reduce body weight in both healthy and diabetic people who are overweight or obese. Secondary endpoints including measures of blood sugar have been observed to decrease as a result of the GFL program.
+
+While GFL has been developed and used in private clinical practice in both healthy overweight and type 2 diabetic people, more systematic research is needed to determine to what extent it is able to support healthy weight loss. This open-label pilot study is intended to observe the effects of the program in a representative group of subjects with stable type 2 diabetes at one outpatient medical practice.
+
+The objective of this open-label pilot study is to evaluate the effect of the commercially available GOLO for Life (GFL) weight management program on body weight in a type 2 diabetic patient population after approximately 3 months.",https://clinicaltrials.gov/study/NCT03478202,2018-03-27,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT03529123,Efficacy and Safety of the Insulin Glargine/Lixisenatide Fixed Ratio Combination Versus Insulin Glargine in Patients With Type 2 Diabetes (LixiLan-India),"[""Type 2 Diabetes Mellitus""]","[""India""]",COMPLETED,"[""PHASE3""]",18 Years,64 Years,ALL,"Primary Objective:
+
+To demonstrate the superiority of the insulin glargine/lixisenatide fixed ratio combination (FRC) to insulin glargine by demonstrating change in glycosylated hemoglobin (HbA1c).
+
+Secondary Objectives:
+
+* To assess the effects of the FRC in comparison with insulin glargine on:
+* Percentage of patients reaching HbA1c targets (\<7% );
+* Glycemic control in relation to a meal as evaluated by 2-hour Post-prandial Plasma Glucose; (PPG);
+* Body weight
+* Fasting Plasma Glucose (FPG);
+* Percentage of patients reaching HbA1c targets of \<7% with no body weight gain and no hypoglycemia (as defined in the evaluation criteria);
+* 7-point Self-Monitoring Plasma Glucose (SMPG) profile;
+* Insulin glargine dose.
+* To assess the safety and tolerability in each treatment group.
+
+The maximum study duration per patient is 33 weeks.",https://clinicaltrials.gov/study/NCT03529123,2022-04-25,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT03760991,Evaluation of the Efficacy and Safety of Insulin Glargine 300 U/mL in Patients With Type 2 Diabetes Mellitus Uncontrolled on Other Kinds of Insulin,"[""Type 2 Diabetes Mellitus""]","[""Argentina"", ""Colombia"", ""Egypt"", ""Hong Kong"", ""India"", ""Indonesia"", ""Lebanon"", ""Malaysia"", ""Peru"", ""Philippines"", ""Saudi Arabia"", ""South Africa"", ""Thailand"", ""Turkey (Türkiye)""]",COMPLETED,"[""PHASE4""]",18 Years,,ALL,"Primary Objective:
+
+To assess the efficacy of Gla-300 on glycemic control measured by hemoglobin A1c (HbA1c) change in patients with type 2 diabetes mellitus (T2DM) uncontrolled with their current basal insulin following the switch to Gla-300.
+
+Secondary Objectives:
+
+To evaluate the effects of Gla-300 on glycemic control, treatment satisfaction, and health care resource utilization (HCRU) outcomes.
+
+To evaluate the safety of Gla-300.
+
+Study duration per participant is approximately 29 weeks including a screening period of up to 2 weeks, a 26-week treatment period, and a post treatment follow-up phone call visit at Week 27.",https://clinicaltrials.gov/study/NCT03760991,2022-04-25,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT03787563,Herbal Tea in the Treatment of Type 2 Diabetes Mellitus,"[""Type 2 Diabetes Mellitus""]","[""India""]",UNKNOWN,"[""NA""]",18 Years,,ALL,"Diabetes mellitus is a chronic disease caused by inherited and/or acquired deficiency in production of insulin by the pancreas, or by the ineffectiveness of the insulin produced. It has become a major healthcare problem in India. High-quality, low-cost solutions adapted to the local context are critical to addressing the current crisis in the management of diabetes. Herbal tea consists of tulsi, guava and stevia, which has glucose lowering properties.The aim of this trial is to study the effect of a herbal tea in the glycemic response in the early type 2 diabetes.",https://clinicaltrials.gov/study/NCT03787563,2018-12-26,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT04072523,An Observational Study to Assess the Prevalence of Heart Failure in Type 2 Diabetes Patients,"[""Type 2 Diabetes""]","[""India""]",COMPLETED,[],,,ALL,"An Observational Study to assess the Prevalence of Heart Failure in Type 2 Diabetes Patients in India.
+
+This is a cross sectional, observational, multi-centre study to be conducted at 40 centres in India. The study targets to enrol 1000 patients with approx. 25 patients per site. The study would enrol Type 2 Diabetes Mellitus patients who provide written informed consent. No study medication will be prescribed or administered as a part of study procedure. Patients, who have been treated as per Investigators' routine clinical practice will be screened for enrolment in study. The study will be initiated after obtaining written approval of Independent Ethics Committee (IEC) /Institutional Review Board (IRB).",https://clinicaltrials.gov/study/NCT04072523,2022-03-04,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT04153981,A Study of Insulin Glargine (LY2963016) in Adult Participants With Type 2 Diabetes in India,"[""Type 2 Diabetes Mellitus""]","[""India""]",COMPLETED,"[""PHASE4""]",18 Years,75 Years,ALL,The reason for this study is to see if insulin glargine is safe in participants with type 2 diabetes mellitus (T2DM) in India.,https://clinicaltrials.gov/study/NCT04153981,2024-02-15,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT04445714,To Assess Safety of Fixed Dose Combination of Dapagliflozin and Saxagliptin in Type 2 Diabetes Mellitus Patients,"[""Type 2 Diabetes Mellitus""]","[""India""]",COMPLETED,"[""PHASE4""]",18 Years,,ALL,"A prospective, multicenter, phase -IV study to assess the safety of fixed dose combination of dapagliflozin and saxagliptin in Indian Type 2 Diabetes Mellitus (T2D) patients.
+
+During the study, an AstraZeneca representative/delegate will have regular contacts with the study site, including visits to site for the site monitoring and source data verification activities. Electronic Case Report Forms (eCRF) will be used for data collection and query handling. The investigator will sign the completed electronic Case Report Forms. A copy of the completed electronic Case Report Forms will be archived at the study site. Authorized representatives of AstraZeneca or delegate, a regulatory authority, or an Ethics Committee may perform audits or inspections at the center's. Number and percentages of Incidence of adverse events will be presented, stratified by age/gender/baseline medications. Annualised event rate shall also be presented in addition to the incidence rate during the study. Mean change in HbA1C from baseline to 6 months for patients will be analysed using paired t test / Wilcoxon signed-rank test at 5% level of significance.",https://clinicaltrials.gov/study/NCT04445714,2024-11-12,2026-10-17T08:38:23.921533+00:00,ClinicalTrials.gov
+NCT05659537,A Study of Dulaglutide (LY2189265) in Participants With Type 2 Diabetes Mellitus in India,"[""Diabetes Mellitus, Type 2""]","[""India""]",COMPLETED,"[""PHASE4""]",18 Years,,ALL,The main purpose of this study is to evaluate safety of dulaglutide in participants with type 2 diabetes mellitus in India.,https://clinicaltrials.gov/study/NCT05659537,2025-02-20,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT06055582,To Study the Effects of Mango Ingestion in T2DM and Non-diabetic Subjects.,"[""Normoglycemia"", ""T2DM (Type 2 Diabetes Mellitus)""]","[""India""]",COMPLETED,"[""NA""]",25 Years,60 Years,ALL,"T2DM patient will be recruited from endocrine OPD
+
+1. Clinical History and Examination:
+
+   1. General Physical Examination:
+
+      * Height (cm)
+      * weight (kg)
+      * BMI (kg/m2)
+      * Blood Pressure (mmHg)
+   2. Anthropometry: Circumferences and skinfold thickness will be recorded for the patients in the following manner.
+
+      Circumferences:
+      * Waist circumference (cm)
+      * Hip circumference (cm)
+      * Mid-arm circumference (cm)
+      * Mid-thigh circumference (cm)
+   3. Skin fold thickness: Skin fold thickness will be measured by using (LANGE skin fold calipers) (to nearest of 1 mm) at the following sites
+
+      * Biceps (mm)
+      * Triceps (mm)
+      * Thigh (mm)
+      * Calf (mm)
+      * Sub scapular (mm)
+      * Supra-iliac (mm)
+      * Anterior axillary fold. (mm)
+2. Biochemical Test: The biochemical analysis will be done using ELISA kit or commercially available kits
+
+   * Blood glucose (mg/dL)
+   * HbA1c (%)
+   * Serum insulin (μIU/mL)
+   * Total Cholestrol (mg/dl)
+   * Triglyceride (mg/dl)
+   * Fructosamine (umol/L)
+   * Adiponectin (µg/ml) -- HOMA-IR
+3. Body Composition Analysis (TANITA)
+
+1. Phase I: Exploratory Acute Phase- Stratified randomized study
+
+   * Study population: 2 groups; patients with T2DM and non-diabetic subjects n=45 (20 T2DM subject, 25 non-diabetic subjects).
+   * Study groups: 3 groups; OGTT (n=5), mango (n=30), bread (n=10) Subjects in mango group will be further randomized into three different groups. Each group will be tested on a different variety of mango.
+
+   Procedure for Phase I:
+
+   After measuring baseline glucose level on empty stomach, three groups will be given their respective standardized food item and blood samples will be drawn every half an hour upto 2 hours of ingestion at (minutes): 0, 30, 60, 90 and 120. Fingertip capillary blood will be used for the estimation of blood glucose using a glucometer of contour brand.
+2. Phase II: Exploratory Sub-Acute Phase- Two randomized cross over study
+
+   * Study population: 2 groups; patients with T2DM and non-diabetic subjects, n=50 (25 in each study population group)
+   * Study groups: 2 groups; mango (n=30), bread (n=20) Subjects in mango group will be further randomized into three different groups. Each group will be tested on a different variety of mango.
+
+   Procedure for Phase II:
+   1. Continuous glucose monitoring system (CGMS): It will be affixed for 3 days.
+   2. The research team will be contacting the study subjects every day for any discomfort due to CGMS device or diet.
+   3. On day 4 study subjects will be called to the study site and CGMS will be removed and data will be transferred to the study records.
+   4. Study subjects will be asked to maintain a food diary and record the foods consumed during the entire period of 3 days.
+   5. The subjects will also be asked to fill questionnaire of dietary assessment on Day 1 and Day 4 for per schedule of assessments.
+3. Phase III: Confirmatory Chronic Phase- Randomized controlled parallel arm study
+
+   * Study population: patients with T2DM, n=35
+   * Study groups: 2 groups; mango (n=20), bread (n=15) Subjects in mango group will be further randomized into two different groups. Each group will be tested on a different variety of mango.
+
+Procedure for Phase III:
+
+Subjects will be given glucometers and will be asked to monitor blood glucose at fasting state and after standard breakfast meal at baseline, at day 30 and day 60 in both the study groups. The intermediate term effect of mango consumption and bread consumption will be assessed at baseline and at day 60 in terms of following investigations:
+
+1. Dietary assessment
+2. Physical activity (PA) assessment (GPAQ)
+3. Blood pressure
+4. Anthropometry measures
+5. Body composition
+6. Biochemical investigations",https://clinicaltrials.gov/study/NCT06055582,2023-09-26,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT06370715,A Study of LY900014 in Adult Participants With Type 2 Diabetes Mellitus in India,"[""Diabetes Mellitus, Type 2""]","[""India""]",COMPLETED,"[""PHASE4""]",18 Years,,ALL,"The purpose of this study is to assess the safety of insulin lispro-aabc in adult participants with Type 2 diabetes mellitus in India.
+
+The study will last about 33 weeks for each participant, including screening (1 week), Lead-in period (4 weeks), treatment period (26 weeks) and follow up period (2 weeks).",https://clinicaltrials.gov/study/NCT06370715,2026-09-28,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT06498284,Evaluate HM-002-1005 in Subjects With Type 2 Diabetes Mellitus,"[""Diabetes Mellitus, Type II""]","[""United States""]",COMPLETED,"[""PHASE1""]",18 Years,65 Years,ALL,"The purposes of this study are to:
+
+* Evaluate the safety and tolerability of the study drug.
+* Measure how much of the study drug (HM-002-1005) and its breakdown product get into the bloodstream, and how long it takes the body to get rid of them.
+* Measure the amount of glucose (blood sugar) and a substance called C-peptide in the bloodstream after receiving the study drug.
+
+Researchers will compare the study drug to a placebo (a look-alike substance that contains no drug).
+
+Participants will:
+
+* Stay 5 days and 4 nights or 6 days and 5 nights at the research site, and have a follow-up phone call 7 days after leaving the research site.
+* Take one (1) dose of the study drug or placebo
+* Have blood taken to measure the amount of study drug and its breakdown product and the levels of glucose and C-peptide
+* Have safety tests such as vital sign, ECGs, and glucose measurements",https://clinicaltrials.gov/study/NCT06498284,2025-04-03,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT06517784,Insulin Initiation and Adherence Behaviours: a Cross Sectional Survey of Indian HCPs & Patients With Type 2 Diabetes,"[""Type 2 Diabetes""]","[""India""]",COMPLETED,[],18 Years,,ALL,This is a cross-sectional study planned among patients with Type 2 Diabetes (T2D) and Health Care Providers (HCPs) who treat T2D patients. Study participants will be recruited through existing databases/panels to complete a 30-minute self-administered online survey. The purpose of the study is to understand the insulinization barriers and the insulin adherence behaviours of both HCPs and patients.,https://clinicaltrials.gov/study/NCT06517784,2024-08-28,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT06716424,A Study to Investigate Safety and Efficacy of iGlarLixi in Adult Patients With Type 2 Diabetes Mellitus,"[""Type 2 Diabetes""]","[""India""]",COMPLETED,"[""PHASE4""]",18 Years,,ALL,"This is an intervention, phase IV, single-arm study to assess the safety and efficacy of iGlarLixi in adult patients with Type 2 diabetes.
+
+The study duration will be up to 27 weeks, with a treatment duration approximately 24 weeks.",https://clinicaltrials.gov/study/NCT06716424,2026-07-10,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT06851858,"Efficacy, Safety and Tolerability of AZD6234 in Participants Living With Overweight or Obesity With Type 2 Diabetes Who Are on a Stable Dose of GLP-1 Receptor Agonist","[""Endocrinology"", ""Diabetes, Type II"", ""Obesity""]","[""United States""]",COMPLETED,"[""PHASE2""]",18 Years,75 Years,ALL,"This Phase II study is a randomized, parallel group, double blinded, placebo-controlled, multicenter to evaluate the efficacy, safety, and tolerability of AZD6234 in adults with overweight or obesity and type 2 diabetes on stable GLP-1 RA therapy.
+
+This is a Phase II, randomised, parallel-group, double-blind, placebo-controlled, multi-centre study to assess the efficacy, safety, and tolerability of AZD6234 compared with placebo, given once weekly as a subcutaneous (SC) injection, in adults living with overweight or obesity and type 2 diabetes who are on a stable dose of GLP-1 RA. The study is being conducted across sites in the USA to evaluate the efficacy, safety, and tolerability of AZD6234 in adults with overweight or obesity and type 2 diabetes on stable GLP-1 RA therapy. A total of 64 Participants, aged 18-75 with a BMI ≥ 27 kg/m², will be randomized to receive weekly subcutaneous injections of either AZD6234 or a placebo, alongside their current GLP-1 RA medication. The study involves a screening period and a treatment and follow-up period.",https://clinicaltrials.gov/study/NCT06851858,2026-09-24,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT07029009,Liraglutide Treatment in Patients With Maturity-onset Diabetes of the Young (MODY),"[""Maturity Onset Diabetes of the Young""]","[""United States""]",RECRUITING,"[""PHASE2""]",10 Years,,ALL,"The reason for this research study is to better understand the use of liraglutide, a commonly prescribed Type 2 diabetes medication, in patients with a diagnosis of maturity-onset diabetes of the young (MODY).
+
+The investigators are interested in better understanding the way that this drug affects the metabolism and hormone levels of a person with MODY. Many people with MODY report having gastrointestinal (GI) issues such as an upset stomach. Investigators also are interested in finding out if this drug will help with GI issues.
+
+If liraglutide does help with this symptom of MODY, the investigators want to know why this happens. If this drug is effective for participants, the investigators will use participants cells to make human induced pluripotent stem cell (iPSC). This means that the investigators will use participant cells to create what are called stem cells, which are cells in the body that are able to be told what their job is. Investigators will use these cells to see what happens in gastrointestinal (GI) tract.
+
+The objective of this study is to perform a comprehensive metabolic and hormonal evaluation of individuals with Maturity-onset diabetes of the young (MODY) at baseline and then assess response to initiation of liraglutide. Select individuals will be consented for human induced pluripotent stem cell (iPSC) generation to identify the cellular basis of enteroendocrine cell (EEC) dysfunction.
+
+The hypothesis is that heterozygous mutations in MODY-related genes contribute to a range of GI pathologies, including regional disruptions in epithelial identity and disturbances in the function of EECs. Thus, patients with MODY may experience improvement not only in HbA1c and BMI but also in GI symptoms with initiation of GLP-1 receptor agonists. Investigators plan to enroll approximately 50 patients with MODY and obtain baseline metabolic labs and imaging along with enteroendocrine labs before initiating liraglutide and assessing response with repeat labs and imaging. This project will provide further guidance for clinical care and treatment of patients with MODY.",https://clinicaltrials.gov/study/NCT07029009,2025-12-17,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT07282743,Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus,"[""Type II Diabetes Mellitus""]","[""India"", ""United States""]",RECRUITING,"[""PHASE2""]",18 Years,,ALL,"This is a phase II, randomized, double-blind, placebo-controlled study to evaluate the efficacy and tolerability of GL0034 among type II diabetes mellitus subjects who are obese or overweight with weight-related comorbidities. Subjects will be put on either one of the four treatment arms (GL0034, once a week, subcutaneous injection) or placebo arm (once a week, subcutaneous injection) following initial dose-up titration that takes up to approximately 20 weeks. The primary end point is change in HbA1c levels from baseline (Week 0) to Week 36 following treatments in all participants.",https://clinicaltrials.gov/study/NCT07282743,2026-03-18,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT07321678,"A Study to Evaluate the Efficacy, Safety, and Tolerability of ASC30 Tablets in Participants With Type 2 Diabetes Mellitus","[""T2DM (Type 2 Diabetes Mellitus)""]","[""United States""]",COMPLETED,"[""PHASE2""]",18 Years,75 Years,ALL,"This randomized, double-blind, placebo-controlled Phase II study is designed to evaluate the efficacy, safety, and tolerability of ASC30 oral tablets formulation in participants with Type 2 Diabetes Mellitus",https://clinicaltrials.gov/study/NCT07321678,2026-09-21,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT07340320,A Study of CX11 Tablets in Patients With Type 2 Diabetes Mellitus,"[""Type II Diabetes Mellitus""]","[""Poland"", ""United States""]",RECRUITING,"[""PHASE2""]",18 Years,75 Years,ALL,"This study is testing whether a new medication called CX11 works and is safe for participants with type 2 diabetes who have not reached good blood sugar control while taking a steady dose of metformin, with or without a steady dose of an SGLT2 inhibitor, for at least 90 days.
+
+The study is being done at multiple medical centers. Participants are assigned by chance (randomized) to different groups, and neither the participants nor the study staff know which group they're in (double-blind). The groups are compared side by side (parallel), and some participants will receive inactive pills (placebo) to help measure the true effect of the study drug.
+
+After screening, participants will be randomly placed into one of six groups, with equal chances of being in any group. Each group will receive a different dose of CX11 or a placebo. Treatment will last 24 weeks. After that, all participants will have a 2-week follow-up period to check on safety.",https://clinicaltrials.gov/study/NCT07340320,2026-09-15,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT07361341,Culturally Tailored Program for Food-Insecure Adults: SPICE-D,"[""Type 2 Diabetes Mellitus (T2D)""]","[""United States""]",RECRUITING,"[""NA""]",18 Years,,ALL,"The goal of this pilot intervention study is to learn if culturally appropriate food bundles and nutrition education can help people with diabetes who struggle to afford healthy food in patients with diabetes receiving care at Community Care Clinic in Winston-Salem, NC. The main questions we hope to answer are:
+
+1. Can providing culturally appropriate foods and recipes improve how people cook and prepare meals at home?
+2. Can this approach improve people's nutrition knowledge and help them better manage their diabetes?
+3. Can this approach improve overall health outcomes for people with diabetes who face food insecurity?
+
+Participants will:
+
+1. Complete an initial interview and survey about their food security, health challenges, and social needs
+2. Receive culturally appropriate food bundles designed for their community
+3. Receive easy-to-use educational materials including recipes and cooking guides that match their reading level
+4. Complete follow-up surveys at 3 months and 6 months to track any changes in their cooking habits, nutrition knowledge, diabetes management, and health
+
+The purpose of this hybrid study is to examine the relationship between food insecurity and health outcomes among predominantly Hispanic, low-income patients at the Community Care Clinic (CCC), and to evaluate the impact of culturally tailored food interventions on diabetes management and overall health. Using retrospective chart review and prospective cohort analysis, this research will assess how food insecurity affects key health indicators including glycemic control (HbA1c), blood pressure, body mass index, and healthcare utilization patterns. Qualitative interviews also will elucidate patient perspectives of their care, their food choices, and their experiences managing diabetes. Through the provision of culturally familiar food bundles and recipe resources over a three-month period, this study aims to identify effective, community-centered nutritional strategies that address both the structural barriers and cultural dimensions of food insecurity in this vulnerable population. The findings will inform evidence-based interventions to improve diabetes care and reduce health disparities among uninsured, low-income patients at the CCC and similar safety-net clinics serving marginalized communities.",https://clinicaltrials.gov/study/NCT07361341,2026-05-26,2026-10-17T08:38:25.260702+00:00,ClinicalTrials.gov
+NCT07385547,Study to Evaluate if Exposure to Drug is Impacted in Participants With Renal Insufficiency,"[""Type II Diabetes Mellitus""]","[""United States""]",RECRUITING,"[""PHASE1""]",18 Years,80 Years,ALL,"This is an open-label, single-dose, Phase 1 clinical study designed to evaluate the effect of renal impairment on the pharmacokinetics (PK) of GL0034, a long-acting GLP-1 receptor agonist. Approximately 40 adult participants will be enrolled across four groups: normal renal function, moderate renal impairment, severe renal impairment without dialysis, and severe renal impairment with dialysis. Each participant will receive a single subcutaneous dose of GL0034. Blood samples will be collected for PK analysis. Secondary objectives include assessing safety and tolerability. The study will help determine whether renal impairment affects GL0034 exposure and inform dosing recommendations for patients with compromised renal function.",https://clinicaltrials.gov/study/NCT07385547,2026-03-13,2026-10-17T08:38:24.637583+00:00,ClinicalTrials.gov
+NCT07495787,Magnetic Compression Anastomosis Procedure for Partial Jejunoileal Anastomosis: Assessing the Viability of an Innovative Metabolic Approach,"[""Diabete Type 2""]","[""India""]",RECRUITING,"[""NA""]",25 Years,65 Years,ALL,"English, Hindi and Gujarati
+
+Title: Magnetic Compression Anastomosis Procedure for Partial Jejunoileal Anastomosis: Assessing the Viability of an Innovative Metabolic Approach Protocol Number 2025/01/EDIT Trial Type Investigator Initiated Trial This investigator-initiated trial (IIT) is a prospective, single-center, single-arm observation study in patients designed to explore metabolic indicator and procedural outcomes in patients with T2DM. A total of 5 patients with T2DM will be recruited in the study. Following the administration of general anesthesia, surgeon will introduce the ring component of the magnetic compression anastomosis system through an enterotomy. The insertion of the distal ring into the terminal ileum via an enterotomy, positioned approximately 30 cm proximal to the ileocecal valve, utilizing a laparoscopic deployment instrument. The proximal ring is then placed in the proximal jejunum, located around 20 cm (with a variance of ± 10 cm) distal to the ligament of Treitz. Laparoscopic techniques are employed to maneuver the bowel, aligning the proximal and distal magnets for effective magnetic coupling and observing the ring pair mating via intraoperative imaging (fluoroscopy or plain x-ray). This IIT will be conducted in single centre in India by a qualified investigator. It will be initiated after Institutional Review Board (IRB)/Independent Ethics Committee (IEC).
+
+The anticipated timeline for this study is as follows:
+
+* Study Participant Enrollment: 02 months
+* Procedure Period: 01 day
+* Post procedure care: As suggested by the PI
+* Safety and functionality follow-up: 6 weeks, 3 months, 6 months, 9 months
+* Additional indications of efficacy follow-up: 12 months",https://clinicaltrials.gov/study/NCT07495787,2026-03-27,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov
+NCT07549373,"Effect of Diode Laser, Gudmar and Vinegar in Diabetic Patients During Root Canal Treatment","[""Diabete Type 2""]","[""India""]",RECRUITING,"[""NA""]",25 Years,60 Years,ALL,"Methodology
+
+Patient with diabetes 2 with informed consent -convenience sampling over a one year period.The tooth isolated with a rubber dam and the correct disinfection procedures will be used. researcher will do the Access preparation Working length -electronic apex locator (Dentsply Propex II) as well as a radiographic approach.
+
+After the canals will be obturated using ZOE sealer and gutta percha and post endodontic restoration is done using composite restoration. Patient is kept on follow up for 7days, 15 days, 30 days ,45 days and 60 days Clinical outcome is measure using periapical radiograph (RVG) Pain is measured using visual analog scale to mark the pain intensity. Data will be analysed statistically To enlarge the root canals (ISO size 20 file)
+
+A sterile paper point inside the root canal for one minute until the apex of the root canal is reached
+
+Using T.E Buffer, samples will be delivered to the School Of Basic Life Sciences, Sharda University.
+
+The samples will be subjected to traditional PCR analysis for the detection of Peptostreptococcus spp. in the root canal.
+
+Grouping Following instrumentation, 5% NaOCl and 17% EDTA irrigation will be done. Control group (n=15) The final irrigant will be saline Group 1 (n=15) Irrigation using 5% apple cider vinegar done The final irrigant will be saline Group 2 (n=15) Diode laser is used for disinfection in the presence of saline Group 3 (n=15) Gymnema Sylvestre Mother Tincture Q 1000 CH solution is used for disinfection in the presence of saline Group 4 (n=15) Diode laser is used for disinfection in the presence of 5% apple cider vinegar. The final irrigant will be saline Group 5 (n=15) Diode laser is used for disinfection in the presence of Gymnema Sylvestre Mother Tincture Q 1000 CH solution. The final irrigant will be saline
+
+After cleaning and shaping, samples will be collected and sent through T.E. Buffer to the School Of Basic Life Sciences, Sharda University.
+
+The samples will be subjected to traditional PCR analysis for the detection of Peptostreptococcus spp. in the root canal.
+
+Study design and ethical consideration The present study will be a randomized controlled clinical study conducted over the period of one year; the study protocol will be reviewed and approved by the institutional; ethics committee , sharda university. All procedures will be performed in accordance with the ethical standards laid down in the declaration of Helsinki.
+
+Patients diagnosed with type 2 diabetes mellitus will be recruited after obtaining written informed consent. Convenience sampling will be employed due to the clinical nature of the study and availability of eligible patient reporting to the out patient department during the study period. .Randomisation will be done using lottery method Patient selection and sampling method Type 2 diabetic patients fulfilling the inclusion criteria will be selected using a convenience sampling technique over a one year period.
+
+Convenience sampling has been widely used in clinical endodontic trials where strict criteria limit patient availability.
+
+After patient recruitment, the selected tooth will be isolated using the rubber dam to maintain asepsis and prevent salivary contamination, which is critical for accurate microbiological sampling.
+
+Access cavity preparation will be performed using and access opening bur # 2 followed by refinement of the access wall using an endo z carbide bur to ensure straight line access to root canals.
+
+Working length determination The working length was determined using the electronic apex locator (Dentsply propex II) and radiographic verification. The use of an electronic apex locator in conjunction with a radiograph has been shown to improve accuracy and reduce procedural errors.
+
+Canal instrumentation and initial microbiological sampling Root canal enlargement was performed up ISO size 20 file , following standardized instrumentation protocol to ensure uniformity across all groups For predisinfection microbial sampling , a sterile paper point was inserted into the root canal and maintained for 1 min, ensuring it reached the apical 3rd of the canal. This technique has been validated for effective recovery of intracanal microorganisms.
+
+The collected paper points were immediately transferred into strile vials containing TE buffer, which preserve bacterial DNA integrity during transport.
+
+Transport and microbiological analysis All sample were transported to the school of basics life sciences , under sterile conditions The samples were subjected to PCR analysis for the detection of peptostreptococcus species, which are obligate anaerobics commonly associated with persistent endodontic infections and apical periodontitis.
+
+PCR was chosen due to its high sensitivity and specificity in detecting low bacterial loads compared to culture methods
+
+Grouping and Disinfection Protocol Following biochemical preparations, all canals were irrigated using 5% sodium hypochlorite (NaOCI) and 17% EDTA, which are considered the gold standard for organic tissues dissolution and smear layer removal, respectively
+
+Patients were randomly allocated into six groups as follows:
+
+Control Group (n=15) Final irrigation was performed using sterile saline
+
+Group 1 - Apple Cider Vinegar (n=15) Irrigation was performed using 5% apple cider vinegar, followed by final irrigation with sterile saline. Apple Cider Vinegar has demonstrated antimicrobial efficacy due to its acetic acid content Group 2 - Diode Laser (n=15) A 940nm diode laser was used for canal disinfection in the presence of saline. Diode lasers have been shown to penetrate dentinal tubules and reduce anaerobic bacterial load effectively Group 3 - Gymnema Sylvestre (n=15) Disinfection was carried out using the Gymnema Sylvestre mother tincture Q 1000 CH solution in the presence of saline. Gymnema sylvestre exhibits documented antimicrobial and anit-infalamatory properties
+
+Group 4 - Diode Laser + Apple Cider Vinegar (n=15) Disinfection was performed using a 940 nm diode laser in the presence of 5% apple cider vinegar followed by saline irrigation
+
+Group 5 - Diode laser + Gymenam Sylvestre (n=15) Disinfection was performed using a 940 nm diode laser in the presence of Gynema Sylvestre mother tincture followed by saline irrigation.
+
+Post-disinfection Sampling After completion of cleaning and shaping and final disinfection protocols, post-treatment microbial samples were collected using sterile paper points and transported in T.E buffer for PCR analysis to assess bacterial reduction.
+
+Follow-up and Outcome Assessment Patients were recalled at 7, 15, 30, 45, 60 days for follow-up Clinical outcome was measured using RVG and PAI was calculated Post-operative pain was assessed using a VAS, a validated toll for pain assessment in endodontics studies Microbiological analysis using traditional polymerase chain reaction (PCR)",https://clinicaltrials.gov/study/NCT07549373,2026-05-28,2026-10-17T08:38:23.419914+00:00,ClinicalTrials.gov

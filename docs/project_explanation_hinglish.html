@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TrialOps-Adaptive AI | Complete Hinglish Explanation</title><meta name="description" content="Complete source-verified Hinglish explanation, actual model training, architecture, Docker status, demo and viva."><style>
+:root{--ink:#18332f;--muted:#5a6b66;--accent:#0b6c5c;--paper:#fff;--bg:#f3f5f1;--line:#d9e3dc;--code:#edf4ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Segoe UI,Arial,sans-serif;font-size:17px;line-height:1.8}
+#progress{position:fixed;top:0;left:0;height:4px;background:#36ad87;width:0;z-index:10}.top{background:#103e35;color:#fff;padding:31px 40px 33px}.top-inner{max-width:1460px;margin:auto;display:flex;justify-content:space-between;gap:26px;align-items:center}.eyebrow{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:#a7dbb9;font-weight:700}.top h1{font-size:34px;line-height:1.25;margin:8px 0}.subtitle{color:#c5dcd2;font-size:15px;margin:0;max-width:830px}.buttons{display:flex;gap:10px;flex-shrink:0}button{font:inherit;font-size:14px;font-weight:600;border:1px solid #b4d0bf;background:#e7f3e9;color:#173f31;padding:10px 18px;cursor:pointer;border-radius:6px}button:hover{background:#fff}.layout{display:grid;grid-template-columns:282px minmax(0,1fr);max-width:1460px;margin:auto;gap:34px;padding:32px 36px 80px}.sidebar{position:sticky;top:24px;align-self:start;max-height:calc(100vh - 50px);overflow-y:auto;font-size:13px;padding-right:13px}.sidebar h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;margin:0 0 16px}.sidebar ul{list-style:none;margin:0;padding:0}.sidebar li{margin:0 0 4px}.sidebar a{display:block;text-decoration:none;padding:7px 9px;border-left:2px solid transparent;color:#4e665b;line-height:1.5}.sidebar a:hover,.sidebar a.active{color:#005b47;border-left-color:#178d6a;background:#e5eee5}.sidebar .hint{margin-top:18px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}.content{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:42px 52px;min-width:0;box-shadow:0 8px 24px #153e2e05}.content>h1{font-size:34px;line-height:1.3;letter-spacing:-.025em;margin:0 0 25px}.content h2{font-size:26px;line-height:1.4;margin:58px 0 22px;padding-top:21px;border-top:2px solid #dfe9de;letter-spacing:-.015em}.content h3{font-size:19px;line-height:1.5;margin:35px 0 12px;color:#0b6c5c}.content p{margin:0 0 18px}.content strong{color:#123c2d}.content blockquote{margin:24px 0;padding:18px 22px;border-left:4px solid #168568;background:#edf5ec;font-size:18px}.content blockquote p:last-child{margin:0}.content code{font-family:Consolas,monospace;font-size:.85em;overflow-wrap:anywhere;background:var(--code);padding:2px 5px;border-radius:4px}.content pre{background:#133c34;color:#e1f2e6;padding:22px;border-radius:6px;overflow-x:auto;font-size:14px;line-height:1.6}.content pre code{background:none;padding:0;color:inherit;overflow-wrap:normal;white-space:pre}.table-scroll{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:5px}.content table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.65;margin:0}.content th{background:#e9f0e6;color:#174734;text-align:left;font-size:13px}.content td,.content th{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}.content tr:last-child td{border:0}.content tr:nth-child(even) td{background:#f8faf7}.content td code{font-size:12px}.content hr{border:0;border-top:1px solid var(--line);margin:36px 0}.content a{color:#066c54}.foot{font-size:12px;color:var(--muted);margin-top:45px;border-top:1px solid var(--line);padding-top:15px}#back{position:fixed;right:20px;bottom:18px;background:#113e35;color:white;border:none;padding:8px 14px;border-radius:20px;font-size:13px}.reading .sidebar{display:none}.reading .layout{display:block;max-width:1100px}.reading .content{padding:45px 70px}
+@media(max-width:1050px){.layout{grid-template-columns:220px minmax(0,1fr);gap:22px;padding:24px}.content{padding:30px}.top{padding:25px}.top-inner{align-items:flex-start}.top h1{font-size:29px}.buttons{flex-direction:column}.content>h1{font-size:30px}}
+@media(max-width:760px){body{font-size:16px}.top-inner{display:block}.buttons{flex-direction:row;margin-top:18px}.layout{display:block;padding:15px}.sidebar{position:static;max-height:250px;overflow:auto;padding:15px;margin-bottom:20px;border:1px solid var(--line);border-radius:6px}.content,.reading .content{padding:24px 20px}.content>h1{font-size:27px}.content h2{font-size:23px;margin-top:42px}.content table{min-width:430px}.content pre{font-size:12px}#back{right:12px;bottom:12px}}
+@media print{@page{size:A4;margin:18mm 16mm}html{scroll-behavior:auto}body{background:white;font-size:10.5pt;line-height:1.55}.top{background:white;color:#12382c;padding:0 0 16px;border-bottom:2px solid #193f31}.top h1{font-size:22pt}.eyebrow,.subtitle{color:#456457}.buttons,.sidebar,#progress,#back{display:none!important}.layout,.reading .layout{display:block;padding:0;max-width:none}.content,.reading .content{box-shadow:none;border:0;border-radius:0;padding:22px 0}.content>h1{font-size:22pt}.content h2{font-size:16pt;break-after:avoid;margin-top:29px}.content h3{font-size:12pt;break-after:avoid}.content p{orphans:3;widows:3}.content table{font-size:9pt;min-width:0}.content th,.content td{padding:7px}.content pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eef3ed;color:#173b2d;font-size:8pt}.content pre code{white-space:pre-wrap;overflow-wrap:anywhere}.content blockquote{font-size:11pt}.table-scroll{overflow:visible;break-inside:auto}tr{break-inside:avoid}thead{display:table-header-group}}
+</style></head><body><div id="progress" aria-hidden="true"></div><header class="top"><div class="top-inner"><div><div class="eyebrow">Project explanation / Hinglish / 18 October 2026</div><h1>TrialOps-Adaptive AI</h1><p class="subtitle">Start se implementation tak: purpose, NLP, models, actual training, India-US comparison, integration, Docker, demo aur viva. 9,391 words / 30 chapters / 32 viva answers.</p></div><div class="buttons"><button id="readButton" onclick="toggleReading()">Focus reading</button><button onclick="window.print()">Print / Save PDF</button></div></div></header><div class="layout"><aside class="sidebar" aria-label="Chapters"><h2>Jump to chapter</h2><div class="toc">
+<ul>
+<li><a href="#1-opening-mera-project-exactly-kya-hai">1. Opening: mera project exactly kya hai?</a></li>
+<li><a href="#2-clinical-trial-protocol-aur-eligibility-ka-basic-meaning">2. Clinical trial, protocol aur eligibility ka basic meaning</a></li>
+<li><a href="#3-is-project-ki-zarurat-kyun-padi">3. Is project ki zarurat kyun padi?</a></li>
+<li><a href="#4-sirf-india-kyun-nahi-india-aur-us-dono-kyun">4. Sirf India kyun nahi? India aur US dono kyun?</a></li>
+<li><a href="#5-starting-point-kya-tha-aur-start-se-ab-tak-kya-kiya">5. Starting point kya tha, aur start se ab tak kya kiya?</a></li>
+<li><a href="#6-data-kahan-se-aaya-aur-kitna-aaya">6. Data kahan se aaya aur kitna aaya?</a></li>
+<li><a href="#7-ctri-india-ka-kya-hua-provenance-kya-hai">7. CTRI India ka kya hua? Provenance kya hai?</a></li>
+<li><a href="#8-pura-system-ek-flow-mein-kaise-working-hai">8. Pura system ek flow mein kaise working hai?</a></li>
+<li><a href="#9-nlp-exactly-kahan-aur-kaise-integrated-hai">9. NLP exactly kahan aur kaise integrated hai?</a></li>
+<li><a href="#10-ek-sentence-se-rule-kaise-banta-hai-worked-example">10. Ek sentence se rule kaise banta hai? Worked example</a></li>
+<li><a href="#11-ner-alone-enough-kyun-nahi-units-aur-difficult-text-ka-kya">11. NER alone enough kyun nahi? Units aur difficult text ka kya?</a></li>
+<li><a href="#12-konsa-llm-liya-actually-models-kitne-aur-kis-kaam-ke-hain">12. Konsa LLM liya? Actually models kitne aur kis kaam ke hain?</a></li>
+<li><a href="#13-biomedical-model-ka-integration-detail">13. Biomedical model ka integration detail</a></li>
+<li><a href="#14-fine-tuningtuning-mein-actually-kya-kiya">14. Fine-tuning/tuning mein actually kya kiya?</a></li>
+<li><a href="#15-training-ka-result-kya-raha-metrics-ka-meaning-kya-hai">15. Training ka result kya raha? Metrics ka meaning kya hai?</a></li>
+<li><a href="#16-adaptive-naam-ka-exact-meaning-kya-hai">16. “Adaptive” naam ka exact meaning kya hai?</a></li>
+<li><a href="#17-synthetic-evaluation-kaise-kaam-karti-hai">17. Synthetic evaluation kaise kaam karti hai?</a></li>
+<li><a href="#18-human-review-sqlite-aur-explainability-kaise-integrate-hue">18. Human review, SQLite aur explainability kaise integrate hue?</a></li>
+<li><a href="#19-rag-minilm-bm25-aur-faiss-kaise-kaam-karte-hain">19. RAG, MiniLM, BM25 aur FAISS kaise kaam karte hain?</a></li>
+<li><a href="#20-flan-t5-small-ko-kaise-integrate-kiya-aur-kya-tuning-hui">20. FLAN-T5-small ko kaise integrate kiya, aur kya tuning hui?</a></li>
+<li><a href="#21-agentic-ai-ka-meaning-kya-hai-langgraph-liya-kya">21. Agentic AI ka meaning kya hai? LangGraph liya kya?</a></li>
+<li><a href="#22-frontend-backend-aur-technologies-ka-actual-integration">22. Frontend, backend aur technologies ka actual integration</a></li>
+<li><a href="#23-docker-exactly-kaise-banaya-abhi-kya-verified-hai">23. Docker exactly kaise banaya? Abhi kya verified hai?</a></li>
+<li><a href="#24-testing-bug-fixes-reproducibility-aur-current-limitations">24. Testing, bug fixes, reproducibility aur current limitations</a></li>
+<li><a href="#25-live-demo-dene-ka-ready-speaking-script">25. Live demo dene ka ready speaking script</a></li>
+<li><a href="#26-detailed-viva-expected-questions-aur-direct-answers">26. Detailed viva: expected questions aur direct answers</a></li>
+<li><a href="#27-two-minute-final-explanation-aur-revision-card">27. Two-minute final explanation aur revision card</a></li>
+<li><a href="#28-code-exactly-kahan-hai-file-map">28. Code exactly kahan hai? File map</a></li>
+<li><a href="#29-runreproduce-karne-ke-commands">29. Run/reproduce karne ke commands</a></li>
+<li><a href="#30-agar-examiner-proof-dikhao-bole-to-kahan-dikhana-hai">30. Agar examiner “proof dikhao” bole to kahan dikhana hai?</a></li>
+</ul>
+</div>
+<p class="hint">Offline document. No external fonts or scripts.<br>Use Ctrl+F to search.<br>Tables contain exact facts; quoted paragraphs are ready to speak.</p></aside><main class="content"><h1 id="trialops-adaptive-ai-complete-hinglish-explanation-script">TrialOps-Adaptive AI: Complete Hinglish Explanation Script</h1>
+<p><strong>Project samajhne, presentation dene aur viva prepare karne ke liye.</strong></p>
+<p>Prepared: 18 October 2026. Facts implemented source code, saved run reports aur experiment artifacts se verify kiye gaye hain. Yeh script project ki current verified position explain karti hai; proposed future features ko completed work nahi bolti.</p>
+<p><strong>Kaise padho:</strong> Sections 1–24 complete explanation hain. Section 25 mein live demo ka speaking script, section 26 mein viva answers, aur section 27 mein quick revision hai. Quoted paragraphs directly bol sakte ho. Technical tables tumhari understanding aur follow-up questions ke liye hain.</p>
+<p><strong>Project folder:</strong> <code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP</code></p>
+<hr />
+<h2 id="1-opening-mera-project-exactly-kya-hai">1. Opening: mera project exactly kya hai?</h2>
+<p>"Good morning. Mere project ka naam <strong>TrialOps-Adaptive AI</strong> hai. Current implementation ka descriptive title hai <strong>Cross-Region Clinical Trial Protocol Intelligence and Explainable Eligibility Pre-Screening Using Biomedical NLP, Retrieval, and Bounded Workflows</strong>.</p>
+<p>Simple language mein, yeh ek research application hai jo clinical trials ke actual public records padhti hai. Unke eligibility text mein se diseases, measurements, age limits, negation aur logical conditions identify karti hai. Jo complete conditions clearly samajh aati hain unko source-linked structured rules mein convert karti hai. Phir reviewed rules ke against fabricated, yani synthetic, profiles evaluate karti hai aur har result ka reason dikhati hai.</p>
+<p>Ismein India aur United States mein sites rakhne wale Type 2 Diabetes studies explore aur compare kar sakte hain. Research assistant relevant source passages retrieve karta hai. Optional local language model ek experimental answer draft bhi bana sakta hai.</p>
+<p>Project ka focus hai: <strong>source se rule kaise nikla, rule ka meaning kya hai, profile us condition ko meet karti hai ya nahi, aur kahan information ya understanding incomplete hai</strong>. Yeh actual patient selection ya diagnosis ka system nahi hai.”</p>
+<p>Ek line mein yaad rakho: <strong>actual trial documents + biomedical NLP + conservative rule engine + source evidence + synthetic demonstration</strong>.</p>
+<h2 id="2-clinical-trial-protocol-aur-eligibility-ka-basic-meaning">2. Clinical trial, protocol aur eligibility ka basic meaning</h2>
+<p>“Clinical trial ek research study hoti hai. Protocol us study ka plan aur requirements describe karta hai. Eligibility criteria batate hain ki study participation ke liye kaun si conditions required hain aur kaun si conditions participation ko exclude kar sakti hain.</p>
+<p>Inclusion criterion ka matlab required condition; exclusion criterion ka matlab aisi condition jiske present hone par participation allowed na ho sakta hai. Actual meaning complete protocol aur qualified review par depend karta hai.</p>
+<p>Age, Body Mass Index ya BMI, glycated hemoglobin ya HbA1c, blood pressure aur medical conditions eligibility text mein aa sakte hain. Hum in values ka disease diagnosis nahi kar rahe. Hum selected source ki explicit requirement ko synthetic observation se compare kar rahe hain.”</p>
+<p>Teen cheezein alag hain:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Cheez</th>
+<th>Is project mein meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Real study record</td>
+<td>Actual public registry ka protocol-related record; source URL aur identifier ke saath</td>
+</tr>
+<tr>
+<td>Synthetic profile</td>
+<td>Software testing ke liye fabricated measurements/conditions; real person ka medical record nahi</td>
+</tr>
+<tr>
+<td>Published annotations</td>
+<td>CHIA corpus ke authors ke labels, jo separate NLP experiment mein ground truth ke liye use hue</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Real trial data use hua” ka matlab “real patients ke records use hue” nahi hai. Humare paas public study descriptions hain, identifiable patient records nahi.</p>
+<h2 id="3-is-project-ki-zarurat-kyun-padi">3. Is project ki zarurat kyun padi?</h2>
+<p>“Eligibility criteria usually plain English paragraphs aur bullet lists mein likhe hote hain. Computer ke liye ‘HbA1c’, ‘8’ aur ‘percent’ detect karna enough nahi hota. Usko samajhna padta hai ki value 8 se kam chahiye, 8 se zyada chahiye, equal allowed hai ya nahi, condition inclusion mein hai ya exclusion mein, aur kya uske saath time window ya exception bhi attached hai.</p>
+<p>Ek researcher multiple protocols manually padhe to numerical limits, units aur exceptions compare karna time leta hai. Generic text search relevant words dikha sakti hai, lekin complete logical requirement nahi. Generic chatbot fluent explanation de sakta hai, lekin us explanation se automatically executable medical rule establish nahi hota.</p>
+<p>Humne isliye aisa system banaya jo useful extraction kare, original text dikhaye, uncertainty preserve kare, aur unsupported language par review maange. Intended benefit researcher ko source reading, comparison aur traceable demonstration mein help karna hai. Humne actual hospital time saving ya patient outcomes measure nahi kiye hain.”</p>
+<p>Project ke research questions hain: biomedical entity detection kitni achhi hai; complete criteria ka kitna portion safely structure ho sakta hai; lexical aur semantic retrieval mein kya difference hai; aur source-linked uncertainty ke saath integrated application kaise behave karti hai.</p>
+<h2 id="4-sirf-india-kyun-nahi-india-aur-us-dono-kyun">4. Sirf India kyun nahi? India aur US dono kyun?</h2>
+<p>“India humare project ka important study grouping hai. United States ko comparison group ke roop mein include kiya gaya, taaki application ek hi subset tak limited na rahe. Dono groups se actual criteria padhkar hum vocabulary, extracted fields, parsing coverage aur retrieval behavior explore kar sakte hain.</p>
+<p>Ek region par bana extractor usi sample ke wording patterns par achha dikh sakta hai. Do site-based subsets rakhne se hum check kar sakte hain ki wording aur available criteria change hone par system ka behavior kya hota hai. Same global registry use karne se do completely different registry interfaces ka effect kuch had tak separate rehta hai. Lekin sample composition, sponsor, study design, age group aur update history ke differences ab bhi exist kar sakte hain.</p>
+<p>Is project mein country ka meaning hai <strong>study mein listed site location</strong>. Isse patient ki nationality, ethnicity ya biology infer nahi hoti. India select karne par system apna BMI ya HbA1c cutoff apply nahi karta. Threshold hamesha selected protocol se aata hai.</p>
+<p>Agar ek India-site study aur ek US-site study mein different age range hai, to hum do protocols ka difference describe karenge. Hum yeh conclusion nahi nikalenge ki poore India aur poore US ke patients ke rules alag hain.”</p>
+<p>US ko choose karna project ki practical comparison choice hai; yeh claim nahi ki wahi scientifically ekmatra valid comparator hai. Doosre countries add karne ke liye verified source records aur suitable evaluation chahiye. Current sample small convenience sample hai; national representativeness ya causal comparison establish nahi hua.</p>
+<h2 id="5-starting-point-kya-tha-aur-start-se-ab-tak-kya-kiya">5. Starting point kya tha, aur start se ab tak kya kiya?</h2>
+<p>“Starting point par supplied ZIP mein ek small Python demo tha. Usmein 30 synthetic profiles, do fictional protocols, deterministic comparisons aur CSV outputs the. Maine pehle usko trained AI system nahi maana; existing behavior run karke verify kiya.</p>
+<p>Uske four sanity checks pass hue. Seeded reproduction mein 30 profiles par do fictional protocols ke total 60 evaluations aaye. Fictional India demo mein 7 pass, 20 fail, 3 review; fictional US demo mein 12 pass, 15 fail, 3 review aaye. Yeh demo output counts the, NLP accuracy ya real country statistics nahi.</p>
+<p>Original files ko legacy folder mein preserve kiya. Uske baad actual registry ingestion, NLP modules, model inference, source-linked rules, review storage, retrieval, experiments, FastAPI backend aur Streamlit interface implement kiye. Phir integration problems fix kiye, automated tests aur real application smoke checks run kiye, documentation aur source archive banaya.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Actual kaam aur uska reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requirements/audit</td>
+<td>Supplied guide reference ke roop mein padha; pasted master prompt ko user requirements maana; prototype limitations record ki</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Python 3.11 virtual environment, pinned dependencies aur hardware/runtime inspect kiya</td>
+</tr>
+<tr>
+<td>Real data</td>
+<td>Official API v2 se actual Type 2 Diabetes studies retrieve, normalize aur provenance ke saath save ki</td>
+</tr>
+<tr>
+<td>Classical NLP</td>
+<td>Source offsets, tokenization, sections, quantities, units, negation aur whole-clause rules implement kiye</td>
+</tr>
+<tr>
+<td>Biomedical inference</td>
+<td>Actual pretrained NER model CPU par load aur run kiya; long-text windowing handle ki</td>
+</tr>
+<tr>
+<td>Rule evaluation</td>
+<td>TRUE/FALSE/UNKNOWN logic, source review, conflicts aur synthetic-only input checks integrate kiye</td>
+</tr>
+<tr>
+<td>Retrieval</td>
+<td>BM25, MiniLM embeddings, FAISS aur hybrid ranking actual source chunks par run ki</td>
+</tr>
+<tr>
+<td>Training/research</td>
+<td>CHIA entity benchmark aur frozen-encoder head training actually execute ki; regional/parser/retrieval experiments record kiye</td>
+</tr>
+<tr>
+<td>Generation/workflow</td>
+<td>FLAN-T5-small local inference aur bounded typed tool workflow integrate kiya</td>
+</tr>
+<tr>
+<td>Product integration</td>
+<td>Eight UI pages, API routes, exports aur local start/stop scripts integrate kiye</td>
+</tr>
+<tr>
+<td>Verification</td>
+<td>Bugs fix kiye, 150 automated tests pass kiye, UI actions aur clean archive extraction verify ki</td>
+</tr>
+<tr>
+<td>Packaging</td>
+<td>Dockerfiles/Compose validate kiye; actual build attempt engine failure se blocked raha; local Python run verified hai</td>
+</tr>
+</tbody>
+</table></div>
+<p>Isliye final work sirf old demo ko web page mein wrap karna nahi tha. Data collection, language processing, model experiments, semantics, evidence aur software integration sab separate layers mein add hue.</p>
+<h2 id="6-data-kahan-se-aaya-aur-kitna-aaya">6. Data kahan se aaya aur kitna aaya?</h2>
+<p>“Primary source <strong>ClinicalTrials.gov ka official API v2</strong> hai. Humne Type 2 Diabetes ke liye India aur United States location queries use ki. Har query se 30 selected records liye. Response pages save kiye, actual location fields verify kiye aur NCT identifier se duplicates merge kiye.</p>
+<p>Final dataset mein <strong>58 distinct studies</strong> hain. Inmein <strong>32 studies Indian locations</strong>, <strong>30 United States locations</strong>, aur <strong>4 studies dono countries ki locations</strong> list karti hain. Isliye 32 plus 30 minus 4 equals 58.</p>
+<p>Thirty plus thirty selections se 58 unique studies banne ka reason hai ki do records dono query selections mein aaye. Final corpus mein chaar records dono countries list karte hain; query overlap aur actual site overlap alag counts hain.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Verified corpus fact</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distinct NCT study records</td>
+<td style="text-align: right;">58</td>
+</tr>
+<tr>
+<td>India-only / US-only / shared</td>
+<td style="text-align: right;">28 / 26 / 4</td>
+</tr>
+<tr>
+<td>India-site union / US-site union</td>
+<td style="text-align: right;">32 / 30</td>
+</tr>
+<tr>
+<td>Raw response pages</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Location rows, all listed countries combined</td>
+<td style="text-align: right;">1,226</td>
+</tr>
+<tr>
+<td>Missing eligibility descriptions</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Currently recorded overall status RECRUITING</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>COMPLETED / TERMINATED / UNKNOWN</td>
+<td style="text-align: right;">39 / 5 / 5</td>
+</tr>
+<tr>
+<td>SUSPENDED / AVAILABLE</td>
+<td style="text-align: right;">1 / 1</td>
+</tr>
+<tr>
+<td>Saved retrieval</td>
+<td style="text-align: right;">17 October 2026, approximately 08:38 UTC</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Humne sirf currently recruiting studies nahi li. Historical records bhi protocol-language research ke liye retained hain. Listed site hona aur currently recruiting hona same baat nahi. Live registry future mein update ho sakti hai; humara saved snapshot timestamped hai.”</p>
+<p>Har record mein ID, title, conditions, countries, sites, status, phase, age fields, sex eligibility, description, eligibility text, source URL aur available update information preserve hui. Normalized CSV/JSON application ko structured access dete hain; original raw responses verification ke liye retained hain.</p>
+<h2 id="7-ctri-india-ka-kya-hua-provenance-kya-hai">7. CTRI India ka kya hua? Provenance kya hai?</h2>
+<p>“CTRI ka public search inspect kiya tha. Usmein security code tha; automated access ko bypass nahi kiya. Current shipped corpus mein <strong>zero native CTRI records</strong> hain. India-site ClinicalTrials.gov records ko CTRI records nahi bola gaya.</p>
+<p>Authorized public CTRI CSV/JSON records add karne ke liye manual importer implement hua hai. Usmein actual CTRI registration ID, actual record URL, eligibility text, retrieval timestamp aur provenance note required hain. Format validation authenticity ka final proof nahi; imported material source se verify karna padega.”</p>
+<p>“Provenance ka matlab data ki history: record kahan se mila, kab download hua, request kya thi aur original content kya tha. Raw response ke bytes, exact request information aur SHA-256 checksum save kiye. SHA-256 content ka fingerprint hai: content change ho to fingerprint change hota hai. Yeh registry data ko medically correct prove nahi karta; yeh saved content ka trace establish karta hai.”</p>
+<p>Ingestion mein pagination, bounded retries, timeouts, missing fields, repeated page token, duplicate IDs aur schema errors handle kiye. Failed download purane successful normalized corpus ko silently overwrite nahi karta. Required count achieve karne ke liye fabricated studies add nahi ki gayi.</p>
+<h2 id="8-pura-system-ek-flow-mein-kaise-working-hai">8. Pura system ek flow mein kaise working hai?</h2>
+<p>“Application ke teen main flows hain: protocol analysis, synthetic rule evaluation aur evidence-based research search.”</p>
+<pre><code class="language-text">Actual registry API responses
+        |
+        v
+Raw records + provenance --&gt; normalized study JSON/CSV
+        |
+        +--&gt; NLP: text, entities, source spans, supported rules, unresolved text
+        |          |
+        |          v
+        |     Rule review + extraction-version fingerprint
+        |          |
+        |          v
+        |     Synthetic profile --&gt; deterministic evaluation --&gt; explanations
+        |
+        +--&gt; Source chunks --&gt; BM25 + MiniLM embeddings + FAISS
+                              |
+                              v
+                     Retrieve and verify exact excerpts
+                              |
+                              +--&gt; source-grounded response + tool trace
+                              +--&gt; optional FLAN-T5 unverified draft
+
+All application flows: Streamlit UI &lt;--&gt; FastAPI backend &lt;--&gt; Python services
+</code></pre>
+<p>“NLP model, retrieval model aur language generator ke roles different hain. Generator ka answer deterministic eligibility engine ke rule ya result ko overwrite nahi karta. Is separation se explanation fluent hone aur rule actually valid hone ka difference visible rehta hai.”</p>
+<h2 id="9-nlp-exactly-kahan-aur-kaise-integrated-hai">9. NLP exactly kahan aur kaise integrated hai?</h2>
+<p>“NLP ka full form Natural Language Processing hai. Humare project mein iska kaam unstructured protocol language ko machine-readable information mein convert karna hai. Yeh sirf chatbot box lagana nahi hai.</p>
+<p>Pehla step Unicode normalization hai. Text mein comparison symbols aur characters ke variants ho sakte hain. Hum NFKC normalization karte hain, lekin normalized positions ko original characters se map karte hain. Isliye extracted result ke saath exact original source start aur end positions dikh sakti hain.</p>
+<p>Next sentence display, section identification aur tokenization hoti hai. Token matlab text ka useful piece. Inclusion aur exclusion headings context dete hain. Executable rule ke liye complete paragraph ya bullet ka meaning consider hota hai; sentence display ko blindly rule boundary nahi maana jata.</p>
+<p>Then abbreviations, numeric quantities, measurement names, units, comparators aur negation identify hote hain. Example: T2DM ko Type 2 Diabetes phrase mapping se recognize kar sakte hain. ‘Not’ ya ‘without’ requirement ka meaning reverse kar sakte hain, isliye unko preserve karte hain.</p>
+<p>Finally complete criterion supported grammar mein fit ho to structured rule banta hai. Agar temporal condition, unknown qualification ya ambiguous scope ho, to text unresolved list mein rehta hai.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>NLP component</th>
+<th>Actual role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unicode normalization</td>
+<td>Equivalent character forms handle karna, original offsets preserve karna</td>
+</tr>
+<tr>
+<td>Tokenization and segmentation</td>
+<td>Words/symbols aur complete criterion units identify karna</td>
+</tr>
+<tr>
+<td>Section detection</td>
+<td>Inclusion/exclusion context retain karna</td>
+</tr>
+<tr>
+<td>Abbreviation lexicon</td>
+<td>Explicit biomedical short forms map karna</td>
+</tr>
+<tr>
+<td>Rule-based entities</td>
+<td>Known measurements/conditions/quantities identify karna</td>
+</tr>
+<tr>
+<td>Biomedical transformer NER</td>
+<td>Learned biomedical entity spans separately predict karna</td>
+</tr>
+<tr>
+<td>Numeric/unit parser</td>
+<td>Operator, limit, scale aur unit ko structured form dena</td>
+</tr>
+<tr>
+<td>Negation and Boolean parsing</td>
+<td>AND/OR/NOT aur exclusion scope represent karna</td>
+</tr>
+<tr>
+<td>TF-IDF</td>
+<td>Separate classical text representation for regional exploration</td>
+</tr>
+<tr>
+<td>Embedding model</td>
+<td>Research queries ke liye semantic retrieval representation</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Humne general stopword deletion, stemming ya lemmatization actual rule pipeline mein use nahi ki. Clinical rules mein ‘no’, ‘not’, ‘and’ aur ‘or’ remove karna dangerous meaning change kar sakta hai. Lemmatization useful tab hoti jab measured benefit ho; syllabus ka word cover karne ke liye unnecessary transformation add nahi ki. NLTK dependency installed hai, lekin actual tokenizer ko NLTK lemmatization pipeline nahi bolunga.”</p>
+<h2 id="10-ek-sentence-se-rule-kaise-banta-hai-worked-example">10. Ek sentence se rule kaise banta hai? Worked example</h2>
+<p>Yeh <strong>educational synthetic sentence</strong> hai, actual national medical guideline ya kisi real protocol ka quote nahi:</p>
+<blockquote>
+<p>Participants must be between 18 and 65 years of age and must not have severe renal impairment.</p>
+</blockquote>
+<p>“Parser pehle age range identify karta hai: lower 18, upper 65, unit years. Phir ‘must not have’ se severe renal impairment ka required Boolean value false identify karta hai. ‘And’ ke karan dono conditions ka group banta hai.”</p>
+<p>Readable structured representation, simplified from actual output:</p>
+<pre><code class="language-json">{
+  &quot;logic&quot;: &quot;AND&quot;,
+  &quot;conditions&quot;: [
+    {&quot;field&quot;: &quot;age&quot;, &quot;operator&quot;: &quot;between_inclusive&quot;, &quot;lower&quot;: 18, &quot;upper&quot;: 65, &quot;unit&quot;: &quot;years&quot;},
+    {&quot;field&quot;: &quot;severe_renal_impairment&quot;, &quot;operator&quot;: &quot;equals&quot;, &quot;value&quot;: false}
+  ]
+}
+</code></pre>
+<p>Actual output mein IDs, validation basis aur original source spans bhi hain. Yeh example 18 October ko script verification ke waqt deterministic functions par dobara run hua:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Fabricated observation</th>
+<th>Logic result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age 35; severe renal impairment explicitly false</td>
+<td>MATCHES_KNOWN_CRITERIA</td>
+</tr>
+<tr>
+<td>Age 17; severe renal impairment explicitly false</td>
+<td>DOES_NOT_MATCH_KNOWN_CRITERIA</td>
+</tr>
+<tr>
+<td>Age 35; renal information absent</td>
+<td>INSUFFICIENT_INFORMATION</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Yeh direct parser/evaluator demonstration hai. Real-study application flow mein extraction ke saath rule-review checkpoint bhi apply hota hai. Aur ‘matches known criteria’ ka matlab full study eligibility establish hona nahi hai.”</p>
+<p><code>between</code> ko current grammar inclusive treat karti hai; source prose ki real interpretation review item hai. Explicit <code>&gt;</code> aur <code>&gt;=</code> mein difference preserve hota hai. Standalone educational limits ko current real studies ke thresholds ke saath mix nahi karna.</p>
+<h2 id="11-ner-alone-enough-kyun-nahi-units-aur-difficult-text-ka-kya">11. NER alone enough kyun nahi? Units aur difficult text ka kya?</h2>
+<p>“NER, yani Named Entity Recognition, text mein entity ka span detect karta hai. ‘HbA1c’ lab-related entity ho sakta hai; ‘metformin’ medication-related entity ho sakta hai. Lekin entity detect karne se ‘greater than’, time window aur logical relationship automatically establish nahi hoti.</p>
+<p>Example ke liye ‘HbA1c at most 8 percent within the previous six months’ mein quantity detect karna easy ho sakta hai. Lekin time qualification supported nahi hai to hum sirf number uthakar complete criterion execute nahi karte. Whole clause unresolved rahegi.</p>
+<p>Isi tarah ‘no T2DM or hypertension’ mein negation dono par hai ya ek par, wording ambiguous ho sakti hai. Unsupported mixed logic, investigator discretion, prior treatment history, exceptions aur duration ko review ke liye preserve karte hain.”</p>
+<p>Canonical numeric fields age, BMI, HbA1c, systolic BP aur diastolic BP hain. Canonical units years, kg/m², percent aur mmHg hain. Explicit conversion supported hai: age months to years; BP kPa to mmHg; IFCC HbA1c mmol/mol to NGSP percent. Source value aur unit retained rehte hain; conversion new medical cutoff invent nahi karti.</p>
+<p>“Bare ‘diabetes’ ko automatically Type 2 Diabetes nahi bana dete. ‘Severe kidney disease’ aur ‘severe renal impairment’ ko automatically equivalent nahi maan lete. Pipeline ka kaam missing specificity fill karke confident sentence banana nahi hai.”</p>
+<p>Structured registry age/sex fields bhi source metadata ke roop mein use ho sakte hain. Text aur metadata merge hone ke baad contradictory bounds milen to conflict visible hota hai. Aise conflict ko arbitrary ek value choose karke hide nahi karte.</p>
+<h2 id="12-konsa-llm-liya-actually-models-kitne-aur-kis-kaam-ke-hain">12. Konsa LLM liya? Actually models kitne aur kis kaam ke hain?</h2>
+<p>“Project mein teen pretrained model identities use hui hain, aur ek trained experimental head hai. Har transformer ko generative LLM bolna technically correct nahi hoga.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Actual model</th>
+<th>Kaam</th>
+<th>Is project mein weights trained?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biomedical NER</td>
+<td><code>d4data/biomedical-ner-all</code></td>
+<td>Biomedical entity spans; DistilBERT-based token classification</td>
+<td>Original pretrained model inference ke liye unchanged</td>
+</tr>
+<tr>
+<td>Semantic embeddings</td>
+<td><code>sentence-transformers/all-MiniLM-L6-v2</code></td>
+<td>Text/query ko 384-dimensional vectors mein represent karna</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Local generative model</td>
+<td><code>google/flan-t5-small</code></td>
+<td>Retrieved source context par experimental answer draft</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Experimental CHIA classifier</td>
+<td>Frozen biomedical encoder + <code>Linear(768, 7)</code> head</td>
+<td>Condition/Drug/Procedure BIO labels predict karna</td>
+<td><strong>Only new 5,383-parameter head trained</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>“Agar mujhse specifically poochhen ‘konsa LLM liya?’, mera answer hai: <strong>optional local generation ke liye FLAN-T5-small liya. Biomedical NER ke liye DistilBERT-based model aur semantic search ke liye MiniLM use hua.</strong> GPT/OpenAI API model is implementation mein use nahi hua. Public Hugging Face weights ke liye API key required nahi thi.”</p>
+<p>Models pinned revisions se load hote hain, taaki future upstream update silently experiment change na kare. <code>trust_remote_code=False</code>, safetensors aur local ignored model cache use hota hai. Weights downloaded hon to offline mode use kar sakte hain. Actual execution CPU par four PyTorch threads ke saath hua; GPU detected hone ka matlab GPU training hui nahi.</p>
+<h2 id="13-biomedical-model-ka-integration-detail">13. Biomedical model ka integration detail</h2>
+<p>“Hugging Face Transformers library se tokenizer aur biomedical token-classification model load kiya. Yeh DistilBERT model upstream clinical case-report annotations par trained tha; humare project ne us upstream training ko perform nahi kiya.</p>
+<p>Tokenizer words ko subword pieces mein split karta hai. Model har token ke liye label scores deta hai. BIO ka meaning Beginning, Inside, Outside hai: entity ka first token B, continuation I, aur entity ke bahar O.</p>
+<p>Model predictions ko exact original text spans mein aggregate kiya. Original model configuration mein 84 BIO/O labels hain. Hum selected biomedical labels display/mapping ke liye use karte hain; model-card ki entity-category count ko blindly actual label count nahi maana.</p>
+<p>Long protocols 512-token windows aur 64-token overlap se process hote hain. Overlap par central prediction prefer hoti hai. Isliye sirf document ke first 512 tokens process karke baaki silently ignore nahi kiye. Input size explicit limit se control hota hai.</p>
+<p>NER output baseline parser ke output se separately visible hai. NER ko disease term mil jaane se executable eligibility rule approve nahi ho jata.”</p>
+<p>Saved model smoke run mein actual local inference hua, aur long real text par multiple windows bhi verify hue. Model score softmax score hai, medical correctness ki calibrated confidence nahi. Domain mismatch ke karan source entities mislabel bhi hui; benchmark mein isi limitation ka measured evidence hai.</p>
+<h2 id="14-fine-tuningtuning-mein-actually-kya-kiya">14. Fine-tuning/tuning mein actually kya kiya?</h2>
+<p>“Main openly clarify karunga: <strong>FLAN-T5 ya complete DistilBERT ko end-to-end fine-tune nahi kiya. Actual supervised training frozen biomedical encoder ke upar ek new linear classification head ki hui.</strong></p>
+<p>Training ke liye published <strong>CHIA</strong> eligibility-criteria annotations use ki. CHIA mein 1,000 studies ke inclusion aur exclusion documents, total 2,000 documents hain. Authors ke human annotations ko reference maana, model predictions ko ground truth nahi banaya. Dataset CC BY 4.0 hai aur original attribution/provenance documented hai.</p>
+<p>Frozen encoder ka matlab uske weights update nahi hue. Usne token ka 768-dimensional representation nikala. New linear layer ne representation se seven BIO labels predict kiye: O, B/I-Condition, B/I-Drug aur B/I-Procedure. Layer mein 768 multiplied by 7 weights, plus 7 biases hain: total <strong>5,383 trainable parameters</strong>.</p>
+<p>Yeh head adaptation hai: existing representation ko target annotation categories ke liye small supervised mapping sikhana. Yeh huge language model scratch se train karna nahi, aur India-US-specific learned adaptation bhi nahi.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Training setting</th>
+<th>Executed value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Train</td>
+<td>100 studies / 200 documents</td>
+</tr>
+<tr>
+<td>Development</td>
+<td>20 studies / 40 documents</td>
+</tr>
+<tr>
+<td>Held-out test</td>
+<td>20 studies / 40 documents / 328 unique mapped gold spans</td>
+</tr>
+<tr>
+<td>Encoder</td>
+<td>Frozen biomedical DistilBERT; gradients disabled</td>
+</tr>
+<tr>
+<td>Head</td>
+<td>Linear 768 → 7</td>
+</tr>
+<tr>
+<td>Supervised training tokens</td>
+<td>23,014</td>
+</tr>
+<tr>
+<td>Optimizer</td>
+<td>AdamW</td>
+</tr>
+<tr>
+<td>Learning rate / weight decay</td>
+<td>0.001 / 0.0001</td>
+</tr>
+<tr>
+<td>Token batch / epochs</td>
+<td>512 / 8</td>
+</tr>
+<tr>
+<td>Random seed</td>
+<td>17</td>
+</tr>
+<tr>
+<td>Loss</td>
+<td>Class-weighted cross entropy; ambiguous supervision ignored</td>
+</tr>
+<tr>
+<td>Selection</td>
+<td>Highest development exact-span F1; epoch 8 selected</td>
+</tr>
+<tr>
+<td>Saved artifact</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\models\adapted_chia_head\head.safetensors</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>“Loss training labels ke against error measure karti hai. Optimizer sirf head ke parameters update karta hai. Development set se checkpoint select hua; uske baad untouched held-out test par score nikala. Inclusion aur exclusion documents same study ke hain, isliye study-level grouping rakhi, taaki ek study ka inclusion train mein aur exclusion test mein na chala jaye.</p>
+<p>Published BRAT offsets original text ke characters se match hone chahiye. CRLF newline conversion offset shift kar sakti thi, isliye original bytes decode karke preserve kiye. Full CHIA audit mein 48,870 text-bound rows mein 21 mismatches mile; selected head-training subset mein invalid documents nahi the. Overlapping/discontinuous spans ko training supervision mein explicitly handle/ignore kiya, lekin full gold spans final evaluation se delete nahi kiye.</p>
+<p>Recorded complete experiment approximately 39.21 seconds tha, including model loading, feature encoding, fitting aur evaluation. Cached features par optimizer part approximately 0.588 seconds tha. Sirf 0.588 seconds ko total training pipeline time bolna misleading hoga.”</p>
+<p><strong>Integration boundary:</strong> Trained head saved aur benchmarked hai; dashboard/report mein results hain. Yeh experimental artifact default eligibility parser ya rule execution mein connected nahi hai. Default app mein supported deterministic grammar aur original pretrained NER ki clearly separate roles hain.</p>
+<h2 id="15-training-ka-result-kya-raha-metrics-ka-meaning-kya-hai">15. Training ka result kya raha? Metrics ka meaning kya hai?</h2>
+<p>“Entity experiment mein correct prediction tab maana jab category aur complete character span dono gold annotation se match hon. Sirf entity ka kuch portion detect hona exact match nahi hai.</p>
+<p>Precision batati hai predicted entities mein kitni correct thi. Recall batati hai gold entities mein kitni find hui. F1 precision aur recall ka harmonic mean hai. <strong>F1 = 2PR / (P + R)</strong>. Yeh clinical eligibility accuracy nahi hai.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Method, same held-out test</th>
+<th style="text-align: right;">Precision</th>
+<th style="text-align: right;">Recall</th>
+<th style="text-align: right;">Exact-span F1</th>
+<th>TP / FP / FN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Training-derived dictionary baseline</td>
+<td style="text-align: right;">0.3636</td>
+<td style="text-align: right;">0.5122</td>
+<td style="text-align: right;"><strong>0.4253</strong></td>
+<td>168 / 294 / 160</td>
+</tr>
+<tr>
+<td>Original biomedical NER</td>
+<td style="text-align: right;">0.1281</td>
+<td style="text-align: right;">0.1250</td>
+<td style="text-align: right;"><strong>0.1265</strong></td>
+<td>41 / 279 / 287</td>
+</tr>
+<tr>
+<td>Frozen encoder + trained CHIA head</td>
+<td style="text-align: right;">0.2441</td>
+<td style="text-align: right;">0.4695</td>
+<td style="text-align: right;"><strong>0.3212</strong></td>
+<td>154 / 477 / 174</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Adapted head ne original untouched biomedical NER se improve kiya, lekin dictionary se lower F1 diya. Dictionary 800 training studies se derived thi aur head 100 studies se trained tha. Isliye yeh perfectly equal-data architecture comparison nahi hai.</p>
+<p>Transformer automatically best hoga yeh assume nahi kiya. Case-report domain aur trial-criteria domain different hain, annotation categories aur exact boundaries bhi difficult hain. Single seed aur limited test set se universal conclusion nahi nikalta. Honest negative finding bhi research result hai.</p>
+<p>Aur 0.3212 F1 ko 32.12 percent full patient-selection accuracy nahi bolunga. Is experiment ka unit biomedical entity span tha.”</p>
+<p>Classical parser ka separate developer test split 12 supported semantic references mein 10 complete matches aur 8 unsupported references par 8 abstentions deta hai. Supported subset par 83.3% matching hai; yeh independently clinically annotated benchmark nahi. Real corpus mein <strong>983 criteria mein 18 fully parsed</strong>, approximately <strong>1.83% complete-criterion coverage</strong> mila. Coverage aur correctness alag measures hain. Registry ke structured age fields se useful constraints add ho sakte hain, lekin unko text-parsing coverage mein count karke inflate nahi kiya.</p>
+<p>All 58 real studies mein unresolved requirements remain karte hain. Isliye project ki current strength broad automatic parsing nahi; source traceability, conservative execution aur honest uncertainty handling hai.</p>
+<h2 id="16-adaptive-naam-ka-exact-meaning-kya-hai">16. “Adaptive” naam ka exact meaning kya hai?</h2>
+<p>“Project mein adaptive word ko three levels par explain karunga. Pehla, selected protocol change ho to actual source-derived requirements change hoti hain. Doosra, region/site filters aur comparison views se data subsets explore hote hain. Teesra, actual CHIA head adaptation experiment se biomedical representations ko target labels ke liye adapt kiya gaya.</p>
+<p>Lekin India aur US ke independently labeled comparable criteria available nahi the. Isliye <strong>learned India-to-US ya US-to-India domain adaptation</strong> ka claim nahi kar sakta. Country dropdown ko model fine-tuning bolna incorrect hoga.</p>
+<p>Regional study split, TF-IDF aur Jensen–Shannon divergence descriptive experiments hain. TF-IDF words ko unki document-level importance ke basis par numerical representation deta hai. JSD do vocabulary distributions ke difference ka measure hai; yeh disease risk ya model accuracy nahi hai.”</p>
+<p>Regional exploratory split mein 49 training studies aur 9 test studies the. TF-IDF vocabulary training data par fit hui. India-only versus US-only vocabulary JSD pooled comparison mein approximately 0.2026 aur tiny held-out comparison mein approximately 0.3955 thi. Held-out groups sirf 3 aur 6 studies the; result ko small-sample description ki tarah interpret karna chahiye.</p>
+<p>Real text complete-criterion coverage India-only 9/387, US-only 5/503 aur shared 4/93 thi. Yeh source composition aur narrow grammar ke observations hain; nationality ki capability ya healthcare quality ka ranking nahi.</p>
+<h2 id="17-synthetic-evaluation-kaise-kaam-karti-hai">17. Synthetic evaluation kaise kaam karti hai?</h2>
+<p>“Synthetic profile mein fabricated age, BMI, HbA1c, blood-pressure measurements ya explicit Boolean conditions de sakte hain. API ko exact Boolean <code>is_synthetic: true</code> chahiye. Unknown field names, invalid numbers ya real-data flag reject hote hain.</p>
+<p>Blank value ko zero nahi banaya. Diagnosis list mein koi condition absent ho to usko false nahi maana. Missing means UNKNOWN. Agar explicitly severe renal impairment false diya hai tabhi absence ka comparison ho sakta hai.</p>
+<p>Rule engine three-valued logic use karta hai: TRUE, FALSE, UNKNOWN. AND mein known false condition ho to group false ho sakta hai. Sab known true na hon aur koi false na ho to unknown rehta hai. OR mein ek known true ho to TRUE aata hai; sab conditions false hon to FALSE, aur koi TRUE na ho lekin at least ek UNKNOWN ho to UNKNOWN aata hai. Empty group bhi UNKNOWN hai. NOT of UNKNOWN bhi UNKNOWN rehta hai.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Returned status</th>
+<th>Exact meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MATCHES_KNOWN_CRITERIA</td>
+<td>Supplied, supported, resolved constraints match; complete trial eligibility established nahi</td>
+</tr>
+<tr>
+<td>DOES_NOT_MATCH_KNOWN_CRITERIA</td>
+<td>At least one executable known condition false; unresolved requirements still shown</td>
+</tr>
+<tr>
+<td>INSUFFICIENT_INFORMATION</td>
+<td>Missing input, unreviewed/unsupported conditions, no usable rules ya source conflicts prevent a complete known-criteria match</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Source contradiction detect ho to system review maangta hai. Two conflicting age ranges ko arbitrary choose nahi karta. Complex arbitrary logical satisfiability solver implement nahi hua; supported contradiction checks ka documented scope hai.”</p>
+<p>Developer-authored 18 synthetic profile-reference cases mein 18 expected statuses match hue. Yeh selected software cases ki correctness hai, 100% clinical accuracy nahi.</p>
+<h2 id="18-human-review-sqlite-aur-explainability-kaise-integrate-hue">18. Human review, SQLite aur explainability kaise integrate hue?</h2>
+<p>“Parser ka <code>validated=true</code> flag bas itna bolta hai ki criterion documented grammar mein fit hai ya explicit source metadata se aaya. Iska matlab clinician approval nahi.</p>
+<p>Application mein review checkpoint separately hai. Reviewer source dekhta hai, rule ko synthetic demo ke liye approve ya reject karta hai. SQLite mein study ID, rule ID, extraction fingerprint, decision, reviewer label, time aur purpose save hota hai. Reviewer label local demo label hai; authenticated clinical identity nahi.</p>
+<p>Fingerprint current extraction version ka hash hai. Text ya extraction semantics change ho to old approval automatically new rule ko valid nahi banata. Review revoke karne par old UI evaluation clear hoti hai, taaki stale result screen par current approval jaisa na lage.</p>
+<p>Explainability ka matlab sirf AI ka generated paragraph nahi. Har rule ke saath source evidence, source field, available text offsets, operator, normalized value, fabricated observation, comparison result aur unresolved requirements show hote hain. Structured age/sex metadata rules ke liye text offsets null ho sakte hain; source field unki provenance deta hai. User original public record kholkar independently inspect kar sakta hai.”</p>
+<p>SQLite review decisions ke liye use hui. Core study corpus JSON/CSV mein, vector artifacts files mein aur model weights separate cache mein hain. Is implementation mein PostgreSQL, Redis ya cloud database use nahi hua.</p>
+<h2 id="19-rag-minilm-bm25-aur-faiss-kaise-kaam-karte-hain">19. RAG, MiniLM, BM25 aur FAISS kaise kaam karte hain?</h2>
+<p>“RAG ka full form Retrieval-Augmented Generation hai: pehle relevant source retrieve karo, phir answer ko source context se assist karo. Humare assistant ka reliable visible base exact retrieved quotes hain; optional generated draft separate rehta hai.</p>
+<p>Study title, description aur eligibility text ko source-linked chunks mein split kiya. Typical windows 700 characters aur overlap 120 characters hain. Har chunk ke saath study ID, source URL, source field aur character offsets preserve hain.</p>
+<p>BM25 lexical search exact words aur term relevance use karta hai. MiniLM embedding model query aur chunks ko 384-dimensional vectors mein represent karta hai, jisse semantic similarity search possible hoti hai. FAISS in vectors ko efficiently search karne ka index hai; FAISS khud language model nahi hai.</p>
+<p>Normalized vectors par inner-product similarity cosine search ke equivalent use hoti hai. Long chunk ke liye token-aware overlapping embedding windows use kiye, taaki model input limit se text silently drop na ho.</p>
+<p>Hybrid mode BM25 aur semantic rankings ko Reciprocal Rank Fusion se combine karta hai. Formula rank-based sum <code>1 / (60 + rank)</code> hai. Yeh score clinical relevance ki calibrated probability nahi hai.”</p>
+<p>Worked question:</p>
+<blockquote>
+<p>Which diabetes studies mention BMI restrictions?</p>
+</blockquote>
+<p>“Backend query aur explicit filters leta hai, relevant source chunks retrieve karta hai, har returned excerpt original field ke exact slice se verify karta hai, phir IDs, links aur passages ke saath response banata hai. Country filter corpus selection karta hai; clinical threshold modify nahi karta.</p>
+<p>Index persist hota hai, lekin runtime corpus/model fingerprint aur embeddings checksum verify karta hai. NumPy pickle loading disabled hai; verified arrays se FAISS rebuild hota hai. Semantic component unavailable ho to explicitly <code>bm25_fallback</code> status aata hai; keyword results ko semantic output pretend nahi karte.”</p>
+<p>Retrieval experiment mein 12 heuristic mention-based queries the. Precision@5 BM25 0.6000, semantic 0.7167, hybrid 0.8333 tha; nDCG approximately 0.5565, 0.7396 aur 0.8442 tha. Yeh selected queries par observed result hai. Relevance labels independent expert judgments nahi the, isliye 83.33% ko whole assistant accuracy nahi bolna.</p>
+<h2 id="20-flan-t5-small-ko-kaise-integrate-kiya-aur-kya-tuning-hui">20. FLAN-T5-small ko kaise integrate kiya, aur kya tuning hui?</h2>
+<p>“Optional generated answer ke liye <strong>google/flan-t5-small</strong>, approximately 77 million parameters wala instruction-tuned encoder-decoder model use hua. Iska size local CPU experiment ke liye practical tha. Humare machine par actual local inference run hui; paid API credential required nahi tha.</p>
+<p>Transformers ke <code>AutoTokenizer</code> aur <code>AutoModelForSeq2SeqLM</code> se pinned model load hua. Query ke saath selected retrieved source excerpt prompt mein diya: source excerpt, question aur answer cue. Question/context truncation explicitly recorded hai; model ke experiment input limit ko hide nahi kiya.</p>
+<p>Generation deterministic configuration mein greedy hai: <code>do_sample=false</code>, <code>num_beams=1</code>, maximum 96 new tokens. Environment variable <code>GENERATOR_BACKEND=local</code> local model select karta hai. <code>none</code> se optional generation disable kar sakte hain. Ollama adapter bhi implemented hai, lekin actual Ollama model inference perform nahi hui.</p>
+<p>Is project mein FLAN ke weights update nahi hue. Prompt format ya decoding parameters set karna <strong>prompt/configuration work</strong> hai, supervised fine-tuning nahi. RAG mein source context dena bhi fine-tuning nahi: query ke waqt information supply hoti hai, learned weights unchanged rehte hain.”</p>
+<p>Actual negative finding: real-source HbA1c question par saved FLAN output <strong>“Glycated hemoglobin”</strong> tha—ek incomplete answer. Model successfully load/generate hua, lekin strong question answering prove nahi hui. Generated draft <code>verified=false</code> rehta hai. Narrow numeric guard source se absent numbers flag karta hai, lekin full factual entailment verify nahi karta.</p>
+<p>“Citation ka exact text match verify karna aur generated answer medically correct verify karna alag cheezein hain. Isliye generated prose kabhi approval, clinical threshold ya deterministic profile decision supply nahi karti.”</p>
+<h2 id="21-agentic-ai-ka-meaning-kya-hai-langgraph-liya-kya">21. Agentic AI ka meaning kya hai? LangGraph liya kya?</h2>
+<p>“Workflow ko bounded tool graph ke equivalent deterministic finite-state logic mein implement kiya. Query interpret karna, sources search karna, selected study extract karna, do IDs compare karna, supplied synthetic profile evaluate karna, evidence verify karna aur report compile karna typed operations hain.</p>
+<p>Request ka maximum workflow budget six steps hai. Har step ka status, tool/action aur duration trace visible hai. Assistant arbitrary code execute nahi karta. Retrieved document mein likhi instruction application ke tool permissions nahi ban jati.</p>
+<p>Is implementation mein <strong>LangGraph use nahi hua</strong>. Custom bounded workflow uske basic graph-orchestration role ka deliberately small alternative hai. Main ise unrestricted autonomous LLM agent ya multi-agent medical reasoning system nahi bolunga.”</p>
+<p>“Agar query mein explicit study ID ya country/status filter hai, woh relevant operation se pehle apply hota hai. ‘Show us’ ke pronoun ko US country filter samajhne wali ambiguity fix hui. Unsupported negated recruitment wording par system silently opposite selection nahi karta. Trace user ko batata hai actually kaun sa operation hua.”</p>
+<h2 id="22-frontend-backend-aur-technologies-ka-actual-integration">22. Frontend, backend aur technologies ka actual integration</h2>
+<p>“Frontend <strong>Streamlit</strong> hai aur backend <strong>FastAPI</strong>. UI Python HTTP requests ke through backend endpoints call karti hai. Backend Pydantic se request fields validate karta hai, appropriate Python services call karta hai aur JSON response deta hai. Streamlit usko tables, explanations, warnings aur downloads mein display karta hai.</p>
+<p>NLP Laboratory <code>/extract</code> call karta hai. Study comparison <code>/compare</code> use karta hai. Review decision <code>/reviews</code> mein save hoti hai. Synthetic profile <code>/evaluate</code> ko jaati hai. Research question <code>/ask</code> ko jaata hai. Health aur study-list/report endpoints bhi available hain.</p>
+<p>Backend localhost port 8000 aur frontend port 8501 par local deployment mein run hota hai. Uvicorn FastAPI ka server process hai. Yeh deployed public hospital service ya cloud-hosted production system nahi hai.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Project mein purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python 3.11.9</td>
+<td>Backend, UI, NLP aur experiments ki common language</td>
+</tr>
+<tr>
+<td>FastAPI 0.115.12 + Uvicorn 0.34.2</td>
+<td>Typed API endpoints aur HTTP server</td>
+</tr>
+<tr>
+<td>Pydantic 2.11.4</td>
+<td>Input schema, strict types aur validation</td>
+</tr>
+<tr>
+<td>Streamlit 1.45.1</td>
+<td>Interactive research interface</td>
+</tr>
+<tr>
+<td>PyTorch 2.14.1 CPU</td>
+<td>Real model inference aur small-head training</td>
+</tr>
+<tr>
+<td>Transformers 4.51.3</td>
+<td>Hugging Face tokenizer, NER aur seq2seq generation</td>
+</tr>
+<tr>
+<td>Sentence Transformers 4.1.0</td>
+<td>MiniLM embeddings</td>
+</tr>
+<tr>
+<td>FAISS CPU 1.11.0 + rank-bm25 0.2.2</td>
+<td>Semantic index aur lexical retrieval</td>
+</tr>
+<tr>
+<td>scikit-learn 1.6.1</td>
+<td>TF-IDF aur classical research utilities</td>
+</tr>
+<tr>
+<td>pandas 2.2.3 + NumPy 2.2.6</td>
+<td>Tables, arrays, exports aur embeddings</td>
+</tr>
+<tr>
+<td>SQLite</td>
+<td>Version-bound local review decisions</td>
+</tr>
+<tr>
+<td>Matplotlib 3.10.3</td>
+<td>Stored experiment charts</td>
+</tr>
+<tr>
+<td>pytest 8.3.5 + HTTPX</td>
+<td>Unit/API/integration verification</td>
+</tr>
+<tr>
+<td>Requests</td>
+<td>Registry/backend HTTP calls</td>
+</tr>
+<tr>
+<td>PowerShell</td>
+<td>Windows start/stop/smoke lifecycle</td>
+</tr>
+<tr>
+<td>Docker + Compose configuration</td>
+<td>Reproducible two-service packaging specification</td>
+</tr>
+<tr>
+<td>Git + source archive</td>
+<td>Checkpointing aur safe source handover</td>
+</tr>
+</tbody>
+</table></div>
+<p>Eight pages: Overview, Explore Trials, NLP Laboratory, India–US Comparison, Synthetic Evaluation, Research Assistant, Evaluation Dashboard aur Reports. Interface ek practical demonstration surface hai; model benchmark reports separate scientific evidence hain.</p>
+<p>Requests par payload/text limits hain, numeric values finite/nonnegative validate hote hain, local CORS configured hai, invalid inputs meaningful errors return karte hain. Reports HTML-escaped aur CSV formula-protected hain. Local demo reviewer labels full authentication/authorization system nahi hain.</p>
+<h2 id="23-docker-exactly-kaise-banaya-abhi-kya-verified-hai">23. Docker exactly kaise banaya? Abhi kya verified hai?</h2>
+<p>“Docker environment packaging ka tool hai. <strong>Dockerfile</strong> image banane ki recipe hai; <strong>image</strong> built application environment hai; <strong>container</strong> us image ka running instance hai. Compose multiple services ko ek configuration se coordinate karta hai.</p>
+<p>Humne backend aur frontend ke liye separate Dockerfiles banaye. Backend Python 3.11 slim base image par pinned dependencies aur CPU PyTorch install karta hai, backend/data/report files copy karta hai, model/data paths set karta hai aur Uvicorn start karta hai. Frontend image Streamlit aur uski required dependencies install karke UI start karti hai.</p>
+<p>Dono mein non-root user aur HTTP health checks configured hain. Compose mein backend aur frontend services, ports, startup dependency, restart policy aur persistent host mounts define hain.”</p>
+<pre><code class="language-text">Host browser :8501 --&gt; frontend container :8501
+                           |
+                           | API_BASE_URL=http://backend:8000
+                           v
+                      backend container :8000
+                           |
+                           +--&gt; mounted data directory
+                           +--&gt; mounted downloaded model cache
+</code></pre>
+<p>“Container ke andar localhost usi container ko refer karta hai. Isliye frontend se backend ke liye <code>http://backend:8000</code> use hota hai, <code>http://localhost:8000</code> nahi. Host ports localhost address par bind hain. Data aur cached weights mounted hain, isliye container recreate hone par unko har baar lose/download nahi karna padta.</p>
+<p><code>.dockerignore</code> virtual environment, Git metadata, secrets aur large local caches ko build context se exclude karta hai. CPU image research machine ke CUDA setup par unnecessarily dependent nahi hai.”</p>
+<p><strong>Current honest status:</strong> <code>docker compose config --quiet</code> passed. Actual <code>docker compose build</code> attempt hui, lekin Docker Desktop Linux engine unavailable hone ke karan build fail hua <strong>before successful image construction</strong>. Missing Linux engine pipe aur Docker Desktop backend inference-socket access error documented hain. <strong>No successfully built image, no running-container verification claim.</strong> Yeh host runtime blocker hai; Docker configuration likhna aur actual container run prove karna alag stages hain.</p>
+<p>“Local Windows Python deployment independently run aur test hui hai. Isliye application ki verified local functionality ko Docker execution success ke saath confuse nahi karunga. Engine healthy hone ke baad actual build, container startup aur endpoint tests remaining hain.”</p>
+<h2 id="24-testing-bug-fixes-reproducibility-aur-current-limitations">24. Testing, bug fixes, reproducibility aur current limitations</h2>
+<p>“Current recorded automated suite mein <strong>150 tests passed, zero failed, zero skipped</strong> hain. Yeh ingestion, NLP semantics, eligibility logic, retrieval, API validation, adaptation helpers, generation guards, integration regressions aur UI behavior cover karte hain.</p>
+<p>Actual backend ke against 17 UI page/action smoke checks bhi run hue, transformer aur local-generation flows exercise hue, aur source-linked JSON download verify hui. Local startup, already-running service reuse aur owned process stop behavior test hua. Source archive ko fresh temporary folder mein extract karke offline automated suite dobara pass hui.</p>
+<p>Independent integration review mein stale review-dependent result, invalid huge numeric input ka server error, filter handling, merged source conflicts, exact-ID provenance aur ambiguous query interpretation jaise issues fix hue. Test count software verification hai; usko 150 clinical trials ki validation ya model accuracy nahi bolna.”</p>
+<p>Source checkpoint <code>0549eb2</code> verified implementation ka saved Git checkpoint hai. New explanation documents is checkpoint ke baad add ho sakte hain. Safe source ZIP approximately 1.4 MB hai; model weights, external licensed corpus, virtual environment, <code>.env</code> secrets aur local review database included nahi hain. Fresh source extract ke offline tests installed environment ke saath pass hue; downloaded model files ke bina fresh neural inference ko initial model download chahiye.</p>
+<p>“Important limitations openly state karunga: real complete-criterion parsing coverage low hai; all studies mein unresolved content hai; real patient evaluation nahi hui; independent expert annotation humare regional corpus ke liye available nahi; experimental head F1 limited hai; generator incomplete answer de chuka hai; and Docker engine execution blocked hai.</p>
+<p>Future work mein representative double-annotated criteria, adjudicated labels, fair equal-data multi-seed experiments, temporal/scope handling, protocol-family-aware splits, calibrated uncertainty aur actual regional-transfer benchmark aayenge. Yeh future plans hain, completed achievements nahi.”</p>
+<h2 id="25-live-demo-dene-ka-ready-speaking-script">25. Live demo dene ka ready speaking script</h2>
+<h3 id="a-overview-aur-actual-source">A. Overview aur actual source</h3>
+<p>“Ab main application dikhata hoon. Overview par 58 actual studies hain. India count 32 aur US count 30 hai, lekin four shared studies ke karan total 62 distinct records nahi hain. Yeh site groupings hain, patient nationality groups nahi.</p>
+<p>Explore Trials mein India filter lagata hoon aur source record kholta hoon. Yahan title, actual ID, original eligibility text, registry URL aur provenance dikh rahi hai. Humara application registry record ko summarize/explore karta hai; missing field invent nahi karta.”</p>
+<p>Suggested actual India-site example: <code>NCT00261352</code>. Live source ke current values aur saved snapshot mein update ho sakta hai; displayed source ke basis par explain karo.</p>
+<h3 id="b-nlp-aur-uncertainty">B. NLP aur uncertainty</h3>
+<p>“NLP Laboratory mein pretrained entity model aur rule parser ke outputs separate hain. Ab educational sentence run karta hoon: participants 18 to 65 years aur severe renal impairment absent. Yahan age range, negation, AND group aur exact source offsets dikhte hain.</p>
+<p>Ab time-qualified wording add karne par system complete rule compile nahi karega. Unresolved output aana intentional behavior hai. Humein unsupported sentence par invented certainty nahi chahiye.”</p>
+<h3 id="c-real-study-synthetic-comparison">C. Real-study synthetic comparison</h3>
+<p>“US-site example <code>NCT00081328</code> real TODAY adolescent/youth study record hai. Iske source age fields 10 to 17 years hain. Yeh study recorded corpus mein completed hai; is demo ko active recruitment recommendation nahi bol raha.</p>
+<p>Main fabricated age 35 enter karta hoon. Supported source rules unreviewed hon to pehle insufficient information aayegi. Ab source age rule inspect karke synthetic demonstration purpose ke liye review record save karta hoon. Re-evaluation mein known age mismatch visible ho sakta hai; baaki unresolved protocol requirements still visible rahengi.</p>
+<p>Is result ka meaning hai age selected source requirement ko meet nahi karti. Yeh clinician ka complete patient-selection decision nahi. Review revoke karne par prior evaluation clear hoti hai.”</p>
+<h3 id="d-retrieval-aur-experiments">D. Retrieval aur experiments</h3>
+<p>“Research Assistant mein BMI restrictions wala question hybrid mode se poochhta hoon. Returned chunks ke exact quotes aur source links inspect karta hoon. Trace batata hai search aur evidence verification mein kya hua. Optional FLAN draft unverified hai.</p>
+<p>Evaluation Dashboard par dictionary, original biomedical NER aur trained head ke measured scores hain. Adaptation improve hui, lekin dictionary se below hai. Main F1 ko clinical accuracy nahi bol raha. Reports se JSON/CSV/HTML artifact export karke source-level results inspect kar sakte hain.”</p>
+<p>Demo se pehle source/model unavailable ho to explicit error dikhana. Saved timestamped report ko saved experiment bolo; live successful execution pretend mat karo.</p>
+<h2 id="26-detailed-viva-expected-questions-aur-direct-answers">26. Detailed viva: expected questions aur direct answers</h2>
+<h3 id="q1-project-ka-main-contribution-kya-hai">Q1. Project ka main contribution kya hai?</h3>
+<p>“Actual public trial ingestion se source-linked NLP, conservative rules, synthetic evaluation, reviewed semantics, hybrid retrieval aur integrated application tak end-to-end pipeline. Saath mein actual head training aur honest measured limitations documented hain.”</p>
+<h3 id="q2-nlp-ke-bina-simple-if-else-se-yeh-ho-sakta-tha">Q2. NLP ke bina simple if-else se yeh ho sakta tha?</h3>
+<p>“If-else structured rules evaluate kar sakta hai. Problem yeh hai ki rules initially natural-language protocols mein hain. NLP text ko entities, units, comparisons aur logical structures mein convert karne ke liye hai. Execution deterministic hai, input language understanding separate layer hai.”</p>
+<h3 id="q3-kya-regex-hi-poora-ai-hai">Q3. Kya regex hi poora AI hai?</h3>
+<p>“Narrow executable grammar mein pattern/rule logic hai, kyunki supported meaning traceable chahiye. Biomedical entity inference actual transformer se, semantic search actual learned embeddings se, generation actual FLAN model se aur experimental classification head actual supervised training se aati hai.”</p>
+<h3 id="q4-fine-tuned-model-ka-naam-kya-hai">Q4. Fine-tuned model ka naam kya hai?</h3>
+<p>“Experimental artifact frozen <code>d4data/biomedical-ner-all</code> encoder ke upar trained CHIA BIO head hai. Complete original transformer fine-tune nahi hua. Generative FLAN aur MiniLM unchanged hain.”</p>
+<h3 id="q5-head-train-karna-choose-kyun-kiya">Q5. Head train karna choose kyun kiya?</h3>
+<p>“Existing biomedical representations reuse karke limited local compute par supervised adaptation demonstrate ki. Small trainable parameter count reproducible hai. Yeh engineering tradeoff hai; result prove nahi karta ki full-model fine-tuning se better hai.”</p>
+<h3 id="q6-encoder-frozen-matlab-kya">Q6. Encoder frozen matlab kya?</h3>
+<p>“Encoder token features deta hai lekin uske weights optimization mein update nahi hote. Sirf new output classifier aur uske weights/bias train hue. Frozen representations aur new label mapping ke roles separate hain.”</p>
+<h3 id="q7-train-validation-aur-test-alag-kyun">Q7. Train, validation aur test alag kyun?</h3>
+<p>“Train se parameters learn hote hain; development se epoch select hota hai; held-out test final estimate deta hai. Same test ko repeatedly dekhkar tuning karne se optimistic bias ho sakta hai. Documents study-level groups mein split hue.”</p>
+<h3 id="q8-model-best-nahi-aaya-to-project-unsuccessful-hai">Q8. Model best nahi aaya to project unsuccessful hai?</h3>
+<p>“Research ka aim honest comparison bhi hai. Head ne untouched biomedical NER ko improve kiya, dictionary se below raha. Domain mismatch, annotation boundaries aur unequal training volume limitations expose karna useful measured finding hai.”</p>
+<h3 id="q9-accuracy-kitni-hai">Q9. Accuracy kitni hai?</h3>
+<p>“Ek single overall accuracy number appropriate nahi. Entity exact-span F1 dictionary .4253, original NER .1265 aur head .3212 hai. Developer supported semantic test 10/12 hai; real text complete coverage 18/983 hai; retrieval Precision@5 separate hai. Inko mix nahi karunga.”</p>
+<h3 id="q10-zero-parser-false-positives-ka-matlab-safe-system">Q10. Zero parser false positives ka matlab safe system?</h3>
+<p>“Nahi. Selected developer test mein unsupported examples sirf eight the aur unmein eight abstentions hue. Is small denominator se real-world safety establish nahi hoti.”</p>
+<h3 id="q11-india-aur-us-choose-karne-ka-scientifically-correct-answer">Q11. India aur US choose karne ka scientifically correct answer?</h3>
+<p>“Cross-subset language and extraction behavior explore karne ke liye. Actual protocol requirements compare hue, national patient thresholds invent nahi hue. Convenience sample se national causal inference nahi hua.”</p>
+<h3 id="q12-same-person-ko-india-aur-us-mein-alag-result-mil-sakta-hai">Q12. Same person ko India aur US mein alag result mil sakta hai?</h3>
+<p>“Do selected protocols ke requirements genuinely different hon to synthetic profile ke known-rule results different ho sakte hain. Reason protocol difference hoga; country se automatically threshold switch nahi hoga.”</p>
+<h3 id="q13-rag-aur-fine-tuning-ka-difference">Q13. RAG aur fine-tuning ka difference?</h3>
+<p>“RAG query-time relevant documents context mein deta hai. Fine-tuning training data se weights update karti hai. FLAN context use karta hai, weights unchanged hain; separate CHIA head mein actual weight updates hue.”</p>
+<h3 id="q14-embedding-model-aur-llm-same-hai">Q14. Embedding model aur LLM same hai?</h3>
+<p>“MiniLM text ko retrieval vector banata hai. FLAN text generate karta hai. Dono transformer-based ho sakte hain, lekin purpose aur output different hain.”</p>
+<h3 id="q15-faiss-database-hai-ya-model">Q15. FAISS database hai ya model?</h3>
+<p>“Yahan FAISS similarity search index hai. Source metadata JSON mein aur vectors verified arrays mein persist hain. Yeh generative model nahi. Review decisions SQLite mein stored hain.”</p>
+<h3 id="q16-citation-ho-to-answer-correct-kyun-nahi-maan-sakte">Q16. Citation ho to answer correct kyun nahi maan sakte?</h3>
+<p>“Citation verify karti hai quoted passage source mein present hai. Generated sentence us passage ka incorrect interpretation kar sakta hai. Exact text verification full entailment ya clinical validation nahi hai.”</p>
+<h3 id="q17-missing-lab-value-par-kya-hota-hai">Q17. Missing lab value par kya hota hai?</h3>
+<p>“UNKNOWN. Hum normal value, zero ya negative condition assume nahi karte. Output insufficient information ho sakta hai. Known false conjunctive condition ho to known mismatch dikh sakta hai, remaining unknowns ke saath.”</p>
+<h3 id="q18-exclusion-rules-kaise-handle-kiye">Q18. Exclusion rules kaise handle kiye?</h3>
+<p>“Complete exclusion criterion ko logical NOT context mein represent karte hain. A OR B ko exclude karna aur A AND B ko exclude karna different hai. Har individual term blindly reverse nahi hota.”</p>
+<h3 id="q19-reviewer-approve-kare-to-clinical-validation-complete">Q19. Reviewer approve kare to clinical validation complete?</h3>
+<p>“Nahi. Current reviewer label local synthetic demo record hai. Clinical use ke liye independent expert validation, governance, privacy/authentication aur broader evidence ki zarurat hogi.”</p>
+<h3 id="q20-transformer-ko-complete-protocol-kyun-nahi-diya-ek-saath">Q20. Transformer ko complete protocol kyun nahi diya ek saath?</h3>
+<p>“Input token limits hain. NER overlapping windows process karta hai; embedding chunks token-aware hain. Generator ka context smaller hai aur selected excerpt/truncation explicitly logged hai. Har model ka limit separate handle hua.”</p>
+<h3 id="q21-language-english-hai-to-hinglish-input-support-hai">Q21. Language English hai to Hinglish input support hai?</h3>
+<p>“Source corpus aur verified parser English trial criteria par hain. Yeh explanation Hinglish mein hai; isse model ka Hindi/Hinglish clinical parsing capability prove nahi hoti.”</p>
+<h3 id="q22-local-model-kyun-gpt-api-kyun-nahi">Q22. Local model kyun, GPT API kyun nahi?</h3>
+<p>“Local execution se credential-free reproducible inference demonstrate hui aur external paid API dependency avoid hui. Lekin small model quality limited hai. Larger model benefit ko actual evaluation ke bina claim nahi kiya.”</p>
+<h3 id="q23-gpu-use-hua">Q23. GPU use hua?</h3>
+<p>“Machine mein RTX 3050 Laptop GPU detect hui thi, lekin recorded inference aur training CPU four threads par hue. GPU training speed ya CUDA deployment claim nahi hai.”</p>
+<h3 id="q24-docker-successfully-deployed-hai">Q24. Docker successfully deployed hai?</h3>
+<p>“Dockerfiles aur Compose configuration ready aur validated hain. Actual image build attempt Docker Desktop engine error se failed hui. Local Python application tested hai. Container build/run verification pending hai.”</p>
+<h3 id="q25-backend-aur-frontend-separate-kyun">Q25. Backend aur frontend separate kyun?</h3>
+<p>“API services ko UI se separate rakhne se request validation, reusable functions aur API tests possible hue. Streamlit display handle karta hai; FastAPI NLP/retrieval/evaluation services expose karta hai.”</p>
+<h3 id="q26-agentic-naam-use-karke-kya-overclaim-ho-raha-hai">Q26. “Agentic” naam use karke kya overclaim ho raha hai?</h3>
+<p>“Architecture bounded orchestration hai: typed tools, maximum steps aur trace. Unrestricted LLM agent nahi. Is limited meaning ko title ke saath explicitly explain karte hain; LangGraph use hone ka claim nahi hai.”</p>
+<h3 id="q27-data-leakage-bilkul-impossible-hai">Q27. Data leakage bilkul impossible hai?</h3>
+<p>“Study-level separation aur source hashes implemented hain, aur test selection fixed hai. Lekin upstream pretrained model ne kya dekha tha aur related protocol-family overlap fully rule out nahi kar sakte. Absolute no-leakage claim nahi.”</p>
+<h3 id="q28-150-tests-aur-18-synthetic-cases-mein-difference">Q28. 150 tests aur 18 synthetic cases mein difference?</h3>
+<p>“150 software test functions/cases suite ka count hai. Eighteen specifically developer expected synthetic-status reference cases hain. Dono clinical outcome datasets nahi hain aur entity benchmark se different hain.”</p>
+<h3 id="q29-chia-aur-maccrobat-ka-role-kya-tha">Q29. CHIA aur MACCROBAT ka role kya tha?</h3>
+<p>“CHIA published trial-eligibility annotations actual benchmark/head training ke liye downloaded hui. MACCROBAT upstream biomedical model ka training domain hai; humne usko local patient workflow mein import nahi kiya. Dono ke roles conflate nahi kiye.”</p>
+<h3 id="q30-agar-poochhen-tumne-khud-kya-kiya-ai-help-li">Q30. Agar poochhen tumne khud kya kiya, AI help li?</h3>
+<p>“Project AI-assisted implementation se develop hua. Main architecture, data provenance, algorithms, experiments aur limitations ko explain aur inspect kar sakta hoon. Authorship ya manual execution ke false claims nahi karunga; repository aur saved run evidence actual work establish karte hain.”</p>
+<h3 id="q31-next-practical-improvement-kya-hoga">Q31. Next practical improvement kya hoga?</h3>
+<p>“Pehle representative independently annotated criteria aur better scope/temporal handling. Phir fair multi-seed model experiments aur abstention calibration. Sirf larger model add kar dena validation ka substitute nahi.”</p>
+<h3 id="q32-isko-production-ready-kyun-nahi-bol-rahe">Q32. Isko production-ready kyun nahi bol rahe?</h3>
+<p>“Local research workflow implemented hai, lekin clinical validation, real patient data governance, authenticated expert workflow, broad rule coverage aur verified container execution complete nahi. Production-readiness separate evidence maangti hai.”</p>
+<h2 id="27-two-minute-final-explanation-aur-revision-card">27. Two-minute final explanation aur revision card</h2>
+<p>“Mera project TrialOps-Adaptive AI ek source-linked clinical-trial research application hai. Yeh Type 2 Diabetes ke actual public protocols ko read karta hai aur India-site aur US-site studies explore/compare karne deta hai. Dataset official ClinicalTrials.gov API v2 se aaya: 58 unique studies, 32 India-site, 30 US-site aur four shared. Country grouping location hai, nationality ya automatic threshold selection nahi.</p>
+<p>NLP pipeline normalization, source offsets, tokenization, section detection, abbreviations, negation, quantities, units aur Boolean grammar use karti hai. Complete supported clauses structured rules bante hain; difficult text unresolved rehta hai. Biomedical NER ke liye pretrained DistilBERT-based model separately run hota hai. Reviewed known rules synthetic profiles par TRUE/FALSE/UNKNOWN logic se evaluate hote hain, har result ke source aur explanation ke saath.</p>
+<p>Semantic search MiniLM embeddings aur FAISS use karti hai; BM25 lexical search aur hybrid rank fusion bhi hain. Research assistant verified source quotes return karta hai. Optional generation FLAN-T5-small se hui, lekin answer incomplete tha, isliye draft unverified rehta hai aur eligibility decisions affect nahi karta.</p>
+<p>Actual training CHIA human annotations par frozen encoder ke upar 5,383-parameter BIO head ki hui. Head F1 .3212 tha, original NER .1265 se better lekin dictionary .4253 se lower. Yeh experiment default executable parser ka replacement nahi.</p>
+<p>Frontend Streamlit, backend FastAPI aur review storage SQLite hai. Eight UI pages, reports, 150 passing software tests aur local deployment verified hain. Docker configuration validate hui, lekin actual build Docker Desktop engine failure se blocked hui. Main limitation low full-criterion parsing coverage aur missing independent clinical validation hai. Project ka contribution uncertainty hide kiye bina traceable end-to-end research workflow banana hai.”</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Yaad rakhne wali baat</th>
+<th>Exact short answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>Trial protocol intelligence + explainable synthetic pre-screening</td>
+</tr>
+<tr>
+<td>Real data</td>
+<td>Public trial records; no identifiable patient records</td>
+</tr>
+<tr>
+<td>Countries</td>
+<td>India/US study-site subsets; no country-derived thresholds</td>
+</tr>
+<tr>
+<td>Data count</td>
+<td>58 unique; 32 India, 30 US, 4 overlap</td>
+</tr>
+<tr>
+<td>NER</td>
+<td>d4data biomedical DistilBERT model</td>
+</tr>
+<tr>
+<td>Embeddings</td>
+<td>MiniLM, 384 dimensions</td>
+</tr>
+<tr>
+<td>Generator</td>
+<td>FLAN-T5-small; local; not fine-tuned</td>
+</tr>
+<tr>
+<td>Trained artifact</td>
+<td>Frozen encoder + 5,383-parameter CHIA head</td>
+</tr>
+<tr>
+<td>Head test F1</td>
+<td>.3212; dictionary .4253; original NER .1265</td>
+</tr>
+<tr>
+<td>Rule coverage</td>
+<td>18/983 complete criteria; 1.83%</td>
+</tr>
+<tr>
+<td>Rule output</td>
+<td>Known match / known mismatch / insufficient information</td>
+</tr>
+<tr>
+<td>Agent framework</td>
+<td>Custom bounded workflow; LangGraph not used</td>
+</tr>
+<tr>
+<td>Tests</td>
+<td>150 passing software tests, not clinical accuracy</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>Local Python verified; Docker config validated, build blocked</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="28-code-exactly-kahan-hai-file-map">28. Code exactly kahan hai? File map</h2>
+<p>Sab code isi project root ke andar hai: <code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP</code>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kis cheez ka code?</th>
+<th>Full location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main API/endpoints</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\main.py</code></td>
+</tr>
+<tr>
+<td>Request schemas</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\schemas.py</code></td>
+</tr>
+<tr>
+<td>Registry ingestion</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\ingestion.py</code></td>
+</tr>
+<tr>
+<td>Classical NLP/rule extraction</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\nlp.py</code></td>
+</tr>
+<tr>
+<td>Pretrained NER/model loading</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\neural.py</code></td>
+</tr>
+<tr>
+<td>Rule evaluation</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\eligibility.py</code></td>
+</tr>
+<tr>
+<td>Review storage</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\reviews.py</code></td>
+</tr>
+<tr>
+<td>Study services</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\services.py</code></td>
+</tr>
+<tr>
+<td>Retrieval/index</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\retrieval.py</code></td>
+</tr>
+<tr>
+<td>Bounded workflow</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\workflow.py</code></td>
+</tr>
+<tr>
+<td>FLAN generation</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\app\generation.py</code></td>
+</tr>
+<tr>
+<td>All eight UI pages</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\frontend\app.py</code></td>
+</tr>
+<tr>
+<td>Head training</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\experiments\adapt_entity_head.py</code></td>
+</tr>
+<tr>
+<td>Original entity benchmark</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\experiments\entity_benchmark.py</code></td>
+</tr>
+<tr>
+<td>Research/parser/regional experiments</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\experiments\research_eval.py</code></td>
+</tr>
+<tr>
+<td>Retrieval benchmark</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\experiments\retrieval_benchmark.py</code></td>
+</tr>
+<tr>
+<td>Automated tests</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\tests</code></td>
+</tr>
+<tr>
+<td>Dependencies</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\requirements.txt</code></td>
+</tr>
+<tr>
+<td>Backend image recipe</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\backend\Dockerfile</code></td>
+</tr>
+<tr>
+<td>Frontend image recipe</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\frontend\Dockerfile</code></td>
+</tr>
+<tr>
+<td>Multi-service packaging</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\docker-compose.yml</code></td>
+</tr>
+<tr>
+<td>Local lifecycle scripts</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\scripts</code></td>
+</tr>
+<tr>
+<td>Normalized actual records</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\data\processed</code></td>
+</tr>
+<tr>
+<td>Raw API evidence</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\data\raw\clinicaltrials</code></td>
+</tr>
+<tr>
+<td>Cached public model weights</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\models\hf</code></td>
+</tr>
+<tr>
+<td>Experimental trained head</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\models\adapted_chia_head</code></td>
+</tr>
+<tr>
+<td>Measured reports and plots</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports</code></td>
+</tr>
+<tr>
+<td>Original unchanged starter</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\legacy\TrialOps_Adaptive_Demo</code></td>
+</tr>
+<tr>
+<td>Safe source ZIP</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\TrialOps-Adaptive-AI-source.zip</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Weights aur downloaded external corpus Git/source ZIP mein intentionally included nahi. Working machine par existing cache aur external files separate available ho sakte hain. ZIP handover source-code package hai, entire virtual environment/model distribution nahi.</p>
+<h2 id="29-runreproduce-karne-ke-commands">29. Run/reproduce karne ke commands</h2>
+<p>Existing configured Windows environment ke liye PowerShell:</p>
+<pre><code class="language-powershell">Set-Location 'C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP'
+.\scripts\start.ps1
+</code></pre>
+<p>Frontend: <code>http://127.0.0.1:8501/</code>. Backend API documentation: <code>http://127.0.0.1:8000/docs</code>.</p>
+<p>Verification aur shutdown:</p>
+<pre><code class="language-powershell">.\scripts\smoke.ps1 -Full
+.\.venv\Scripts\python.exe -m scripts.verify --live
+.\scripts\stop.ps1
+</code></pre>
+<p>Head experiment reproduce karna ho to existing CHIA files, original benchmark report aur cached pinned biomedical model required hain:</p>
+<pre><code class="language-powershell">.\.venv\Scripts\python.exe -u experiments/adapt_entity_head.py --train-studies 100 --dev-studies 20 --epochs 8
+</code></pre>
+<p>Healthy Docker engine available hone ke baad container verification ke liye:</p>
+<pre><code class="language-powershell">docker compose config --quiet
+docker compose up --build
+</code></pre>
+<p>Last command successful execution ka current claim nahi; yeh remaining Docker runtime verification ke liye command hai. Local script correct project environment use karti hai, background windows hide karti hai aur owned process identity record karti hai. Stop script arbitrary unrelated Python processes kill nahi karti.</p>
+<h2 id="30-agar-examiner-proof-dikhao-bole-to-kahan-dikhana-hai">30. Agar examiner “proof dikhao” bole to kahan dikhana hai?</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Claim</th>
+<th>Evidence file, full path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dataset source/counts</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\docs\data_sources.md</code></td>
+</tr>
+<tr>
+<td>Raw retrieval/provenance</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\data\processed\study_metadata.json</code> plus raw page sidecars</td>
+</tr>
+<tr>
+<td>Original pretrained inference</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\model_smoke.json</code></td>
+</tr>
+<tr>
+<td>CHIA dictionary/NER benchmark</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\entity_benchmark.json</code></td>
+</tr>
+<tr>
+<td>Actual head training settings/epochs/results</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\adaptation_benchmark.json</code></td>
+</tr>
+<tr>
+<td>Parser/regional/synthetic experiments</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\research_metrics.json</code></td>
+</tr>
+<tr>
+<td>Retrieval ablation</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\retrieval_benchmark.json</code></td>
+</tr>
+<tr>
+<td>Actual local generator output</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\generation_smoke.json</code></td>
+</tr>
+<tr>
+<td>150-test result</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\test_results.json</code></td>
+</tr>
+<tr>
+<td>UI actions</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\ui_smoke.json</code></td>
+</tr>
+<tr>
+<td>Deployment status/limitations</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\docs\deployment.md</code></td>
+</tr>
+<tr>
+<td>Archive fresh-extraction verification</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\reports\source_archive.json</code></td>
+</tr>
+<tr>
+<td>Formal technical report</td>
+<td><code>C:\Users\LENOVO\OneDrive\Documents\ChatGPT\NLP\docs\technical_report.html</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Yehi factual distinction presentation mein maintain karni hai: <strong>implemented code, executed experiment, observed result, experimental component, external blocker aur future work</strong>. Har claim ke liye appropriate evidence hai; ek component ka success doosre component ki accuracy prove nahi karta.</p><div class="foot">Prepared from local implementation and recorded experiment evidence. Successful software execution, model quality, clinical validation and container execution are separate claims.</div></main></div><button id="back" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">Back to top</button><script>
+function toggleReading(){document.body.classList.toggle('reading');document.getElementById('readButton').textContent=document.body.classList.contains('reading')?'Show chapters':'Focus reading'}
+function updateProgress(){let max=document.documentElement.scrollHeight-innerHeight;document.getElementById('progress').style.width=(max>0?100*scrollY/max:0)+'%'}
+addEventListener('scroll',updateProgress,{passive:true});addEventListener('resize',updateProgress);updateProgress();
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){document.querySelectorAll('.sidebar a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id))}}},{rootMargin:'-5% 0px -75% 0px'});document.querySelectorAll('main h2').forEach(h=>observer.observe(h));
+</script></body></html>

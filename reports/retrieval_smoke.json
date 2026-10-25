@@ -1,0 +1,1201 @@
+{
+  "run_at_utc": "2026-10-17T08:40:44.432758+00:00",
+  "study_count": 58,
+  "index": {
+    "chunks": 426,
+    "lexical": "ready",
+    "semantic": "ready",
+    "semantic_error": null,
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "version": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "corpus_sha256": "1c2859c4e8c4698cbd69c7d9c1fc43bb953e3c33144112e10c6a3e717052c11a"
+  },
+  "build_seconds": 16.554,
+  "source_substring_verification": "passed for every returned chunk",
+  "queries": [
+    {
+      "query": "HbA1c glycated hemoglobin inclusion criteria",
+      "country": null,
+      "status": null,
+      "search": {
+        "requested_mode": "bm25",
+        "actual_mode": "bm25",
+        "status": "ok",
+        "latency_ms": 1.35,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT03760991",
+          "chunk_id": "NCT03760991:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT03760991",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 695,
+          "text": "Inclusion criteria :\n\n* Participants with type 2 diabetes mellitus.\n* Participants on \"standard of care\" basal insulin therapy administered once or twice daily, as per labeling for at least 6 months prior to screening visit, with or without other antidiabetics approved for using with insulin.\n* Glycated hemoglobin (HbA1c) between 7.5% (58 mmol/mol) and 10% (86 mmol/mol) inclusive, during screening.\n* Fasting plasma glucose values above 130 mg/dL.\n\nExclusion criteria:\n\n* Unstable basal insulin regimen in the last 8 weeks prior to screening visit (ie, type of insulin and time/frequency of the injection, insulin doses \\[variation more than ±20%\\]).\n* Treatment with insulin other than basal",
+          "title": "Evaluation of the Efficacy and Safety of Insulin Glargine 300 U/mL in Patients With Type 2 Diabetes Mellitus Uncontrolled on Other Kinds of Insulin",
+          "countries": [
+            "Argentina",
+            "Colombia",
+            "Egypt",
+            "Hong Kong",
+            "India",
+            "Indonesia",
+            "Lebanon",
+            "Malaysia",
+            "Peru",
+            "Philippines",
+            "Saudi Arabia",
+            "South Africa",
+            "Thailand",
+            "Turkey (Türkiye)"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Type 2 Diabetes Mellitus"
+          ],
+          "score": 10.6306293,
+          "actual_mode": "bm25",
+          "bm25_score": 10.6306293,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT02941367",
+          "chunk_id": "NCT02941367:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT02941367",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 699,
+          "text": "Inclusion criteria :\n\n* Patients with type 2 diabetes mellitus, diagnosed for at least 1 year at the time of the screening visit, insufficiently controlled with basal insulin + SU (≤50% max allowed dose) ±1 oral antidiabetic (OAD) drug.\n* Patients who express the intention to fast during Ramadan.\n* Signed informed consent.\n\nExclusion criteria:\n\n* At the time of screening age \\< legal age of majority.\n* Glycated hemoglobin (HbA1c) at screening visit: \\<7.5% or \\>10%.\n* Body mass index (BMI) \\<20kg/m\\^2.\n* Treatment with basal insulin for less than 6 months prior to screening.\n* Prior antidiabetic medication (basal insulin and OADs) not at stable dose (eg, same medication, frequency and \\<20%",
+          "title": "Safety Assessment of Lyxumia (Lixisenatide) and Sulfonylurea as Add-on Treatment to Basal Insulin in Uncontrolled Patients With Type 2 Diabetes Mellitus Who Elect to Fast During Ramadan",
+          "countries": [
+            "India",
+            "Israel",
+            "Kuwait",
+            "Turkey (Türkiye)"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Diabetes Mellitus, Type 2"
+          ],
+          "score": 10.5805693,
+          "actual_mode": "bm25",
+          "bm25_score": 10.5805693,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07495787",
+          "chunk_id": "NCT07495787:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07495787",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 687,
+          "text": "Inclusion Criteria:\n\n* Subjects will be included in the study if they meet the following criteria:\n\n  1. Participant is willing and able to give informed consent for participation in the study.\n  2. Male or Female, aged ≥ 25 years to ≤ 65 years.\n  3. BMI greater than or equal to 25 and less than 50\n  4. Clinical diagnosis of T2DM by plasma glucose criteria, either the fasting plasma glucose (FPG) value or the 2-h plasma glucose (2-h PG) value during a 75-g oral glucose tolerance test (OGTT), or A1C criteria\n  5. Glycated Hemoglobin greater than or equal to 7.5% and less than 10.5% in at least one laboratory analysis conducted within the past 3 months, typically associated with a",
+          "title": "Magnetic Compression Anastomosis Procedure for Partial Jejunoileal Anastomosis: Assessing the Viability of an Innovative Metabolic Approach",
+          "countries": [
+            "India"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Diabete Type 2"
+          ],
+          "score": 9.063847,
+          "actual_mode": "bm25",
+          "bm25_score": 9.063847,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT02065674",
+          "chunk_id": "NCT02065674:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT02065674",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 240,
+          "text": "Inclusion Criteria:\n\nInclusion Criteria Age 30 Years above Both Sexes NIDDM FBS - 110-300mg/dl HbA1c above ≤ 6.5\n\n\\-\n\nExclusion Criteria:\n\n* Patient with major complications like diabetic retinopathy and cardiomyopathy. IDDM HbA1c above 11%",
+          "title": "Therapeutic Efficacy of \"Abroma Agusta\" in HbA1c % in NIDDM",
+          "countries": [
+            "India"
+          ],
+          "status": "AVAILABLE",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 8.2458334,
+          "actual_mode": "bm25",
+          "bm25_score": 8.2458334,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT01713764",
+          "chunk_id": "NCT01713764:description:1",
+          "source_url": "https://clinicaltrials.gov/study/NCT01713764",
+          "source_field": "description",
+          "start": 574,
+          "end": 1115,
+          "text": "ation recommended diet) and emotion regulation and mindful eating strategies.\n\nApproximately 40 individuals with Type II diabetes or prediabetes will be randomized in a 1:1 ratio to treatment groups. Groups will meet for 12 weekly sessions, then approximately biweekly for 3 sessions, for a total of 15 1.5-2 hour sessions over 4.5 months. Participants will be evaluated at 0, 1 month, 3 months, and 6 months. Our outcome of interest is HbA1c (glycated hemoglobin, a measure indicative of blood glucose levels and tied to diabetes severity).",
+          "title": "A Pilot Study of the Effects of Diet and Behavioral Interventions on Health in Diabetics",
+          "countries": [
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Diabetes Type II"
+          ],
+          "score": 8.1984752,
+          "actual_mode": "bm25",
+          "bm25_score": 8.1984752,
+          "semantic_score": null,
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "query": "diabetes treatment",
+      "country": "India",
+      "status": "RECRUITING",
+      "search": {
+        "requested_mode": "bm25",
+        "actual_mode": "bm25",
+        "status": "ok",
+        "latency_ms": 0.413,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:eligibility_text:12",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "eligibility_text",
+          "start": 6907,
+          "end": 7603,
+          "text": "l withdrawal symptoms ± institutionalized/hospitalized due to alcohol use ± binge drinking with \\>5 standard drinks on a single occasion in men or \\>4 standard drinks on a single occasion in women).\n22. Participants are taking, or will start, medications with narrow therapeutic index such as digoxin, warfarin, etc, or those that will prolong QTc interval.\n23. Participants received any medications for the treatment of type II diabetes mellitus other than those stated in the inclusion criteria within 90 days before screening. Short-term insulin treatment for a maximum of 7 days prior to screening is allowed. Prior insulin treatment for gestational diabetes is also allowed.\n24. Participants",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 3.8746177,
+          "actual_mode": "bm25",
+          "bm25_score": 3.8746177,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:eligibility_text:13",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "eligibility_text",
+          "start": 7483,
+          "end": 8179,
+          "text": "7 days prior to screening is allowed. Prior insulin treatment for gestational diabetes is also allowed.\n24. Participants who have used medications in the family of GLP-1 agonists in the past.\n25. Treatment with any herbal diet supplements, over-the-counter diet medications as an attempt to lose weight within 90 days before screening.\n26. Treatment with orlistat, lorcaserin, zonisamide, topiramate, phentermine, buproprion, or naltrexone that could promote weight loss within 90 days before screening.\n27. Participation in any organized or online weight-reduction program (i.e. Weight Watchers) within 90 days before screening.\n28. Screening calcitonin ≥50 ng/L (pg/mL).\n29. Participants having",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 3.3752649,
+          "actual_mode": "bm25",
+          "bm25_score": 3.3752649,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:description:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "description",
+          "start": 0,
+          "end": 588,
+          "text": "This is a phase II, randomized, double-blind, placebo-controlled study to evaluate the efficacy and tolerability of GL0034 among type II diabetes mellitus subjects who are obese or overweight with weight-related comorbidities. Subjects will be put on either one of the four treatment arms (GL0034, once a week, subcutaneous injection) or placebo arm (once a week, subcutaneous injection) following initial dose-up titration that takes up to approximately 20 weeks. The primary end point is change in HbA1c levels from baseline (Week 0) to Week 36 following treatments in all participants.",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 2.5384182,
+          "actual_mode": "bm25",
+          "bm25_score": 2.5384182,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07495787",
+          "chunk_id": "NCT07495787:eligibility_text:1",
+          "source_url": "https://clinicaltrials.gov/study/NCT07495787",
+          "source_field": "eligibility_text",
+          "start": 567,
+          "end": 1265,
+          "text": " and less than 10.5% in at least one laboratory analysis conducted within the past 3 months, typically associated with a recommendation by patient's primary care physician and/or endocrinologist for intensification of treatment beyond oral medications\n  6. Currently taking oral combination therapy for T2DM\n  7. At least 12 months of experience with Diabetes Self-Management and Support\n\nExclusion Criteria:\n\n* 1\\. Pregnancy or breastfeeding mothers, or individuals planning to become pregnant in next 9-12 months 2. Vulnerable individuals (mentally disabled, physically disabled, prisoner, etc.) 3. Current enrolment in another research study or previous participation within 30 days of enrolment",
+          "title": "Magnetic Compression Anastomosis Procedure for Partial Jejunoileal Anastomosis: Assessing the Viability of an Innovative Metabolic Approach",
+          "countries": [
+            "India"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Diabete Type 2"
+          ],
+          "score": 2.4492621,
+          "actual_mode": "bm25",
+          "bm25_score": 2.4492621,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:eligibility_text:6",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "eligibility_text",
+          "start": 3454,
+          "end": 4149,
+          "text": "ncreatitis (acute or chronic) or \\>3 hypoglycemic episodes (blood glucose level \\<70 mg/dL or 3.9 mmol/L) within 90 days prior to screening.\n4. Diagnosis of chronic kidney disease with estimated glomerular filtration rate \\<60.\n5. Poorly controlled hypertension with systolic blood pressure \\>160 mmHg and/or diastolic blood pressure \\>100 mmHg.\n6. Poorly controlled hypothyroidism defined as thyroid-stimulating hormone \\>6 mIU/L or \\<0.4 mIU/L.\n7. Diabetes mellitus and/or obesity that is induced by endocrine disorders (e.g. Cushing Syndrome) or medication use (e.g. corticosteroids) as judged by the Investigator.\n8. Previous surgical treatment for obesity (liposuction and/or abdominoplasty",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 2.3776815,
+          "actual_mode": "bm25",
+          "bm25_score": 2.3776815,
+          "semantic_score": null,
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "query": "body mass index BMI",
+      "country": "United States",
+      "status": null,
+      "search": {
+        "requested_mode": "bm25",
+        "actual_mode": "bm25",
+        "status": "ok",
+        "latency_ms": 0.704,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT07340320",
+          "chunk_id": "NCT07340320:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07340320",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 692,
+          "text": "Inclusion Criteria\n\nParticipants who meet all of the following criteria will be eligible to participate in this study:\n\n* Adults aged 18 to 75.\n* Diagnosis of type 2 diabetes for at least 6 months.\n* HbA1c between 7.0% and 10.5%.\n* Body mass index (BMI) between 23 and 50 kg/m².\n* Body weight stable for the past 3 months before joining.\n* Stable dose of metformin (≥1000 mg/day), with or without SGLT2i, for ≥3 months.\n* Women of childbearing potential (WOCBP): highly effective contraception ≥6 months prior to screening, throughout study, and 90 days post-last dose; negative pregnancy test within 24 hrs of first dose; no intent to donate sperm/ova\n* Agrees to avoid grapefruit/grapefruit",
+          "title": "A Study of CX11 Tablets in Patients With Type 2 Diabetes Mellitus",
+          "countries": [
+            "Poland",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 10.0547212,
+          "actual_mode": "bm25",
+          "bm25_score": 10.0547212,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT00997152",
+          "chunk_id": "NCT00997152:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00997152",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 654,
+          "text": "Inclusion Criteria:\n\n1. Have type 2 diabetes;\n2. Body mass index (BMI) of ≤ 45.0 kg/m2;\n3. Are either untreated with respect to hypoglycemic agents OR are currently being treated with a stable dose of metformin alone.\n\nExclusion Criteria:\n\n1. Females who are pregnant or breast-feeding;\n2. Known medical history or presence of type 1 diabetes or pancreatitis, acute metabolic diabetic complications, presence of unstable or rapidly progressing retinopathy, nephropathy or neuropathy;\n3. Acute coronary syndrome or uncontrolled hypertension;\n4. Does not meet all diet or previous/concomitant medication restrictions criteria, as described in the protocol.",
+          "title": "Efficacy and Safety Study of JTT-654 in Type 2 Diabetic Patients",
+          "countries": [
+            "United States"
+          ],
+          "status": "TERMINATED",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 9.8402484,
+          "actual_mode": "bm25",
+          "bm25_score": 9.8402484,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT00929539",
+          "chunk_id": "NCT00929539:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00929539",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 655,
+          "text": "Inclusion Criteria:\n\n1. Have type 2 diabetes;\n2. Body mass index (BMI) of \\> 27.0 kg/m2 and ≤ 45.0 kg/m2;\n3. Are either drug naïve with respect to hypoglycemic agents OR are currently being treated with metformin alone or in combination with a sulfonylurea. Metformin and sulfonylurea dosing must be stable.\n\nExclusion Criteria:\n\n1. Females who are pregnant or breast-feeding\n2. Known medical history or presence of type 1 diabetes, pancreatitis, unstable or rapidly progressing retinopathy, nephropathy or neuropathy;\n3. Acute coronary syndrome or uncontrolled hypertension;\n4. Does not meet medication restriction criteria, as described in the protocol.",
+          "title": "Safety and Efficacy Study of JTT-130 in Obese Type 2 Diabetic Patients",
+          "countries": [
+            "Czechia",
+            "Hungary",
+            "Netherlands",
+            "Russia",
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 9.6921272,
+          "actual_mode": "bm25",
+          "bm25_score": 9.6921272,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT01546844",
+          "chunk_id": "NCT01546844:description:3",
+          "source_url": "https://clinicaltrials.gov/study/NCT01546844",
+          "source_field": "description",
+          "start": 1724,
+          "end": 2423,
+          "text": "vements in clinical, utilization and satisfaction outcomes for patients with DM compared to patient who receive standard care.\n2. Evaluating if an SMS protocol can be readily adopted by an adult population in both urban and rural areas with a time-consuming chronic illness.\n\nTargeted outcomes include:\n\n1. Improved measures of diabetes control, demonstrated as HbA1c percentage levels ≤ 8%; improved blood pressure (BP) control, demonstrated as BP ≤ 140/90 millimeters mercury (mm Hg); and lower body mass index (BMI) among users of the SMS-based tool.\n2. Improved knowledge of self-care and disease management practices among adult patients with diabetes treated in Beacon clinics in the Salt Lake",
+          "title": "Mobile Health Technology as an Intervention for Diabetes Self-Management",
+          "countries": [
+            "United States"
+          ],
+          "status": "UNKNOWN",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 9.2733628,
+          "actual_mode": "bm25",
+          "bm25_score": 9.2733628,
+          "semantic_score": null,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT00737152",
+          "chunk_id": "NCT00737152:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00737152",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 698,
+          "text": "Inclusion Criteria:\n\n1. Patients with Type II Diabetes Mellitus (non-insulin-dependent), not taking any anti-diabetic agent.\n2. Fasting blood glucose level below 250mg/dL\n3. Age 30 to 60 years\n4. Both genders\n5. HbA1c of 6.0% to 13.0%, inclusive\n6. Body mass index (BMI) below 40 kg/m2\n7. Female subjects not pregnant, not lactating, post-menopausal, surgically sterile or using effective contraceptive measures are included.\n8. Provide signed Informed Consent\n\nExclusion Criteria:\n\n1. Subject unable to give Informed Consent\n2. Patients with Type I Diabetes Mellitus\n\n   a. History of ketoacidosis\n3. Serum creatinine \\> 2.0 mg or above\n4. Liver Function Test; Elevated liver enzymes: ALT/AST (2.5",
+          "title": "Evaluate the Side Effects and Benefits of RAS 130 With or Without Diet and Exercise in Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "UNKNOWN",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 9.1851716,
+          "actual_mode": "bm25",
+          "bm25_score": 9.1851716,
+          "semantic_score": null,
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "query": "HbA1c glycated hemoglobin inclusion criteria",
+      "country": null,
+      "status": null,
+      "search": {
+        "requested_mode": "semantic",
+        "actual_mode": "semantic",
+        "status": "ok",
+        "latency_ms": 27.021,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT00727896",
+          "chunk_id": "NCT00727896:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00727896",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 348,
+          "text": "Inclusion Criteria:\n\n* Male or female, 30-65 yrs of age at the time of entry and have type 2 diabetes for a minimum period of 5 years.\n* HbA1C ranging 8.0-10.0%\n* Patients either receiving OHA and / or insulin\n\nExclusion Criteria:\n\n* Type 1 diabetes\n* Patients with history of blindness, decreased vision\n* Serious vascular complications :\n* Cancer",
+          "title": "\"Information Technology Methodology for Patient Motivation in Diabetes Management.\"",
+          "countries": [
+            "India"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Type 2 Diabetes"
+          ],
+          "score": 0.596835,
+          "actual_mode": "semantic",
+          "bm25_score": 5.848696,
+          "semantic_score": 0.596835,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07321678",
+          "chunk_id": "NCT07321678:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07321678",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 620,
+          "text": "Inclusion Criteria:\n\n* Have Type 2 Diabetes (T2D)\n* Have HbA1c ≥7.0% to ≤10.5% as determined by the central laboratory at screening.\n* Stable body weight (less than 5% self-reported change within the previous 3 months).\n* Have a BMI ≥23.0 kilogram/square meter (kg/m²) at screening.\n\nExclusion Criteria:\n\n* Have any prior diagnosis of type 1 diabetes mellitus (T1DM), or rare forms of diabetes mellitus\n* Have had more than 1 episode of severe hypoglycemia\n* Have poorly controlled hypertension\n* Have acute or chronic hepatitis and pancreatitis\n* Have evidence of a significant active and uncontrolled medical condition",
+          "title": "A Study to Evaluate the Efficacy, Safety, and Tolerability of ASC30 Tablets in Participants With Type 2 Diabetes Mellitus",
+          "countries": [
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "T2DM (Type 2 Diabetes Mellitus)"
+          ],
+          "score": 0.5535818,
+          "actual_mode": "semantic",
+          "bm25_score": 4.7670025,
+          "semantic_score": 0.5535818,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT02065674",
+          "chunk_id": "NCT02065674:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT02065674",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 240,
+          "text": "Inclusion Criteria:\n\nInclusion Criteria Age 30 Years above Both Sexes NIDDM FBS - 110-300mg/dl HbA1c above ≤ 6.5\n\n\\-\n\nExclusion Criteria:\n\n* Patient with major complications like diabetic retinopathy and cardiomyopathy. IDDM HbA1c above 11%",
+          "title": "Therapeutic Efficacy of \"Abroma Agusta\" in HbA1c % in NIDDM",
+          "countries": [
+            "India"
+          ],
+          "status": "AVAILABLE",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.5479162,
+          "actual_mode": "semantic",
+          "bm25_score": 8.2458334,
+          "semantic_score": 0.5479162,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT05659537",
+          "chunk_id": "NCT05659537:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT05659537",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 693,
+          "text": "Inclusion Criteria:\n\n* Have a diagnosis of type 2 diabetes mellitus (T2DM) of at least 1-year duration currently treated with stable doses of oral antihyperglycemic medications with or without stable doses of basal or premix insulin for the last 3 months prior to screening\n* Have hemoglobin A1c (HbA1c) greater than or equal to (≥) 7.5 percent (%) and less than or equal to (≤) 11.5%, both inclusive, at screening\n* Have body mass index (BMI) ≥ 23 kilogram/square meter (kg/m²)\n\nExclusion Criteria:\n\n* A diagnosis of type 1 diabetes mellitus (T1DM) or latent autoimmune diabetes, or specific type of diabetes other than T2DM\n* Been treated with antihyperglycemic medication like glucagon-like",
+          "title": "A Study of Dulaglutide (LY2189265) in Participants With Type 2 Diabetes Mellitus in India",
+          "countries": [
+            "India"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Diabetes Mellitus, Type 2"
+          ],
+          "score": 0.5349243,
+          "actual_mode": "semantic",
+          "bm25_score": 6.9600569,
+          "semantic_score": 0.5349243,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT03760991",
+          "chunk_id": "NCT03760991:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT03760991",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 695,
+          "text": "Inclusion criteria :\n\n* Participants with type 2 diabetes mellitus.\n* Participants on \"standard of care\" basal insulin therapy administered once or twice daily, as per labeling for at least 6 months prior to screening visit, with or without other antidiabetics approved for using with insulin.\n* Glycated hemoglobin (HbA1c) between 7.5% (58 mmol/mol) and 10% (86 mmol/mol) inclusive, during screening.\n* Fasting plasma glucose values above 130 mg/dL.\n\nExclusion criteria:\n\n* Unstable basal insulin regimen in the last 8 weeks prior to screening visit (ie, type of insulin and time/frequency of the injection, insulin doses \\[variation more than ±20%\\]).\n* Treatment with insulin other than basal",
+          "title": "Evaluation of the Efficacy and Safety of Insulin Glargine 300 U/mL in Patients With Type 2 Diabetes Mellitus Uncontrolled on Other Kinds of Insulin",
+          "countries": [
+            "Argentina",
+            "Colombia",
+            "Egypt",
+            "Hong Kong",
+            "India",
+            "Indonesia",
+            "Lebanon",
+            "Malaysia",
+            "Peru",
+            "Philippines",
+            "Saudi Arabia",
+            "South Africa",
+            "Thailand",
+            "Turkey (Türkiye)"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Type 2 Diabetes Mellitus"
+          ],
+          "score": 0.5285138,
+          "actual_mode": "semantic",
+          "bm25_score": 10.6306293,
+          "semantic_score": 0.5285138,
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "query": "diabetes treatment",
+      "country": "India",
+      "status": "RECRUITING",
+      "search": {
+        "requested_mode": "semantic",
+        "actual_mode": "semantic",
+        "status": "ok",
+        "latency_ms": 7.295,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:description:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "description",
+          "start": 0,
+          "end": 588,
+          "text": "This is a phase II, randomized, double-blind, placebo-controlled study to evaluate the efficacy and tolerability of GL0034 among type II diabetes mellitus subjects who are obese or overweight with weight-related comorbidities. Subjects will be put on either one of the four treatment arms (GL0034, once a week, subcutaneous injection) or placebo arm (once a week, subcutaneous injection) following initial dose-up titration that takes up to approximately 20 weeks. The primary end point is change in HbA1c levels from baseline (Week 0) to Week 36 following treatments in all participants.",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.4952392,
+          "actual_mode": "semantic",
+          "bm25_score": 2.5384182,
+          "semantic_score": 0.4952392,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:title:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "title",
+          "start": 0,
+          "end": 90,
+          "text": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.4887739,
+          "actual_mode": "semantic",
+          "bm25_score": 1.9162297,
+          "semantic_score": 0.4887739,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07495787",
+          "chunk_id": "NCT07495787:eligibility_text:1",
+          "source_url": "https://clinicaltrials.gov/study/NCT07495787",
+          "source_field": "eligibility_text",
+          "start": 567,
+          "end": 1265,
+          "text": " and less than 10.5% in at least one laboratory analysis conducted within the past 3 months, typically associated with a recommendation by patient's primary care physician and/or endocrinologist for intensification of treatment beyond oral medications\n  6. Currently taking oral combination therapy for T2DM\n  7. At least 12 months of experience with Diabetes Self-Management and Support\n\nExclusion Criteria:\n\n* 1\\. Pregnancy or breastfeeding mothers, or individuals planning to become pregnant in next 9-12 months 2. Vulnerable individuals (mentally disabled, physically disabled, prisoner, etc.) 3. Current enrolment in another research study or previous participation within 30 days of enrolment",
+          "title": "Magnetic Compression Anastomosis Procedure for Partial Jejunoileal Anastomosis: Assessing the Viability of an Innovative Metabolic Approach",
+          "countries": [
+            "India"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Diabete Type 2"
+          ],
+          "score": 0.4754157,
+          "actual_mode": "semantic",
+          "bm25_score": 2.4492621,
+          "semantic_score": 0.4754157,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:eligibility_text:13",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "eligibility_text",
+          "start": 7483,
+          "end": 8179,
+          "text": "7 days prior to screening is allowed. Prior insulin treatment for gestational diabetes is also allowed.\n24. Participants who have used medications in the family of GLP-1 agonists in the past.\n25. Treatment with any herbal diet supplements, over-the-counter diet medications as an attempt to lose weight within 90 days before screening.\n26. Treatment with orlistat, lorcaserin, zonisamide, topiramate, phentermine, buproprion, or naltrexone that could promote weight loss within 90 days before screening.\n27. Participation in any organized or online weight-reduction program (i.e. Weight Watchers) within 90 days before screening.\n28. Screening calcitonin ≥50 ng/L (pg/mL).\n29. Participants having",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.4617639,
+          "actual_mode": "semantic",
+          "bm25_score": 3.3752649,
+          "semantic_score": 0.4617639,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:eligibility_text:12",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "eligibility_text",
+          "start": 6907,
+          "end": 7603,
+          "text": "l withdrawal symptoms ± institutionalized/hospitalized due to alcohol use ± binge drinking with \\>5 standard drinks on a single occasion in men or \\>4 standard drinks on a single occasion in women).\n22. Participants are taking, or will start, medications with narrow therapeutic index such as digoxin, warfarin, etc, or those that will prolong QTc interval.\n23. Participants received any medications for the treatment of type II diabetes mellitus other than those stated in the inclusion criteria within 90 days before screening. Short-term insulin treatment for a maximum of 7 days prior to screening is allowed. Prior insulin treatment for gestational diabetes is also allowed.\n24. Participants",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.4595372,
+          "actual_mode": "semantic",
+          "bm25_score": 3.8746177,
+          "semantic_score": 0.4595372,
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "query": "body mass index BMI",
+      "country": "United States",
+      "status": null,
+      "search": {
+        "requested_mode": "semantic",
+        "actual_mode": "semantic",
+        "status": "ok",
+        "latency_ms": 8.085,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT02326129",
+          "chunk_id": "NCT02326129:description:4",
+          "source_url": "https://clinicaltrials.gov/study/NCT02326129",
+          "source_field": "description",
+          "start": 2302,
+          "end": 2963,
+          "text": "c profiles in 24 hour and spot urine samples.\n\nThe study population will include 50 obese adolescents with T2D, 50 obese adolescents without T2D and 50 age, gender, race and pubertal status-matched normal weight controls. The subjects will be recruited at the Healthy Lifestyle Program at Duke, Diabetes Clinics at Lenox Baker Children's Hospital and Roxboro Clinics.\n\nStudy activities include physical exam and medical history, vitals, laboratory tests (only for obese adolescents), urine testing for sugar (only for normal weight adolescents), 24 hour urine collection, spot urine collection, body fat content measurement, and food and activity questionnaire.",
+          "title": "Novel Biomarker for Development of T2D",
+          "countries": [
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Diabetes Type II"
+          ],
+          "score": 0.3773779,
+          "actual_mode": "semantic",
+          "bm25_score": 2.0789855,
+          "semantic_score": 0.3773779,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT00997152",
+          "chunk_id": "NCT00997152:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00997152",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 654,
+          "text": "Inclusion Criteria:\n\n1. Have type 2 diabetes;\n2. Body mass index (BMI) of ≤ 45.0 kg/m2;\n3. Are either untreated with respect to hypoglycemic agents OR are currently being treated with a stable dose of metformin alone.\n\nExclusion Criteria:\n\n1. Females who are pregnant or breast-feeding;\n2. Known medical history or presence of type 1 diabetes or pancreatitis, acute metabolic diabetic complications, presence of unstable or rapidly progressing retinopathy, nephropathy or neuropathy;\n3. Acute coronary syndrome or uncontrolled hypertension;\n4. Does not meet all diet or previous/concomitant medication restrictions criteria, as described in the protocol.",
+          "title": "Efficacy and Safety Study of JTT-654 in Type 2 Diabetic Patients",
+          "countries": [
+            "United States"
+          ],
+          "status": "TERMINATED",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.3698995,
+          "actual_mode": "semantic",
+          "bm25_score": 9.8402484,
+          "semantic_score": 0.3698995,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT03478202",
+          "chunk_id": "NCT03478202:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT03478202",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 697,
+          "text": "Inclusion Criteria:\n\n* Age ≥ 18 years and ≤ 69 years\n* Diagnosis of type 2 diabetes mellitus at least six months prior to enrollment\n* Currently being treated for type 2 diabetes mellitus with oral medication or diet therapy\n* Oral medications or diet therapy for diabetes stable for at least three months prior to enrollment\n* Body mass index (BMI) ≥ 30 and ≤ 45 kg/m2\n* Have the ability to engage in at least 15 minutes of moderate physical activity such as brisk walking\n* Willing to comply with study procedures described herein\n\nExclusion Criteria:\n\n* Current uncontrolled type 2 diabetes (clinically significant increases in FBG or HbA1c in the past 6 months, as determined by a physician or",
+          "title": "GOLO Open-Label Pilot 1",
+          "countries": [
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Diabetes Mellitus, Type II"
+          ],
+          "score": 0.355687,
+          "actual_mode": "semantic",
+          "bm25_score": 9.1851716,
+          "semantic_score": 0.355687,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT02326129",
+          "chunk_id": "NCT02326129:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT02326129",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 696,
+          "text": "Inclusion criteria:\n\n1. Obese/Overweight adolescents/young adults without T2D who are having their first visit to the Healthy Lifestyle Program at Duke or Obese/Overweight adolescents/young adults without T2D recruited from the community at PBRC\n2. Obese/Overweight adolescents/young adults with prediabetes (HbA1c between 5.7-6.4%) and T2D (HbA1c≥6.5%)followed at Diabetes Clinics or recruited from the community at PBRC\n3. Age, gender, race and pubertal status matched normal weight adolescents presenting for \"well child check\" at Roxboro Clinics\n4. ≥12 to 21 (inclusive) years of age for urine studies\n5. 18-21 years of age obese adolescents/young adults without T2D and age, gender, race and",
+          "title": "Novel Biomarker for Development of T2D",
+          "countries": [
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Diabetes Type II"
+          ],
+          "score": 0.3445112,
+          "actual_mode": "semantic",
+          "bm25_score": 0.0,
+          "semantic_score": 0.3445112,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07385547",
+          "chunk_id": "NCT07385547:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07385547",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 692,
+          "text": "Inclusion Criteria:\n\n1. Participant is willing and able to sign a written or electronic informed consent.\n2. Participant is an adult male or female, aged between 18 and 80 years of age, inclusive, at the time of screening.\n3. Participant has eGFR as defined by CKD-EPI equation and converted to the unit of mL/min according to the following ranges:\n\n   * eGFR ≥ 90 mL/min;\n   * eGFR ≥ 30-59 mL/min;\n   * eGFR \\< 30 mL/min, not on dialysis;\n   * eGFR \\< 30 mL/min, on intermittent hemodialysis.\n4. Participant has a body mass index ≥ 18 kg/m2 and ≤ 42 kg/m2 at the Screening visit.\n5. Contraception requirements:\n\n   Female participants must:\n\n   If of reproductive age and sexually active, be",
+          "title": "Study to Evaluate if Exposure to Drug is Impacted in Participants With Renal Insufficiency",
+          "countries": [
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.3375242,
+          "actual_mode": "semantic",
+          "bm25_score": 6.9327852,
+          "semantic_score": 0.3375242,
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "query": "HbA1c glycated hemoglobin inclusion criteria",
+      "country": null,
+      "status": null,
+      "search": {
+        "requested_mode": "hybrid",
+        "actual_mode": "hybrid",
+        "status": "ok",
+        "latency_ms": 9.008,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT03760991",
+          "chunk_id": "NCT03760991:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT03760991",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 695,
+          "text": "Inclusion criteria :\n\n* Participants with type 2 diabetes mellitus.\n* Participants on \"standard of care\" basal insulin therapy administered once or twice daily, as per labeling for at least 6 months prior to screening visit, with or without other antidiabetics approved for using with insulin.\n* Glycated hemoglobin (HbA1c) between 7.5% (58 mmol/mol) and 10% (86 mmol/mol) inclusive, during screening.\n* Fasting plasma glucose values above 130 mg/dL.\n\nExclusion criteria:\n\n* Unstable basal insulin regimen in the last 8 weeks prior to screening visit (ie, type of insulin and time/frequency of the injection, insulin doses \\[variation more than ±20%\\]).\n* Treatment with insulin other than basal",
+          "title": "Evaluation of the Efficacy and Safety of Insulin Glargine 300 U/mL in Patients With Type 2 Diabetes Mellitus Uncontrolled on Other Kinds of Insulin",
+          "countries": [
+            "Argentina",
+            "Colombia",
+            "Egypt",
+            "Hong Kong",
+            "India",
+            "Indonesia",
+            "Lebanon",
+            "Malaysia",
+            "Peru",
+            "Philippines",
+            "Saudi Arabia",
+            "South Africa",
+            "Thailand",
+            "Turkey (Türkiye)"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Type 2 Diabetes Mellitus"
+          ],
+          "score": 0.0317781,
+          "actual_mode": "hybrid",
+          "bm25_score": 10.6306293,
+          "semantic_score": 0.5285138,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT02065674",
+          "chunk_id": "NCT02065674:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT02065674",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 240,
+          "text": "Inclusion Criteria:\n\nInclusion Criteria Age 30 Years above Both Sexes NIDDM FBS - 110-300mg/dl HbA1c above ≤ 6.5\n\n\\-\n\nExclusion Criteria:\n\n* Patient with major complications like diabetic retinopathy and cardiomyopathy. IDDM HbA1c above 11%",
+          "title": "Therapeutic Efficacy of \"Abroma Agusta\" in HbA1c % in NIDDM",
+          "countries": [
+            "India"
+          ],
+          "status": "AVAILABLE",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.031498,
+          "actual_mode": "hybrid",
+          "bm25_score": 8.2458334,
+          "semantic_score": 0.5479162,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT05659537",
+          "chunk_id": "NCT05659537:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT05659537",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 693,
+          "text": "Inclusion Criteria:\n\n* Have a diagnosis of type 2 diabetes mellitus (T2DM) of at least 1-year duration currently treated with stable doses of oral antihyperglycemic medications with or without stable doses of basal or premix insulin for the last 3 months prior to screening\n* Have hemoglobin A1c (HbA1c) greater than or equal to (≥) 7.5 percent (%) and less than or equal to (≤) 11.5%, both inclusive, at screening\n* Have body mass index (BMI) ≥ 23 kilogram/square meter (kg/m²)\n\nExclusion Criteria:\n\n* A diagnosis of type 1 diabetes mellitus (T1DM) or latent autoimmune diabetes, or specific type of diabetes other than T2DM\n* Been treated with antihyperglycemic medication like glucagon-like",
+          "title": "A Study of Dulaglutide (LY2189265) in Participants With Type 2 Diabetes Mellitus in India",
+          "countries": [
+            "India"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Diabetes Mellitus, Type 2"
+          ],
+          "score": 0.0301178,
+          "actual_mode": "hybrid",
+          "bm25_score": 6.9600569,
+          "semantic_score": 0.5349243,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT00727896",
+          "chunk_id": "NCT00727896:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00727896",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 348,
+          "text": "Inclusion Criteria:\n\n* Male or female, 30-65 yrs of age at the time of entry and have type 2 diabetes for a minimum period of 5 years.\n* HbA1C ranging 8.0-10.0%\n* Patients either receiving OHA and / or insulin\n\nExclusion Criteria:\n\n* Type 1 diabetes\n* Patients with history of blindness, decreased vision\n* Serious vascular complications :\n* Cancer",
+          "title": "\"Information Technology Methodology for Patient Motivation in Diabetes Management.\"",
+          "countries": [
+            "India"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Type 2 Diabetes"
+          ],
+          "score": 0.029214,
+          "actual_mode": "hybrid",
+          "bm25_score": 5.848696,
+          "semantic_score": 0.596835,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT00901979",
+          "chunk_id": "NCT00901979:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00901979",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 185,
+          "text": "Inclusion Criteria:\n\n* HbA1c from 7.0-10.0%, Stable Metformin dose\n\nExclusion Criteria:\n\n* CHF Class III-IV, Liver disease\n\nOther protocol-defined inclusion/exclusion criteria may apply",
+          "title": "A 12 Week Study in Patients With Type 2 Diabetes Mellitus (T2DM)",
+          "countries": [
+            "Canada",
+            "Italy",
+            "Poland",
+            "Puerto Rico",
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Type 2 Diabetes Mellitus"
+          ],
+          "score": 0.0290099,
+          "actual_mode": "hybrid",
+          "bm25_score": 7.9258132,
+          "semantic_score": 0.5096581,
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "query": "diabetes treatment",
+      "country": "India",
+      "status": "RECRUITING",
+      "search": {
+        "requested_mode": "hybrid",
+        "actual_mode": "hybrid",
+        "status": "ok",
+        "latency_ms": 7.334,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:description:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "description",
+          "start": 0,
+          "end": 588,
+          "text": "This is a phase II, randomized, double-blind, placebo-controlled study to evaluate the efficacy and tolerability of GL0034 among type II diabetes mellitus subjects who are obese or overweight with weight-related comorbidities. Subjects will be put on either one of the four treatment arms (GL0034, once a week, subcutaneous injection) or placebo arm (once a week, subcutaneous injection) following initial dose-up titration that takes up to approximately 20 weeks. The primary end point is change in HbA1c levels from baseline (Week 0) to Week 36 following treatments in all participants.",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.0322665,
+          "actual_mode": "hybrid",
+          "bm25_score": 2.5384182,
+          "semantic_score": 0.4952392,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:eligibility_text:12",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "eligibility_text",
+          "start": 6907,
+          "end": 7603,
+          "text": "l withdrawal symptoms ± institutionalized/hospitalized due to alcohol use ± binge drinking with \\>5 standard drinks on a single occasion in men or \\>4 standard drinks on a single occasion in women).\n22. Participants are taking, or will start, medications with narrow therapeutic index such as digoxin, warfarin, etc, or those that will prolong QTc interval.\n23. Participants received any medications for the treatment of type II diabetes mellitus other than those stated in the inclusion criteria within 90 days before screening. Short-term insulin treatment for a maximum of 7 days prior to screening is allowed. Prior insulin treatment for gestational diabetes is also allowed.\n24. Participants",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.0317781,
+          "actual_mode": "hybrid",
+          "bm25_score": 3.8746177,
+          "semantic_score": 0.4595372,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:eligibility_text:13",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "eligibility_text",
+          "start": 7483,
+          "end": 8179,
+          "text": "7 days prior to screening is allowed. Prior insulin treatment for gestational diabetes is also allowed.\n24. Participants who have used medications in the family of GLP-1 agonists in the past.\n25. Treatment with any herbal diet supplements, over-the-counter diet medications as an attempt to lose weight within 90 days before screening.\n26. Treatment with orlistat, lorcaserin, zonisamide, topiramate, phentermine, buproprion, or naltrexone that could promote weight loss within 90 days before screening.\n27. Participation in any organized or online weight-reduction program (i.e. Weight Watchers) within 90 days before screening.\n28. Screening calcitonin ≥50 ng/L (pg/mL).\n29. Participants having",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.031754,
+          "actual_mode": "hybrid",
+          "bm25_score": 3.3752649,
+          "semantic_score": 0.4617639,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07495787",
+          "chunk_id": "NCT07495787:eligibility_text:1",
+          "source_url": "https://clinicaltrials.gov/study/NCT07495787",
+          "source_field": "eligibility_text",
+          "start": 567,
+          "end": 1265,
+          "text": " and less than 10.5% in at least one laboratory analysis conducted within the past 3 months, typically associated with a recommendation by patient's primary care physician and/or endocrinologist for intensification of treatment beyond oral medications\n  6. Currently taking oral combination therapy for T2DM\n  7. At least 12 months of experience with Diabetes Self-Management and Support\n\nExclusion Criteria:\n\n* 1\\. Pregnancy or breastfeeding mothers, or individuals planning to become pregnant in next 9-12 months 2. Vulnerable individuals (mentally disabled, physically disabled, prisoner, etc.) 3. Current enrolment in another research study or previous participation within 30 days of enrolment",
+          "title": "Magnetic Compression Anastomosis Procedure for Partial Jejunoileal Anastomosis: Assessing the Viability of an Innovative Metabolic Approach",
+          "countries": [
+            "India"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Diabete Type 2"
+          ],
+          "score": 0.031498,
+          "actual_mode": "hybrid",
+          "bm25_score": 2.4492621,
+          "semantic_score": 0.4754157,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07282743",
+          "chunk_id": "NCT07282743:title:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07282743",
+          "source_field": "title",
+          "start": 0,
+          "end": 90,
+          "text": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "title": "Efficacy and Safety of GL0034 in Overweight or Obese Adults With Type II Diabetes Mellitus",
+          "countries": [
+            "India",
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.0308349,
+          "actual_mode": "hybrid",
+          "bm25_score": 1.9162297,
+          "semantic_score": 0.4887739,
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "query": "body mass index BMI",
+      "country": "United States",
+      "status": null,
+      "search": {
+        "requested_mode": "hybrid",
+        "actual_mode": "hybrid",
+        "status": "ok",
+        "latency_ms": 7.895,
+        "result_count": 5
+      },
+      "hits": [
+        {
+          "study_id": "NCT00997152",
+          "chunk_id": "NCT00997152:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00997152",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 654,
+          "text": "Inclusion Criteria:\n\n1. Have type 2 diabetes;\n2. Body mass index (BMI) of ≤ 45.0 kg/m2;\n3. Are either untreated with respect to hypoglycemic agents OR are currently being treated with a stable dose of metformin alone.\n\nExclusion Criteria:\n\n1. Females who are pregnant or breast-feeding;\n2. Known medical history or presence of type 1 diabetes or pancreatitis, acute metabolic diabetic complications, presence of unstable or rapidly progressing retinopathy, nephropathy or neuropathy;\n3. Acute coronary syndrome or uncontrolled hypertension;\n4. Does not meet all diet or previous/concomitant medication restrictions criteria, as described in the protocol.",
+          "title": "Efficacy and Safety Study of JTT-654 in Type 2 Diabetic Patients",
+          "countries": [
+            "United States"
+          ],
+          "status": "TERMINATED",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.0322581,
+          "actual_mode": "hybrid",
+          "bm25_score": 9.8402484,
+          "semantic_score": 0.3698995,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT03478202",
+          "chunk_id": "NCT03478202:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT03478202",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 697,
+          "text": "Inclusion Criteria:\n\n* Age ≥ 18 years and ≤ 69 years\n* Diagnosis of type 2 diabetes mellitus at least six months prior to enrollment\n* Currently being treated for type 2 diabetes mellitus with oral medication or diet therapy\n* Oral medications or diet therapy for diabetes stable for at least three months prior to enrollment\n* Body mass index (BMI) ≥ 30 and ≤ 45 kg/m2\n* Have the ability to engage in at least 15 minutes of moderate physical activity such as brisk walking\n* Willing to comply with study procedures described herein\n\nExclusion Criteria:\n\n* Current uncontrolled type 2 diabetes (clinically significant increases in FBG or HbA1c in the past 6 months, as determined by a physician or",
+          "title": "GOLO Open-Label Pilot 1",
+          "countries": [
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Diabetes Mellitus, Type II"
+          ],
+          "score": 0.0307984,
+          "actual_mode": "hybrid",
+          "bm25_score": 9.1851716,
+          "semantic_score": 0.355687,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT00929539",
+          "chunk_id": "NCT00929539:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT00929539",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 655,
+          "text": "Inclusion Criteria:\n\n1. Have type 2 diabetes;\n2. Body mass index (BMI) of \\> 27.0 kg/m2 and ≤ 45.0 kg/m2;\n3. Are either drug naïve with respect to hypoglycemic agents OR are currently being treated with metformin alone or in combination with a sulfonylurea. Metformin and sulfonylurea dosing must be stable.\n\nExclusion Criteria:\n\n1. Females who are pregnant or breast-feeding\n2. Known medical history or presence of type 1 diabetes, pancreatitis, unstable or rapidly progressing retinopathy, nephropathy or neuropathy;\n3. Acute coronary syndrome or uncontrolled hypertension;\n4. Does not meet medication restriction criteria, as described in the protocol.",
+          "title": "Safety and Efficacy Study of JTT-130 in Obese Type 2 Diabetic Patients",
+          "countries": [
+            "Czechia",
+            "Hungary",
+            "Netherlands",
+            "Russia",
+            "United States"
+          ],
+          "status": "COMPLETED",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.0297619,
+          "actual_mode": "hybrid",
+          "bm25_score": 9.6921272,
+          "semantic_score": 0.3050465,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT07385547",
+          "chunk_id": "NCT07385547:eligibility_text:0",
+          "source_url": "https://clinicaltrials.gov/study/NCT07385547",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 692,
+          "text": "Inclusion Criteria:\n\n1. Participant is willing and able to sign a written or electronic informed consent.\n2. Participant is an adult male or female, aged between 18 and 80 years of age, inclusive, at the time of screening.\n3. Participant has eGFR as defined by CKD-EPI equation and converted to the unit of mL/min according to the following ranges:\n\n   * eGFR ≥ 90 mL/min;\n   * eGFR ≥ 30-59 mL/min;\n   * eGFR \\< 30 mL/min, not on dialysis;\n   * eGFR \\< 30 mL/min, on intermittent hemodialysis.\n4. Participant has a body mass index ≥ 18 kg/m2 and ≤ 42 kg/m2 at the Screening visit.\n5. Contraception requirements:\n\n   Female participants must:\n\n   If of reproductive age and sexually active, be",
+          "title": "Study to Evaluate if Exposure to Drug is Impacted in Participants With Renal Insufficiency",
+          "countries": [
+            "United States"
+          ],
+          "status": "RECRUITING",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.0294691,
+          "actual_mode": "hybrid",
+          "bm25_score": 6.9327852,
+          "semantic_score": 0.3375242,
+          "fallback_reason": null
+        },
+        {
+          "study_id": "NCT01546844",
+          "chunk_id": "NCT01546844:description:3",
+          "source_url": "https://clinicaltrials.gov/study/NCT01546844",
+          "source_field": "description",
+          "start": 1724,
+          "end": 2423,
+          "text": "vements in clinical, utilization and satisfaction outcomes for patients with DM compared to patient who receive standard care.\n2. Evaluating if an SMS protocol can be readily adopted by an adult population in both urban and rural areas with a time-consuming chronic illness.\n\nTargeted outcomes include:\n\n1. Improved measures of diabetes control, demonstrated as HbA1c percentage levels ≤ 8%; improved blood pressure (BP) control, demonstrated as BP ≤ 140/90 millimeters mercury (mm Hg); and lower body mass index (BMI) among users of the SMS-based tool.\n2. Improved knowledge of self-care and disease management practices among adult patients with diabetes treated in Beacon clinics in the Salt Lake",
+          "title": "Mobile Health Technology as an Intervention for Diabetes Self-Management",
+          "countries": [
+            "United States"
+          ],
+          "status": "UNKNOWN",
+          "conditions": [
+            "Type II Diabetes Mellitus"
+          ],
+          "score": 0.0291385,
+          "actual_mode": "hybrid",
+          "bm25_score": 9.2733628,
+          "semantic_score": 0.3010466,
+          "fallback_reason": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+  "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+  "source_api": "https://clinicaltrials.gov/api/v2/studies",
+  "query": {
+    "format": "json",
+    "query.cond": "Type 2 Diabetes",
+    "query.locn": "India",
+    "sort": "@relevance",
+    "countTotal": "true",
+    "pageSize": 20
+  },
+  "query_region": "India",
+  "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+  "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+}

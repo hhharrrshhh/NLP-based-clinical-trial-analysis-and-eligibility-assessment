@@ -1,0 +1,7 @@
+# Preserve snapshot bytes and the source/report fingerprints across checkouts.
+# Python, JSON and PowerShell readers support the retained original line endings.
+* -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
+# Original/public snapshots and measured exports retain source whitespace.
+data/** -whitespace
+reports/** -whitespace
+legacy/** -whitespace

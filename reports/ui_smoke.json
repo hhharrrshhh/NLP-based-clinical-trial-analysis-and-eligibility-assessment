@@ -1,0 +1,77 @@
+{
+  "run_at_utc": "2026-10-18T09:12:12.123725+00:00",
+  "method": "Streamlit AppTest against live FastAPI, no mocked HTTP",
+  "actions": [
+    {
+      "action": "page:Overview",
+      "status": "passed"
+    },
+    {
+      "action": "page:Explore Trials",
+      "status": "passed"
+    },
+    {
+      "action": "country_filter",
+      "status": "passed"
+    },
+    {
+      "action": "page:NLP Laboratory",
+      "status": "passed"
+    },
+    {
+      "action": "Analyze eligibility",
+      "status": "passed"
+    },
+    {
+      "action": "page:India & US Comparison",
+      "status": "passed"
+    },
+    {
+      "action": "Compare protocols",
+      "status": "passed"
+    },
+    {
+      "action": "page:Synthetic Evaluation",
+      "status": "passed"
+    },
+    {
+      "action": "Evaluate known criteria",
+      "status": "passed"
+    },
+    {
+      "action": "page:Research Assistant",
+      "status": "passed"
+    },
+    {
+      "action": "Find source evidence",
+      "status": "passed"
+    },
+    {
+      "action": "page:Evaluation Dashboard",
+      "status": "passed"
+    },
+    {
+      "action": "page:Download Reports",
+      "status": "passed"
+    },
+    {
+      "action": "Prepare report",
+      "status": "passed"
+    },
+    {
+      "action": "Prepare report",
+      "status": "passed"
+    },
+    {
+      "action": "Prepare report",
+      "status": "passed"
+    },
+    {
+      "action": "Refresh corpus",
+      "status": "passed"
+    }
+  ],
+  "status": "passed",
+  "elapsed_seconds": 4.802,
+  "scope": "All eight pages, country filter, transformer extraction, comparison, synthetic form, hybrid assistant with local generated draft, all three report formats, refresh. Actual browser download click is separate manual QA."
+}

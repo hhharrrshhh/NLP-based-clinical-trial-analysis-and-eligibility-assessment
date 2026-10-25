@@ -1,0 +1,10614 @@
+{
+  "run_at_utc": "2026-10-18T08:45:12.264852+00:00",
+  "status": "completed",
+  "experiment": "Frozen biomedical encoder with supervised CHIA BIO linear head",
+  "dataset": "CHIA v2 with_scope",
+  "source_download_url": "https://ndownloader.figshare.com/files/21728850",
+  "license": "CC BY 4.0",
+  "citation": "Kury et al. (2020), Chia Annotated Datasets, https://doi.org/10.6084/m9.figshare.11855817.v2",
+  "source_archive_sha256": "b51ec05ba42a3805daf9581dd22a305986f7c5ae3ca4dad36b70d37970fb69b2",
+  "label_provenance": "Published CHIA human Condition/Drug/Procedure annotations, validated against original CRLF-preserved text",
+  "encoder": {
+    "model_id": "d4data/biomedical-ner-all",
+    "revision": "015a4050c9ac99722e61c547aa9b4282bcbedc7f",
+    "frozen": true
+  },
+  "head": {
+    "architecture": "Linear(768, 7)",
+    "trainable_parameters": 5383,
+    "labels": [
+      "O",
+      "B-Condition",
+      "I-Condition",
+      "B-Drug",
+      "I-Drug",
+      "B-Procedure",
+      "I-Procedure"
+    ],
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "epochs": 8,
+    "selected_epoch": 8,
+    "selection": "Highest development exact-span micro F1; earlier epoch on tie",
+    "class_weights": [
+      0.4466104805469513,
+      1.7423396110534668,
+      1.0693702697753906,
+      3.151614189147949,
+      1.843884825706482,
+      3.1188082695007324,
+      1.8731701374053955
+    ],
+    "class_token_counts": [
+      16483,
+      1083,
+      2875,
+      331,
+      967,
+      338,
+      937
+    ],
+    "seed": 17,
+    "artifact": "models/adapted_chia_head/head.safetensors",
+    "artifact_sha256": "3420d5143a144e4b9d15fa5eaafcbca1d450a87e1c2e4ff8cf9c85b74371481a"
+  },
+  "split": {
+    "method": "Same SHA256 by-study partition as entity_benchmark; first 100 original-training studies train, next 20 dev, first 20 original-heldout studies test",
+    "study_ids": {
+      "train": [
+        "NCT03639519",
+        "NCT02536976",
+        "NCT02550769",
+        "NCT00926523",
+        "NCT02466113",
+        "NCT01929434",
+        "NCT02510404",
+        "NCT02394158",
+        "NCT02511574",
+        "NCT02515773",
+        "NCT02222272",
+        "NCT03495557",
+        "NCT02926235",
+        "NCT02607319",
+        "NCT02601157",
+        "NCT02715518",
+        "NCT02385045",
+        "NCT02621489",
+        "NCT02951832",
+        "NCT03056287",
+        "NCT03131050",
+        "NCT03297125",
+        "NCT02650388",
+        "NCT02698969",
+        "NCT03089086",
+        "NCT02055053",
+        "NCT02918409",
+        "NCT02567214",
+        "NCT02552459",
+        "NCT00455663",
+        "NCT03008005",
+        "NCT02498483",
+        "NCT03336801",
+        "NCT02580630",
+        "NCT02528604",
+        "NCT02281643",
+        "NCT03187379",
+        "NCT02596555",
+        "NCT02348918",
+        "NCT02604459",
+        "NCT03513874",
+        "NCT01228279",
+        "NCT03325023",
+        "NCT03122119",
+        "NCT03400735",
+        "NCT02430740",
+        "NCT03619707",
+        "NCT03317197",
+        "NCT02600000",
+        "NCT03212352",
+        "NCT02477280",
+        "NCT03366779",
+        "NCT02056301",
+        "NCT02283905",
+        "NCT03147599",
+        "NCT03476850",
+        "NCT02782702",
+        "NCT01799681",
+        "NCT02361892",
+        "NCT02558504",
+        "NCT02764476",
+        "NCT03624881",
+        "NCT02755701",
+        "NCT02269137",
+        "NCT03079141",
+        "NCT02413970",
+        "NCT03104816",
+        "NCT02939209",
+        "NCT02257580",
+        "NCT02606565",
+        "NCT02416765",
+        "NCT01822262",
+        "NCT03115320",
+        "NCT02884401",
+        "NCT03589105",
+        "NCT01184638",
+        "NCT02974686",
+        "NCT02620904",
+        "NCT03226080",
+        "NCT03250507",
+        "NCT03216447",
+        "NCT02429765",
+        "NCT02818816",
+        "NCT00994786",
+        "NCT02284737",
+        "NCT02035904",
+        "NCT02167022",
+        "NCT03637946",
+        "NCT03445949",
+        "NCT02609698",
+        "NCT02483715",
+        "NCT02995291",
+        "NCT02845427",
+        "NCT02952378",
+        "NCT03225469",
+        "NCT03099863",
+        "NCT01391780",
+        "NCT02903407",
+        "NCT03338296",
+        "NCT03465397"
+      ],
+      "dev": [
+        "NCT02488057",
+        "NCT02634541",
+        "NCT00785213",
+        "NCT03223909",
+        "NCT02202369",
+        "NCT03247413",
+        "NCT02315287",
+        "NCT02901106",
+        "NCT03497598",
+        "NCT02106598",
+        "NCT02851303",
+        "NCT02242188",
+        "NCT02893228",
+        "NCT02894268",
+        "NCT03064867",
+        "NCT02072811",
+        "NCT03555526",
+        "NCT02957877",
+        "NCT02175186",
+        "NCT00445029"
+      ],
+      "test": [
+        "NCT00236340",
+        "NCT02810704",
+        "NCT02003339",
+        "NCT03460002",
+        "NCT02783859",
+        "NCT02106624",
+        "NCT02653131",
+        "NCT02732080",
+        "NCT00904202",
+        "NCT02607748",
+        "NCT02905734",
+        "NCT03264911",
+        "NCT03463564",
+        "NCT03350659",
+        "NCT02301962",
+        "NCT02481518",
+        "NCT03011476",
+        "NCT00806273",
+        "NCT02256956",
+        "NCT03138577"
+      ]
+    },
+    "document_counts": {
+      "train": 200,
+      "dev": 40,
+      "test": 40
+    },
+    "document_ids": {
+      "train": [
+        "NCT03639519_exc",
+        "NCT03639519_inc",
+        "NCT02536976_exc",
+        "NCT02536976_inc",
+        "NCT02550769_exc",
+        "NCT02550769_inc",
+        "NCT00926523_exc",
+        "NCT00926523_inc",
+        "NCT02466113_exc",
+        "NCT02466113_inc",
+        "NCT01929434_exc",
+        "NCT01929434_inc",
+        "NCT02510404_exc",
+        "NCT02510404_inc",
+        "NCT02394158_exc",
+        "NCT02394158_inc",
+        "NCT02511574_exc",
+        "NCT02511574_inc",
+        "NCT02515773_exc",
+        "NCT02515773_inc",
+        "NCT02222272_exc",
+        "NCT02222272_inc",
+        "NCT03495557_exc",
+        "NCT03495557_inc",
+        "NCT02926235_exc",
+        "NCT02926235_inc",
+        "NCT02607319_exc",
+        "NCT02607319_inc",
+        "NCT02601157_exc",
+        "NCT02601157_inc",
+        "NCT02715518_exc",
+        "NCT02715518_inc",
+        "NCT02385045_exc",
+        "NCT02385045_inc",
+        "NCT02621489_exc",
+        "NCT02621489_inc",
+        "NCT02951832_exc",
+        "NCT02951832_inc",
+        "NCT03056287_exc",
+        "NCT03056287_inc",
+        "NCT03131050_exc",
+        "NCT03131050_inc",
+        "NCT03297125_exc",
+        "NCT03297125_inc",
+        "NCT02650388_exc",
+        "NCT02650388_inc",
+        "NCT02698969_exc",
+        "NCT02698969_inc",
+        "NCT03089086_exc",
+        "NCT03089086_inc",
+        "NCT02055053_exc",
+        "NCT02055053_inc",
+        "NCT02918409_exc",
+        "NCT02918409_inc",
+        "NCT02567214_exc",
+        "NCT02567214_inc",
+        "NCT02552459_exc",
+        "NCT02552459_inc",
+        "NCT00455663_exc",
+        "NCT00455663_inc",
+        "NCT03008005_exc",
+        "NCT03008005_inc",
+        "NCT02498483_exc",
+        "NCT02498483_inc",
+        "NCT03336801_exc",
+        "NCT03336801_inc",
+        "NCT02580630_exc",
+        "NCT02580630_inc",
+        "NCT02528604_exc",
+        "NCT02528604_inc",
+        "NCT02281643_exc",
+        "NCT02281643_inc",
+        "NCT03187379_exc",
+        "NCT03187379_inc",
+        "NCT02596555_exc",
+        "NCT02596555_inc",
+        "NCT02348918_exc",
+        "NCT02348918_inc",
+        "NCT02604459_exc",
+        "NCT02604459_inc",
+        "NCT03513874_exc",
+        "NCT03513874_inc",
+        "NCT01228279_exc",
+        "NCT01228279_inc",
+        "NCT03325023_exc",
+        "NCT03325023_inc",
+        "NCT03122119_exc",
+        "NCT03122119_inc",
+        "NCT03400735_exc",
+        "NCT03400735_inc",
+        "NCT02430740_exc",
+        "NCT02430740_inc",
+        "NCT03619707_exc",
+        "NCT03619707_inc",
+        "NCT03317197_exc",
+        "NCT03317197_inc",
+        "NCT02600000_exc",
+        "NCT02600000_inc",
+        "NCT03212352_exc",
+        "NCT03212352_inc",
+        "NCT02477280_exc",
+        "NCT02477280_inc",
+        "NCT03366779_exc",
+        "NCT03366779_inc",
+        "NCT02056301_exc",
+        "NCT02056301_inc",
+        "NCT02283905_exc",
+        "NCT02283905_inc",
+        "NCT03147599_exc",
+        "NCT03147599_inc",
+        "NCT03476850_exc",
+        "NCT03476850_inc",
+        "NCT02782702_exc",
+        "NCT02782702_inc",
+        "NCT01799681_exc",
+        "NCT01799681_inc",
+        "NCT02361892_exc",
+        "NCT02361892_inc",
+        "NCT02558504_exc",
+        "NCT02558504_inc",
+        "NCT02764476_exc",
+        "NCT02764476_inc",
+        "NCT03624881_exc",
+        "NCT03624881_inc",
+        "NCT02755701_exc",
+        "NCT02755701_inc",
+        "NCT02269137_exc",
+        "NCT02269137_inc",
+        "NCT03079141_exc",
+        "NCT03079141_inc",
+        "NCT02413970_exc",
+        "NCT02413970_inc",
+        "NCT03104816_exc",
+        "NCT03104816_inc",
+        "NCT02939209_exc",
+        "NCT02939209_inc",
+        "NCT02257580_exc",
+        "NCT02257580_inc",
+        "NCT02606565_exc",
+        "NCT02606565_inc",
+        "NCT02416765_exc",
+        "NCT02416765_inc",
+        "NCT01822262_exc",
+        "NCT01822262_inc",
+        "NCT03115320_exc",
+        "NCT03115320_inc",
+        "NCT02884401_exc",
+        "NCT02884401_inc",
+        "NCT03589105_exc",
+        "NCT03589105_inc",
+        "NCT01184638_exc",
+        "NCT01184638_inc",
+        "NCT02974686_exc",
+        "NCT02974686_inc",
+        "NCT02620904_exc",
+        "NCT02620904_inc",
+        "NCT03226080_exc",
+        "NCT03226080_inc",
+        "NCT03250507_exc",
+        "NCT03250507_inc",
+        "NCT03216447_exc",
+        "NCT03216447_inc",
+        "NCT02429765_exc",
+        "NCT02429765_inc",
+        "NCT02818816_exc",
+        "NCT02818816_inc",
+        "NCT00994786_exc",
+        "NCT00994786_inc",
+        "NCT02284737_exc",
+        "NCT02284737_inc",
+        "NCT02035904_exc",
+        "NCT02035904_inc",
+        "NCT02167022_exc",
+        "NCT02167022_inc",
+        "NCT03637946_exc",
+        "NCT03637946_inc",
+        "NCT03445949_exc",
+        "NCT03445949_inc",
+        "NCT02609698_exc",
+        "NCT02609698_inc",
+        "NCT02483715_exc",
+        "NCT02483715_inc",
+        "NCT02995291_exc",
+        "NCT02995291_inc",
+        "NCT02845427_exc",
+        "NCT02845427_inc",
+        "NCT02952378_exc",
+        "NCT02952378_inc",
+        "NCT03225469_exc",
+        "NCT03225469_inc",
+        "NCT03099863_exc",
+        "NCT03099863_inc",
+        "NCT01391780_exc",
+        "NCT01391780_inc",
+        "NCT02903407_exc",
+        "NCT02903407_inc",
+        "NCT03338296_exc",
+        "NCT03338296_inc",
+        "NCT03465397_exc",
+        "NCT03465397_inc"
+      ],
+      "dev": [
+        "NCT02488057_exc",
+        "NCT02488057_inc",
+        "NCT02634541_exc",
+        "NCT02634541_inc",
+        "NCT00785213_exc",
+        "NCT00785213_inc",
+        "NCT03223909_exc",
+        "NCT03223909_inc",
+        "NCT02202369_exc",
+        "NCT02202369_inc",
+        "NCT03247413_exc",
+        "NCT03247413_inc",
+        "NCT02315287_exc",
+        "NCT02315287_inc",
+        "NCT02901106_exc",
+        "NCT02901106_inc",
+        "NCT03497598_exc",
+        "NCT03497598_inc",
+        "NCT02106598_exc",
+        "NCT02106598_inc",
+        "NCT02851303_exc",
+        "NCT02851303_inc",
+        "NCT02242188_exc",
+        "NCT02242188_inc",
+        "NCT02893228_exc",
+        "NCT02893228_inc",
+        "NCT02894268_exc",
+        "NCT02894268_inc",
+        "NCT03064867_exc",
+        "NCT03064867_inc",
+        "NCT02072811_exc",
+        "NCT02072811_inc",
+        "NCT03555526_exc",
+        "NCT03555526_inc",
+        "NCT02957877_exc",
+        "NCT02957877_inc",
+        "NCT02175186_exc",
+        "NCT02175186_inc",
+        "NCT00445029_exc",
+        "NCT00445029_inc"
+      ],
+      "test": [
+        "NCT00236340_exc",
+        "NCT00236340_inc",
+        "NCT02810704_exc",
+        "NCT02810704_inc",
+        "NCT02003339_exc",
+        "NCT02003339_inc",
+        "NCT03460002_exc",
+        "NCT03460002_inc",
+        "NCT02783859_exc",
+        "NCT02783859_inc",
+        "NCT02106624_exc",
+        "NCT02106624_inc",
+        "NCT02653131_exc",
+        "NCT02653131_inc",
+        "NCT02732080_exc",
+        "NCT02732080_inc",
+        "NCT00904202_exc",
+        "NCT00904202_inc",
+        "NCT02607748_exc",
+        "NCT02607748_inc",
+        "NCT02905734_exc",
+        "NCT02905734_inc",
+        "NCT03264911_exc",
+        "NCT03264911_inc",
+        "NCT03463564_exc",
+        "NCT03463564_inc",
+        "NCT03350659_exc",
+        "NCT03350659_inc",
+        "NCT02301962_exc",
+        "NCT02301962_inc",
+        "NCT02481518_exc",
+        "NCT02481518_inc",
+        "NCT03011476_exc",
+        "NCT03011476_inc",
+        "NCT00806273_exc",
+        "NCT00806273_inc",
+        "NCT02256956_exc",
+        "NCT02256956_inc",
+        "NCT03138577_exc",
+        "NCT03138577_inc"
+      ]
+    },
+    "train_tokens": 23014,
+    "ignored_ambiguous_discontinuous_or_boundary_tokens": {
+      "train": 485,
+      "dev": 158,
+      "test": 124
+    },
+    "supervision": {
+      "train": {
+        "gold_spans": 1904,
+        "discontinuous_gold_spans": 121,
+        "tokens": 23499
+      },
+      "dev": {
+        "gold_spans": 404,
+        "discontinuous_gold_spans": 25,
+        "tokens": 4917
+      },
+      "test": {
+        "gold_spans": 328,
+        "discontinuous_gold_spans": 24,
+        "tokens": 4238
+      }
+    },
+    "excluded_invalid_documents": [],
+    "study_overlap": 0
+  },
+  "label_alignment": "Offsets on original UTF-8-decoded text with CRLF retained. All wordpieces inside a unique contiguous annotation receive B at the annotated start and I thereafter. Tokens intersecting overlapping/discontinuous annotations or crossing annotation boundaries use loss ignore_index=-100; other tokens receive O. Exact evaluation includes all mapped gold spans, including unrepresentable discontinuous spans.",
+  "history": [
+    {
+      "epoch": 1,
+      "training_loss": 1.2396859603451535,
+      "dev": {
+        "tp": 162,
+        "fp": 691,
+        "fn": 241,
+        "precision": 0.1899179366940211,
+        "recall": 0.40198511166253104,
+        "f1": 0.25796178343949044,
+        "false_negative_rate": 0.598014888337469,
+        "false_positive_rate": null,
+        "per_category": {
+          "Condition": {
+            "tp": 78,
+            "fp": 298,
+            "fn": 127,
+            "precision": 0.2074468085106383,
+            "recall": 0.3804878048780488,
+            "f1": 0.26850258175559377,
+            "false_negative_rate": 0.6195121951219512,
+            "false_positive_rate": null
+          },
+          "Drug": {
+            "tp": 61,
+            "fp": 156,
+            "fn": 63,
+            "precision": 0.28110599078341014,
+            "recall": 0.49193548387096775,
+            "f1": 0.35777126099706746,
+            "false_negative_rate": 0.5080645161290323,
+            "false_positive_rate": null
+          },
+          "Procedure": {
+            "tp": 23,
+            "fp": 237,
+            "fn": 51,
+            "precision": 0.08846153846153847,
+            "recall": 0.3108108108108108,
+            "f1": 0.1377245508982036,
+            "false_negative_rate": 0.6891891891891891,
+            "false_positive_rate": null
+          }
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "training_loss": 0.9718530320982396,
+      "dev": {
+        "tp": 180,
+        "fp": 664,
+        "fn": 223,
+        "precision": 0.2132701421800948,
+        "recall": 0.4466501240694789,
+        "f1": 0.2886928628708902,
+        "false_negative_rate": 0.5533498759305211,
+        "false_positive_rate": null,
+        "per_category": {
+          "Condition": {
+            "tp": 84,
+            "fp": 284,
+            "fn": 121,
+            "precision": 0.22826086956521738,
+            "recall": 0.4097560975609756,
+            "f1": 0.2931937172774869,
+            "false_negative_rate": 0.5902439024390244,
+            "false_positive_rate": null
+          },
+          "Drug": {
+            "tp": 75,
+            "fp": 143,
+            "fn": 49,
+            "precision": 0.3440366972477064,
+            "recall": 0.6048387096774194,
+            "f1": 0.4385964912280702,
+            "false_negative_rate": 0.3951612903225806,
+            "false_positive_rate": null
+          },
+          "Procedure": {
+            "tp": 21,
+            "fp": 237,
+            "fn": 53,
+            "precision": 0.08139534883720931,
+            "recall": 0.28378378378378377,
+            "f1": 0.12650602409638553,
+            "false_negative_rate": 0.7162162162162162,
+            "false_positive_rate": null
+          }
+        }
+      }
+    },
+    {
+      "epoch": 3,
+      "training_loss": 0.8969417260287172,
+      "dev": {
+        "tp": 178,
+        "fp": 645,
+        "fn": 225,
+        "precision": 0.21628189550425272,
+        "recall": 0.44168734491315137,
+        "f1": 0.29037520391517124,
+        "false_negative_rate": 0.5583126550868487,
+        "false_positive_rate": null,
+        "per_category": {
+          "Condition": {
+            "tp": 86,
+            "fp": 301,
+            "fn": 119,
+            "precision": 0.2222222222222222,
+            "recall": 0.4195121951219512,
+            "f1": 0.2905405405405405,
+            "false_negative_rate": 0.5804878048780487,
+            "false_positive_rate": null
+          },
+          "Drug": {
+            "tp": 73,
+            "fp": 133,
+            "fn": 51,
+            "precision": 0.35436893203883496,
+            "recall": 0.5887096774193549,
+            "f1": 0.4424242424242425,
+            "false_negative_rate": 0.4112903225806452,
+            "false_positive_rate": null
+          },
+          "Procedure": {
+            "tp": 19,
+            "fp": 211,
+            "fn": 55,
+            "precision": 0.08260869565217391,
+            "recall": 0.25675675675675674,
+            "f1": 0.12499999999999999,
+            "false_negative_rate": 0.7432432432432432,
+            "false_positive_rate": null
+          }
+        }
+      }
+    },
+    {
+      "epoch": 4,
+      "training_loss": 0.8487267966294066,
+      "dev": {
+        "tp": 184,
+        "fp": 613,
+        "fn": 219,
+        "precision": 0.23086574654956085,
+        "recall": 0.456575682382134,
+        "f1": 0.3066666666666667,
+        "false_negative_rate": 0.543424317617866,
+        "false_positive_rate": null,
+        "per_category": {
+          "Condition": {
+            "tp": 88,
+            "fp": 291,
+            "fn": 117,
+            "precision": 0.23218997361477572,
+            "recall": 0.4292682926829268,
+            "f1": 0.3013698630136986,
+            "false_negative_rate": 0.5707317073170731,
+            "false_positive_rate": null
+          },
+          "Drug": {
+            "tp": 75,
+            "fp": 118,
+            "fn": 49,
+            "precision": 0.38860103626943004,
+            "recall": 0.6048387096774194,
+            "f1": 0.4731861198738171,
+            "false_negative_rate": 0.3951612903225806,
+            "false_positive_rate": null
+          },
+          "Procedure": {
+            "tp": 21,
+            "fp": 204,
+            "fn": 53,
+            "precision": 0.09333333333333334,
+            "recall": 0.28378378378378377,
+            "f1": 0.14046822742474918,
+            "false_negative_rate": 0.7162162162162162,
+            "false_positive_rate": null
+          }
+        }
+      }
+    },
+    {
+      "epoch": 5,
+      "training_loss": 0.8100911592840475,
+      "dev": {
+        "tp": 167,
+        "fp": 613,
+        "fn": 236,
+        "precision": 0.2141025641025641,
+        "recall": 0.4143920595533499,
+        "f1": 0.28233305156382077,
+        "false_negative_rate": 0.5856079404466501,
+        "false_positive_rate": null,
+        "per_category": {
+          "Condition": {
+            "tp": 81,
+            "fp": 255,
+            "fn": 124,
+            "precision": 0.24107142857142858,
+            "recall": 0.3951219512195122,
+            "f1": 0.29944547134935307,
+            "false_negative_rate": 0.6048780487804878,
+            "false_positive_rate": null
+          },
+          "Drug": {
+            "tp": 63,
+            "fp": 162,
+            "fn": 61,
+            "precision": 0.28,
+            "recall": 0.5080645161290323,
+            "f1": 0.36103151862464183,
+            "false_negative_rate": 0.49193548387096775,
+            "false_positive_rate": null
+          },
+          "Procedure": {
+            "tp": 23,
+            "fp": 196,
+            "fn": 51,
+            "precision": 0.1050228310502283,
+            "recall": 0.3108108108108108,
+            "f1": 0.1569965870307167,
+            "false_negative_rate": 0.6891891891891891,
+            "false_positive_rate": null
+          }
+        }
+      }
+    },
+    {
+      "epoch": 6,
+      "training_loss": 0.780232492589905,
+      "dev": {
+        "tp": 183,
+        "fp": 565,
+        "fn": 220,
+        "precision": 0.2446524064171123,
+        "recall": 0.45409429280397023,
+        "f1": 0.317984361424848,
+        "false_negative_rate": 0.5459057071960298,
+        "false_positive_rate": null,
+        "per_category": {
+          "Condition": {
+            "tp": 83,
+            "fp": 267,
+            "fn": 122,
+            "precision": 0.23714285714285716,
+            "recall": 0.40487804878048783,
+            "f1": 0.2990990990990991,
+            "false_negative_rate": 0.5951219512195122,
+            "false_positive_rate": null
+          },
+          "Drug": {
+            "tp": 75,
+            "fp": 101,
+            "fn": 49,
+            "precision": 0.42613636363636365,
+            "recall": 0.6048387096774194,
+            "f1": 0.5,
+            "false_negative_rate": 0.3951612903225806,
+            "false_positive_rate": null
+          },
+          "Procedure": {
+            "tp": 25,
+            "fp": 197,
+            "fn": 49,
+            "precision": 0.11261261261261261,
+            "recall": 0.33783783783783783,
+            "f1": 0.16891891891891891,
+            "false_negative_rate": 0.6621621621621622,
+            "false_positive_rate": null
+          }
+        }
+      }
+    },
+    {
+      "epoch": 7,
+      "training_loss": 0.7569139326562514,
+      "dev": {
+        "tp": 179,
+        "fp": 553,
+        "fn": 224,
+        "precision": 0.24453551912568305,
+        "recall": 0.4441687344913151,
+        "f1": 0.31541850220264317,
+        "false_negative_rate": 0.5558312655086849,
+        "false_positive_rate": null,
+        "per_category": {
+          "Condition": {
+            "tp": 83,
+            "fp": 246,
+            "fn": 122,
+            "precision": 0.25227963525835867,
+            "recall": 0.40487804878048783,
+            "f1": 0.3108614232209738,
+            "false_negative_rate": 0.5951219512195122,
+            "false_positive_rate": null
+          },
+          "Drug": {
+            "tp": 73,
+            "fp": 98,
+            "fn": 51,
+            "precision": 0.4269005847953216,
+            "recall": 0.5887096774193549,
+            "f1": 0.4949152542372881,
+            "false_negative_rate": 0.4112903225806452,
+            "false_positive_rate": null
+          },
+          "Procedure": {
+            "tp": 23,
+            "fp": 209,
+            "fn": 51,
+            "precision": 0.09913793103448276,
+            "recall": 0.3108108108108108,
+            "f1": 0.15032679738562094,
+            "false_negative_rate": 0.6891891891891891,
+            "false_positive_rate": null
+          }
+        }
+      }
+    },
+    {
+      "epoch": 8,
+      "training_loss": 0.735666303073354,
+      "dev": {
+        "tp": 191,
+        "fp": 543,
+        "fn": 212,
+        "precision": 0.26021798365122617,
+        "recall": 0.4739454094292804,
+        "f1": 0.335971855760774,
+        "false_negative_rate": 0.5260545905707196,
+        "false_positive_rate": null,
+        "per_category": {
+          "Condition": {
+            "tp": 87,
+            "fp": 276,
+            "fn": 118,
+            "precision": 0.2396694214876033,
+            "recall": 0.424390243902439,
+            "f1": 0.3063380281690141,
+            "false_negative_rate": 0.5756097560975609,
+            "false_positive_rate": null
+          },
+          "Drug": {
+            "tp": 78,
+            "fp": 115,
+            "fn": 46,
+            "precision": 0.40414507772020725,
+            "recall": 0.6290322580645161,
+            "f1": 0.4921135646687697,
+            "false_negative_rate": 0.3709677419354839,
+            "false_positive_rate": null
+          },
+          "Procedure": {
+            "tp": 26,
+            "fp": 152,
+            "fn": 48,
+            "precision": 0.14606741573033707,
+            "recall": 0.35135135135135137,
+            "f1": 0.20634920634920634,
+            "false_negative_rate": 0.6486486486486487,
+            "false_positive_rate": null
+          }
+        }
+      }
+    }
+  ],
+  "selected_dev": {
+    "tp": 191,
+    "fp": 543,
+    "fn": 212,
+    "precision": 0.26021798365122617,
+    "recall": 0.4739454094292804,
+    "f1": 0.335971855760774,
+    "false_negative_rate": 0.5260545905707196,
+    "false_positive_rate": null,
+    "per_category": {
+      "Condition": {
+        "tp": 87,
+        "fp": 276,
+        "fn": 118,
+        "precision": 0.2396694214876033,
+        "recall": 0.424390243902439,
+        "f1": 0.3063380281690141,
+        "false_negative_rate": 0.5756097560975609,
+        "false_positive_rate": null
+      },
+      "Drug": {
+        "tp": 78,
+        "fp": 115,
+        "fn": 46,
+        "precision": 0.40414507772020725,
+        "recall": 0.6290322580645161,
+        "f1": 0.4921135646687697,
+        "false_negative_rate": 0.3709677419354839,
+        "false_positive_rate": null
+      },
+      "Procedure": {
+        "tp": 26,
+        "fp": 152,
+        "fn": 48,
+        "precision": 0.14606741573033707,
+        "recall": 0.35135135135135137,
+        "f1": 0.20634920634920634,
+        "false_negative_rate": 0.6486486486486487,
+        "false_positive_rate": null
+      }
+    }
+  },
+  "test": {
+    "tp": 154,
+    "fp": 477,
+    "fn": 174,
+    "precision": 0.24405705229793978,
+    "recall": 0.4695121951219512,
+    "f1": 0.32116788321167883,
+    "false_negative_rate": 0.5304878048780488,
+    "false_positive_rate": null,
+    "per_category": {
+      "Condition": {
+        "tp": 114,
+        "fp": 242,
+        "fn": 100,
+        "precision": 0.3202247191011236,
+        "recall": 0.5327102803738317,
+        "f1": 0.4,
+        "false_negative_rate": 0.4672897196261682,
+        "false_positive_rate": null
+      },
+      "Drug": {
+        "tp": 19,
+        "fp": 77,
+        "fn": 18,
+        "precision": 0.19791666666666666,
+        "recall": 0.5135135135135135,
+        "f1": 0.2857142857142857,
+        "false_negative_rate": 0.4864864864864865,
+        "false_positive_rate": null
+      },
+      "Procedure": {
+        "tp": 21,
+        "fp": 158,
+        "fn": 56,
+        "precision": 0.11731843575418995,
+        "recall": 0.2727272727272727,
+        "f1": 0.1640625,
+        "false_negative_rate": 0.7272727272727273,
+        "false_positive_rate": null
+      }
+    },
+    "mean_encoder_plus_head_latency_ms": 96.0505299961369
+  },
+  "per_document": [
+    {
+      "study_id": "NCT00236340",
+      "document_id": "NCT00236340_exc",
+      "tp": 4,
+      "fp": 5,
+      "fn": 2,
+      "precision": 0.4444444444444444,
+      "recall": 0.6666666666666666,
+      "f1": 0.5333333333333333,
+      "false_negative_rate": 0.3333333333333333,
+      "false_positive_rate": null,
+      "prediction_count": 9,
+      "gold_count": 6,
+      "encoder_ms": 44.26940000848845,
+      "head_ms": 0.1942999952007085,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              18
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              34,
+              39
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              62,
+              71
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              72,
+              87
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              93,
+              97
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              99,
+              108
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              126,
+              139
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              141,
+              150
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              159,
+              175
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              18
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              62,
+              80
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              82,
+              87
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              93,
+              97
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              99,
+              108
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              126,
+              139
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "18e3c5bd73fd11caf6e88cf7bba04226e72f084cda132d95a3f017907664a32d"
+    },
+    {
+      "study_id": "NCT00236340",
+      "document_id": "NCT00236340_inc",
+      "tp": 2,
+      "fp": 5,
+      "fn": 3,
+      "precision": 0.2857142857142857,
+      "recall": 0.4,
+      "f1": 0.3333333333333333,
+      "false_negative_rate": 0.6,
+      "false_positive_rate": null,
+      "prediction_count": 7,
+      "gold_count": 5,
+      "encoder_ms": 41.14879999542609,
+      "head_ms": 0.11449999874457717,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              8
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              20,
+              27
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              28,
+              38
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              43,
+              53
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              67,
+              81
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              89,
+              91
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              104,
+              120
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              8
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              20,
+              38
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              67,
+              81
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              109,
+              120
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              43,
+              53
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "adaf44514e4dd85158e47e63f5568ab947394efd4c10220c378e2676771d06c8"
+    },
+    {
+      "study_id": "NCT02810704",
+      "document_id": "NCT02810704_exc",
+      "tp": 2,
+      "fp": 39,
+      "fn": 14,
+      "precision": 0.04878048780487805,
+      "recall": 0.125,
+      "f1": 0.07017543859649124,
+      "false_negative_rate": 0.875,
+      "false_positive_rate": null,
+      "prediction_count": 41,
+      "gold_count": 16,
+      "encoder_ms": 167.3529000254348,
+      "head_ms": 0.45029999455437064,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              20,
+              33
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              155,
+              158
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              478,
+              486
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              490,
+              503
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              525,
+              547
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              632,
+              639
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              673,
+              688
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              757,
+              783
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              785,
+              787
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              788,
+              804
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              862,
+              871
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              875,
+              895
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              916,
+              933
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1100,
+              1106
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1107,
+              1119
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1120,
+              1132
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1138,
+              1143
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1163,
+              1169
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1283,
+              1293
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              278,
+              282
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              334,
+              341
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              343,
+              351
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              356,
+              361
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              361,
+              367
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              705,
+              729
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              37,
+              41
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              82,
+              85
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              89,
+              105
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              162,
+              166
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              231,
+              237
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              238,
+              267
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              268,
+              275
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              286,
+              298
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              441,
+              445
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              445,
+              459
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              581,
+              590
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              944,
+              955
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              997,
+              1026
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1031,
+              1034
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1036,
+              1039
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1044,
+              1059
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              390,
+              406
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              757,
+              773
+            ],
+            [
+              794,
+              804
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              775,
+              783
+            ],
+            [
+              794,
+              804
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              794,
+              804
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              885,
+              895
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              925,
+              933
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1120,
+              1132
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              673,
+              688
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              705,
+              717
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              30,
+              33
+            ],
+            [
+              42,
+              53
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              37,
+              53
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              76,
+              81
+            ],
+            [
+              89,
+              105
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              76,
+              85
+            ],
+            [
+              94,
+              105
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              944,
+              955
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              960,
+              969
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              997,
+              1016
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "a23af9b032f5fc7d4d486d7bbea22d630b7e934df0b167d6c49ccc6feda088fa"
+    },
+    {
+      "study_id": "NCT02810704",
+      "document_id": "NCT02810704_inc",
+      "tp": 1,
+      "fp": 10,
+      "fn": 1,
+      "precision": 0.09090909090909091,
+      "recall": 0.5,
+      "f1": 0.15384615384615385,
+      "false_negative_rate": 0.5,
+      "false_positive_rate": null,
+      "prediction_count": 11,
+      "gold_count": 2,
+      "encoder_ms": 67.59849999798462,
+      "head_ms": 0.1975000195670873,
+      "predictions": [
+        [
+          "Procedure",
+          [
+            [
+              74,
+              77
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              81,
+              89
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              96,
+              98
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              120,
+              125
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              126,
+              141
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              142,
+              163
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              215,
+              220
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              221,
+              224
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              224,
+              236
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              237,
+              242
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              246,
+              280
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Procedure",
+          [
+            [
+              142,
+              163
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              264,
+              280
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "734174d10c7474a98c609140c00587b03a91fc0cd2298993bf921b5ac2c61a09"
+    },
+    {
+      "study_id": "NCT02003339",
+      "document_id": "NCT02003339_exc",
+      "tp": 3,
+      "fp": 34,
+      "fn": 11,
+      "precision": 0.08108108108108109,
+      "recall": 0.21428571428571427,
+      "f1": 0.11764705882352942,
+      "false_negative_rate": 0.7857142857142857,
+      "false_positive_rate": null,
+      "prediction_count": 37,
+      "gold_count": 14,
+      "encoder_ms": 145.5736999923829,
+      "head_ms": 0.34959998447448015,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              8
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              9,
+              33
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              55,
+              69
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              80,
+              89
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              107,
+              112
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              143,
+              148
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              148,
+              153
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              204,
+              211
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              212,
+              222
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              328,
+              346
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              349,
+              354
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              727,
+              735
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              808,
+              819
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              831,
+              840
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              976,
+              989
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              89,
+              90
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              94,
+              97
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              97,
+              100
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              104,
+              105
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              115,
+              117
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              428,
+              457
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              512,
+              515
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              519,
+              522
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              614,
+              617
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              633,
+              637
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              708,
+              725
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              100,
+              104
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              112,
+              115
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              233,
+              242
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              246,
+              253
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              265,
+              279
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              306,
+              323
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              399,
+              406
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              501,
+              510
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              594,
+              602
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              676,
+              699
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              944,
+              947
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              9,
+              33
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              46,
+              60
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              107,
+              117
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              143,
+              153
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              198,
+              222
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              439,
+              457
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              512,
+              533
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              727,
+              735
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              739,
+              761
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              428,
+              437
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              246,
+              263
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              265,
+              279
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              328,
+              342
+            ],
+            [
+              355,
+              364
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              512,
+              515
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "b30e356f3656abe0b3e5cd10a6abae34e21e358462eefd654fbce913462bbd8e"
+    },
+    {
+      "study_id": "NCT02003339",
+      "document_id": "NCT02003339_inc",
+      "tp": 1,
+      "fp": 3,
+      "fn": 2,
+      "precision": 0.25,
+      "recall": 0.3333333333333333,
+      "f1": 0.28571428571428575,
+      "false_negative_rate": 0.6666666666666666,
+      "false_positive_rate": null,
+      "prediction_count": 4,
+      "gold_count": 3,
+      "encoder_ms": 95.99290002370253,
+      "head_ms": 0.1865000231191516,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              31,
+              45
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              46,
+              70
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              204,
+              228
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              87,
+              97
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              46,
+              70
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              306,
+              315
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              87,
+              104
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "a6697306f756dd45b5f10794d8ef2b11932d5680d1889a80a7843defe4bc26a6"
+    },
+    {
+      "study_id": "NCT03460002",
+      "document_id": "NCT03460002_exc",
+      "tp": 1,
+      "fp": 16,
+      "fn": 4,
+      "precision": 0.058823529411764705,
+      "recall": 0.2,
+      "f1": 0.0909090909090909,
+      "false_negative_rate": 0.8,
+      "false_positive_rate": null,
+      "prediction_count": 17,
+      "gold_count": 5,
+      "encoder_ms": 92.42810000432655,
+      "head_ms": 0.21349999587982893,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              14,
+              25
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              40,
+              46
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              47,
+              60
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              115,
+              118
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              125,
+              142
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              213,
+              217
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              222,
+              255
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              286,
+              292
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              293,
+              310
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              470,
+              472
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              512,
+              514
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              326,
+              328
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              339,
+              343
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              399,
+              431
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              463,
+              469
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              505,
+              511
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              514,
+              515
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              47,
+              60
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              286,
+              310
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              326,
+              337
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              339,
+              343
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              347,
+              351
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "3c3cd67502f01304a4ec4141f030ce7fad94f9f6e93f387b2e9afdbb3cfb178a"
+    },
+    {
+      "study_id": "NCT03460002",
+      "document_id": "NCT03460002_inc",
+      "tp": 0,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": null,
+      "false_positive_rate": null,
+      "prediction_count": 3,
+      "gold_count": 0,
+      "encoder_ms": 38.77220000140369,
+      "head_ms": 0.08919998072087765,
+      "predictions": [
+        [
+          "Procedure",
+          [
+            [
+              75,
+              84
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              93,
+              99
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              104,
+              133
+            ]
+          ]
+        ]
+      ],
+      "gold": [],
+      "text_sha256": "18dc7c3984bcfeb1f5b9b6b71d5a5c549b35dbec8947f251933b9c016a146ce7"
+    },
+    {
+      "study_id": "NCT02783859",
+      "document_id": "NCT02783859_exc",
+      "tp": 11,
+      "fp": 19,
+      "fn": 8,
+      "precision": 0.36666666666666664,
+      "recall": 0.5789473684210527,
+      "f1": 0.44897959183673464,
+      "false_negative_rate": 0.42105263157894735,
+      "false_positive_rate": null,
+      "prediction_count": 30,
+      "gold_count": 19,
+      "encoder_ms": 92.78999999514781,
+      "head_ms": 0.24349999148398638,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              8,
+              14
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              27,
+              42
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              54,
+              60
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              67,
+              81
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              83,
+              91
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              92,
+              116
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              120,
+              136
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              137,
+              160
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              160,
+              161
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              162,
+              164
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              164,
+              178
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              225,
+              232
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              234,
+              240
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              241,
+              253
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              287,
+              298
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              310,
+              317
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              321,
+              328
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              330,
+              339
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              351,
+              390
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              421,
+              422
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              423,
+              424
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              426,
+              436
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              451,
+              458
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              508,
+              514
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              401,
+              411
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              436,
+              437
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              439,
+              450
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              412,
+              419
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              529,
+              535
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              539,
+              545
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              8,
+              14
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              27,
+              42
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              54,
+              60
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              67,
+              81
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              83,
+              116
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              120,
+              135
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              137,
+              160
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              162,
+              178
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              241,
+              253
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              287,
+              298
+            ],
+            [
+              330,
+              339
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              300,
+              308
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              310,
+              317
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              321,
+              328
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              351,
+              363
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              381,
+              390
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              426,
+              436
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              451,
+              458
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              439,
+              450
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              401,
+              419
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "25876fe02083e61d7be7c1a9db55cde6040056835ee6c1bdb01cd4d79d78e867"
+    },
+    {
+      "study_id": "NCT02783859",
+      "document_id": "NCT02783859_inc",
+      "tp": 4,
+      "fp": 15,
+      "fn": 2,
+      "precision": 0.21052631578947367,
+      "recall": 0.6666666666666666,
+      "f1": 0.32,
+      "false_negative_rate": 0.3333333333333333,
+      "false_positive_rate": null,
+      "prediction_count": 19,
+      "gold_count": 6,
+      "encoder_ms": 116.28170000039972,
+      "head_ms": 0.2920999831985682,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              8,
+              12
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              103,
+              119
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              123,
+              132
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              176,
+              181
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              227,
+              230
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              240,
+              250
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              327,
+              347
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              391,
+              404
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              518,
+              538
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              651,
+              662
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              474,
+              488
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              611,
+              615
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              616,
+              628
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              628,
+              635
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              663,
+              665
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              185,
+              189
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              408,
+              419
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              587,
+              598
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              599,
+              610
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              110,
+              119
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              240,
+              250
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              327,
+              347
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              391,
+              404
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              651,
+              659
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              408,
+              419
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "b0e27e8ac720023a648a1ed18394a6794e5277ef688d9898a0c79e44f996c50a"
+    },
+    {
+      "study_id": "NCT02106624",
+      "document_id": "NCT02106624_exc",
+      "tp": 3,
+      "fp": 10,
+      "fn": 3,
+      "precision": 0.23076923076923078,
+      "recall": 0.5,
+      "f1": 0.3157894736842105,
+      "false_negative_rate": 0.5,
+      "false_positive_rate": null,
+      "prediction_count": 13,
+      "gold_count": 6,
+      "encoder_ms": 49.35570000088774,
+      "head_ms": 0.15279999934136868,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              2
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2,
+              12
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              13,
+              38
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              55,
+              67
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              75,
+              85
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              131,
+              137
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              138,
+              155
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              178,
+              187
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              199,
+              209
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              214,
+              223
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              267,
+              276
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              98,
+              105
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              106,
+              129
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              23,
+              38
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              55,
+              67
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              138,
+              155
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              178,
+              187
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              98,
+              114
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              211,
+              223
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "b1589c3d5253c0bafeb522f802e3f41f55eabb223a31261b93e2618474d339d2"
+    },
+    {
+      "study_id": "NCT02106624",
+      "document_id": "NCT02106624_inc",
+      "tp": 1,
+      "fp": 7,
+      "fn": 3,
+      "precision": 0.125,
+      "recall": 0.25,
+      "f1": 0.16666666666666666,
+      "false_negative_rate": 0.75,
+      "false_positive_rate": null,
+      "prediction_count": 8,
+      "gold_count": 4,
+      "encoder_ms": 38.05979999015108,
+      "head_ms": 0.13040000339969993,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              55,
+              69
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              98,
+              100
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              125,
+              137
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              138,
+              151
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              152,
+              169
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              5,
+              27
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              100,
+              101
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              102,
+              106
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              125,
+              134
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              5,
+              27
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              138,
+              148
+            ],
+            [
+              160,
+              169
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              152,
+              169
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "257e167fcec2566bd69bc6867610fdc470afe41f5a013e4e8afc236fb0eee29e"
+    },
+    {
+      "study_id": "NCT02653131",
+      "document_id": "NCT02653131_exc",
+      "tp": 3,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571428571428571,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": null,
+      "prediction_count": 4,
+      "gold_count": 3,
+      "encoder_ms": 30.33569999388419,
+      "head_ms": 0.0686999992467463,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              3
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              17,
+              39
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              41,
+              47
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              66,
+              84
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              17,
+              39
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              41,
+              47
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              66,
+              84
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "4e70da2a4e3675981debbc878125e1051a3eea869862014b170a5d93f5a95bb2"
+    },
+    {
+      "study_id": "NCT02653131",
+      "document_id": "NCT02653131_inc",
+      "tp": 2,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": null,
+      "prediction_count": 4,
+      "gold_count": 2,
+      "encoder_ms": 33.006500016199425,
+      "head_ms": 0.07989999721758068,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              62,
+              82
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              107,
+              130
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              132,
+              146
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              19,
+              49
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              62,
+              82
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              132,
+              146
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "fa383a0b4e6a3d5dc043286c2bda7eb25f7314e5ae2c2a573251a5e3c89d8ded"
+    },
+    {
+      "study_id": "NCT02732080",
+      "document_id": "NCT02732080_exc",
+      "tp": 3,
+      "fp": 15,
+      "fn": 4,
+      "precision": 0.16666666666666666,
+      "recall": 0.42857142857142855,
+      "f1": 0.24,
+      "false_negative_rate": 0.5714285714285714,
+      "false_positive_rate": null,
+      "prediction_count": 18,
+      "gold_count": 7,
+      "encoder_ms": 47.09179999190383,
+      "head_ms": 0.1475999888498336,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              43,
+              45
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              97,
+              119
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              179,
+              183
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              206,
+              214
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              216,
+              222
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              223,
+              236
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              240,
+              257
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              0,
+              11
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              13,
+              28
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              30,
+              33
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              37,
+              43
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              46,
+              57
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              77,
+              81
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              126,
+              130
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              141,
+              160
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              164,
+              176
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              183,
+              184
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              192,
+              206
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              30,
+              33
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              179,
+              184
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              205,
+              214
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              223,
+              236
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              240,
+              257
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              0,
+              11
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              37,
+              57
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "c952d031ee98a51e5ef38c59e0a5e8ba6aff4d757fedcbbd1ff69e312209b337"
+    },
+    {
+      "study_id": "NCT02732080",
+      "document_id": "NCT02732080_inc",
+      "tp": 1,
+      "fp": 13,
+      "fn": 2,
+      "precision": 0.07142857142857142,
+      "recall": 0.3333333333333333,
+      "f1": 0.11764705882352941,
+      "false_negative_rate": 0.6666666666666666,
+      "false_positive_rate": null,
+      "prediction_count": 14,
+      "gold_count": 3,
+      "encoder_ms": 51.344199979212135,
+      "head_ms": 0.13729999773204327,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              25,
+              27
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              28,
+              37
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              38,
+              65
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              67,
+              72
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              99,
+              106
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              152,
+              154
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              154,
+              174
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              176,
+              179
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              210,
+              212
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              27,
+              28
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              66,
+              67
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              175,
+              176
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              187,
+              206
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              212,
+              222
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              25,
+              73
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              187,
+              206
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              210,
+              222
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "bb69d554c3171453d2bd3933643ef48d12e891ae7a73791a7c516de848474c51"
+    },
+    {
+      "study_id": "NCT00904202",
+      "document_id": "NCT00904202_exc",
+      "tp": 4,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.5714285714285714,
+      "recall": 0.5714285714285714,
+      "f1": 0.5714285714285714,
+      "false_negative_rate": 0.42857142857142855,
+      "false_positive_rate": null,
+      "prediction_count": 7,
+      "gold_count": 7,
+      "encoder_ms": 81.61250001285225,
+      "head_ms": 0.1647000026423484,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              9,
+              31
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              70,
+              74
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              209,
+              237
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              285,
+              294
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              319,
+              340
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              348,
+              359
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              360,
+              369
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              9,
+              31
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              70,
+              84
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              209,
+              237
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              285,
+              294
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              311,
+              340
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              348,
+              358
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              360,
+              369
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "906736694789f345f3fadbc3b51791f7f357f446b2df180ba0cba133602d47a7"
+    },
+    {
+      "study_id": "NCT00904202",
+      "document_id": "NCT00904202_inc",
+      "tp": 22,
+      "fp": 23,
+      "fn": 13,
+      "precision": 0.4888888888888889,
+      "recall": 0.6285714285714286,
+      "f1": 0.5499999999999999,
+      "false_negative_rate": 0.37142857142857144,
+      "false_positive_rate": null,
+      "prediction_count": 45,
+      "gold_count": 35,
+      "encoder_ms": 194.2842999997083,
+      "head_ms": 0.6372999923769385,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              22,
+              25
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              27,
+              29
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              31,
+              35
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              37,
+              59
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              61,
+              76
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              77,
+              87
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              88,
+              106
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              108,
+              110
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              111,
+              138
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              213,
+              216
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              231,
+              235
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              252,
+              256
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              283,
+              285
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              300,
+              321
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              326,
+              333
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              334,
+              363
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              364,
+              378
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              395,
+              412
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              420,
+              434
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              456,
+              460
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              532,
+              536
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              576,
+              598
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              694,
+              699
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              747,
+              763
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              813,
+              827
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              842,
+              845
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              847,
+              866
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              870,
+              877
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              878,
+              899
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              911,
+              927
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              977,
+              987
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              988,
+              1006
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1021,
+              1025
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1126,
+              1130
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              681,
+              687
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1280,
+              1289
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1293,
+              1303
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              257,
+              264
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              529,
+              531
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              640,
+              673
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              687,
+              689
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              699,
+              707
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              710,
+              727
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1247,
+              1251
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1251,
+              1264
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              22,
+              25
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              27,
+              29
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              31,
+              35
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              37,
+              59
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              61,
+              64
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              61,
+              75
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              65,
+              75
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              88,
+              106
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              117,
+              138
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              213,
+              216
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              231,
+              235
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              252,
+              264
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              283,
+              285
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              300,
+              304
+            ],
+            [
+              310,
+              321
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              300,
+              306
+            ],
+            [
+              313,
+              321
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              351,
+              378
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              395,
+              412
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              456,
+              460
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              576,
+              598
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              681,
+              689
+            ],
+            [
+              702,
+              707
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              694,
+              707
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              747,
+              763
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              813,
+              827
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              842,
+              845
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              847,
+              866
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              878,
+              899
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              911,
+              927
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              977,
+              1006
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1021,
+              1025
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1247,
+              1264
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1280,
+              1289
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1293,
+              1303
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              640,
+              673
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              710,
+              727
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1161,
+              1196
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "e897fef351506353c189093511e0f22a19695050a0e66d467c61f4bab05094a9"
+    },
+    {
+      "study_id": "NCT02607748",
+      "document_id": "NCT02607748_exc",
+      "tp": 3,
+      "fp": 8,
+      "fn": 4,
+      "precision": 0.2727272727272727,
+      "recall": 0.42857142857142855,
+      "f1": 0.33333333333333326,
+      "false_negative_rate": 0.5714285714285714,
+      "false_positive_rate": null,
+      "prediction_count": 11,
+      "gold_count": 7,
+      "encoder_ms": 59.361299994634464,
+      "head_ms": 0.13559998478740454,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              16,
+              18
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              51,
+              57
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              58,
+              68
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              93,
+              102
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              104,
+              110
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              111,
+              130
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              132,
+              162
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              166,
+              204
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              211,
+              216
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              221,
+              245
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              69,
+              91
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              58,
+              65
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              93,
+              102
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              111,
+              130
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              132,
+              150
+            ],
+            [
+              166,
+              185
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              132,
+              162
+            ],
+            [
+              173,
+              185
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              221,
+              245
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              69,
+              91
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "348bbfd3badcde0ee8704bcbc4d0a501510791885b47869d78442c26accaef88"
+    },
+    {
+      "study_id": "NCT02607748",
+      "document_id": "NCT02607748_inc",
+      "tp": 2,
+      "fp": 28,
+      "fn": 4,
+      "precision": 0.06666666666666667,
+      "recall": 0.3333333333333333,
+      "f1": 0.1111111111111111,
+      "false_negative_rate": 0.6666666666666666,
+      "false_positive_rate": null,
+      "prediction_count": 30,
+      "gold_count": 6,
+      "encoder_ms": 145.16689997981302,
+      "head_ms": 0.3029000072274357,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              29
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              48,
+              76
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              123,
+              131
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              198,
+              206
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              222,
+              230
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              266,
+              268
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              302,
+              308
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              309,
+              317
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              318,
+              331
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              467,
+              473
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              511,
+              532
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              536,
+              550
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              570,
+              572
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              579,
+              599
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              610,
+              631
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              633,
+              656
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              664,
+              666
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              693,
+              696
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              105,
+              118
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              132,
+              152
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              158,
+              170
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              268,
+              269
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              370,
+              378
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              379,
+              399
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              428,
+              435
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              487,
+              492
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              550,
+              555
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              658,
+              664
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              667,
+              670
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              681,
+              683
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              23
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              579,
+              582
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              610,
+              631
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              633,
+              656
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              658,
+              676
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              681,
+              684
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "dcfdb7d335e95eecfd65a05b49ad0f1e923fdf4313326a2043a459da7ae43137"
+    },
+    {
+      "study_id": "NCT02905734",
+      "document_id": "NCT02905734_exc",
+      "tp": 1,
+      "fp": 8,
+      "fn": 2,
+      "precision": 0.1111111111111111,
+      "recall": 0.3333333333333333,
+      "f1": 0.16666666666666666,
+      "false_negative_rate": 0.6666666666666666,
+      "false_positive_rate": null,
+      "prediction_count": 9,
+      "gold_count": 3,
+      "encoder_ms": 41.64789998321794,
+      "head_ms": 0.08699999307282269,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              4
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              36,
+              53
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              132,
+              138
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              146,
+              153
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              154,
+              169
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              171,
+              203
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              57,
+              61
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              61,
+              85
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              119,
+              128
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              36,
+              53
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              146,
+              169
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              57,
+              85
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "e1f3b147c2632f164e18162a7ef5bac3b5e2565eb563ccdc0ab3744d8cadb676"
+    },
+    {
+      "study_id": "NCT02905734",
+      "document_id": "NCT02905734_inc",
+      "tp": 0,
+      "fp": 4,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": 1.0,
+      "false_positive_rate": null,
+      "prediction_count": 4,
+      "gold_count": 1,
+      "encoder_ms": 39.52970000682399,
+      "head_ms": 0.08359999628737569,
+      "predictions": [
+        [
+          "Drug",
+          [
+            [
+              86,
+              93
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              0,
+              6
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              41,
+              50
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              208,
+              217
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Procedure",
+          [
+            [
+              10,
+              33
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "30abe2a509ec244bf632512633029390d4b425655362983cc2a583648f0871cc"
+    },
+    {
+      "study_id": "NCT03264911",
+      "document_id": "NCT03264911_exc",
+      "tp": 9,
+      "fp": 9,
+      "fn": 4,
+      "precision": 0.5,
+      "recall": 0.6923076923076923,
+      "f1": 0.5806451612903226,
+      "false_negative_rate": 0.3076923076923077,
+      "false_positive_rate": null,
+      "prediction_count": 18,
+      "gold_count": 13,
+      "encoder_ms": 50.56709999917075,
+      "head_ms": 0.16680001863278449,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              16
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              31,
+              50
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              91,
+              98
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              99,
+              106
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              107,
+              109
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              162,
+              164
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              166,
+              179
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              180,
+              188
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              189,
+              213
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              233,
+              236
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              238,
+              249
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              250,
+              261
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              20,
+              29
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              78,
+              89
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              112,
+              115
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              126,
+              137
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              109,
+              112
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              115,
+              124
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              16
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              43,
+              50
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              107,
+              124
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              162,
+              165
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              166,
+              179
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              180,
+              188
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              189,
+              213
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              233,
+              236
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              250,
+              261
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              20,
+              29
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              78,
+              89
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              126,
+              137
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              65,
+              72
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "992cb75998b53f2ad22b920c977e415eb2602d1467b6ece959f1f6d82b546ead"
+    },
+    {
+      "study_id": "NCT03264911",
+      "document_id": "NCT03264911_inc",
+      "tp": 1,
+      "fp": 6,
+      "fn": 0,
+      "precision": 0.14285714285714285,
+      "recall": 1.0,
+      "f1": 0.25,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": null,
+      "prediction_count": 7,
+      "gold_count": 1,
+      "encoder_ms": 37.87890000967309,
+      "head_ms": 0.09049999061971903,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              17,
+              34
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              49,
+              60
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              134,
+              137
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              66,
+              68
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              117,
+              119
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              137,
+              146
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              181,
+              185
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              49,
+              60
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "4545f748fecc8c6f8e0d8670db1d20a8e93fdd87147a604daeee726a9f87bc5b"
+    },
+    {
+      "study_id": "NCT03463564",
+      "document_id": "NCT03463564_exc",
+      "tp": 4,
+      "fp": 9,
+      "fn": 3,
+      "precision": 0.3076923076923077,
+      "recall": 0.5714285714285714,
+      "f1": 0.4,
+      "false_negative_rate": 0.42857142857142855,
+      "false_positive_rate": null,
+      "prediction_count": 13,
+      "gold_count": 7,
+      "encoder_ms": 48.33270001108758,
+      "head_ms": 0.11160000576637685,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              62,
+              70
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              93,
+              97
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              146,
+              152
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              153,
+              169
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              217,
+              221
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              225,
+              238
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              240,
+              262
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              306,
+              313
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              16,
+              23
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              200,
+              215
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              24,
+              39
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              116,
+              119
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              126,
+              133
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              30,
+              39
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              62,
+              70
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              153,
+              169
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              240,
+              262
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              200,
+              215
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              217,
+              221
+            ],
+            [
+              233,
+              238
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              225,
+              238
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "0aad8ea415774c937c455aa55430ced24b25dd2280ab71c55865c8792ad8a1c3"
+    },
+    {
+      "study_id": "NCT03463564",
+      "document_id": "NCT03463564_inc",
+      "tp": 3,
+      "fp": 10,
+      "fn": 2,
+      "precision": 0.23076923076923078,
+      "recall": 0.6,
+      "f1": 0.33333333333333337,
+      "false_negative_rate": 0.4,
+      "false_positive_rate": null,
+      "prediction_count": 13,
+      "gold_count": 5,
+      "encoder_ms": 46.97619998478331,
+      "head_ms": 0.10769997606985271,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              4
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              29,
+              39
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              40,
+              45
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              112,
+              115
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              115,
+              121
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              122,
+              128
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              129,
+              150
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              154,
+              158
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              167,
+              178
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              192,
+              194
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              204,
+              211
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              82,
+              109
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              212,
+              216
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              4
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              129,
+              150
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              154,
+              178
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              82,
+              109
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              195,
+              216
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "6621201a1e9c776c344b990ccc9795ff75ea8bffea15d0de409b7cc39a64b883"
+    },
+    {
+      "study_id": "NCT03350659",
+      "document_id": "NCT03350659_exc",
+      "tp": 3,
+      "fp": 9,
+      "fn": 3,
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1": 0.3333333333333333,
+      "false_negative_rate": 0.5,
+      "false_positive_rate": null,
+      "prediction_count": 12,
+      "gold_count": 6,
+      "encoder_ms": 47.48390000895597,
+      "head_ms": 0.12390001211315393,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              24
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              111,
+              124
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              128,
+              135
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              136,
+              149
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              151,
+              157
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              158,
+              177
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              246,
+              254
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              278,
+              284
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              81,
+              95
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              40,
+              48
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              262,
+              276
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              288,
+              309
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              13,
+              24
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              111,
+              124
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              128,
+              149
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              158,
+              177
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              246,
+              254
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              262,
+              276
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "9ee589ce98a8ce7676e3c8f6938b99659400305c7ef7de8e99119a59e79d8fa2"
+    },
+    {
+      "study_id": "NCT03350659",
+      "document_id": "NCT03350659_inc",
+      "tp": 1,
+      "fp": 4,
+      "fn": 1,
+      "precision": 0.2,
+      "recall": 0.5,
+      "f1": 0.28571428571428575,
+      "false_negative_rate": 0.5,
+      "false_positive_rate": null,
+      "prediction_count": 5,
+      "gold_count": 2,
+      "encoder_ms": 42.26879999623634,
+      "head_ms": 0.08840000373311341,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              36,
+              45
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              47,
+              49
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              49,
+              70
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              136,
+              139
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              78,
+              94
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              36,
+              45
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              47,
+              70
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "c68b9567aca5bfb1cfde0be7bf7a884cdb1c2cb60d2f1920cf2998e91f8a76bd"
+    },
+    {
+      "study_id": "NCT02301962",
+      "document_id": "NCT02301962_exc",
+      "tp": 32,
+      "fp": 69,
+      "fn": 37,
+      "precision": 0.31683168316831684,
+      "recall": 0.463768115942029,
+      "f1": 0.3764705882352941,
+      "false_negative_rate": 0.5362318840579711,
+      "false_positive_rate": null,
+      "prediction_count": 101,
+      "gold_count": 69,
+      "encoder_ms": 739.0947999956552,
+      "head_ms": 0.911899987841025,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              29,
+              51
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              52,
+              62
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              76,
+              94
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              103,
+              113
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              152,
+              154
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              161,
+              175
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              248,
+              258
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              305,
+              308
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              309,
+              321
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              322,
+              333
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              337,
+              352
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              401,
+              419
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              457,
+              466
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              467,
+              492
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              550,
+              557
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              558,
+              583
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              587,
+              599
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1197,
+              1222
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1224,
+              1227
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1235,
+              1259
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1261,
+              1279
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1295,
+              1298
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1394,
+              1403
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1405,
+              1425
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1429,
+              1435
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1436,
+              1443
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1756,
+              1758
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1938,
+              1949
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1950,
+              1972
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1984,
+              2005
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2007,
+              2022
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2024,
+              2060
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2062,
+              2069
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2070,
+              2082
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2083,
+              2101
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2150,
+              2157
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2161,
+              2182
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2186,
+              2208
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2449,
+              2457
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2458,
+              2476
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2478,
+              2498
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2503,
+              2508
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2509,
+              2520
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2521,
+              2557
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2648,
+              2654
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2728,
+              2736
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2778,
+              2786
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2898,
+              2936
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3002,
+              3018
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3068,
+              3077
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3164,
+              3187
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3191,
+              3224
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3252,
+              3260
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              603,
+              608
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              617,
+              627
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              631,
+              642
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              646,
+              656
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              706,
+              743
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              745,
+              749
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              775,
+              786
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              790,
+              799
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              819,
+              849
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              857,
+              866
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              868,
+              877
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              879,
+              888
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              892,
+              901
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              933,
+              935
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1000,
+              1013
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1016,
+              1021
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1025,
+              1032
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1799,
+              1805
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1807,
+              1821
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1854,
+              1858
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              207,
+              209
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              209,
+              212
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              297,
+              304
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              393,
+              400
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              513,
+              521
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              744,
+              745
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              749,
+              767
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              902,
+              909
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1145,
+              1154
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1311,
+              1316
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1317,
+              1336
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1452,
+              1459
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1477,
+              1487
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1520,
+              1524
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1583,
+              1590
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1618,
+              1636
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1644,
+              1655
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1736,
+              1749
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1770,
+              1779
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1783,
+              1798
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1831,
+              1846
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1850,
+              1854
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1858,
+              1862
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1887,
+              1891
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1901,
+              1910
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              2655,
+              2666
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              2842,
+              2844
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              3029,
+              3047
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              29,
+              62
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              84,
+              94
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              103,
+              113
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              161,
+              175
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              248,
+              258
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              305,
+              333
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              337,
+              352
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              361,
+              380
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              401,
+              427
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              448,
+              455
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              457,
+              492
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              513,
+              528
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              537,
+              546
+            ],
+            [
+              558,
+              583
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              550,
+              583
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              587,
+              599
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1083,
+              1120
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1197,
+              1222
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1224,
+              1227
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1235,
+              1259
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1261,
+              1279
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1295,
+              1298
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1394,
+              1403
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1405,
+              1425
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1436,
+              1443
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1715,
+              1724
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1950,
+              1972
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1984,
+              2005
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2007,
+              2022
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2036,
+              2060
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2083,
+              2101
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2458,
+              2476
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2478,
+              2498
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2521,
+              2529
+            ],
+            [
+              2537,
+              2557
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2530,
+              2557
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2728,
+              2736
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3009,
+              3018
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3055,
+              3077
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3164,
+              3187
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              3191,
+              3224
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              603,
+              642
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              603,
+              642
+            ],
+            [
+              646,
+              656
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              775,
+              786
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              790,
+              799
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              857,
+              866
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              868,
+              877
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              879,
+              888
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              1000,
+              1021
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              114,
+              142
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              297,
+              304
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              393,
+              400
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              706,
+              743
+            ],
+            [
+              751,
+              767
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              745,
+              749
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              804,
+              849
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              892,
+              909
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              917,
+              929
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              931,
+              947
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              949,
+              962
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              964,
+              980
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              982,
+              994
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1025,
+              1032
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1129,
+              1154
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1311,
+              1336
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1446,
+              1459
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1477,
+              1495
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1612,
+              1636
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1644,
+              1655
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1736,
+              1749
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              2612,
+              2627
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              3029,
+              3047
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "0fadc147a430308eef6498c5b0a4cbe5b26cc7b6e8029fb08041e90d0390c5dd"
+    },
+    {
+      "study_id": "NCT02301962",
+      "document_id": "NCT02301962_inc",
+      "tp": 3,
+      "fp": 30,
+      "fn": 14,
+      "precision": 0.09090909090909091,
+      "recall": 0.17647058823529413,
+      "f1": 0.12000000000000001,
+      "false_negative_rate": 0.8235294117647058,
+      "false_positive_rate": null,
+      "prediction_count": 33,
+      "gold_count": 17,
+      "encoder_ms": 684.6282000187784,
+      "head_ms": 0.678999989759177,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              177,
+              191
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              199,
+              204
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              467,
+              472
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              587,
+              594
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              630,
+              636
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              728,
+              738
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              748,
+              755
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              777,
+              796
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              834,
+              838
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              855,
+              873
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1063,
+              1069
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1744,
+              1754
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1787,
+              1801
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1875,
+              1892
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              2135,
+              2152
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              643,
+              646
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              646,
+              659
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              662,
+              673
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              680,
+              690
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              691,
+              701
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              702,
+              714
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              916,
+              928
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              945,
+              955
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              959,
+              970
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              122,
+              134
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              140,
+              151
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              208,
+              211
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              518,
+              521
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1187,
+              1193
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1427,
+              1431
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1726,
+              1735
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              1803,
+              1808
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              2182,
+              2191
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              177,
+              191
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              558,
+              568
+            ],
+            [
+              587,
+              594
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              572,
+              594
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              728,
+              746
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              777,
+              796
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              827,
+              838
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              855,
+              873
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              1091,
+              1123
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              122,
+              136
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              140,
+              153
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              599,
+              617
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              643,
+              660
+            ],
+            [
+              691,
+              714
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              662,
+              674
+            ],
+            [
+              691,
+              714
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              680,
+              714
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              842,
+              853
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              945,
+              955
+            ],
+            [
+              971,
+              989
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              959,
+              989
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "02d58aa1bc1b84caa152b14c52ac124164f6c2fad5cc6522e7e0be19b547b9d0"
+    },
+    {
+      "study_id": "NCT02481518",
+      "document_id": "NCT02481518_exc",
+      "tp": 1,
+      "fp": 4,
+      "fn": 2,
+      "precision": 0.2,
+      "recall": 0.3333333333333333,
+      "f1": 0.25,
+      "false_negative_rate": 0.6666666666666666,
+      "false_positive_rate": null,
+      "prediction_count": 5,
+      "gold_count": 3,
+      "encoder_ms": 29.258299997309223,
+      "head_ms": 0.1354999840259552,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              53,
+              65
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              66,
+              76
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              77,
+              95
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              21,
+              30
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              38,
+              51
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              66,
+              84
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              86,
+              95
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              21,
+              30
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "6644f62a3ab364a4e3e945bb132871ea99e0bac18d2385a48d15ff3b80ba6dc8"
+    },
+    {
+      "study_id": "NCT02481518",
+      "document_id": "NCT02481518_inc",
+      "tp": 1,
+      "fp": 8,
+      "fn": 1,
+      "precision": 0.1111111111111111,
+      "recall": 0.5,
+      "f1": 0.1818181818181818,
+      "false_negative_rate": 0.5,
+      "false_positive_rate": null,
+      "prediction_count": 9,
+      "gold_count": 2,
+      "encoder_ms": 51.23689997708425,
+      "head_ms": 0.10699999984353781,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              78,
+              98
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              138,
+              143
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              127,
+              130
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              132,
+              136
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              38,
+              44
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              103,
+              111
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              112,
+              121
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              130,
+              132
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              169,
+              172
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              78,
+              98
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              127,
+              136
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "e317dc325fdb0e3b9c98a43d5fdc11dd75df27feb0f37ee0a362da6fd7cf5890"
+    },
+    {
+      "study_id": "NCT03011476",
+      "document_id": "NCT03011476_exc",
+      "tp": 0,
+      "fp": 2,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": 1.0,
+      "false_positive_rate": null,
+      "prediction_count": 2,
+      "gold_count": 3,
+      "encoder_ms": 24.86010000575334,
+      "head_ms": 0.0543000060133636,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              12,
+              57
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              59,
+              100
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              12,
+              30
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              59,
+              64
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              76,
+              89
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "8775d0946e85bbf41c71b311a32b74ecd9bab68f4332436746c3002ea0a523b4"
+    },
+    {
+      "study_id": "NCT03011476",
+      "document_id": "NCT03011476_inc",
+      "tp": 3,
+      "fp": 7,
+      "fn": 0,
+      "precision": 0.3,
+      "recall": 1.0,
+      "f1": 0.4615384615384615,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": null,
+      "prediction_count": 10,
+      "gold_count": 3,
+      "encoder_ms": 45.256099983816966,
+      "head_ms": 0.08609998621977866,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              17
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              46,
+              73
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              95,
+              115
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              120,
+              136
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              137,
+              146
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              148,
+              153
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              163,
+              168
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              38,
+              45
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              80,
+              93
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              174,
+              204
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              17
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              95,
+              115
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              120,
+              136
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "d3247dad46d174b92678678fc92530561bc5f9b572636c8142dd9f5111ce990d"
+    },
+    {
+      "study_id": "NCT00806273",
+      "document_id": "NCT00806273_exc",
+      "tp": 0,
+      "fp": 5,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": 1.0,
+      "false_positive_rate": null,
+      "prediction_count": 5,
+      "gold_count": 3,
+      "encoder_ms": 36.47170000476763,
+      "head_ms": 0.06779999239370227,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              43,
+              65
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              79,
+              88
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              29,
+              33
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              39,
+              41
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              92,
+              99
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              6
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              52,
+              65
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              79,
+              113
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "b6759ef090c91467cc52d4728e0e05a41e382f48168d92164c017054a38a0f41"
+    },
+    {
+      "study_id": "NCT00806273",
+      "document_id": "NCT00806273_inc",
+      "tp": 0,
+      "fp": 8,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": 1.0,
+      "false_positive_rate": null,
+      "prediction_count": 8,
+      "gold_count": 2,
+      "encoder_ms": 45.39889999432489,
+      "head_ms": 0.1060000213328749,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              7,
+              10
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              14,
+              17
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              31,
+              45
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              58,
+              71
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              135,
+              144
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              145,
+              170
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              198,
+              206
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              224,
+              234
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              5
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              7,
+              12
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "611457e23ce21dcff39e278111079140a61fbdc75e8b8b0574b38e192fb6fe8a"
+    },
+    {
+      "study_id": "NCT02256956",
+      "document_id": "NCT02256956_exc",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": null,
+      "false_positive_rate": null,
+      "prediction_count": 0,
+      "gold_count": 0,
+      "encoder_ms": 15.557299979263917,
+      "head_ms": 0.03399999695830047,
+      "predictions": [],
+      "gold": [],
+      "text_sha256": "9cd5b64e0a1f63a8609962b1a87b12b826b5c24a33eeaccf19d309c008727b55"
+    },
+    {
+      "study_id": "NCT02256956",
+      "document_id": "NCT02256956_inc",
+      "tp": 9,
+      "fp": 16,
+      "fn": 10,
+      "precision": 0.36,
+      "recall": 0.47368421052631576,
+      "f1": 0.40909090909090906,
+      "false_negative_rate": 0.5263157894736842,
+      "false_positive_rate": null,
+      "prediction_count": 25,
+      "gold_count": 19,
+      "encoder_ms": 70.95980001031421,
+      "head_ms": 0.14009998994879425,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              0,
+              7
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              18,
+              38
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              67,
+              74
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              75,
+              88
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              90,
+              100
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              102,
+              126
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              130,
+              152
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              170,
+              177
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              328,
+              336
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              337,
+              349
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              351,
+              371
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              373,
+              405
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              407,
+              427
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              429,
+              448
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              193,
+              208
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              233,
+              240
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              245,
+              248
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              267,
+              281
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              285,
+              295
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              321,
+              326
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              49,
+              57
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              178,
+              187
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              218,
+              227
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              240,
+              243
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              248,
+              253
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              67,
+              88
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              90,
+              100
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              102,
+              115
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              130,
+              152
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              303,
+              310
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              328,
+              349
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              351,
+              371
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              373,
+              386
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              388,
+              405
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              407,
+              427
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              429,
+              448
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              193,
+              208
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              233,
+              243
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              267,
+              272
+            ],
+            [
+              285,
+              295
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              267,
+              281
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              314,
+              326
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              178,
+              187
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              218,
+              227
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              245,
+              257
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "4a9125d8a773817a75c6e2424a4b49927fbb9565f5708db297b468b125a92b90"
+    },
+    {
+      "study_id": "NCT03138577",
+      "document_id": "NCT03138577_exc",
+      "tp": 8,
+      "fp": 7,
+      "fn": 3,
+      "precision": 0.5333333333333333,
+      "recall": 0.7272727272727273,
+      "f1": 0.6153846153846153,
+      "false_negative_rate": 0.2727272727272727,
+      "false_positive_rate": null,
+      "prediction_count": 15,
+      "gold_count": 11,
+      "encoder_ms": 54.328099999111146,
+      "head_ms": 0.13229998876340687,
+      "predictions": [
+        [
+          "Condition",
+          [
+            [
+              43,
+              52
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              79,
+              86
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              109,
+              138
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              140,
+              149
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              159,
+              162
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              164,
+              198
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              202,
+              231
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              233,
+              240
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              253,
+              269
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              87,
+              89
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              90,
+              107
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              244,
+              252
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              20,
+              41
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              273,
+              297
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              311,
+              331
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Condition",
+          [
+            [
+              79,
+              86
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              109,
+              138
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              159,
+              162
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              164,
+              185
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              187,
+              198
+            ],
+            [
+              214,
+              231
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              202,
+              231
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              253,
+              269
+            ]
+          ]
+        ],
+        [
+          "Condition",
+          [
+            [
+              322,
+              331
+            ]
+          ]
+        ],
+        [
+          "Drug",
+          [
+            [
+              90,
+              107
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              20,
+              41
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              273,
+              297
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "bb2734dbc17e986319ad37bb64b444d9a8f8e57861ffd75ee9f4755ac07a3171"
+    },
+    {
+      "study_id": "NCT03138577",
+      "document_id": "NCT03138577_inc",
+      "tp": 2,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1": 0.5714285714285715,
+      "false_negative_rate": 0.0,
+      "false_positive_rate": null,
+      "prediction_count": 5,
+      "gold_count": 2,
+      "encoder_ms": 50.76240000198595,
+      "head_ms": 0.09479999425821006,
+      "predictions": [
+        [
+          "Drug",
+          [
+            [
+              163,
+              166
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              11,
+              40
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              46,
+              67
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              83,
+              93
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              169,
+              172
+            ]
+          ]
+        ]
+      ],
+      "gold": [
+        [
+          "Procedure",
+          [
+            [
+              11,
+              40
+            ]
+          ]
+        ],
+        [
+          "Procedure",
+          [
+            [
+              46,
+              67
+            ]
+          ]
+        ]
+      ],
+      "text_sha256": "abe26b6e3b753ed6bd94810779081a9a9ad60c602187cb153c5b52f314f70911"
+    }
+  ],
+  "comparison_with_original_benchmark": {
+    "baseline_report": "reports/entity_benchmark.json",
+    "baseline_report_sha256": "462a606a461bd7df5529529d36e30ce41cd5371c90263b2341fa7498d27fee9f",
+    "same_test_studies_documents_text_hashes_and_gold": true,
+    "metrics": {
+      "training_dictionary": {
+        "tp": 168,
+        "fp": 294,
+        "fn": 160,
+        "precision": 0.36363636363636365,
+        "recall": 0.5121951219512195,
+        "f1": 0.4253164556962025,
+        "false_negative_rate": 0.4878048780487805,
+        "false_positive_rate": null
+      },
+      "biomedical_transformer": {
+        "tp": 41,
+        "fp": 279,
+        "fn": 287,
+        "precision": 0.128125,
+        "recall": 0.125,
+        "f1": 0.12654320987654322,
+        "false_negative_rate": 0.875,
+        "false_positive_rate": null
+      },
+      "adapted_frozen_encoder_head": {
+        "tp": 154,
+        "fp": 477,
+        "fn": 174,
+        "precision": 0.24405705229793978,
+        "recall": 0.4695121951219512,
+        "f1": 0.32116788321167883,
+        "false_negative_rate": 0.5304878048780488,
+        "false_positive_rate": null,
+        "mean_encoder_plus_head_latency_ms": 96.0505299961369
+      }
+    },
+    "f1_delta_vs_biomedical_transformer": 0.1946246733351356,
+    "f1_delta_vs_training_dictionary": -0.1041485724845237
+  },
+  "performance": {
+    "training_seconds_excluding_frozen_encoding": 0.5875063999847043,
+    "encoder_load_ms": 5218.028200004483,
+    "total_seconds_including_load_encoding_training_evaluation": 39.21470979999867,
+    "sampled_peak_process_rss_mib": 953.12890625,
+    "rss_sample_interval_ms": 50,
+    "device": "cpu",
+    "threads": 4,
+    "python": "3.11.9",
+    "torch": "2.14.1+cpu",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "physical_cpu_cores": 8,
+    "logical_cpu_count": 16,
+    "ram_total_gib": 23.692100524902344
+  },
+  "limitations": [
+    "Only the 5,383-parameter linear head is trained; this is not end-to-end transformer fine-tuning.",
+    "CHIA adaptation is distinct from India/US adaptation, which lacks comparable independent regional labels.",
+    "Train100/dev20/test20 study selection is fixed before this run; test is evaluated only after development epoch selection.",
+    "Dictionary baseline used more training studies (800), so comparison does not isolate architecture under equal training data.",
+    "Overlapping/discontinuous and boundary-straddling supervision is ignored for training tokens; full mapped gold spans still count in exact test evaluation.",
+    "The experiment is exploratory with one seed; no clinical efficacy or calibrated reliability is established.",
+    "Feature encoding latency and head decoding are separately timed and summed; production request overhead is excluded.",
+    "The adapted model is an experimental evaluation artifact, not connected to eligibility-rule execution."
+  ]
+}

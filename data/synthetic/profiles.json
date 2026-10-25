@@ -1,0 +1,272 @@
+[
+  {
+    "patient_id": "SYN-DEMO-001",
+    "is_synthetic": true,
+    "age": 35,
+    "bmi": 26.0,
+    "hba1c": 8.0,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-002",
+    "is_synthetic": true,
+    "age": 19,
+    "bmi": 23.0,
+    "hba1c": 7.5,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-003",
+    "is_synthetic": true,
+    "age": 44,
+    "bmi": 36.0,
+    "hba1c": 8.0,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-004",
+    "is_synthetic": true,
+    "age": 50,
+    "bmi": 27.0,
+    "hba1c": null,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-005",
+    "is_synthetic": true,
+    "age": 52,
+    "bmi": 29.0,
+    "hba1c": 9.0,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": true
+  },
+  {
+    "patient_id": "SYN-DEMO-006",
+    "is_synthetic": true,
+    "age": 25,
+    "bmi": 25.3,
+    "hba1c": 11.7,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-007",
+    "is_synthetic": true,
+    "age": 57,
+    "bmi": 30.8,
+    "hba1c": 10.6,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-008",
+    "is_synthetic": true,
+    "age": 55,
+    "bmi": 28.1,
+    "hba1c": null,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": null
+  },
+  {
+    "patient_id": "SYN-DEMO-009",
+    "is_synthetic": true,
+    "age": 61,
+    "bmi": 29.3,
+    "hba1c": 7.5,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-010",
+    "is_synthetic": true,
+    "age": 42,
+    "bmi": 41.0,
+    "hba1c": 8.8,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-011",
+    "is_synthetic": true,
+    "age": 47,
+    "bmi": 21.2,
+    "hba1c": 9.7,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-012",
+    "is_synthetic": true,
+    "age": 47,
+    "bmi": 27.7,
+    "hba1c": 8.1,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-013",
+    "is_synthetic": true,
+    "age": 66,
+    "bmi": 37.9,
+    "hba1c": 11.2,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-014",
+    "is_synthetic": true,
+    "age": 48,
+    "bmi": 29.8,
+    "hba1c": 10.7,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-015",
+    "is_synthetic": true,
+    "age": 51,
+    "bmi": 38.4,
+    "hba1c": 6.2,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-016",
+    "is_synthetic": true,
+    "age": 74,
+    "bmi": 20.8,
+    "hba1c": 10.1,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-017",
+    "is_synthetic": true,
+    "age": 34,
+    "bmi": 30.9,
+    "hba1c": 9.9,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-018",
+    "is_synthetic": true,
+    "age": 74,
+    "bmi": 27.2,
+    "hba1c": 6.8,
+    "type_2_diabetes": false,
+    "severe_kidney_disease": true
+  },
+  {
+    "patient_id": "SYN-DEMO-019",
+    "is_synthetic": true,
+    "age": 47,
+    "bmi": 36.5,
+    "hba1c": 11.5,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-020",
+    "is_synthetic": true,
+    "age": 67,
+    "bmi": 37.0,
+    "hba1c": 10.8,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-021",
+    "is_synthetic": true,
+    "age": 69,
+    "bmi": 20.3,
+    "hba1c": 10.0,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-022",
+    "is_synthetic": true,
+    "age": 45,
+    "bmi": 37.4,
+    "hba1c": 8.6,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-023",
+    "is_synthetic": true,
+    "age": 65,
+    "bmi": 37.7,
+    "hba1c": 6.5,
+    "type_2_diabetes": false,
+    "severe_kidney_disease": true
+  },
+  {
+    "patient_id": "SYN-DEMO-024",
+    "is_synthetic": true,
+    "age": 71,
+    "bmi": 19.9,
+    "hba1c": 10.7,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-025",
+    "is_synthetic": true,
+    "age": 60,
+    "bmi": 35.4,
+    "hba1c": 7.8,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-026",
+    "is_synthetic": true,
+    "age": 73,
+    "bmi": 29.3,
+    "hba1c": 10.2,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-027",
+    "is_synthetic": true,
+    "age": 74,
+    "bmi": 33.9,
+    "hba1c": 7.4,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-028",
+    "is_synthetic": true,
+    "age": 55,
+    "bmi": 25.0,
+    "hba1c": 8.2,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": null
+  },
+  {
+    "patient_id": "SYN-DEMO-029",
+    "is_synthetic": true,
+    "age": 24,
+    "bmi": 27.0,
+    "hba1c": 6.0,
+    "type_2_diabetes": false,
+    "severe_kidney_disease": false
+  },
+  {
+    "patient_id": "SYN-DEMO-030",
+    "is_synthetic": true,
+    "age": 19,
+    "bmi": 29.7,
+    "hba1c": 7.6,
+    "type_2_diabetes": true,
+    "severe_kidney_disease": false
+  }
+]

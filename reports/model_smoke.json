@@ -1,0 +1,4037 @@
+{
+  "run_at_utc": "2026-10-17T08:41:35.420988+00:00",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "cpu_logical_count": 16,
+  "ram_total_gib": 23.692,
+  "device": "cpu",
+  "torch_threads": 4,
+  "input": "Participants aged 18 to 65 years with type 2 diabetes must not have severe renal impairment.",
+  "input_provenance": "synthetic demonstration, not a clinical protocol or patient record",
+  "cold": {
+    "model_id": "d4data/biomedical-ner-all",
+    "version": "015a4050c9ac99722e61c547aa9b4282bcbedc7f",
+    "device": "cpu",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "label": "Age",
+        "text": "18 to 65 years",
+        "score": 0.957957
+      },
+      {
+        "start": 38,
+        "end": 53,
+        "label": "History",
+        "text": "type 2 diabetes",
+        "score": 0.809687
+      },
+      {
+        "start": 75,
+        "end": 80,
+        "label": "Biological_structure",
+        "text": "renal",
+        "score": 0.983658
+      }
+    ],
+    "status": "ok",
+    "input_characters": 92,
+    "role": "Biomedical entity detection only; not an eligibility-rule parser.",
+    "windows": 1,
+    "tokens_processed": 17,
+    "truncated": false,
+    "latency_ms": 7556.969
+  },
+  "warm": {
+    "model_id": "d4data/biomedical-ner-all",
+    "version": "015a4050c9ac99722e61c547aa9b4282bcbedc7f",
+    "device": "cpu",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "label": "Age",
+        "text": "18 to 65 years",
+        "score": 0.957957
+      },
+      {
+        "start": 38,
+        "end": 53,
+        "label": "History",
+        "text": "type 2 diabetes",
+        "score": 0.809687
+      },
+      {
+        "start": 75,
+        "end": 80,
+        "label": "Biological_structure",
+        "text": "renal",
+        "score": 0.983658
+      }
+    ],
+    "status": "ok",
+    "input_characters": 92,
+    "role": "Biomedical entity detection only; not an eligibility-rule parser.",
+    "windows": 1,
+    "tokens_processed": 17,
+    "truncated": false,
+    "latency_ms": 17.196
+  },
+  "memory": {
+    "rss_before_mib": 18.902,
+    "rss_sampled_peak_mib": 685.527,
+    "sampling_interval_ms": 50,
+    "meaning": "Process RSS during load and inference; not model-only or exact allocator peak."
+  },
+  "long_input": {
+    "characters": 8516,
+    "output": {
+      "model_id": "d4data/biomedical-ner-all",
+      "version": "015a4050c9ac99722e61c547aa9b4282bcbedc7f",
+      "device": "cpu",
+      "entities": [
+        {
+          "start": 18,
+          "end": 24,
+          "label": "Detailed_description",
+          "text": "type 2",
+          "score": 0.682438
+        },
+        {
+          "start": 25,
+          "end": 33,
+          "label": "History",
+          "text": "diabetes",
+          "score": 0.4353
+        },
+        {
+          "start": 42,
+          "end": 45,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.898709
+        },
+        {
+          "start": 71,
+          "end": 75,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.871435
+        },
+        {
+          "start": 76,
+          "end": 86,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.5362
+        },
+        {
+          "start": 95,
+          "end": 98,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.927367
+        },
+        {
+          "start": 124,
+          "end": 139,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.787976
+        },
+        {
+          "start": 148,
+          "end": 151,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.972248
+        },
+        {
+          "start": 177,
+          "end": 181,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.90803
+        },
+        {
+          "start": 182,
+          "end": 192,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.504802
+        },
+        {
+          "start": 201,
+          "end": 204,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.969552
+        },
+        {
+          "start": 230,
+          "end": 234,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.903959
+        },
+        {
+          "start": 235,
+          "end": 236,
+          "label": "History",
+          "text": "2",
+          "score": 0.571253
+        },
+        {
+          "start": 237,
+          "end": 245,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.431227
+        },
+        {
+          "start": 254,
+          "end": 257,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.984855
+        },
+        {
+          "start": 283,
+          "end": 287,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.774697
+        },
+        {
+          "start": 288,
+          "end": 298,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.616354
+        },
+        {
+          "start": 307,
+          "end": 310,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.968443
+        },
+        {
+          "start": 336,
+          "end": 340,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.720857
+        },
+        {
+          "start": 341,
+          "end": 351,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.730734
+        },
+        {
+          "start": 360,
+          "end": 363,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.961434
+        },
+        {
+          "start": 389,
+          "end": 393,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.918231
+        },
+        {
+          "start": 394,
+          "end": 404,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.58647
+        },
+        {
+          "start": 413,
+          "end": 416,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.982637
+        },
+        {
+          "start": 442,
+          "end": 446,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.697315
+        },
+        {
+          "start": 447,
+          "end": 457,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.672764
+        },
+        {
+          "start": 466,
+          "end": 469,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.952579
+        },
+        {
+          "start": 495,
+          "end": 499,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.729892
+        },
+        {
+          "start": 500,
+          "end": 510,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.734706
+        },
+        {
+          "start": 519,
+          "end": 522,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.962588
+        },
+        {
+          "start": 548,
+          "end": 552,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.776566
+        },
+        {
+          "start": 553,
+          "end": 563,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.654086
+        },
+        {
+          "start": 572,
+          "end": 575,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.962229
+        },
+        {
+          "start": 601,
+          "end": 605,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.859572
+        },
+        {
+          "start": 606,
+          "end": 616,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.4902
+        },
+        {
+          "start": 625,
+          "end": 628,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.863061
+        },
+        {
+          "start": 654,
+          "end": 669,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.771719
+        },
+        {
+          "start": 678,
+          "end": 681,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.965283
+        },
+        {
+          "start": 707,
+          "end": 722,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.580312
+        },
+        {
+          "start": 731,
+          "end": 734,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.949798
+        },
+        {
+          "start": 760,
+          "end": 764,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.797709
+        },
+        {
+          "start": 765,
+          "end": 775,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.563794
+        },
+        {
+          "start": 784,
+          "end": 787,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.916248
+        },
+        {
+          "start": 813,
+          "end": 828,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.901954
+        },
+        {
+          "start": 837,
+          "end": 840,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.938926
+        },
+        {
+          "start": 866,
+          "end": 881,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.844609
+        },
+        {
+          "start": 890,
+          "end": 893,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.90156
+        },
+        {
+          "start": 919,
+          "end": 934,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.808682
+        },
+        {
+          "start": 943,
+          "end": 946,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.961711
+        },
+        {
+          "start": 972,
+          "end": 987,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.83536
+        },
+        {
+          "start": 996,
+          "end": 999,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.978209
+        },
+        {
+          "start": 1025,
+          "end": 1040,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.676176
+        },
+        {
+          "start": 1049,
+          "end": 1052,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.920852
+        },
+        {
+          "start": 1078,
+          "end": 1093,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.734585
+        },
+        {
+          "start": 1102,
+          "end": 1105,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.877343
+        },
+        {
+          "start": 1131,
+          "end": 1135,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.915987
+        },
+        {
+          "start": 1136,
+          "end": 1137,
+          "label": "History",
+          "text": "2",
+          "score": 0.600236
+        },
+        {
+          "start": 1138,
+          "end": 1146,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.490061
+        },
+        {
+          "start": 1155,
+          "end": 1158,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.94788
+        },
+        {
+          "start": 1184,
+          "end": 1188,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.884503
+        },
+        {
+          "start": 1189,
+          "end": 1190,
+          "label": "History",
+          "text": "2",
+          "score": 0.633443
+        },
+        {
+          "start": 1191,
+          "end": 1199,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.365352
+        },
+        {
+          "start": 1208,
+          "end": 1211,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.98606
+        },
+        {
+          "start": 1237,
+          "end": 1241,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.77758
+        },
+        {
+          "start": 1242,
+          "end": 1252,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.527748
+        },
+        {
+          "start": 1261,
+          "end": 1264,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.988698
+        },
+        {
+          "start": 1290,
+          "end": 1294,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.886008
+        },
+        {
+          "start": 1295,
+          "end": 1305,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.48222
+        },
+        {
+          "start": 1314,
+          "end": 1317,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.919372
+        },
+        {
+          "start": 1343,
+          "end": 1347,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.834237
+        },
+        {
+          "start": 1348,
+          "end": 1349,
+          "label": "History",
+          "text": "2",
+          "score": 0.38746
+        },
+        {
+          "start": 1350,
+          "end": 1358,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.201248
+        },
+        {
+          "start": 1367,
+          "end": 1370,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.991427
+        },
+        {
+          "start": 1396,
+          "end": 1400,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.871152
+        },
+        {
+          "start": 1401,
+          "end": 1411,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.443232
+        },
+        {
+          "start": 1420,
+          "end": 1423,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.995953
+        },
+        {
+          "start": 1449,
+          "end": 1453,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.714417
+        },
+        {
+          "start": 1454,
+          "end": 1464,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.574166
+        },
+        {
+          "start": 1473,
+          "end": 1476,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.990624
+        },
+        {
+          "start": 1502,
+          "end": 1517,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.60708
+        },
+        {
+          "start": 1526,
+          "end": 1529,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.988701
+        },
+        {
+          "start": 1555,
+          "end": 1570,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.680817
+        },
+        {
+          "start": 1579,
+          "end": 1582,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.974159
+        },
+        {
+          "start": 1608,
+          "end": 1623,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.794201
+        },
+        {
+          "start": 1632,
+          "end": 1635,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.983513
+        },
+        {
+          "start": 1661,
+          "end": 1676,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.871698
+        },
+        {
+          "start": 1685,
+          "end": 1688,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.986929
+        },
+        {
+          "start": 1714,
+          "end": 1718,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.735214
+        },
+        {
+          "start": 1719,
+          "end": 1729,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.603175
+        },
+        {
+          "start": 1738,
+          "end": 1741,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.955917
+        },
+        {
+          "start": 1767,
+          "end": 1771,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.945972
+        },
+        {
+          "start": 1772,
+          "end": 1773,
+          "label": "History",
+          "text": "2",
+          "score": 0.463687
+        },
+        {
+          "start": 1774,
+          "end": 1782,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.371287
+        },
+        {
+          "start": 1791,
+          "end": 1794,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.97267
+        },
+        {
+          "start": 1820,
+          "end": 1824,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.845708
+        },
+        {
+          "start": 1825,
+          "end": 1835,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.552599
+        },
+        {
+          "start": 1844,
+          "end": 1847,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.991019
+        },
+        {
+          "start": 1873,
+          "end": 1877,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.869069
+        },
+        {
+          "start": 1878,
+          "end": 1879,
+          "label": "History",
+          "text": "2",
+          "score": 0.497287
+        },
+        {
+          "start": 1880,
+          "end": 1888,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.400883
+        },
+        {
+          "start": 1897,
+          "end": 1900,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.905176
+        },
+        {
+          "start": 1926,
+          "end": 1941,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.630066
+        },
+        {
+          "start": 1950,
+          "end": 1953,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.873385
+        },
+        {
+          "start": 1979,
+          "end": 1994,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.833392
+        },
+        {
+          "start": 2003,
+          "end": 2006,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.954636
+        },
+        {
+          "start": 2032,
+          "end": 2038,
+          "label": "Detailed_description",
+          "text": "type 2",
+          "score": 0.765876
+        },
+        {
+          "start": 2039,
+          "end": 2047,
+          "label": "History",
+          "text": "diabetes",
+          "score": 0.468823
+        },
+        {
+          "start": 2056,
+          "end": 2059,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.989258
+        },
+        {
+          "start": 2085,
+          "end": 2089,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.803691
+        },
+        {
+          "start": 2090,
+          "end": 2100,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.679163
+        },
+        {
+          "start": 2109,
+          "end": 2112,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.901694
+        },
+        {
+          "start": 2138,
+          "end": 2153,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.673231
+        },
+        {
+          "start": 2162,
+          "end": 2165,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.972662
+        },
+        {
+          "start": 2191,
+          "end": 2206,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.918102
+        },
+        {
+          "start": 2215,
+          "end": 2218,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.93876
+        },
+        {
+          "start": 2244,
+          "end": 2259,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.91597
+        },
+        {
+          "start": 2268,
+          "end": 2271,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.902872
+        },
+        {
+          "start": 2297,
+          "end": 2312,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.861012
+        },
+        {
+          "start": 2321,
+          "end": 2324,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.982161
+        },
+        {
+          "start": 2350,
+          "end": 2354,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.85093
+        },
+        {
+          "start": 2355,
+          "end": 2365,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.540652
+        },
+        {
+          "start": 2374,
+          "end": 2377,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.978263
+        },
+        {
+          "start": 2403,
+          "end": 2409,
+          "label": "Detailed_description",
+          "text": "type 2",
+          "score": 0.701031
+        },
+        {
+          "start": 2410,
+          "end": 2418,
+          "label": "History",
+          "text": "diabetes",
+          "score": 0.378718
+        },
+        {
+          "start": 2427,
+          "end": 2430,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.977143
+        },
+        {
+          "start": 2456,
+          "end": 2460,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.731212
+        },
+        {
+          "start": 2461,
+          "end": 2471,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.630889
+        },
+        {
+          "start": 2480,
+          "end": 2483,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.897771
+        },
+        {
+          "start": 2509,
+          "end": 2513,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.645371
+        },
+        {
+          "start": 2514,
+          "end": 2524,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.705817
+        },
+        {
+          "start": 2533,
+          "end": 2536,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.983723
+        },
+        {
+          "start": 2562,
+          "end": 2566,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.739501
+        },
+        {
+          "start": 2567,
+          "end": 2577,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.713586
+        },
+        {
+          "start": 2586,
+          "end": 2589,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.984874
+        },
+        {
+          "start": 2615,
+          "end": 2619,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.702791
+        },
+        {
+          "start": 2620,
+          "end": 2630,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.765816
+        },
+        {
+          "start": 2639,
+          "end": 2642,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.951815
+        },
+        {
+          "start": 2668,
+          "end": 2672,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.90338
+        },
+        {
+          "start": 2673,
+          "end": 2674,
+          "label": "History",
+          "text": "2",
+          "score": 0.587787
+        },
+        {
+          "start": 2675,
+          "end": 2683,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.396449
+        },
+        {
+          "start": 2692,
+          "end": 2695,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.935572
+        },
+        {
+          "start": 2721,
+          "end": 2725,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.728997
+        },
+        {
+          "start": 2726,
+          "end": 2736,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.58245
+        },
+        {
+          "start": 2774,
+          "end": 2778,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.833127
+        },
+        {
+          "start": 2779,
+          "end": 2780,
+          "label": "History",
+          "text": "2",
+          "score": 0.539893
+        },
+        {
+          "start": 2781,
+          "end": 2789,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.423318
+        },
+        {
+          "start": 2798,
+          "end": 2801,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.896783
+        },
+        {
+          "start": 2827,
+          "end": 2842,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.867551
+        },
+        {
+          "start": 2851,
+          "end": 2854,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.887734
+        },
+        {
+          "start": 2880,
+          "end": 2884,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.578379
+        },
+        {
+          "start": 2885,
+          "end": 2895,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.623554
+        },
+        {
+          "start": 2904,
+          "end": 2907,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.959504
+        },
+        {
+          "start": 2933,
+          "end": 2937,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.736219
+        },
+        {
+          "start": 2938,
+          "end": 2948,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.606827
+        },
+        {
+          "start": 2957,
+          "end": 2960,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.953806
+        },
+        {
+          "start": 2986,
+          "end": 3001,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.959056
+        },
+        {
+          "start": 3010,
+          "end": 3013,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.846126
+        },
+        {
+          "start": 3039,
+          "end": 3054,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.835972
+        },
+        {
+          "start": 3063,
+          "end": 3066,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.751824
+        },
+        {
+          "start": 3092,
+          "end": 3098,
+          "label": "Detailed_description",
+          "text": "type 2",
+          "score": 0.738134
+        },
+        {
+          "start": 3099,
+          "end": 3107,
+          "label": "History",
+          "text": "diabetes",
+          "score": 0.427435
+        },
+        {
+          "start": 3116,
+          "end": 3119,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.951793
+        },
+        {
+          "start": 3145,
+          "end": 3160,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.923683
+        },
+        {
+          "start": 3169,
+          "end": 3172,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.908807
+        },
+        {
+          "start": 3198,
+          "end": 3213,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.73171
+        },
+        {
+          "start": 3222,
+          "end": 3225,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.808198
+        },
+        {
+          "start": 3251,
+          "end": 3255,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.859215
+        },
+        {
+          "start": 3256,
+          "end": 3266,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.461497
+        },
+        {
+          "start": 3275,
+          "end": 3278,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.969104
+        },
+        {
+          "start": 3304,
+          "end": 3319,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.675622
+        },
+        {
+          "start": 3328,
+          "end": 3331,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.887897
+        },
+        {
+          "start": 3357,
+          "end": 3372,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.628359
+        },
+        {
+          "start": 3381,
+          "end": 3384,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.972793
+        },
+        {
+          "start": 3410,
+          "end": 3414,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.696762
+        },
+        {
+          "start": 3415,
+          "end": 3425,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.581833
+        },
+        {
+          "start": 3434,
+          "end": 3437,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.939526
+        },
+        {
+          "start": 3463,
+          "end": 3467,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.639012
+        },
+        {
+          "start": 3468,
+          "end": 3478,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.661012
+        },
+        {
+          "start": 3487,
+          "end": 3490,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.972051
+        },
+        {
+          "start": 3516,
+          "end": 3531,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.587645
+        },
+        {
+          "start": 3540,
+          "end": 3543,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.992652
+        },
+        {
+          "start": 3569,
+          "end": 3573,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.673042
+        },
+        {
+          "start": 3574,
+          "end": 3584,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.569329
+        },
+        {
+          "start": 3593,
+          "end": 3596,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.994479
+        },
+        {
+          "start": 3622,
+          "end": 3626,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.927667
+        },
+        {
+          "start": 3627,
+          "end": 3628,
+          "label": "History",
+          "text": "2",
+          "score": 0.430223
+        },
+        {
+          "start": 3629,
+          "end": 3637,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.373941
+        },
+        {
+          "start": 3646,
+          "end": 3649,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.973033
+        },
+        {
+          "start": 3675,
+          "end": 3690,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.646097
+        },
+        {
+          "start": 3699,
+          "end": 3702,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.991929
+        },
+        {
+          "start": 3728,
+          "end": 3743,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.788982
+        },
+        {
+          "start": 3752,
+          "end": 3755,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.968434
+        },
+        {
+          "start": 3781,
+          "end": 3796,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.879486
+        },
+        {
+          "start": 3805,
+          "end": 3808,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.984601
+        },
+        {
+          "start": 3834,
+          "end": 3849,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.65859
+        },
+        {
+          "start": 3858,
+          "end": 3861,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.965993
+        },
+        {
+          "start": 3887,
+          "end": 3902,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.702244
+        },
+        {
+          "start": 3911,
+          "end": 3914,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.987959
+        },
+        {
+          "start": 3940,
+          "end": 3955,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.636467
+        },
+        {
+          "start": 3964,
+          "end": 3967,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.97905
+        },
+        {
+          "start": 3993,
+          "end": 4008,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.685227
+        },
+        {
+          "start": 4017,
+          "end": 4020,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.926495
+        },
+        {
+          "start": 4046,
+          "end": 4052,
+          "label": "Detailed_description",
+          "text": "type 2",
+          "score": 0.864339
+        },
+        {
+          "start": 4070,
+          "end": 4073,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.896645
+        },
+        {
+          "start": 4099,
+          "end": 4114,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.77826
+        },
+        {
+          "start": 4123,
+          "end": 4126,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.643056
+        },
+        {
+          "start": 4152,
+          "end": 4167,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.93998
+        },
+        {
+          "start": 4176,
+          "end": 4179,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.963234
+        },
+        {
+          "start": 4205,
+          "end": 4209,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.566958
+        },
+        {
+          "start": 4210,
+          "end": 4220,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.689603
+        },
+        {
+          "start": 4229,
+          "end": 4232,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.963715
+        },
+        {
+          "start": 4258,
+          "end": 4262,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.827937
+        },
+        {
+          "start": 4263,
+          "end": 4273,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.571711
+        },
+        {
+          "start": 4282,
+          "end": 4285,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.876727
+        },
+        {
+          "start": 4311,
+          "end": 4326,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.884835
+        },
+        {
+          "start": 4335,
+          "end": 4338,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.98223
+        },
+        {
+          "start": 4364,
+          "end": 4379,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.938912
+        },
+        {
+          "start": 4388,
+          "end": 4391,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.910598
+        },
+        {
+          "start": 4417,
+          "end": 4432,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.89559
+        },
+        {
+          "start": 4441,
+          "end": 4444,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.719584
+        },
+        {
+          "start": 4470,
+          "end": 4476,
+          "label": "Detailed_description",
+          "text": "type 2",
+          "score": 0.702186
+        },
+        {
+          "start": 4477,
+          "end": 4485,
+          "label": "History",
+          "text": "diabetes",
+          "score": 0.417693
+        },
+        {
+          "start": 4494,
+          "end": 4497,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.939049
+        },
+        {
+          "start": 4523,
+          "end": 4527,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.907083
+        },
+        {
+          "start": 4528,
+          "end": 4529,
+          "label": "History",
+          "text": "2",
+          "score": 0.520042
+        },
+        {
+          "start": 4530,
+          "end": 4538,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.389611
+        },
+        {
+          "start": 4547,
+          "end": 4550,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.975706
+        },
+        {
+          "start": 4576,
+          "end": 4580,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.852278
+        },
+        {
+          "start": 4581,
+          "end": 4591,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.590165
+        },
+        {
+          "start": 4600,
+          "end": 4603,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.975447
+        },
+        {
+          "start": 4629,
+          "end": 4633,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.764067
+        },
+        {
+          "start": 4634,
+          "end": 4644,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.67578
+        },
+        {
+          "start": 4653,
+          "end": 4656,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.922743
+        },
+        {
+          "start": 4682,
+          "end": 4686,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.865062
+        },
+        {
+          "start": 4687,
+          "end": 4697,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.629843
+        },
+        {
+          "start": 4706,
+          "end": 4709,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.975668
+        },
+        {
+          "start": 4735,
+          "end": 4739,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.686013
+        },
+        {
+          "start": 4740,
+          "end": 4750,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.670894
+        },
+        {
+          "start": 4759,
+          "end": 4762,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.966682
+        },
+        {
+          "start": 4788,
+          "end": 4792,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.649832
+        },
+        {
+          "start": 4793,
+          "end": 4803,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.7713
+        },
+        {
+          "start": 4812,
+          "end": 4815,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.956699
+        },
+        {
+          "start": 4841,
+          "end": 4845,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.833972
+        },
+        {
+          "start": 4846,
+          "end": 4856,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.647042
+        },
+        {
+          "start": 4865,
+          "end": 4868,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.955733
+        },
+        {
+          "start": 4894,
+          "end": 4898,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.844674
+        },
+        {
+          "start": 4899,
+          "end": 4909,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.49838
+        },
+        {
+          "start": 4918,
+          "end": 4921,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.426633
+        },
+        {
+          "start": 4947,
+          "end": 4962,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.737734
+        },
+        {
+          "start": 4971,
+          "end": 4974,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.918944
+        },
+        {
+          "start": 5000,
+          "end": 5015,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.697427
+        },
+        {
+          "start": 5024,
+          "end": 5027,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.94349
+        },
+        {
+          "start": 5053,
+          "end": 5057,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.831503
+        },
+        {
+          "start": 5058,
+          "end": 5068,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.532534
+        },
+        {
+          "start": 5077,
+          "end": 5080,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.872172
+        },
+        {
+          "start": 5106,
+          "end": 5121,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.890211
+        },
+        {
+          "start": 5130,
+          "end": 5133,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.933775
+        },
+        {
+          "start": 5159,
+          "end": 5174,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.880554
+        },
+        {
+          "start": 5183,
+          "end": 5186,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.875737
+        },
+        {
+          "start": 5212,
+          "end": 5227,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.820366
+        },
+        {
+          "start": 5236,
+          "end": 5239,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.957247
+        },
+        {
+          "start": 5265,
+          "end": 5280,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.805012
+        },
+        {
+          "start": 5289,
+          "end": 5292,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.968929
+        },
+        {
+          "start": 5318,
+          "end": 5333,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.808812
+        },
+        {
+          "start": 5342,
+          "end": 5345,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.908726
+        },
+        {
+          "start": 5371,
+          "end": 5386,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.786276
+        },
+        {
+          "start": 5395,
+          "end": 5398,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.752265
+        },
+        {
+          "start": 5424,
+          "end": 5428,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.887307
+        },
+        {
+          "start": 5429,
+          "end": 5430,
+          "label": "History",
+          "text": "2",
+          "score": 0.54111
+        },
+        {
+          "start": 5431,
+          "end": 5439,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.452831
+        },
+        {
+          "start": 5448,
+          "end": 5451,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.934492
+        },
+        {
+          "start": 5477,
+          "end": 5481,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.799292
+        },
+        {
+          "start": 5482,
+          "end": 5492,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.47635
+        },
+        {
+          "start": 5501,
+          "end": 5504,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.982866
+        },
+        {
+          "start": 5530,
+          "end": 5534,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.84824
+        },
+        {
+          "start": 5535,
+          "end": 5545,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.465384
+        },
+        {
+          "start": 5554,
+          "end": 5557,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.992154
+        },
+        {
+          "start": 5583,
+          "end": 5587,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.829588
+        },
+        {
+          "start": 5588,
+          "end": 5598,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.598319
+        },
+        {
+          "start": 5607,
+          "end": 5610,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.627276
+        },
+        {
+          "start": 5636,
+          "end": 5640,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.82956
+        },
+        {
+          "start": 5641,
+          "end": 5651,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.387591
+        },
+        {
+          "start": 5660,
+          "end": 5663,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.993223
+        },
+        {
+          "start": 5689,
+          "end": 5693,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.895269
+        },
+        {
+          "start": 5694,
+          "end": 5695,
+          "label": "History",
+          "text": "2",
+          "score": 0.484155
+        },
+        {
+          "start": 5713,
+          "end": 5716,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.995967
+        },
+        {
+          "start": 5742,
+          "end": 5746,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.496298
+        },
+        {
+          "start": 5747,
+          "end": 5757,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.627988
+        },
+        {
+          "start": 5766,
+          "end": 5769,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.992688
+        },
+        {
+          "start": 5795,
+          "end": 5810,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.534933
+        },
+        {
+          "start": 5819,
+          "end": 5822,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.989922
+        },
+        {
+          "start": 5848,
+          "end": 5863,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.614894
+        },
+        {
+          "start": 5872,
+          "end": 5875,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.966528
+        },
+        {
+          "start": 5901,
+          "end": 5916,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.821451
+        },
+        {
+          "start": 5925,
+          "end": 5928,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.979124
+        },
+        {
+          "start": 5954,
+          "end": 5969,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.912745
+        },
+        {
+          "start": 5978,
+          "end": 5981,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.983308
+        },
+        {
+          "start": 6007,
+          "end": 6011,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.791661
+        },
+        {
+          "start": 6012,
+          "end": 6022,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.561603
+        },
+        {
+          "start": 6031,
+          "end": 6034,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.947454
+        },
+        {
+          "start": 6060,
+          "end": 6064,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.930526
+        },
+        {
+          "start": 6065,
+          "end": 6075,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.431846
+        },
+        {
+          "start": 6084,
+          "end": 6087,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.976436
+        },
+        {
+          "start": 6113,
+          "end": 6117,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.825364
+        },
+        {
+          "start": 6118,
+          "end": 6128,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.576067
+        },
+        {
+          "start": 6137,
+          "end": 6140,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.984605
+        },
+        {
+          "start": 6166,
+          "end": 6181,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.57326
+        },
+        {
+          "start": 6190,
+          "end": 6193,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.844104
+        },
+        {
+          "start": 6219,
+          "end": 6234,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.612984
+        },
+        {
+          "start": 6243,
+          "end": 6246,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.875607
+        },
+        {
+          "start": 6272,
+          "end": 6287,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.872621
+        },
+        {
+          "start": 6296,
+          "end": 6299,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.920393
+        },
+        {
+          "start": 6325,
+          "end": 6331,
+          "label": "Detailed_description",
+          "text": "type 2",
+          "score": 0.833326
+        },
+        {
+          "start": 6332,
+          "end": 6340,
+          "label": "History",
+          "text": "diabetes",
+          "score": 0.385651
+        },
+        {
+          "start": 6349,
+          "end": 6352,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.987656
+        },
+        {
+          "start": 6378,
+          "end": 6382,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.801737
+        },
+        {
+          "start": 6383,
+          "end": 6393,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.616011
+        },
+        {
+          "start": 6402,
+          "end": 6405,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.827165
+        },
+        {
+          "start": 6431,
+          "end": 6446,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.768721
+        },
+        {
+          "start": 6455,
+          "end": 6458,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.974879
+        },
+        {
+          "start": 6484,
+          "end": 6499,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.922597
+        },
+        {
+          "start": 6508,
+          "end": 6511,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.947105
+        },
+        {
+          "start": 6537,
+          "end": 6552,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.941789
+        },
+        {
+          "start": 6561,
+          "end": 6564,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.801468
+        },
+        {
+          "start": 6590,
+          "end": 6605,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.887556
+        },
+        {
+          "start": 6614,
+          "end": 6617,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.984948
+        },
+        {
+          "start": 6643,
+          "end": 6647,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.820017
+        },
+        {
+          "start": 6648,
+          "end": 6658,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.713683
+        },
+        {
+          "start": 6667,
+          "end": 6670,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.94845
+        },
+        {
+          "start": 6696,
+          "end": 6700,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.937398
+        },
+        {
+          "start": 6701,
+          "end": 6711,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.589838
+        },
+        {
+          "start": 6720,
+          "end": 6723,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.975243
+        },
+        {
+          "start": 6749,
+          "end": 6753,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.496177
+        },
+        {
+          "start": 6754,
+          "end": 6764,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.802478
+        },
+        {
+          "start": 6773,
+          "end": 6776,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.915718
+        },
+        {
+          "start": 6802,
+          "end": 6806,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.465982
+        },
+        {
+          "start": 6807,
+          "end": 6817,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.84242
+        },
+        {
+          "start": 6826,
+          "end": 6829,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.978137
+        },
+        {
+          "start": 6855,
+          "end": 6859,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.833833
+        },
+        {
+          "start": 6860,
+          "end": 6870,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.734859
+        },
+        {
+          "start": 6879,
+          "end": 6882,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.98954
+        },
+        {
+          "start": 6908,
+          "end": 6912,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.612253
+        },
+        {
+          "start": 6913,
+          "end": 6923,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.834313
+        },
+        {
+          "start": 6932,
+          "end": 6935,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.966648
+        },
+        {
+          "start": 6961,
+          "end": 6965,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.899801
+        },
+        {
+          "start": 6966,
+          "end": 6976,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.645212
+        },
+        {
+          "start": 6985,
+          "end": 6988,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.965785
+        },
+        {
+          "start": 7014,
+          "end": 7018,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.728386
+        },
+        {
+          "start": 7019,
+          "end": 7029,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.658583
+        },
+        {
+          "start": 7038,
+          "end": 7041,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.689328
+        },
+        {
+          "start": 7067,
+          "end": 7071,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.785678
+        },
+        {
+          "start": 7072,
+          "end": 7082,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.641857
+        },
+        {
+          "start": 7091,
+          "end": 7094,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.911249
+        },
+        {
+          "start": 7120,
+          "end": 7135,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.756583
+        },
+        {
+          "start": 7144,
+          "end": 7147,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.937608
+        },
+        {
+          "start": 7173,
+          "end": 7177,
+          "label": "Disease_disorder",
+          "text": "type",
+          "score": 0.416508
+        },
+        {
+          "start": 7178,
+          "end": 7188,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.663599
+        },
+        {
+          "start": 7197,
+          "end": 7200,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.978624
+        },
+        {
+          "start": 7226,
+          "end": 7230,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.476695
+        },
+        {
+          "start": 7231,
+          "end": 7241,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.674889
+        },
+        {
+          "start": 7250,
+          "end": 7253,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.950211
+        },
+        {
+          "start": 7279,
+          "end": 7294,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.89975
+        },
+        {
+          "start": 7303,
+          "end": 7306,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.9573
+        },
+        {
+          "start": 7332,
+          "end": 7336,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.811348
+        },
+        {
+          "start": 7337,
+          "end": 7338,
+          "label": "History",
+          "text": "2",
+          "score": 0.533707
+        },
+        {
+          "start": 7339,
+          "end": 7347,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.439324
+        },
+        {
+          "start": 7356,
+          "end": 7359,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.778483
+        },
+        {
+          "start": 7385,
+          "end": 7389,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.932947
+        },
+        {
+          "start": 7390,
+          "end": 7391,
+          "label": "History",
+          "text": "2",
+          "score": 0.481028
+        },
+        {
+          "start": 7392,
+          "end": 7400,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.506222
+        },
+        {
+          "start": 7409,
+          "end": 7412,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.979733
+        },
+        {
+          "start": 7438,
+          "end": 7453,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.8283
+        },
+        {
+          "start": 7462,
+          "end": 7465,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.955205
+        },
+        {
+          "start": 7491,
+          "end": 7495,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.750083
+        },
+        {
+          "start": 7496,
+          "end": 7506,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.609634
+        },
+        {
+          "start": 7515,
+          "end": 7518,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.747497
+        },
+        {
+          "start": 7544,
+          "end": 7548,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.736841
+        },
+        {
+          "start": 7549,
+          "end": 7559,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.722436
+        },
+        {
+          "start": 7568,
+          "end": 7571,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.98463
+        },
+        {
+          "start": 7597,
+          "end": 7601,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.916125
+        },
+        {
+          "start": 7602,
+          "end": 7612,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.557262
+        },
+        {
+          "start": 7621,
+          "end": 7624,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.96573
+        },
+        {
+          "start": 7650,
+          "end": 7654,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.91799
+        },
+        {
+          "start": 7655,
+          "end": 7665,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.500309
+        },
+        {
+          "start": 7674,
+          "end": 7677,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.992195
+        },
+        {
+          "start": 7703,
+          "end": 7707,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.434262
+        },
+        {
+          "start": 7708,
+          "end": 7718,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.773094
+        },
+        {
+          "start": 7727,
+          "end": 7730,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.958657
+        },
+        {
+          "start": 7756,
+          "end": 7760,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.532609
+        },
+        {
+          "start": 7761,
+          "end": 7771,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.798892
+        },
+        {
+          "start": 7780,
+          "end": 7783,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.988355
+        },
+        {
+          "start": 7809,
+          "end": 7813,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.89936
+        },
+        {
+          "start": 7814,
+          "end": 7824,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.486409
+        },
+        {
+          "start": 7833,
+          "end": 7836,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.9964
+        },
+        {
+          "start": 7862,
+          "end": 7866,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.592899
+        },
+        {
+          "start": 7867,
+          "end": 7877,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.69549
+        },
+        {
+          "start": 7886,
+          "end": 7889,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.996943
+        },
+        {
+          "start": 7915,
+          "end": 7919,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.736951
+        },
+        {
+          "start": 7920,
+          "end": 7930,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.614397
+        },
+        {
+          "start": 7939,
+          "end": 7942,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.9861
+        },
+        {
+          "start": 7968,
+          "end": 7972,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.737382
+        },
+        {
+          "start": 7973,
+          "end": 7974,
+          "label": "History",
+          "text": "2",
+          "score": 0.55227
+        },
+        {
+          "start": 7975,
+          "end": 7983,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.396013
+        },
+        {
+          "start": 7992,
+          "end": 7995,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.996598
+        },
+        {
+          "start": 8021,
+          "end": 8025,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.700156
+        },
+        {
+          "start": 8026,
+          "end": 8036,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.690456
+        },
+        {
+          "start": 8045,
+          "end": 8048,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.973003
+        },
+        {
+          "start": 8074,
+          "end": 8078,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.938669
+        },
+        {
+          "start": 8079,
+          "end": 8080,
+          "label": "History",
+          "text": "2",
+          "score": 0.496374
+        },
+        {
+          "start": 8081,
+          "end": 8089,
+          "label": "Detailed_description",
+          "text": "diabetes",
+          "score": 0.355559
+        },
+        {
+          "start": 8098,
+          "end": 8101,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.993828
+        },
+        {
+          "start": 8127,
+          "end": 8131,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.453728
+        },
+        {
+          "start": 8132,
+          "end": 8142,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.69941
+        },
+        {
+          "start": 8151,
+          "end": 8154,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.977881
+        },
+        {
+          "start": 8180,
+          "end": 8184,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.626521
+        },
+        {
+          "start": 8185,
+          "end": 8195,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.664754
+        },
+        {
+          "start": 8204,
+          "end": 8207,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.981504
+        },
+        {
+          "start": 8233,
+          "end": 8248,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.627383
+        },
+        {
+          "start": 8257,
+          "end": 8260,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.987544
+        },
+        {
+          "start": 8286,
+          "end": 8290,
+          "label": "Detailed_description",
+          "text": "type",
+          "score": 0.812893
+        },
+        {
+          "start": 8291,
+          "end": 8301,
+          "label": "History",
+          "text": "2 diabetes",
+          "score": 0.515911
+        },
+        {
+          "start": 8310,
+          "end": 8313,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.977186
+        },
+        {
+          "start": 8339,
+          "end": 8345,
+          "label": "Detailed_description",
+          "text": "type 2",
+          "score": 0.809254
+        },
+        {
+          "start": 8363,
+          "end": 8366,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.939639
+        },
+        {
+          "start": 8392,
+          "end": 8407,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.621604
+        },
+        {
+          "start": 8416,
+          "end": 8419,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.863836
+        },
+        {
+          "start": 8445,
+          "end": 8460,
+          "label": "Detailed_description",
+          "text": "type 2 diabetes",
+          "score": 0.901729
+        },
+        {
+          "start": 8469,
+          "end": 8472,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.99223
+        },
+        {
+          "start": 8480,
+          "end": 8486,
+          "label": "Severity",
+          "text": "Severe",
+          "score": 0.999444
+        },
+        {
+          "start": 8487,
+          "end": 8503,
+          "label": "Disease_disorder",
+          "text": "renal impairment",
+          "score": 0.999745
+        }
+      ],
+      "status": "ok",
+      "input_characters": 8516,
+      "role": "Biomedical entity detection only; not an eligibility-rule parser.",
+      "windows": 4,
+      "tokens_processed": 1766,
+      "truncated": false,
+      "latency_ms": 681.832
+    },
+    "tail_entity_detected": true
+  },
+  "real_study": {
+    "study_id": "NCT00081328",
+    "source_url": "https://clinicaltrials.gov/study/NCT00081328",
+    "input": "Inclusion Criteria (during Screening and Run-in period):\n\n* Diabetes by ADA criteria (laboratory determinations of fasting glucose ≥ 126 mg/dL, random glucose ≥ 200 mg/dL, or two-hour OGTT glucose ≥ 200 mg/dL) documented and confirmed in medical record. For patients diagnosed with diabetes during screening who have a normal fasting glucose but an elevated two-hour glucose during an OGTT, the HbA1c must be ≥ 6%.\n* Duration since diagnosis less than two years by date of randomization.\n* BMI ≥ 85th percentile documented at time of diagnosis or at screening.\n* Fasting C-peptide at screening (drawn at least one week after treatment for ketosis or acidosis, if applicable) \\> 0.6 ng/mL.\n* Absence of pancreatic autoimmunity (both GAD and ICA512 negative).\n* Age 10-17, with randomization prior to 18th birthday.\n* Signed informed consent/assent forms for the pre-randomization period.\n* A family member or adult closely involved in the daily activities of the child agrees to participate in the child's treatment.\n* Fluency in English or Spanish for both child and family member.\n* Patient and family able to fully participate in trial protocol in the opinion of the investigator.\n\nExclusion Criteria (during Screening and Run-in period):\n\n* Participating in another interventional research study protocol in the past 30 days.\n* Genetic syndrome or disorder known to affect glucose tolerance other than diabetes.\n* Patient on inhaled steroids at dose above 1000 mcg daily Flovent equivalent.\n* Patient on a course of oral steroids within the last 60 days or on oral steroids more than 20 days during the past year.\n* Patient on medication(s) that are known to affect insulin sensitivity or secretion within the last 30 days.\n* Patient on medication(s) that are known to cause weight gain within the last 30 days.\n* Patient on any weight-loss medication(s) within the last 30 days.\n* Patient on medication(s) known to affect the metabolism of study drug.\n* Inability to comprehend the lowest grade level at which lifestyle intervention materials are prepared, for both child and participating family member.\n* Females who are pregnant, planning to become pregnant within two years of enrollment, or who admit sexual activity without appropriate contraception.\n* Calculated creatinine clearance \\< 70 mL/min.\n* Any transaminase \\> 2.5 ULN. If any transaminase 1.5-2.5 times ULN, then patient must be appropriately evaluated by PCP (minimum evaluation includes ceruloplasmin level, alpha-1 antitrypsin phenotype, ANA, anti-smooth muscle antibody, anti-LKM antibody, anti-HCV, and anti-HBc total antibody not IgM, iron, and TIBC) and is eligible if all other causes for elevation are ruled out and it is presumed due only to non-alcoholic fatty liver disease (NAFLD).\n* Diabetic ketoacidosis (DKA) at any time after diagnosis unless only a single episode of DKA related to a significant medical illness.\n* Physical limitations preventing patient from being randomized to the lifestyle intervention.\n* Patient plans to leave the geographic area within one calendar year.\n* Abnormal reticulocyte count or HbA1c chromatogram at time of screening.\n* Admitted use of anabolic steroids within the past 60 days.\n* Other significant organ system illness or condition (including psychiatric or developmental disorder) that would prevent participation in the opinion of the investigator.\n* Patient participates in a formal weight-loss program.\n\nInclusion Criteria (post Run-in and Randomization):\n\n* Duration since diagnosis less than 2 years at randomization.\n* HbA1c \\< 8% on metformin alone.\n* Age 10-17, with randomization before patient is 18 years old.\n* Signed consent/assent forms for randomization and the post-randomization phase.\n* A family member or adult closely involved in the daily activities of the child agrees to participate in the child's treatment.\n* Fluency in English or Spanish for both child and family member.\n* Patient and family able to fully participate in trial protocol in the opinion of the investigator.\n\nExclusion Criteria (post Run-in and Randomization):\n\n* Refractory hypertension: average systolic blood pressure ≥ 150 mmHg or average diastolic blood pressure ≥ 95 mmHg despite appropriate medical therapy.\n* Refractory hyperlipidemia: total cholesterol \\> 300 mg/dL or LDL \\> 190 mg/dL or triglycerides \\> 800 mg/dL, despite appropriate medical therapy.\n* Refractory anemia: hematocrit \\< 30% or hemoglobin \\< 10 gm/dL despite appropriate medical therapy.\n* Patient on a thiazolidinedione (TZD) within the last 12 weeks.\n* Patient on non-study diabetes medications within the past 6 weeks.\n* Patient on inhaled steroids at dose above 1000 mcg daily Flovent equivalent.\n* Patient on a course of oral steroids within the last 60 days or on oral steroids more than 20 days during the past year.\n* Patient on medication(s) that are known to affect insulin sensitivity or secretion within the last 30 days.\n* Patient on medication(s) that are known to cause weight gain within the last 30 days.\n* Patient on any weight-loss medication(s) within the last 30 days.\n* Patient on medication(s) known to affect the metabolism of study drug.\n* Inability to comprehend the lowest grade level at which lifestyle intervention materials are prepared, for both child and participating family member, assessed by mastery of standard diabetes education program administered during run-in.\n* Inability to comply with requirements of study during run-in period.\n* Females who are pregnant, planning to become pregnant within two years of enrollment, or who admit sexual activity without appropriate contraception.\n* Calculated creatinine clearance \\< 70 mL/min.\n* Physical limitations preventing patient from being randomized to the lifestyle intervention.\n* Patient plans to leave the geographic area within one calendar year.\n* Admitted use of anabolic steroids within 60 days.\n* Other significant organ system illness or condition (including psychiatric or developmental disorder) that would prevent participation in the opinion of the investigator.\n* Patient participates in a formal weight loss program.\n* Episode of DKA during the run-in.30.\n* Edema at the time of randomization (a participant who experiences edema during run-in must have recovered within 2 weeks and be edema free for 1 week prior to randomization).",
+    "output": {
+      "model_id": "d4data/biomedical-ner-all",
+      "version": "015a4050c9ac99722e61c547aa9b4282bcbedc7f",
+      "device": "cpu",
+      "entities": [
+        {
+          "start": 60,
+          "end": 68,
+          "label": "Diagnostic_procedure",
+          "text": "Diabetes",
+          "score": 0.829782
+        },
+        {
+          "start": 72,
+          "end": 75,
+          "label": "Diagnostic_procedure",
+          "text": "ADA",
+          "score": 0.910157
+        },
+        {
+          "start": 115,
+          "end": 130,
+          "label": "Diagnostic_procedure",
+          "text": "fasting glucose",
+          "score": 0.999704
+        },
+        {
+          "start": 133,
+          "end": 136,
+          "label": "Lab_value",
+          "text": "126",
+          "score": 0.929566
+        },
+        {
+          "start": 144,
+          "end": 158,
+          "label": "Diagnostic_procedure",
+          "text": "random glucose",
+          "score": 0.994104
+        },
+        {
+          "start": 184,
+          "end": 186,
+          "label": "Diagnostic_procedure",
+          "text": "OG",
+          "score": 0.992565
+        },
+        {
+          "start": 282,
+          "end": 290,
+          "label": "Disease_disorder",
+          "text": "diabetes",
+          "score": 0.998339
+        },
+        {
+          "start": 319,
+          "end": 325,
+          "label": "Lab_value",
+          "text": "normal",
+          "score": 0.998686
+        },
+        {
+          "start": 326,
+          "end": 341,
+          "label": "Diagnostic_procedure",
+          "text": "fasting glucose",
+          "score": 0.828839
+        },
+        {
+          "start": 349,
+          "end": 357,
+          "label": "Lab_value",
+          "text": "elevated",
+          "score": 0.642156
+        },
+        {
+          "start": 367,
+          "end": 374,
+          "label": "Diagnostic_procedure",
+          "text": "glucose",
+          "score": 0.958267
+        },
+        {
+          "start": 395,
+          "end": 399,
+          "label": "Diagnostic_procedure",
+          "text": "HbA1",
+          "score": 0.997584
+        },
+        {
+          "start": 442,
+          "end": 446,
+          "label": "Duration",
+          "text": "less",
+          "score": 0.496466
+        },
+        {
+          "start": 452,
+          "end": 455,
+          "label": "Duration",
+          "text": "two",
+          "score": 0.542271
+        },
+        {
+          "start": 490,
+          "end": 491,
+          "label": "Diagnostic_procedure",
+          "text": "B",
+          "score": 0.999466
+        },
+        {
+          "start": 494,
+          "end": 508,
+          "label": "Lab_value",
+          "text": "≥ 85th percent",
+          "score": 0.918607
+        },
+        {
+          "start": 563,
+          "end": 567,
+          "label": "Diagnostic_procedure",
+          "text": "Fast",
+          "score": 0.999108
+        },
+        {
+          "start": 571,
+          "end": 580,
+          "label": "Diagnostic_procedure",
+          "text": "C-peptide",
+          "score": 0.99902
+        },
+        {
+          "start": 610,
+          "end": 613,
+          "label": "Date",
+          "text": "one",
+          "score": 0.805652
+        },
+        {
+          "start": 639,
+          "end": 646,
+          "label": "Disease_disorder",
+          "text": "ketosis",
+          "score": 0.935881
+        },
+        {
+          "start": 676,
+          "end": 677,
+          "label": "Lab_value",
+          "text": ">",
+          "score": 0.868773
+        },
+        {
+          "start": 678,
+          "end": 679,
+          "label": "Lab_value",
+          "text": "0",
+          "score": 0.870882
+        },
+        {
+          "start": 722,
+          "end": 725,
+          "label": "Disease_disorder",
+          "text": "ity",
+          "score": 0.654182
+        },
+        {
+          "start": 1331,
+          "end": 1347,
+          "label": "Disease_disorder",
+          "text": "Genetic syndrome",
+          "score": 0.923403
+        },
+        {
+          "start": 1376,
+          "end": 1383,
+          "label": "Disease_disorder",
+          "text": "glucose",
+          "score": 0.598293
+        },
+        {
+          "start": 1384,
+          "end": 1393,
+          "label": "Sign_symptom",
+          "text": "tolerance",
+          "score": 0.525349
+        },
+        {
+          "start": 1428,
+          "end": 1435,
+          "label": "Medication",
+          "text": "inhaled",
+          "score": 0.7179
+        },
+        {
+          "start": 1436,
+          "end": 1444,
+          "label": "Medication",
+          "text": "steroids",
+          "score": 0.99845
+        },
+        {
+          "start": 1464,
+          "end": 1467,
+          "label": "Dosage",
+          "text": "mcg",
+          "score": 0.800029
+        },
+        {
+          "start": 1519,
+          "end": 1523,
+          "label": "Medication",
+          "text": "oral",
+          "score": 0.963321
+        },
+        {
+          "start": 1524,
+          "end": 1532,
+          "label": "Medication",
+          "text": "steroids",
+          "score": 0.997301
+        },
+        {
+          "start": 1552,
+          "end": 1556,
+          "label": "Duration",
+          "text": "days",
+          "score": 0.823447
+        },
+        {
+          "start": 1563,
+          "end": 1567,
+          "label": "Medication",
+          "text": "oral",
+          "score": 0.994971
+        },
+        {
+          "start": 1568,
+          "end": 1576,
+          "label": "Medication",
+          "text": "steroids",
+          "score": 0.996689
+        },
+        {
+          "start": 1630,
+          "end": 1640,
+          "label": "Medication",
+          "text": "medication",
+          "score": 0.998298
+        },
+        {
+          "start": 1669,
+          "end": 1676,
+          "label": "Medication",
+          "text": "insulin",
+          "score": 0.701225
+        },
+        {
+          "start": 1740,
+          "end": 1750,
+          "label": "Medication",
+          "text": "medication",
+          "score": 0.985941
+        },
+        {
+          "start": 1778,
+          "end": 1789,
+          "label": "Sign_symptom",
+          "text": "weight gain",
+          "score": 0.999775
+        },
+        {
+          "start": 1896,
+          "end": 1906,
+          "label": "Medication",
+          "text": "medication",
+          "score": 0.877849
+        },
+        {
+          "start": 2156,
+          "end": 2164,
+          "label": "History",
+          "text": "pregnant",
+          "score": 0.246388
+        },
+        {
+          "start": 2217,
+          "end": 2225,
+          "label": "History",
+          "text": "activity",
+          "score": 0.588187
+        },
+        {
+          "start": 2274,
+          "end": 2276,
+          "label": "Diagnostic_procedure",
+          "text": "cr",
+          "score": 0.999749
+        },
+        {
+          "start": 2276,
+          "end": 2278,
+          "label": "Diagnostic_procedure",
+          "text": "ea",
+          "score": 0.527711
+        },
+        {
+          "start": 2315,
+          "end": 2327,
+          "label": "Diagnostic_procedure",
+          "text": "transaminase",
+          "score": 0.743724
+        },
+        {
+          "start": 2347,
+          "end": 2359,
+          "label": "Diagnostic_procedure",
+          "text": "transaminase",
+          "score": 0.833737
+        },
+        {
+          "start": 2427,
+          "end": 2430,
+          "label": "Diagnostic_procedure",
+          "text": "PCP",
+          "score": 0.966898
+        },
+        {
+          "start": 2462,
+          "end": 2464,
+          "label": "Medication",
+          "text": "ru",
+          "score": 0.520709
+        },
+        {
+          "start": 2466,
+          "end": 2468,
+          "label": "Medication",
+          "text": "pl",
+          "score": 0.603485
+        },
+        {
+          "start": 2468,
+          "end": 2470,
+          "label": "Diagnostic_procedure",
+          "text": "as",
+          "score": 0.666207
+        },
+        {
+          "start": 2481,
+          "end": 2486,
+          "label": "Detailed_description",
+          "text": "alpha",
+          "score": 0.316938
+        },
+        {
+          "start": 2496,
+          "end": 2498,
+          "label": "Diagnostic_procedure",
+          "text": "ps",
+          "score": 0.570462
+        },
+        {
+          "start": 2551,
+          "end": 2554,
+          "label": "Diagnostic_procedure",
+          "text": "LKM",
+          "score": 0.651322
+        },
+        {
+          "start": 2570,
+          "end": 2572,
+          "label": "Diagnostic_procedure",
+          "text": "HC",
+          "score": 0.980747
+        },
+        {
+          "start": 2579,
+          "end": 2587,
+          "label": "Diagnostic_procedure",
+          "text": "anti-HBc",
+          "score": 0.709113
+        },
+        {
+          "start": 2588,
+          "end": 2602,
+          "label": "Diagnostic_procedure",
+          "text": "total antibody",
+          "score": 0.991224
+        },
+        {
+          "start": 2727,
+          "end": 2756,
+          "label": "Disease_disorder",
+          "text": "alcoholic fatty liver disease",
+          "score": 0.995258
+        },
+        {
+          "start": 2768,
+          "end": 2789,
+          "label": "Disease_disorder",
+          "text": "Diabetic ketoacidosis",
+          "score": 0.89052
+        },
+        {
+          "start": 3016,
+          "end": 3021,
+          "label": "Clinical_event",
+          "text": "leave",
+          "score": 0.935003
+        },
+        {
+          "start": 3049,
+          "end": 3066,
+          "label": "Date",
+          "text": "one calendar year",
+          "score": 0.863546
+        },
+        {
+          "start": 3079,
+          "end": 3081,
+          "label": "Diagnostic_procedure",
+          "text": "re",
+          "score": 0.974057
+        },
+        {
+          "start": 3084,
+          "end": 3097,
+          "label": "Diagnostic_procedure",
+          "text": "ulocyte count",
+          "score": 0.966878
+        },
+        {
+          "start": 3101,
+          "end": 3102,
+          "label": "Diagnostic_procedure",
+          "text": "H",
+          "score": 0.994962
+        },
+        {
+          "start": 3115,
+          "end": 3119,
+          "label": "Diagnostic_procedure",
+          "text": "gram",
+          "score": 0.98934
+        },
+        {
+          "start": 3160,
+          "end": 3177,
+          "label": "Medication",
+          "text": "anabolic steroids",
+          "score": 0.872999
+        },
+        {
+          "start": 3513,
+          "end": 3517,
+          "label": "Duration",
+          "text": "less",
+          "score": 0.630148
+        },
+        {
+          "start": 3523,
+          "end": 3524,
+          "label": "Date",
+          "text": "2",
+          "score": 0.486434
+        },
+        {
+          "start": 3551,
+          "end": 3552,
+          "label": "Diagnostic_procedure",
+          "text": "H",
+          "score": 0.98376
+        },
+        {
+          "start": 3555,
+          "end": 3556,
+          "label": "Lab_value",
+          "text": "c",
+          "score": 0.705356
+        },
+        {
+          "start": 3558,
+          "end": 3559,
+          "label": "Lab_value",
+          "text": "<",
+          "score": 0.999581
+        },
+        {
+          "start": 3561,
+          "end": 3562,
+          "label": "Lab_value",
+          "text": "%",
+          "score": 0.819141
+        },
+        {
+          "start": 3566,
+          "end": 3569,
+          "label": "Medication",
+          "text": "met",
+          "score": 0.944435
+        },
+        {
+          "start": 3573,
+          "end": 3575,
+          "label": "Medication",
+          "text": "in",
+          "score": 0.639741
+        },
+        {
+          "start": 3633,
+          "end": 3641,
+          "label": "Date",
+          "text": "18 years",
+          "score": 0.946751
+        },
+        {
+          "start": 4114,
+          "end": 4116,
+          "label": "Detailed_description",
+          "text": "sy",
+          "score": 0.583403
+        },
+        {
+          "start": 4123,
+          "end": 4137,
+          "label": "Diagnostic_procedure",
+          "text": "blood pressure",
+          "score": 0.999485
+        },
+        {
+          "start": 4138,
+          "end": 4148,
+          "label": "Lab_value",
+          "text": "≥ 150 mmHg",
+          "score": 0.931529
+        },
+        {
+          "start": 4170,
+          "end": 4184,
+          "label": "Diagnostic_procedure",
+          "text": "blood pressure",
+          "score": 0.984684
+        },
+        {
+          "start": 4187,
+          "end": 4194,
+          "label": "Lab_value",
+          "text": "95 mmHg",
+          "score": 0.944208
+        },
+        {
+          "start": 4245,
+          "end": 4250,
+          "label": "Sign_symptom",
+          "text": "hyper",
+          "score": 0.606864
+        },
+        {
+          "start": 4253,
+          "end": 4259,
+          "label": "Sign_symptom",
+          "text": "idemia",
+          "score": 0.649101
+        },
+        {
+          "start": 4267,
+          "end": 4278,
+          "label": "Diagnostic_procedure",
+          "text": "cholesterol",
+          "score": 0.901672
+        },
+        {
+          "start": 4279,
+          "end": 4280,
+          "label": "Lab_value",
+          "text": "\\",
+          "score": 0.984996
+        },
+        {
+          "start": 4280,
+          "end": 4281,
+          "label": "Lab_value",
+          "text": ">",
+          "score": 0.997311
+        },
+        {
+          "start": 4282,
+          "end": 4291,
+          "label": "Lab_value",
+          "text": "300 mg/dL",
+          "score": 0.999406
+        },
+        {
+          "start": 4295,
+          "end": 4298,
+          "label": "Diagnostic_procedure",
+          "text": "LDL",
+          "score": 0.811396
+        },
+        {
+          "start": 4299,
+          "end": 4300,
+          "label": "Lab_value",
+          "text": "\\",
+          "score": 0.699935
+        },
+        {
+          "start": 4300,
+          "end": 4301,
+          "label": "Lab_value",
+          "text": ">",
+          "score": 0.998545
+        },
+        {
+          "start": 4302,
+          "end": 4311,
+          "label": "Lab_value",
+          "text": "190 mg/dL",
+          "score": 0.996915
+        },
+        {
+          "start": 4315,
+          "end": 4318,
+          "label": "Diagnostic_procedure",
+          "text": "tri",
+          "score": 0.979853
+        },
+        {
+          "start": 4318,
+          "end": 4328,
+          "label": "Diagnostic_procedure",
+          "text": "glycerides",
+          "score": 0.681577
+        },
+        {
+          "start": 4401,
+          "end": 4404,
+          "label": "Diagnostic_procedure",
+          "text": "hem",
+          "score": 0.923359
+        },
+        {
+          "start": 4413,
+          "end": 4418,
+          "label": "Lab_value",
+          "text": "< 30%",
+          "score": 0.980596
+        },
+        {
+          "start": 4422,
+          "end": 4425,
+          "label": "Diagnostic_procedure",
+          "text": "hem",
+          "score": 0.986824
+        },
+        {
+          "start": 4425,
+          "end": 4427,
+          "label": "Diagnostic_procedure",
+          "text": "og",
+          "score": 0.961218
+        },
+        {
+          "start": 4427,
+          "end": 4432,
+          "label": "Diagnostic_procedure",
+          "text": "lobin",
+          "score": 0.770839
+        },
+        {
+          "start": 4434,
+          "end": 4444,
+          "label": "Lab_value",
+          "text": "< 10 gm/dL",
+          "score": 0.993013
+        },
+        {
+          "start": 4497,
+          "end": 4499,
+          "label": "Medication",
+          "text": "th",
+          "score": 0.99953
+        },
+        {
+          "start": 4499,
+          "end": 4501,
+          "label": "Medication",
+          "text": "ia",
+          "score": 0.975146
+        },
+        {
+          "start": 4501,
+          "end": 4514,
+          "label": "Medication",
+          "text": "zolidinedione",
+          "score": 0.992346
+        },
+        {
+          "start": 4560,
+          "end": 4563,
+          "label": "Detailed_description",
+          "text": "non",
+          "score": 0.504868
+        },
+        {
+          "start": 4570,
+          "end": 4590,
+          "label": "Medication",
+          "text": "diabetes medications",
+          "score": 0.99404
+        },
+        {
+          "start": 4629,
+          "end": 4636,
+          "label": "Medication",
+          "text": "inhaled",
+          "score": 0.902164
+        },
+        {
+          "start": 4637,
+          "end": 4645,
+          "label": "Medication",
+          "text": "steroids",
+          "score": 0.997748
+        },
+        {
+          "start": 4665,
+          "end": 4667,
+          "label": "Dosage",
+          "text": "mc",
+          "score": 0.938397
+        },
+        {
+          "start": 4720,
+          "end": 4724,
+          "label": "Medication",
+          "text": "oral",
+          "score": 0.995357
+        },
+        {
+          "start": 4725,
+          "end": 4733,
+          "label": "Medication",
+          "text": "steroids",
+          "score": 0.999508
+        },
+        {
+          "start": 4764,
+          "end": 4768,
+          "label": "Medication",
+          "text": "oral",
+          "score": 0.985641
+        },
+        {
+          "start": 4769,
+          "end": 4777,
+          "label": "Medication",
+          "text": "steroids",
+          "score": 0.999442
+        },
+        {
+          "start": 4831,
+          "end": 4841,
+          "label": "Medication",
+          "text": "medication",
+          "score": 0.999629
+        },
+        {
+          "start": 4870,
+          "end": 4877,
+          "label": "Medication",
+          "text": "insulin",
+          "score": 0.366263
+        },
+        {
+          "start": 4941,
+          "end": 4951,
+          "label": "Medication",
+          "text": "medication",
+          "score": 0.999201
+        },
+        {
+          "start": 4979,
+          "end": 4990,
+          "label": "Sign_symptom",
+          "text": "weight gain",
+          "score": 0.999878
+        },
+        {
+          "start": 5033,
+          "end": 5039,
+          "label": "Sign_symptom",
+          "text": "weight",
+          "score": 0.976161
+        },
+        {
+          "start": 5040,
+          "end": 5044,
+          "label": "Sign_symptom",
+          "text": "loss",
+          "score": 0.730818
+        },
+        {
+          "start": 5045,
+          "end": 5055,
+          "label": "Medication",
+          "text": "medication",
+          "score": 0.661056
+        },
+        {
+          "start": 5097,
+          "end": 5107,
+          "label": "Medication",
+          "text": "medication",
+          "score": 0.996381
+        },
+        {
+          "start": 5515,
+          "end": 5523,
+          "label": "Subject",
+          "text": "pregnant",
+          "score": 0.561385
+        },
+        {
+          "start": 5633,
+          "end": 5635,
+          "label": "Diagnostic_procedure",
+          "text": "cr",
+          "score": 0.976074
+        },
+        {
+          "start": 5655,
+          "end": 5656,
+          "label": "Lab_value",
+          "text": "<",
+          "score": 0.94168
+        },
+        {
+          "start": 5852,
+          "end": 5869,
+          "label": "Medication",
+          "text": "anabolic steroids",
+          "score": 0.995469
+        },
+        {
+          "start": 6094,
+          "end": 6100,
+          "label": "Sign_symptom",
+          "text": "weight",
+          "score": 0.983567
+        },
+        {
+          "start": 6128,
+          "end": 6129,
+          "label": "Disease_disorder",
+          "text": "D",
+          "score": 0.568779
+        },
+        {
+          "start": 6156,
+          "end": 6158,
+          "label": "Sign_symptom",
+          "text": "Ed",
+          "score": 0.999952
+        },
+        {
+          "start": 6158,
+          "end": 6161,
+          "label": "Sign_symptom",
+          "text": "ema",
+          "score": 0.985814
+        },
+        {
+          "start": 6222,
+          "end": 6227,
+          "label": "Sign_symptom",
+          "text": "edema",
+          "score": 0.939446
+        },
+        {
+          "start": 6235,
+          "end": 6238,
+          "label": "Clinical_event",
+          "text": "run",
+          "score": 0.764891
+        },
+        {
+          "start": 6252,
+          "end": 6261,
+          "label": "Sign_symptom",
+          "text": "recovered",
+          "score": 0.998879
+        },
+        {
+          "start": 6284,
+          "end": 6286,
+          "label": "Sign_symptom",
+          "text": "ed",
+          "score": 0.999599
+        },
+        {
+          "start": 6286,
+          "end": 6289,
+          "label": "Sign_symptom",
+          "text": "ema",
+          "score": 0.99904
+        }
+      ],
+      "status": "ok",
+      "input_characters": 6330,
+      "role": "Biomedical entity detection only; not an eligibility-rule parser.",
+      "windows": 3,
+      "tokens_processed": 1385,
+      "truncated": false,
+      "latency_ms": 515.237
+    }
+  }
+}

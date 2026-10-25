@@ -1,0 +1,53 @@
+name: trialops
+
+services:
+  backend:
+    user: "${TRIALOPS_UID:-10001}:${TRIALOPS_GID:-10001}"
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATA_DIR: /app/data
+      TRIALOPS_MODEL_CACHE: /app/models/hf
+      TRIALOPS_TORCH_THREADS: "4"
+      HF_HUB_OFFLINE: ${HF_HUB_OFFLINE:-0}
+      GENERATOR_BACKEND: ${GENERATOR_BACKEND:-local}
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-}
+      CORS_ORIGINS: http://localhost:8501,http://127.0.0.1:8501
+    ports:
+      - "127.0.0.1:${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ./data:/app/data
+      - ./models/hf:/app/models/hf
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4)"]
+      interval: 20s
+      timeout: 5s
+      start_period: 30s
+      retries: 5
+    restart: unless-stopped
+    init: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      API_BASE_URL: http://backend:8000
+      STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-8501}:8501"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health', timeout=4)"]
+      interval: 20s
+      timeout: 5s
+      start_period: 20s
+      retries: 5
+    restart: unless-stopped
+    init: true

@@ -1,0 +1,17 @@
+{
+  "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+  "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+  "source_api": "https://clinicaltrials.gov/api/v2/studies",
+  "query": {
+    "format": "json",
+    "query.cond": "Type 2 Diabetes",
+    "query.locn": "United States",
+    "sort": "@relevance",
+    "countTotal": "true",
+    "pageSize": 10,
+    "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+  },
+  "query_region": "United States",
+  "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+  "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+}

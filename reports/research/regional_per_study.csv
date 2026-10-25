@@ -1,0 +1,59 @@
+study_id,region,split,countries,source_url,source_label_origin,criterion_count,parsed_count,unresolved_count,entity_count,criterion_coverage,requires_human_validation,token_count,oov_token_count,oov_rate,sentence_count,latency_ms_single_descriptive_pass
+NCT00081328,US_only,train,United States,https://clinicaltrials.gov/study/NCT00081328,ClinicalTrials.gov unannotated registry text,62,0,62,57,0.0,True,939,0,0.0,64,5.254699994111434
+NCT00261352,India_only,train,Brazil|Canada|Finland|France|Germany|Hong Kong|Hungary|India|Indonesia|Malaysia|Norway|Philippines|Portugal|Russia|Singapore|South Africa|Switzerland|Taiwan,https://clinicaltrials.gov/study/NCT00261352,ClinicalTrials.gov unannotated registry text,13,2,11,9,0.15384615384615385,True,167,0,0.0,15,1.6715000092517585
+NCT00309751,India_only,train,Denmark|Germany|India|Netherlands|Poland|United Kingdom,https://clinicaltrials.gov/study/NCT00309751,ClinicalTrials.gov unannotated registry text,10,0,10,3,0.0,True,66,0,0.0,12,0.7126999844331294
+NCT00344370,India_only,train,Denmark|Germany|India|Netherlands|Poland|United Kingdom,https://clinicaltrials.gov/study/NCT00344370,ClinicalTrials.gov unannotated registry text,4,0,4,4,0.0,True,17,0,0.0,6,0.298700004350394
+NCT00726505,US_only,test,United States,https://clinicaltrials.gov/study/NCT00726505,ClinicalTrials.gov unannotated registry text,10,0,10,11,0.0,True,89,2,0.02247191011235955,12,0.8956000092439353
+NCT00727896,India_only,train,India,https://clinicaltrials.gov/study/NCT00727896,ClinicalTrials.gov unannotated registry text,7,0,7,11,0.0,True,54,0,0.0,9,0.3483999753370881
+NCT00737152,shared,train,India|United States,https://clinicaltrials.gov/study/NCT00737152,ClinicalTrials.gov unannotated registry text,32,2,30,21,0.0625,True,313,0,0.0,67,3.327100013848394
+NCT00901979,US_only,train,Canada|Italy|Poland|Puerto Rico|United States,https://clinicaltrials.gov/study/NCT00901979,ClinicalTrials.gov unannotated registry text,3,0,3,3,0.0,True,23,0,0.0,5,0.2628999936860055
+NCT00929539,US_only,test,Czechia|Hungary|Netherlands|Russia|United States,https://clinicaltrials.gov/study/NCT00929539,ClinicalTrials.gov unannotated registry text,7,0,7,9,0.0,True,98,2,0.02040816326530612,17,0.8852000173646957
+NCT00947557,shared,train,Belarus|Colombia|Hungary|India|Lithuania|Peru|Romania|United States,https://clinicaltrials.gov/study/NCT00947557,ClinicalTrials.gov unannotated registry text,6,1,5,16,0.16666666666666666,True,49,0,0.0,8,0.6609999982174486
+NCT00952445,US_only,train,United States,https://clinicaltrials.gov/study/NCT00952445,ClinicalTrials.gov unannotated registry text,12,0,12,15,0.0,True,121,0,0.0,14,1.0241999989375472
+NCT00960791,US_only,test,United States,https://clinicaltrials.gov/study/NCT00960791,ClinicalTrials.gov unannotated registry text,6,0,6,11,0.0,True,109,3,0.027522935779816515,8,0.893300020834431
+NCT00970424,shared,train,Belarus|Germany|India|Lithuania|Romania|United States,https://clinicaltrials.gov/study/NCT00970424,ClinicalTrials.gov unannotated registry text,6,1,5,15,0.16666666666666666,True,47,0,0.0,8,0.5554000090342015
+NCT00995787,US_only,train,United States,https://clinicaltrials.gov/study/NCT00995787,ClinicalTrials.gov unannotated registry text,6,0,6,9,0.0,True,119,0,0.0,8,0.9496000129729509
+NCT00997152,US_only,train,United States,https://clinicaltrials.gov/study/NCT00997152,ClinicalTrials.gov unannotated registry text,7,0,7,8,0.0,True,96,0,0.0,16,0.877300015417859
+NCT01194258,US_only,train,United States,https://clinicaltrials.gov/study/NCT01194258,ClinicalTrials.gov unannotated registry text,13,0,13,19,0.0,True,198,0,0.0,15,1.5205000236164778
+NCT01252524,US_only,test,United States,https://clinicaltrials.gov/study/NCT01252524,ClinicalTrials.gov unannotated registry text,9,0,9,9,0.0,True,106,17,0.16037735849056603,11,0.9846000175457448
+NCT01257412,India_only,train,India,https://clinicaltrials.gov/study/NCT01257412,ClinicalTrials.gov unannotated registry text,9,0,9,8,0.0,True,99,0,0.0,12,0.8640000014565885
+NCT01406717,India_only,test,India,https://clinicaltrials.gov/study/NCT01406717,ClinicalTrials.gov unannotated registry text,9,0,9,12,0.0,True,161,10,0.062111801242236024,12,1.3398999872151762
+NCT01523405,India_only,train,India,https://clinicaltrials.gov/study/NCT01523405,ClinicalTrials.gov unannotated registry text,10,1,9,5,0.1,True,157,0,0.0,14,1.4841000083833933
+NCT01546844,US_only,train,United States,https://clinicaltrials.gov/study/NCT01546844,ClinicalTrials.gov unannotated registry text,7,0,7,5,0.0,True,53,0,0.0,9,0.5715999868698418
+NCT01671189,US_only,train,United States,https://clinicaltrials.gov/study/NCT01671189,ClinicalTrials.gov unannotated registry text,9,0,9,11,0.0,True,118,0,0.0,11,1.3088000123389065
+NCT01713764,US_only,train,United States,https://clinicaltrials.gov/study/NCT01713764,ClinicalTrials.gov unannotated registry text,26,1,25,11,0.038461538461538464,True,175,0,0.0,30,1.3045000087004155
+NCT01969084,US_only,train,United States,https://clinicaltrials.gov/study/NCT01969084,ClinicalTrials.gov unannotated registry text,40,1,39,39,0.025,True,677,0,0.0,56,3.8287999923340976
+NCT01995539,India_only,train,India,https://clinicaltrials.gov/study/NCT01995539,ClinicalTrials.gov unannotated registry text,13,0,13,14,0.0,True,229,0,0.0,28,1.7490000172983855
+NCT02065674,India_only,train,India,https://clinicaltrials.gov/study/NCT02065674,ClinicalTrials.gov unannotated registry text,3,0,3,7,0.0,True,34,0,0.0,6,0.4484000091906637
+NCT02091193,US_only,train,United States,https://clinicaltrials.gov/study/NCT02091193,ClinicalTrials.gov unannotated registry text,7,1,6,5,0.14285714285714285,True,45,0,0.0,9,0.686399987898767
+NCT02175121,US_only,train,United States,https://clinicaltrials.gov/study/NCT02175121,ClinicalTrials.gov unannotated registry text,15,0,15,29,0.0,True,333,0,0.0,22,1.7786999815143645
+NCT02326129,US_only,train,United States,https://clinicaltrials.gov/study/NCT02326129,ClinicalTrials.gov unannotated registry text,12,0,12,25,0.0,True,255,0,0.0,24,2.371200011111796
+NCT02361489,US_only,train,United States,https://clinicaltrials.gov/study/NCT02361489,ClinicalTrials.gov unannotated registry text,21,0,21,21,0.0,True,267,0,0.0,21,1.566499995533377
+NCT02588859,India_only,train,India,https://clinicaltrials.gov/study/NCT02588859,ClinicalTrials.gov unannotated registry text,10,1,9,10,0.1,True,127,0,0.0,22,1.1471000034362078
+NCT02786823,India_only,train,India,https://clinicaltrials.gov/study/NCT02786823,ClinicalTrials.gov unannotated registry text,12,0,12,7,0.0,True,132,0,0.0,18,1.3159999798517674
+NCT02853630,India_only,train,India,https://clinicaltrials.gov/study/NCT02853630,ClinicalTrials.gov unannotated registry text,30,1,29,31,0.03333333333333333,True,372,0,0.0,32,3.190799994627014
+NCT02941367,India_only,train,India|Israel|Kuwait|Turkey (Türkiye),https://clinicaltrials.gov/study/NCT02941367,ClinicalTrials.gov unannotated registry text,20,0,20,21,0.0,True,297,0,0.0,22,1.7458000220358372
+NCT03071016,India_only,train,India,https://clinicaltrials.gov/study/NCT03071016,ClinicalTrials.gov unannotated registry text,8,1,7,9,0.125,True,89,0,0.0,18,0.8483999990858138
+NCT03374774,India_only,train,India,https://clinicaltrials.gov/study/NCT03374774,ClinicalTrials.gov unannotated registry text,1,0,1,6,0.0,True,219,0,0.0,3,1.1436000058893114
+NCT03478202,US_only,train,United States,https://clinicaltrials.gov/study/NCT03478202,ClinicalTrials.gov unannotated registry text,21,2,19,26,0.09523809523809523,True,388,0,0.0,29,2.5062999920919538
+NCT03529123,India_only,test,India,https://clinicaltrials.gov/study/NCT03529123,ClinicalTrials.gov unannotated registry text,16,0,16,29,0.0,True,380,16,0.042105263157894736,20,2.2689999896101654
+NCT03760991,India_only,train,Argentina|Colombia|Egypt|Hong Kong|India|Indonesia|Lebanon|Malaysia|Peru|Philippines|Saudi Arabia|South Africa|Thailand|Turkey (Türkiye),https://clinicaltrials.gov/study/NCT03760991,ClinicalTrials.gov unannotated registry text,7,1,6,13,0.14285714285714285,True,155,0,0.0,9,1.035499997669831
+NCT03787563,India_only,train,India,https://clinicaltrials.gov/study/NCT03787563,ClinicalTrials.gov unannotated registry text,15,0,15,17,0.0,True,225,0,0.0,31,1.2040000001434237
+NCT04072523,India_only,train,India,https://clinicaltrials.gov/study/NCT04072523,ClinicalTrials.gov unannotated registry text,11,0,11,7,0.0,True,104,0,0.0,13,1.0086999973282218
+NCT04153981,India_only,train,India,https://clinicaltrials.gov/study/NCT04153981,ClinicalTrials.gov unannotated registry text,16,0,16,19,0.0,True,332,0,0.0,21,1.9573000026866794
+NCT04445714,India_only,train,India,https://clinicaltrials.gov/study/NCT04445714,ClinicalTrials.gov unannotated registry text,28,0,28,27,0.0,True,433,0,0.0,55,2.4252000148408115
+NCT05659537,India_only,test,India,https://clinicaltrials.gov/study/NCT05659537,ClinicalTrials.gov unannotated registry text,9,0,9,20,0.0,True,193,3,0.015544041450777202,11,1.5398999967146665
+NCT06055582,India_only,train,India,https://clinicaltrials.gov/study/NCT06055582,ClinicalTrials.gov unannotated registry text,7,0,7,4,0.0,True,70,0,0.0,9,0.7614000060129911
+NCT06370715,India_only,train,India,https://clinicaltrials.gov/study/NCT06370715,ClinicalTrials.gov unannotated registry text,27,1,26,33,0.037037037037037035,True,545,0,0.0,30,3.5131000040564686
+NCT06498284,US_only,train,United States,https://clinicaltrials.gov/study/NCT06498284,ClinicalTrials.gov unannotated registry text,45,0,45,61,0.0,True,860,0,0.0,95,6.404100015060976
+NCT06517784,India_only,train,India,https://clinicaltrials.gov/study/NCT06517784,ClinicalTrials.gov unannotated registry text,19,1,18,15,0.05263157894736842,True,233,0,0.0,39,2.142000012099743
+NCT06716424,India_only,train,India,https://clinicaltrials.gov/study/NCT06716424,ClinicalTrials.gov unannotated registry text,23,0,23,32,0.0,True,469,0,0.0,25,2.588899980764836
+NCT06851858,US_only,train,United States,https://clinicaltrials.gov/study/NCT06851858,ClinicalTrials.gov unannotated registry text,12,0,12,23,0.0,True,173,0,0.0,26,1.1008000001311302
+NCT07029009,US_only,test,United States,https://clinicaltrials.gov/study/NCT07029009,ClinicalTrials.gov unannotated registry text,14,0,14,12,0.0,True,100,6,0.06,16,1.2597999884746969
+NCT07282743,shared,train,India|United States,https://clinicaltrials.gov/study/NCT07282743,ClinicalTrials.gov unannotated registry text,49,0,49,57,0.0,True,1389,0,0.0,107,7.455299986759201
+NCT07321678,US_only,train,United States,https://clinicaltrials.gov/study/NCT07321678,ClinicalTrials.gov unannotated registry text,9,0,9,15,0.0,True,92,0,0.0,11,0.7790999952703714
+NCT07340320,US_only,test,Poland|United States,https://clinicaltrials.gov/study/NCT07340320,ClinicalTrials.gov unannotated registry text,54,0,54,44,0.0,True,542,54,0.0996309963099631,59,3.3066000032704324
+NCT07361341,US_only,train,United States,https://clinicaltrials.gov/study/NCT07361341,ClinicalTrials.gov unannotated registry text,21,0,21,26,0.0,True,493,0,0.0,34,3.5068000142928213
+NCT07385547,US_only,train,United States,https://clinicaltrials.gov/study/NCT07385547,ClinicalTrials.gov unannotated registry text,55,0,55,41,0.0,True,1045,0,0.0,104,5.594699992798269
+NCT07495787,India_only,train,India,https://clinicaltrials.gov/study/NCT07495787,ClinicalTrials.gov unannotated registry text,38,0,38,59,0.0,True,932,0,0.0,90,5.123999988427386
+NCT07549373,India_only,train,India,https://clinicaltrials.gov/study/NCT07549373,ClinicalTrials.gov unannotated registry text,12,0,12,11,0.0,True,118,0,0.0,15,1.3435999862849712

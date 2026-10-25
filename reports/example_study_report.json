@@ -1,0 +1,2713 @@
+{
+  "study": {
+    "study_id": "NCT00261352",
+    "title": "GALLANT 14 Tesaglitazar vs. Metformin and Fenofibrate",
+    "conditions": [
+      "Type 2 Diabetes"
+    ],
+    "countries": [
+      "Brazil",
+      "Canada",
+      "Finland",
+      "France",
+      "Germany",
+      "Hong Kong",
+      "Hungary",
+      "India",
+      "Indonesia",
+      "Malaysia",
+      "Norway",
+      "Philippines",
+      "Portugal",
+      "Russia",
+      "Singapore",
+      "South Africa",
+      "Switzerland",
+      "Taiwan"
+    ],
+    "status": "TERMINATED",
+    "phase": [
+      "PHASE3"
+    ],
+    "eligibility_text": "Inclusion Criteria:\n\n* Provision of a written informed consent\n* Men or women who are \\>=18 years of age\n* Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control\n* Diagnosed with type 2 diabetes\n* Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents\n\nExclusion Criteria:\n\n* Type 1 diabetes\n* New York Heart Association heart failure Class III or IV\n* Treatment with chronic insulin\n* History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)\n* History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)\n* Creatinine levels above the normal range\n* Received any investigational product in other clinical studies within 12 weeks\n* Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+    "minimum_age": "18 Years",
+    "maximum_age": null,
+    "sex": "ALL",
+    "healthy_volunteers": false,
+    "description": "This is a 24-week study to determine the lipid metabolic effects, safety, and tolerability of tesaglitazar compared with metformin and metformin in combination with fenofibrate in patients with type 2 diabetes and low high-density lipoprotein cholesterol (HDL-C). Improvement in dyslipidemia will be evaluated. The study comprises a 2-week enrollment period, 6-week run-in and a 24-week randomized, double blind, parallel group, multi-center, active controlled (metformin with or without fenofibrate) treatment period and a 3-week follow-up. From visit 2 (run-in), all patients will receive a standardized dose of statin (rosuvastatin)",
+    "source_url": "https://clinicaltrials.gov/study/NCT00261352",
+    "last_update": "2009-04-22",
+    "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+    "registry": "ClinicalTrials.gov",
+    "locations": [
+      {
+        "facility": "Research Site",
+        "city": "Fortaleza",
+        "state": "Ceará",
+        "zip": null,
+        "country": "Brazil",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Goiânia",
+        "state": "Goiás",
+        "zip": null,
+        "country": "Brazil",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Porto Alegre",
+        "state": "Rio Grande do Sul",
+        "zip": null,
+        "country": "Brazil",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "zip": null,
+        "country": "Brazil",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Curitiba",
+        "state": null,
+        "zip": null,
+        "country": "Brazil",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Calgary",
+        "state": "Alberta",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Surrey",
+        "state": "British Columbia",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Bay Roberts",
+        "state": "Newfoundland and Labrador",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Mount Pearl",
+        "state": "Newfoundland and Labrador",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "St. John's",
+        "state": "Newfoundland and Labrador",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Bolton",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Brampton",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Etobicoke",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Hastings",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Kingston",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Kitchener",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "London",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Mississauga",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Napanee",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Newboro",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Ottawa",
+        "state": "Ontario",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Montreal",
+        "state": "Quebec",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Pointe-Claire",
+        "state": "Quebec",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Sherbrooke",
+        "state": "Quebec",
+        "zip": null,
+        "country": "Canada",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Helsinki",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Kuopio",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Lahti",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Mikkeli",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Oulu",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Porvoo",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Savonlinna",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Seinäjoki",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Suonenjoki",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Tampere",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Turku",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Vaasa",
+        "state": null,
+        "zip": null,
+        "country": "Finland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Aix-en-Provence",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Ambriere LES Vallees",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Béziers",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Briey",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Broglie",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Château-Gontier",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Cremeaux",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Falaise",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Fontaine Saint Martin",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Freyming-Merlebach",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Gan",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Hyères",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Jarny",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Jort",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "L'Aigle",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Lambersart",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Le Lavandou",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Lille",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Lomme",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Marange-Silvange",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Marignane",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Mars-la-Tour",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Martigues",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Mayenne",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Metz",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Mondelange",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Montbrison",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Montpellier",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Moûtiers",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Nantes",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Paris",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Poitiers",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Roanne",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Roquevaire",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Rugles",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Saint-Chamond",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Saint-Jean-de-Luz",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Tantonville",
+        "state": null,
+        "zip": null,
+        "country": "France",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Heidelberg",
+        "state": "Baden-Wurttemberg",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Stuttgart",
+        "state": "Baden-Wurttemberg",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "München",
+        "state": "Bavaria",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Frankfurt am Main",
+        "state": "Hesse",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Hanover",
+        "state": "Lower Saxony",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Düsseldorf",
+        "state": "North Rhine-Westphalia",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Münster",
+        "state": "North Rhine-Westphalia",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Dresden",
+        "state": "Saxony",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Berlin",
+        "state": "State of Berlin",
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Aschaffenburg",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Beckum",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Berlin",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Dresden",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Düsseldorf",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Essen",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Gelnhausen",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Hanover",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Heidelberg",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Heilbronn",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Künzing",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Nuremberg",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Pirna",
+        "state": null,
+        "zip": null,
+        "country": "Germany",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Hong Kong",
+        "state": null,
+        "zip": null,
+        "country": "Hong Kong",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Shatin",
+        "state": null,
+        "zip": null,
+        "country": "Hong Kong",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Balatonfüred",
+        "state": null,
+        "zip": null,
+        "country": "Hungary",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Budapest",
+        "state": null,
+        "zip": null,
+        "country": "Hungary",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Gy¿r",
+        "state": null,
+        "zip": null,
+        "country": "Hungary",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Kaposvár",
+        "state": null,
+        "zip": null,
+        "country": "Hungary",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Kecskemét",
+        "state": null,
+        "zip": null,
+        "country": "Hungary",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Miskolc",
+        "state": null,
+        "zip": null,
+        "country": "Hungary",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Siófok",
+        "state": null,
+        "zip": null,
+        "country": "Hungary",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Székesfehérvár",
+        "state": null,
+        "zip": null,
+        "country": "Hungary",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Mumbai",
+        "state": "Mashatra",
+        "zip": null,
+        "country": "India",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Bangalore",
+        "state": null,
+        "zip": null,
+        "country": "India",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Delhi",
+        "state": null,
+        "zip": null,
+        "country": "India",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "India",
+        "state": null,
+        "zip": null,
+        "country": "India",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Jakarta",
+        "state": "DKI Jakarta",
+        "zip": null,
+        "country": "Indonesia",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Malang",
+        "state": "East Java",
+        "zip": null,
+        "country": "Indonesia",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "George Town",
+        "state": null,
+        "zip": null,
+        "country": "Malaysia",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Kuala Lumpur",
+        "state": null,
+        "zip": null,
+        "country": "Malaysia",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Petaling Jaya",
+        "state": null,
+        "zip": null,
+        "country": "Malaysia",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Bergen",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Bodø",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Elverum",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Fredrikstad",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Hamar",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Oslo",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Paradis",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Trondheim",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Tvedestrand",
+        "state": null,
+        "zip": null,
+        "country": "Norway",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Cebu City",
+        "state": null,
+        "zip": null,
+        "country": "Philippines",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Makati City",
+        "state": null,
+        "zip": null,
+        "country": "Philippines",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Manila",
+        "state": null,
+        "zip": null,
+        "country": "Philippines",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Almada",
+        "state": null,
+        "zip": null,
+        "country": "Portugal",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Amadora",
+        "state": null,
+        "zip": null,
+        "country": "Portugal",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Caldas da Rainha",
+        "state": null,
+        "zip": null,
+        "country": "Portugal",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Elvas",
+        "state": null,
+        "zip": null,
+        "country": "Portugal",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Lisbon",
+        "state": null,
+        "zip": null,
+        "country": "Portugal",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Portalegre",
+        "state": null,
+        "zip": null,
+        "country": "Portugal",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Moscow",
+        "state": null,
+        "zip": null,
+        "country": "Russia",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Saint Petersburg",
+        "state": null,
+        "zip": null,
+        "country": "Russia",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Yaroslavl",
+        "state": null,
+        "zip": null,
+        "country": "Russia",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Singapore",
+        "state": null,
+        "zip": null,
+        "country": "Singapore",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Cape Town",
+        "state": null,
+        "zip": null,
+        "country": "South Africa",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Durban",
+        "state": null,
+        "zip": null,
+        "country": "South Africa",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Johannesburg",
+        "state": null,
+        "zip": null,
+        "country": "South Africa",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Pretoria",
+        "state": null,
+        "zip": null,
+        "country": "South Africa",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Bern",
+        "state": null,
+        "zip": null,
+        "country": "Switzerland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Chur",
+        "state": null,
+        "zip": null,
+        "country": "Switzerland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Ilanz",
+        "state": null,
+        "zip": null,
+        "country": "Switzerland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Lausanne",
+        "state": null,
+        "zip": null,
+        "country": "Switzerland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Monthey",
+        "state": null,
+        "zip": null,
+        "country": "Switzerland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Sion",
+        "state": null,
+        "zip": null,
+        "country": "Switzerland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Zurich",
+        "state": null,
+        "zip": null,
+        "country": "Switzerland",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Yongkang District",
+        "state": "Tainan County",
+        "zip": null,
+        "country": "Taiwan",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Changhua",
+        "state": null,
+        "zip": null,
+        "country": "Taiwan",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Taichung",
+        "state": null,
+        "zip": null,
+        "country": "Taiwan",
+        "status": null
+      },
+      {
+        "facility": "Research Site",
+        "city": "Taipei",
+        "state": null,
+        "zip": null,
+        "country": "Taiwan",
+        "status": null
+      }
+    ],
+    "provenance": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ]
+  },
+  "extraction": {
+    "study_id": "NCT00261352",
+    "normalized_text": "Inclusion Criteria:\n\n* Provision of a written informed consent\n* Men or women who are \\>=18 years of age\n* Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control\n* Diagnosed with type 2 diabetes\n* Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents\n\nExclusion Criteria:\n\n* Type 1 diabetes\n* New York Heart Association heart failure Class III or IV\n* Treatment with chronic insulin\n* History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)\n* History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)\n* Creatinine levels above the normal range\n* Received any investigational product in other clinical studies within 12 weeks\n* Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+    "entities": [
+      {
+        "label": "quantity",
+        "text": "18 years",
+        "source_text": "18 years",
+        "source_start": 89,
+        "source_end": 97,
+        "study_id": "NCT00261352"
+      },
+      {
+        "label": "measurement",
+        "field": "age",
+        "text": "age",
+        "negated": false,
+        "source_text": "age",
+        "source_start": 101,
+        "source_end": 104,
+        "study_id": "NCT00261352"
+      },
+      {
+        "label": "condition",
+        "field": "type_2_diabetes",
+        "text": "type 2 diabetes",
+        "negated": false,
+        "source_text": "type 2 diabetes",
+        "source_start": 248,
+        "source_end": 263,
+        "study_id": "NCT00261352"
+      },
+      {
+        "label": "quantity",
+        "text": "2",
+        "source_text": "2",
+        "source_start": 253,
+        "source_end": 254,
+        "study_id": "NCT00261352"
+      },
+      {
+        "label": "condition",
+        "field": "type_1_diabetes",
+        "text": "Type 1 diabetes",
+        "negated": false,
+        "source_text": "Type 1 diabetes",
+        "source_start": 410,
+        "source_end": 425,
+        "study_id": "NCT00261352"
+      },
+      {
+        "label": "quantity",
+        "text": "1",
+        "source_text": "1",
+        "source_start": 415,
+        "source_end": 416,
+        "study_id": "NCT00261352"
+      },
+      {
+        "label": "quantity",
+        "text": "3",
+        "source_text": "3",
+        "source_start": 672,
+        "source_end": 673,
+        "study_id": "NCT00261352"
+      },
+      {
+        "label": "quantity",
+        "text": "3",
+        "source_text": "3",
+        "source_start": 682,
+        "source_end": 683,
+        "study_id": "NCT00261352"
+      },
+      {
+        "label": "quantity",
+        "text": "12",
+        "source_text": "12",
+        "source_start": 993,
+        "source_end": 995,
+        "study_id": "NCT00261352"
+      }
+    ],
+    "rules": [
+      {
+        "kind": "condition",
+        "field": "type_2_diabetes",
+        "operator": "equals",
+        "value": true,
+        "unit": null,
+        "negated": false,
+        "source_text": "Diagnosed with type 2 diabetes",
+        "source_start": 233,
+        "source_end": 263,
+        "study_id": "NCT00261352",
+        "id": "rule-4",
+        "validated": true,
+        "validation_basis": "supported_grammar",
+        "type": "inclusion"
+      },
+      {
+        "kind": "group",
+        "logic": "NOT",
+        "children": [
+          {
+            "kind": "condition",
+            "field": "type_1_diabetes",
+            "operator": "equals",
+            "value": true,
+            "unit": null,
+            "negated": false,
+            "source_text": "Type 1 diabetes",
+            "source_start": 410,
+            "source_end": 425,
+            "study_id": "NCT00261352",
+            "id": "rule-6.1",
+            "validated": true,
+            "validation_basis": "supported_grammar",
+            "type": "exclusion_constraint"
+          }
+        ],
+        "source_text": "Type 1 diabetes",
+        "source_start": 410,
+        "source_end": 425,
+        "study_id": "NCT00261352",
+        "id": "rule-6",
+        "validated": true,
+        "validation_basis": "supported_grammar",
+        "type": "exclusion_constraint"
+      },
+      {
+        "id": "metadata_minimum_age",
+        "kind": "condition",
+        "field": "age",
+        "operator": "gte",
+        "value": 18.0,
+        "unit": "years",
+        "type": "inclusion",
+        "validated": true,
+        "validation_basis": "structured_registry_field",
+        "source_text": "18 Years",
+        "source_field": "minimum_age",
+        "source_start": null,
+        "source_end": null,
+        "study_id": "NCT00261352"
+      }
+    ],
+    "unresolved": [
+      {
+        "source_text": "Provision of a written informed consent",
+        "source_start": 23,
+        "source_end": 62,
+        "study_id": "NCT00261352",
+        "type": "inclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "Men or women who are \\>=18 years of age",
+        "source_start": 65,
+        "source_end": 104,
+        "study_id": "NCT00261352",
+        "type": "inclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control",
+        "source_start": 107,
+        "source_end": 230,
+        "study_id": "NCT00261352",
+        "type": "inclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Conditional, ambiguous or investigator-dependent wording requires review."
+      },
+      {
+        "source_text": "Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents",
+        "source_start": 266,
+        "source_end": 385,
+        "study_id": "NCT00261352",
+        "type": "inclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "New York Heart Association heart failure Class III or IV",
+        "source_start": 428,
+        "source_end": 484,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "Treatment with chronic insulin",
+        "source_start": 487,
+        "source_end": 517,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)",
+        "source_start": 520,
+        "source_end": 738,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Temporal, historical, stability or visit qualification requires review."
+      },
+      {
+        "source_text": "History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)",
+        "source_start": 741,
+        "source_end": 877,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Temporal, historical, stability or visit qualification requires review."
+      },
+      {
+        "source_text": "Creatinine levels above the normal range",
+        "source_start": 880,
+        "source_end": 920,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "Received any investigational product in other clinical studies within 12 weeks",
+        "source_start": 923,
+        "source_end": 1001,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Temporal, historical, stability or visit qualification requires review."
+      },
+      {
+        "source_text": "Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+        "source_start": 1004,
+        "source_end": 1247,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Conditional, ambiguous or investigator-dependent wording requires review."
+      }
+    ],
+    "contradictions": [],
+    "requires_human_validation": true,
+    "real_world_review_required": true,
+    "stats": {
+      "criterion_count": 13,
+      "parsed_count": 2,
+      "unresolved_count": 11,
+      "entity_count": 9,
+      "latency_ms": 14.1418999992311,
+      "supported_rules_with_metadata": 3
+    },
+    "preprocessing": {
+      "tokens": [
+        {
+          "text": "Inclusion",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "text": "Criteria",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "text": ":",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "text": "*",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "text": "Provision",
+          "start": 23,
+          "end": 32
+        },
+        {
+          "text": "of",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "text": "a",
+          "start": 36,
+          "end": 37
+        },
+        {
+          "text": "written",
+          "start": 38,
+          "end": 45
+        },
+        {
+          "text": "informed",
+          "start": 46,
+          "end": 54
+        },
+        {
+          "text": "consent",
+          "start": 55,
+          "end": 62
+        },
+        {
+          "text": "*",
+          "start": 63,
+          "end": 64
+        },
+        {
+          "text": "Men",
+          "start": 65,
+          "end": 68
+        },
+        {
+          "text": "or",
+          "start": 69,
+          "end": 71
+        },
+        {
+          "text": "women",
+          "start": 72,
+          "end": 77
+        },
+        {
+          "text": "who",
+          "start": 78,
+          "end": 81
+        },
+        {
+          "text": "are",
+          "start": 82,
+          "end": 85
+        },
+        {
+          "text": "\\",
+          "start": 86,
+          "end": 87
+        },
+        {
+          "text": ">=",
+          "start": 87,
+          "end": 89
+        },
+        {
+          "text": "18",
+          "start": 89,
+          "end": 91
+        },
+        {
+          "text": "years",
+          "start": 92,
+          "end": 97
+        },
+        {
+          "text": "of",
+          "start": 98,
+          "end": 100
+        },
+        {
+          "text": "age",
+          "start": 101,
+          "end": 104
+        },
+        {
+          "text": "*",
+          "start": 105,
+          "end": 106
+        },
+        {
+          "text": "Female",
+          "start": 107,
+          "end": 113
+        },
+        {
+          "text": "patients",
+          "start": 114,
+          "end": 122
+        },
+        {
+          "text": ":",
+          "start": 122,
+          "end": 123
+        },
+        {
+          "text": "postmenopausal",
+          "start": 124,
+          "end": 138
+        },
+        {
+          "text": ",",
+          "start": 138,
+          "end": 139
+        },
+        {
+          "text": "hysterectomized",
+          "start": 140,
+          "end": 155
+        },
+        {
+          "text": ",",
+          "start": 155,
+          "end": 156
+        },
+        {
+          "text": "or",
+          "start": 157,
+          "end": 159
+        },
+        {
+          "text": "if",
+          "start": 160,
+          "end": 162
+        },
+        {
+          "text": "of",
+          "start": 163,
+          "end": 165
+        },
+        {
+          "text": "childbearing",
+          "start": 166,
+          "end": 178
+        },
+        {
+          "text": "potential",
+          "start": 179,
+          "end": 188
+        },
+        {
+          "text": ",",
+          "start": 188,
+          "end": 189
+        },
+        {
+          "text": "using",
+          "start": 190,
+          "end": 195
+        },
+        {
+          "text": "a",
+          "start": 196,
+          "end": 197
+        },
+        {
+          "text": "reliable",
+          "start": 198,
+          "end": 206
+        },
+        {
+          "text": "method",
+          "start": 207,
+          "end": 213
+        },
+        {
+          "text": "of",
+          "start": 214,
+          "end": 216
+        },
+        {
+          "text": "birth",
+          "start": 217,
+          "end": 222
+        },
+        {
+          "text": "control",
+          "start": 223,
+          "end": 230
+        },
+        {
+          "text": "*",
+          "start": 231,
+          "end": 232
+        },
+        {
+          "text": "Diagnosed",
+          "start": 233,
+          "end": 242
+        },
+        {
+          "text": "with",
+          "start": 243,
+          "end": 247
+        },
+        {
+          "text": "type",
+          "start": 248,
+          "end": 252
+        },
+        {
+          "text": "2",
+          "start": 253,
+          "end": 254
+        },
+        {
+          "text": "diabetes",
+          "start": 255,
+          "end": 263
+        },
+        {
+          "text": "*",
+          "start": 264,
+          "end": 265
+        },
+        {
+          "text": "Treated",
+          "start": 266,
+          "end": 273
+        },
+        {
+          "text": "with",
+          "start": 274,
+          "end": 278
+        },
+        {
+          "text": "diet",
+          "start": 279,
+          "end": 283
+        },
+        {
+          "text": "alone",
+          "start": 284,
+          "end": 289
+        },
+        {
+          "text": "or",
+          "start": 290,
+          "end": 292
+        },
+        {
+          "text": "treatment",
+          "start": 293,
+          "end": 302
+        },
+        {
+          "text": "with",
+          "start": 303,
+          "end": 307
+        },
+        {
+          "text": "a",
+          "start": 308,
+          "end": 309
+        },
+        {
+          "text": "single",
+          "start": 310,
+          "end": 316
+        },
+        {
+          "text": "oral",
+          "start": 317,
+          "end": 321
+        },
+        {
+          "text": "antidiabetic",
+          "start": 322,
+          "end": 334
+        },
+        {
+          "text": "agent",
+          "start": 335,
+          "end": 340
+        },
+        {
+          "text": "or",
+          "start": 341,
+          "end": 343
+        },
+        {
+          "text": "low",
+          "start": 344,
+          "end": 347
+        },
+        {
+          "text": "doses",
+          "start": 348,
+          "end": 353
+        },
+        {
+          "text": "of",
+          "start": 354,
+          "end": 356
+        },
+        {
+          "text": "two",
+          "start": 357,
+          "end": 360
+        },
+        {
+          "text": "oral",
+          "start": 361,
+          "end": 365
+        },
+        {
+          "text": "antidiabetic",
+          "start": 366,
+          "end": 378
+        },
+        {
+          "text": "agents",
+          "start": 379,
+          "end": 385
+        },
+        {
+          "text": "Exclusion",
+          "start": 387,
+          "end": 396
+        },
+        {
+          "text": "Criteria",
+          "start": 397,
+          "end": 405
+        },
+        {
+          "text": ":",
+          "start": 405,
+          "end": 406
+        },
+        {
+          "text": "*",
+          "start": 408,
+          "end": 409
+        },
+        {
+          "text": "Type",
+          "start": 410,
+          "end": 414
+        },
+        {
+          "text": "1",
+          "start": 415,
+          "end": 416
+        },
+        {
+          "text": "diabetes",
+          "start": 417,
+          "end": 425
+        },
+        {
+          "text": "*",
+          "start": 426,
+          "end": 427
+        },
+        {
+          "text": "New",
+          "start": 428,
+          "end": 431
+        },
+        {
+          "text": "York",
+          "start": 432,
+          "end": 436
+        },
+        {
+          "text": "Heart",
+          "start": 437,
+          "end": 442
+        },
+        {
+          "text": "Association",
+          "start": 443,
+          "end": 454
+        },
+        {
+          "text": "heart",
+          "start": 455,
+          "end": 460
+        },
+        {
+          "text": "failure",
+          "start": 461,
+          "end": 468
+        },
+        {
+          "text": "Class",
+          "start": 469,
+          "end": 474
+        },
+        {
+          "text": "III",
+          "start": 475,
+          "end": 478
+        },
+        {
+          "text": "or",
+          "start": 479,
+          "end": 481
+        },
+        {
+          "text": "IV",
+          "start": 482,
+          "end": 484
+        },
+        {
+          "text": "*",
+          "start": 485,
+          "end": 486
+        },
+        {
+          "text": "Treatment",
+          "start": 487,
+          "end": 496
+        },
+        {
+          "text": "with",
+          "start": 497,
+          "end": 501
+        },
+        {
+          "text": "chronic",
+          "start": 502,
+          "end": 509
+        },
+        {
+          "text": "insulin",
+          "start": 510,
+          "end": 517
+        },
+        {
+          "text": "*",
+          "start": 518,
+          "end": 519
+        },
+        {
+          "text": "History",
+          "start": 520,
+          "end": 527
+        },
+        {
+          "text": "of",
+          "start": 528,
+          "end": 530
+        },
+        {
+          "text": "hypersensitivity",
+          "start": 531,
+          "end": 547
+        },
+        {
+          "text": "or",
+          "start": 548,
+          "end": 550
+        },
+        {
+          "text": "intolerance",
+          "start": 551,
+          "end": 562
+        },
+        {
+          "text": "to",
+          "start": 563,
+          "end": 565
+        },
+        {
+          "text": "any",
+          "start": 566,
+          "end": 569
+        },
+        {
+          "text": "peroxisome",
+          "start": 570,
+          "end": 580
+        },
+        {
+          "text": "proliferator-activated",
+          "start": 581,
+          "end": 603
+        },
+        {
+          "text": "receptor",
+          "start": 604,
+          "end": 612
+        },
+        {
+          "text": "agonist",
+          "start": 613,
+          "end": 620
+        },
+        {
+          "text": "(",
+          "start": 621,
+          "end": 622
+        },
+        {
+          "text": "like",
+          "start": 622,
+          "end": 626
+        },
+        {
+          "text": "Actos",
+          "start": 627,
+          "end": 632
+        },
+        {
+          "text": "or",
+          "start": 633,
+          "end": 635
+        },
+        {
+          "text": "Avandia",
+          "start": 636,
+          "end": 643
+        },
+        {
+          "text": ")",
+          "start": 643,
+          "end": 644
+        },
+        {
+          "text": ",",
+          "start": 644,
+          "end": 645
+        },
+        {
+          "text": "fenofibrate",
+          "start": 646,
+          "end": 657
+        },
+        {
+          "text": ",",
+          "start": 657,
+          "end": 658
+        },
+        {
+          "text": "metformin",
+          "start": 659,
+          "end": 668
+        },
+        {
+          "text": "or",
+          "start": 669,
+          "end": 671
+        },
+        {
+          "text": "3",
+          "start": 672,
+          "end": 673
+        },
+        {
+          "text": "-",
+          "start": 673,
+          "end": 674
+        },
+        {
+          "text": "hydroxy-3-methylglutaryl",
+          "start": 674,
+          "end": 698
+        },
+        {
+          "text": "coenzyme",
+          "start": 699,
+          "end": 707
+        },
+        {
+          "text": "A",
+          "start": 708,
+          "end": 709
+        },
+        {
+          "text": "reductase",
+          "start": 710,
+          "end": 719
+        },
+        {
+          "text": "inhibitor",
+          "start": 720,
+          "end": 729
+        },
+        {
+          "text": "(",
+          "start": 730,
+          "end": 731
+        },
+        {
+          "text": "statin",
+          "start": 731,
+          "end": 737
+        },
+        {
+          "text": ")",
+          "start": 737,
+          "end": 738
+        },
+        {
+          "text": "*",
+          "start": 739,
+          "end": 740
+        },
+        {
+          "text": "History",
+          "start": 741,
+          "end": 748
+        },
+        {
+          "text": "of",
+          "start": 749,
+          "end": 751
+        },
+        {
+          "text": "drug-induced",
+          "start": 752,
+          "end": 764
+        },
+        {
+          "text": "myopathy",
+          "start": 765,
+          "end": 773
+        },
+        {
+          "text": "or",
+          "start": 774,
+          "end": 776
+        },
+        {
+          "text": "drug-induced",
+          "start": 777,
+          "end": 789
+        },
+        {
+          "text": "creatine",
+          "start": 790,
+          "end": 798
+        },
+        {
+          "text": "kinase",
+          "start": 799,
+          "end": 805
+        },
+        {
+          "text": "elevation",
+          "start": 806,
+          "end": 815
+        },
+        {
+          "text": ",",
+          "start": 815,
+          "end": 816
+        },
+        {
+          "text": "liver",
+          "start": 817,
+          "end": 822
+        },
+        {
+          "text": "enzyme",
+          "start": 823,
+          "end": 829
+        },
+        {
+          "text": "elevations",
+          "start": 830,
+          "end": 840
+        },
+        {
+          "text": ",",
+          "start": 840,
+          "end": 841
+        },
+        {
+          "text": "neutropenia",
+          "start": 842,
+          "end": 853
+        },
+        {
+          "text": "(",
+          "start": 854,
+          "end": 855
+        },
+        {
+          "text": "low",
+          "start": 855,
+          "end": 858
+        },
+        {
+          "text": "white",
+          "start": 859,
+          "end": 864
+        },
+        {
+          "text": "blood",
+          "start": 865,
+          "end": 870
+        },
+        {
+          "text": "cells",
+          "start": 871,
+          "end": 876
+        },
+        {
+          "text": ")",
+          "start": 876,
+          "end": 877
+        },
+        {
+          "text": "*",
+          "start": 878,
+          "end": 879
+        },
+        {
+          "text": "Creatinine",
+          "start": 880,
+          "end": 890
+        },
+        {
+          "text": "levels",
+          "start": 891,
+          "end": 897
+        },
+        {
+          "text": "above",
+          "start": 898,
+          "end": 903
+        },
+        {
+          "text": "the",
+          "start": 904,
+          "end": 907
+        },
+        {
+          "text": "normal",
+          "start": 908,
+          "end": 914
+        },
+        {
+          "text": "range",
+          "start": 915,
+          "end": 920
+        },
+        {
+          "text": "*",
+          "start": 921,
+          "end": 922
+        },
+        {
+          "text": "Received",
+          "start": 923,
+          "end": 931
+        },
+        {
+          "text": "any",
+          "start": 932,
+          "end": 935
+        },
+        {
+          "text": "investigational",
+          "start": 936,
+          "end": 951
+        },
+        {
+          "text": "product",
+          "start": 952,
+          "end": 959
+        },
+        {
+          "text": "in",
+          "start": 960,
+          "end": 962
+        },
+        {
+          "text": "other",
+          "start": 963,
+          "end": 968
+        },
+        {
+          "text": "clinical",
+          "start": 969,
+          "end": 977
+        },
+        {
+          "text": "studies",
+          "start": 978,
+          "end": 985
+        },
+        {
+          "text": "within",
+          "start": 986,
+          "end": 992
+        },
+        {
+          "text": "12",
+          "start": 993,
+          "end": 995
+        },
+        {
+          "text": "weeks",
+          "start": 996,
+          "end": 1001
+        },
+        {
+          "text": "*",
+          "start": 1002,
+          "end": 1003
+        },
+        {
+          "text": "Any",
+          "start": 1004,
+          "end": 1007
+        },
+        {
+          "text": "clinically",
+          "start": 1008,
+          "end": 1018
+        },
+        {
+          "text": "significant",
+          "start": 1019,
+          "end": 1030
+        },
+        {
+          "text": "abnormality",
+          "start": 1031,
+          "end": 1042
+        },
+        {
+          "text": "identified",
+          "start": 1043,
+          "end": 1053
+        },
+        {
+          "text": "on",
+          "start": 1054,
+          "end": 1056
+        },
+        {
+          "text": "physical",
+          "start": 1057,
+          "end": 1065
+        },
+        {
+          "text": "examination",
+          "start": 1066,
+          "end": 1077
+        },
+        {
+          "text": ",",
+          "start": 1077,
+          "end": 1078
+        },
+        {
+          "text": "laboratory",
+          "start": 1079,
+          "end": 1089
+        },
+        {
+          "text": "tests",
+          "start": 1090,
+          "end": 1095
+        },
+        {
+          "text": "or",
+          "start": 1096,
+          "end": 1098
+        },
+        {
+          "text": "electrocardiogram",
+          "start": 1099,
+          "end": 1116
+        },
+        {
+          "text": ",",
+          "start": 1116,
+          "end": 1117
+        },
+        {
+          "text": "which",
+          "start": 1118,
+          "end": 1123
+        },
+        {
+          "text": "in",
+          "start": 1124,
+          "end": 1126
+        },
+        {
+          "text": "the",
+          "start": 1127,
+          "end": 1130
+        },
+        {
+          "text": "judgment",
+          "start": 1131,
+          "end": 1139
+        },
+        {
+          "text": "of",
+          "start": 1140,
+          "end": 1142
+        },
+        {
+          "text": "the",
+          "start": 1143,
+          "end": 1146
+        },
+        {
+          "text": "investigator",
+          "start": 1147,
+          "end": 1159
+        },
+        {
+          "text": "would",
+          "start": 1160,
+          "end": 1165
+        },
+        {
+          "text": "compromise",
+          "start": 1166,
+          "end": 1176
+        },
+        {
+          "text": "the",
+          "start": 1177,
+          "end": 1180
+        },
+        {
+          "text": "patient's",
+          "start": 1181,
+          "end": 1190
+        },
+        {
+          "text": "safety",
+          "start": 1191,
+          "end": 1197
+        },
+        {
+          "text": "or",
+          "start": 1198,
+          "end": 1200
+        },
+        {
+          "text": "successful",
+          "start": 1201,
+          "end": 1211
+        },
+        {
+          "text": "participation",
+          "start": 1212,
+          "end": 1225
+        },
+        {
+          "text": "in",
+          "start": 1226,
+          "end": 1228
+        },
+        {
+          "text": "the",
+          "start": 1229,
+          "end": 1232
+        },
+        {
+          "text": "clinical",
+          "start": 1233,
+          "end": 1241
+        },
+        {
+          "text": "study",
+          "start": 1242,
+          "end": 1247
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Inclusion Criteria:",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "text": "* Provision of a written informed consent",
+          "start": 21,
+          "end": 62
+        },
+        {
+          "text": "* Men or women who are \\>=18 years of age",
+          "start": 63,
+          "end": 104
+        },
+        {
+          "text": "* Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control",
+          "start": 105,
+          "end": 230
+        },
+        {
+          "text": "* Diagnosed with type 2 diabetes",
+          "start": 231,
+          "end": 263
+        },
+        {
+          "text": "* Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents",
+          "start": 264,
+          "end": 385
+        },
+        {
+          "text": "Exclusion Criteria:",
+          "start": 387,
+          "end": 406
+        },
+        {
+          "text": "* Type 1 diabetes",
+          "start": 408,
+          "end": 425
+        },
+        {
+          "text": "* New York Heart Association heart failure Class III or IV",
+          "start": 426,
+          "end": 484
+        },
+        {
+          "text": "* Treatment with chronic insulin",
+          "start": 485,
+          "end": 517
+        },
+        {
+          "text": "* History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)",
+          "start": 518,
+          "end": 738
+        },
+        {
+          "text": "* History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)",
+          "start": 739,
+          "end": 877
+        },
+        {
+          "text": "* Creatinine levels above the normal range",
+          "start": 878,
+          "end": 920
+        },
+        {
+          "text": "* Received any investigational product in other clinical studies within 12 weeks",
+          "start": 921,
+          "end": 1001
+        },
+        {
+          "text": "* Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+          "start": 1002,
+          "end": 1247
+        }
+      ],
+      "clauses": [
+        {
+          "text": "Provision of a written informed consent",
+          "start": 23,
+          "end": 62,
+          "section": "inclusion"
+        },
+        {
+          "text": "Men or women who are \\>=18 years of age",
+          "start": 65,
+          "end": 104,
+          "section": "inclusion"
+        },
+        {
+          "text": "Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control",
+          "start": 107,
+          "end": 230,
+          "section": "inclusion"
+        },
+        {
+          "text": "Diagnosed with type 2 diabetes",
+          "start": 233,
+          "end": 263,
+          "section": "inclusion"
+        },
+        {
+          "text": "Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents",
+          "start": 266,
+          "end": 385,
+          "section": "inclusion"
+        },
+        {
+          "text": "Type 1 diabetes",
+          "start": 410,
+          "end": 425,
+          "section": "exclusion"
+        },
+        {
+          "text": "New York Heart Association heart failure Class III or IV",
+          "start": 428,
+          "end": 484,
+          "section": "exclusion"
+        },
+        {
+          "text": "Treatment with chronic insulin",
+          "start": 487,
+          "end": 517,
+          "section": "exclusion"
+        },
+        {
+          "text": "History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)",
+          "start": 520,
+          "end": 738,
+          "section": "exclusion"
+        },
+        {
+          "text": "History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)",
+          "start": 741,
+          "end": 877,
+          "section": "exclusion"
+        },
+        {
+          "text": "Creatinine levels above the normal range",
+          "start": 880,
+          "end": 920,
+          "section": "exclusion"
+        },
+        {
+          "text": "Received any investigational product in other clinical studies within 12 weeks",
+          "start": 923,
+          "end": 1001,
+          "section": "exclusion"
+        },
+        {
+          "text": "Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+          "start": 1004,
+          "end": 1247,
+          "section": "exclusion"
+        }
+      ],
+      "negation_preserved": true,
+      "method": "NFKC + offset tokenizer + full-clause grammar"
+    },
+    "parser_version": "conservative-grammar-v1",
+    "extraction_hash": "18c77d82da8a744d5576ebd6b66cd50ece9a0b1a133e1b176377ade0027f07a5",
+    "source_url": "https://clinicaltrials.gov/study/NCT00261352",
+    "notice": "Research demonstration using synthetic profiles. Not a clinical decision or full eligibility determination.",
+    "reviews": []
+  },
+  "notice": "Research demonstration using synthetic profiles. Not a clinical decision or full eligibility determination."
+}

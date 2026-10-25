@@ -1,0 +1,88 @@
+# Python build/test/cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local environments and credentials: retain the reviewed example only.
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
+credentials.json
+token.json
+.streamlit/secrets.toml
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Model weights, checkpoints and experiment caches are downloaded/reproduced.
+models/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.bin
+model_cache/
+hf_cache/
+.cache/
+wandb/
+mlruns/
+
+# Private/restricted data and unreviewed downloads must not enter Git.
+data/external/
+data/downloads/
+data/private/
+data/restricted/
+data/cache/
+data/processed/cache/
+data/index/
+data/raw/*
+
+# Explicitly reviewed public API snapshot and official schema, with provenance.
+# New raw runs remain ignored until separately reviewed for publication.
+!data/raw/clinicaltrials/
+data/raw/clinicaltrials/*
+!data/raw/clinicaltrials/20261017T083822512361Z/
+!data/raw/reference/
+data/raw/reference/*
+!data/raw/reference/clinicaltrials-v2-openapi.yaml
+
+# Runtime decisions/databases are machine-local, not public research fixtures.
+*.sqlite*
+*.db
+*.db-journal
+
+# Generated archives, process state, local guide extraction and transient files.
+storage/
+tmp/
+temp/
+reports/tmp/
+reports/cache/
+reports/server*.json
+reports/source_archive.json
+docs/source_guide.txt
+*.zip
+*.7z
+*.rar
+.ipynb_checkpoints/
+

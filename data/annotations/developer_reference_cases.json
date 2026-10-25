@@ -1,0 +1,1664 @@
+{
+  "schema_version": "developer-reference-v1",
+  "label_origin": "developer_reference",
+  "expert_reviewed": false,
+  "blinded": false,
+  "authoring": "Expected semantics are explicitly authored above, without parser imports or predictions. The parser existed before these references; the author read its documented contract. These references are not independent clinical ground truth.",
+  "positive_definition": "Complete, unambiguous constraints expressible in the declared field/operator/unit/Boolean model, including explicit lexical generalization challenges.",
+  "split_definition": "Separately for authored executable/unsupported dispositions, sort whole families by SHA256(developer-reference-v1:family); first floor(0.6*K) families train, next through floor(0.8*K) dev, remainder test. Assign all family cases together. Splits use labels, never predictions. No model is trained on this set. Test is a developer reference holdout, not blinded external validation.",
+  "cases": [
+    {
+      "case_id": "DEVREF-001",
+      "family": "age-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-age-comparisons",
+      "split": "test",
+      "text": "Age > 21 years",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "gt",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 21,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-002",
+      "family": "age-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-age-comparisons",
+      "split": "test",
+      "text": "Age at most 72 years",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "lte",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 72,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-003",
+      "family": "age-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-age-comparisons",
+      "split": "test",
+      "text": "Age no less than 24 years",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "gte",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 24,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-004",
+      "family": "age-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-age-comparisons",
+      "split": "test",
+      "text": "Age equals 45 years",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "equals",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 45,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-005",
+      "family": "unicode-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-unicode-comparisons",
+      "split": "dev",
+      "text": "Age ≥ 22 years",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "gte",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 22,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-006",
+      "family": "unicode-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-unicode-comparisons",
+      "split": "dev",
+      "text": "ＢＭＩ ≤ ２９ kg/m²",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "bmi",
+          "operator": "lte",
+          "unit": "kg/m2",
+          "negated": false,
+          "type": "inclusion",
+          "value": 29,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-007",
+      "family": "bmi-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-bmi-comparisons",
+      "split": "test",
+      "text": "Body mass index less than 32.5 kg/m2",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "bmi",
+          "operator": "lt",
+          "unit": "kg/m2",
+          "negated": false,
+          "type": "inclusion",
+          "value": 32.5,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-008",
+      "family": "bmi-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-bmi-comparisons",
+      "split": "test",
+      "text": "BMI more than 19 kg/m^2",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "bmi",
+          "operator": "gt",
+          "unit": "kg/m2",
+          "negated": false,
+          "type": "inclusion",
+          "value": 19,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-009",
+      "family": "hba1c-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-hba1c-comparisons",
+      "split": "train",
+      "text": "HbA1c greater than or equal to 7.1 %",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "hba1c",
+          "operator": "gte",
+          "unit": "%",
+          "negated": false,
+          "type": "inclusion",
+          "value": 7.1,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-010",
+      "family": "hba1c-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-hba1c-comparisons",
+      "split": "train",
+      "text": "Glycated hemoglobin below 9 percent",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "hba1c",
+          "operator": "lt",
+          "unit": "%",
+          "negated": false,
+          "type": "inclusion",
+          "value": 9,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-011",
+      "family": "pressure-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-pressure-comparisons",
+      "split": "train",
+      "text": "Systolic blood pressure <= 135 mmHg",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "systolic_bp",
+          "operator": "lte",
+          "unit": "mmHg",
+          "negated": false,
+          "type": "inclusion",
+          "value": 135,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-012",
+      "family": "pressure-comparisons",
+      "study_id": "SYNTHETIC-REFERENCE-pressure-comparisons",
+      "split": "train",
+      "text": "DBP over 75 mm Hg",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "diastolic_bp",
+          "operator": "gt",
+          "unit": "mmHg",
+          "negated": false,
+          "type": "inclusion",
+          "value": 75,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-013",
+      "family": "unit-conversions",
+      "study_id": "SYNTHETIC-REFERENCE-unit-conversions",
+      "split": "train",
+      "text": "Age >= 240 months",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "gte",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 20,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-014",
+      "family": "unit-conversions",
+      "study_id": "SYNTHETIC-REFERENCE-unit-conversions",
+      "split": "train",
+      "text": "HbA1c <= 48 mmol/mol",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "hba1c",
+          "operator": "lte",
+          "unit": "%",
+          "negated": false,
+          "type": "inclusion",
+          "value": 6.54304,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-015",
+      "family": "unit-conversions",
+      "study_id": "SYNTHETIC-REFERENCE-unit-conversions",
+      "split": "train",
+      "text": "SBP >= 16 kPa",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "systolic_bp",
+          "operator": "gte",
+          "unit": "mmHg",
+          "negated": false,
+          "type": "inclusion",
+          "value": 120.009852134,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-016",
+      "family": "assumed-units",
+      "study_id": "SYNTHETIC-REFERENCE-assumed-units",
+      "split": "train",
+      "text": "Age >= 23",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "gte",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 23,
+          "unit_assumed": true
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-017",
+      "family": "assumed-units",
+      "study_id": "SYNTHETIC-REFERENCE-assumed-units",
+      "split": "train",
+      "text": "BMI <= 31",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "bmi",
+          "operator": "lte",
+          "unit": "kg/m2",
+          "negated": false,
+          "type": "inclusion",
+          "value": 31,
+          "unit_assumed": true
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-018",
+      "family": "inclusive-ranges",
+      "study_id": "SYNTHETIC-REFERENCE-inclusive-ranges",
+      "split": "train",
+      "text": "Age from 21 to 70 years",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "between_inclusive",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "lower": 21,
+          "upper": 70,
+          "lower_inclusive": true,
+          "upper_inclusive": true,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-019",
+      "family": "inclusive-ranges",
+      "study_id": "SYNTHETIC-REFERENCE-inclusive-ranges",
+      "split": "train",
+      "text": "BMI 19–29 kg/m²",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "bmi",
+          "operator": "between_inclusive",
+          "unit": "kg/m2",
+          "negated": false,
+          "type": "inclusion",
+          "lower": 19,
+          "upper": 29,
+          "lower_inclusive": true,
+          "upper_inclusive": true,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-020",
+      "family": "exclusive-ranges",
+      "study_id": "SYNTHETIC-REFERENCE-exclusive-ranges",
+      "split": "dev",
+      "text": "Age between 21 and 70 years exclusive",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "between_exclusive",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "lower": 21,
+          "upper": 70,
+          "lower_inclusive": false,
+          "upper_inclusive": false,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-021",
+      "family": "exclusive-ranges",
+      "study_id": "SYNTHETIC-REFERENCE-exclusive-ranges",
+      "split": "dev",
+      "text": "HbA1c between 6.2 and 8.4 % exclusive",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "hba1c",
+          "operator": "between_exclusive",
+          "unit": "%",
+          "negated": false,
+          "type": "inclusion",
+          "lower": 6.2,
+          "upper": 8.4,
+          "lower_inclusive": false,
+          "upper_inclusive": false,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-022",
+      "family": "chained-bounds",
+      "study_id": "SYNTHETIC-REFERENCE-chained-bounds",
+      "split": "train",
+      "text": "21 <= age < 70 years",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "AND",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "age",
+              "operator": "gte",
+              "unit": "years",
+              "negated": false,
+              "type": "inclusion",
+              "value": 21,
+              "unit_assumed": false
+            },
+            {
+              "kind": "condition",
+              "field": "age",
+              "operator": "lt",
+              "unit": "years",
+              "negated": false,
+              "type": "inclusion",
+              "value": 70,
+              "unit_assumed": false
+            }
+          ],
+          "type": "inclusion"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-023",
+      "family": "chained-bounds",
+      "study_id": "SYNTHETIC-REFERENCE-chained-bounds",
+      "split": "train",
+      "text": "HbA1c >= 6.2 % and < 8.4 %",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "AND",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "hba1c",
+              "operator": "gte",
+              "unit": "%",
+              "negated": false,
+              "type": "inclusion",
+              "value": 6.2,
+              "unit_assumed": false
+            },
+            {
+              "kind": "condition",
+              "field": "hba1c",
+              "operator": "lt",
+              "unit": "%",
+              "negated": false,
+              "type": "inclusion",
+              "value": 8.4,
+              "unit_assumed": false
+            }
+          ],
+          "type": "inclusion"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-024",
+      "family": "positive-diagnoses",
+      "study_id": "SYNTHETIC-REFERENCE-positive-diagnoses",
+      "split": "train",
+      "text": "Diagnosed with T2DM",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "type_2_diabetes",
+          "operator": "equals",
+          "unit": null,
+          "negated": false,
+          "type": "inclusion",
+          "value": true
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-025",
+      "family": "positive-diagnoses",
+      "study_id": "SYNTHETIC-REFERENCE-positive-diagnoses",
+      "split": "train",
+      "text": "Type 1 diabetes mellitus",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "type_1_diabetes",
+          "operator": "equals",
+          "unit": null,
+          "negated": false,
+          "type": "inclusion",
+          "value": true
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-026",
+      "family": "positive-diagnoses",
+      "study_id": "SYNTHETIC-REFERENCE-positive-diagnoses",
+      "split": "train",
+      "text": "With hypertension",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "hypertension",
+          "operator": "equals",
+          "unit": null,
+          "negated": false,
+          "type": "inclusion",
+          "value": true
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-027",
+      "family": "positive-diagnoses",
+      "study_id": "SYNTHETIC-REFERENCE-positive-diagnoses",
+      "split": "train",
+      "text": "Severe kidney disease",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "severe_kidney_disease",
+          "operator": "equals",
+          "unit": null,
+          "negated": false,
+          "type": "inclusion",
+          "value": true
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-028",
+      "family": "explicit-negation",
+      "study_id": "SYNTHETIC-REFERENCE-explicit-negation",
+      "split": "train",
+      "text": "Without hypertension",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "hypertension",
+          "operator": "equals",
+          "unit": null,
+          "negated": true,
+          "type": "exclusion_constraint",
+          "value": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-029",
+      "family": "explicit-negation",
+      "study_id": "SYNTHETIC-REFERENCE-explicit-negation",
+      "split": "train",
+      "text": "Must not have severe renal impairment",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "severe_renal_impairment",
+          "operator": "equals",
+          "unit": null,
+          "negated": true,
+          "type": "exclusion_constraint",
+          "value": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-030",
+      "family": "explicit-negation",
+      "study_id": "SYNTHETIC-REFERENCE-explicit-negation",
+      "split": "train",
+      "text": "Not be pregnant",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "pregnant",
+          "operator": "equals",
+          "unit": null,
+          "negated": true,
+          "type": "exclusion_constraint",
+          "value": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-031",
+      "family": "explicit-negation",
+      "study_id": "SYNTHETIC-REFERENCE-explicit-negation",
+      "split": "train",
+      "text": "Negative for T1DM",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "type_1_diabetes",
+          "operator": "equals",
+          "unit": null,
+          "negated": true,
+          "type": "exclusion_constraint",
+          "value": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-032",
+      "family": "older-younger",
+      "study_id": "SYNTHETIC-REFERENCE-older-younger",
+      "split": "test",
+      "text": "Age 24 years or older",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "gte",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 24,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-033",
+      "family": "older-younger",
+      "study_id": "SYNTHETIC-REFERENCE-older-younger",
+      "split": "test",
+      "text": "Age 68 years or younger",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "lte",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 68,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-034",
+      "family": "explicit-and",
+      "study_id": "SYNTHETIC-REFERENCE-explicit-and",
+      "split": "dev",
+      "text": "Age >= 21 years and BMI < 29 kg/m2",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "AND",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "age",
+              "operator": "gte",
+              "unit": "years",
+              "negated": false,
+              "type": "inclusion",
+              "value": 21,
+              "unit_assumed": false
+            },
+            {
+              "kind": "condition",
+              "field": "bmi",
+              "operator": "lt",
+              "unit": "kg/m2",
+              "negated": false,
+              "type": "inclusion",
+              "value": 29,
+              "unit_assumed": false
+            }
+          ],
+          "type": "inclusion"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-035",
+      "family": "explicit-or",
+      "study_id": "SYNTHETIC-REFERENCE-explicit-or",
+      "split": "train",
+      "text": "HbA1c < 7.5 % or BMI < 28 kg/m2",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "hba1c",
+              "operator": "lt",
+              "unit": "%",
+              "negated": false,
+              "type": "inclusion",
+              "value": 7.5,
+              "unit_assumed": false
+            },
+            {
+              "kind": "condition",
+              "field": "bmi",
+              "operator": "lt",
+              "unit": "kg/m2",
+              "negated": false,
+              "type": "inclusion",
+              "value": 28,
+              "unit_assumed": false
+            }
+          ],
+          "type": "inclusion"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-036",
+      "family": "parenthesized-logic",
+      "study_id": "SYNTHETIC-REFERENCE-parenthesized-logic",
+      "split": "train",
+      "text": "Age >= 21 years and (BMI < 29 kg/m2 or HbA1c < 7.5 %)",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "AND",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "age",
+              "operator": "gte",
+              "unit": "years",
+              "negated": false,
+              "type": "inclusion",
+              "value": 21,
+              "unit_assumed": false
+            },
+            {
+              "kind": "group",
+              "logic": "OR",
+              "children": [
+                {
+                  "kind": "condition",
+                  "field": "bmi",
+                  "operator": "lt",
+                  "unit": "kg/m2",
+                  "negated": false,
+                  "type": "inclusion",
+                  "value": 29,
+                  "unit_assumed": false
+                },
+                {
+                  "kind": "condition",
+                  "field": "hba1c",
+                  "operator": "lt",
+                  "unit": "%",
+                  "negated": false,
+                  "type": "inclusion",
+                  "value": 7.5,
+                  "unit_assumed": false
+                }
+              ],
+              "type": "inclusion"
+            }
+          ],
+          "type": "inclusion"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-037",
+      "family": "scoped-negation",
+      "study_id": "SYNTHETIC-REFERENCE-scoped-negation",
+      "split": "dev",
+      "text": "No T2DM and not be pregnant",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "AND",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "type_2_diabetes",
+              "operator": "equals",
+              "unit": null,
+              "negated": true,
+              "type": "exclusion_constraint",
+              "value": false
+            },
+            {
+              "kind": "condition",
+              "field": "pregnant",
+              "operator": "equals",
+              "unit": null,
+              "negated": true,
+              "type": "exclusion_constraint",
+              "value": false
+            }
+          ],
+          "type": "inclusion"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-038",
+      "family": "exclusion-positive",
+      "study_id": "SYNTHETIC-REFERENCE-exclusion-positive",
+      "split": "test",
+      "text": "Exclusion Criteria:\n- Pregnancy",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "NOT",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "pregnant",
+              "operator": "equals",
+              "unit": null,
+              "negated": false,
+              "type": "exclusion_constraint",
+              "value": true
+            }
+          ],
+          "type": "exclusion_constraint"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-039",
+      "family": "exclusion-or",
+      "study_id": "SYNTHETIC-REFERENCE-exclusion-or",
+      "split": "train",
+      "text": "Exclusion Criteria:\n- T1DM or severe renal impairment",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "NOT",
+          "children": [
+            {
+              "kind": "group",
+              "logic": "OR",
+              "children": [
+                {
+                  "kind": "condition",
+                  "field": "type_1_diabetes",
+                  "operator": "equals",
+                  "unit": null,
+                  "negated": false,
+                  "type": "exclusion_constraint",
+                  "value": true
+                },
+                {
+                  "kind": "condition",
+                  "field": "severe_renal_impairment",
+                  "operator": "equals",
+                  "unit": null,
+                  "negated": false,
+                  "type": "exclusion_constraint",
+                  "value": true
+                }
+              ],
+              "type": "exclusion_constraint"
+            }
+          ],
+          "type": "exclusion_constraint"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-040",
+      "family": "exclusion-negative",
+      "study_id": "SYNTHETIC-REFERENCE-exclusion-negative",
+      "split": "dev",
+      "text": "Exclusion Criteria:\n- Without hypertension",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "NOT",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "hypertension",
+              "operator": "equals",
+              "unit": null,
+              "negated": true,
+              "type": "exclusion_constraint",
+              "value": false
+            }
+          ],
+          "type": "exclusion_constraint"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-041",
+      "family": "distinct-bullets",
+      "study_id": "SYNTHETIC-REFERENCE-distinct-bullets",
+      "split": "train",
+      "text": "Inclusion Criteria:\n- Age >= 21 years\n- BMI <= 29 kg/m2",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "gte",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 21,
+          "unit_assumed": false
+        },
+        {
+          "kind": "condition",
+          "field": "bmi",
+          "operator": "lte",
+          "unit": "kg/m2",
+          "negated": false,
+          "type": "inclusion",
+          "value": 29,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-042",
+      "family": "exact-prose",
+      "study_id": "SYNTHETIC-REFERENCE-exact-prose",
+      "split": "train",
+      "text": "Participants must be between 21 and 70 years of age and must not have severe renal impairment.",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "group",
+          "logic": "AND",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "age",
+              "operator": "between_inclusive",
+              "unit": "years",
+              "negated": false,
+              "type": "inclusion",
+              "lower": 21,
+              "upper": 70,
+              "lower_inclusive": true,
+              "upper_inclusive": true,
+              "unit_assumed": false
+            },
+            {
+              "kind": "condition",
+              "field": "severe_renal_impairment",
+              "operator": "equals",
+              "unit": null,
+              "negated": true,
+              "type": "exclusion_constraint",
+              "value": false
+            }
+          ],
+          "type": "inclusion"
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-043",
+      "family": "semantic-paraphrases",
+      "study_id": "SYNTHETIC-REFERENCE-semantic-paraphrases",
+      "split": "test",
+      "text": "Age must exceed 21 years",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "age",
+          "operator": "gt",
+          "unit": "years",
+          "negated": false,
+          "type": "inclusion",
+          "value": 21,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Unambiguous greater-than meaning; lexical grammar coverage is being tested.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-044",
+      "family": "semantic-paraphrases",
+      "study_id": "SYNTHETIC-REFERENCE-semantic-paraphrases",
+      "split": "test",
+      "text": "BMI is lower than 29 kg/m2",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "bmi",
+          "operator": "lt",
+          "unit": "kg/m2",
+          "negated": false,
+          "type": "inclusion",
+          "value": 29,
+          "unit_assumed": false
+        }
+      ],
+      "rationale": "Unambiguous less-than meaning; lexical grammar coverage is being tested.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-045",
+      "family": "semantic-paraphrases",
+      "study_id": "SYNTHETIC-REFERENCE-semantic-paraphrases",
+      "split": "test",
+      "text": "No pregnancy",
+      "expected_executable": true,
+      "expected_rules": [
+        {
+          "kind": "condition",
+          "field": "pregnant",
+          "operator": "equals",
+          "unit": null,
+          "negated": true,
+          "type": "exclusion_constraint",
+          "value": false
+        }
+      ],
+      "rationale": "Complete unambiguous supported-field semantics.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-046",
+      "family": "temporal",
+      "study_id": "SYNTHETIC-REFERENCE-temporal",
+      "split": "train",
+      "text": "Age >= 21 years at screening",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Age must be anchored to a visit.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-047",
+      "family": "temporal",
+      "study_id": "SYNTHETIC-REFERENCE-temporal",
+      "split": "train",
+      "text": "HbA1c < 8 % within the past 3 months",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Temporal measurement validity is unsupported.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-048",
+      "family": "duration",
+      "study_id": "SYNTHETIC-REFERENCE-duration",
+      "split": "dev",
+      "text": "T2DM for at least 12 months",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Disease-duration reasoning is unsupported.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-049",
+      "family": "duration",
+      "study_id": "SYNTHETIC-REFERENCE-duration",
+      "split": "dev",
+      "text": "History of hypertension",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Historical and current diagnosis differ.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-050",
+      "family": "discretion",
+      "study_id": "SYNTHETIC-REFERENCE-discretion",
+      "split": "train",
+      "text": "Age >= 21 years unless the investigator approves",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "An exception changes execution scope.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-051",
+      "family": "discretion",
+      "study_id": "SYNTHETIC-REFERENCE-discretion",
+      "split": "train",
+      "text": "Adequate renal function",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "No measurable threshold is supplied.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-052",
+      "family": "partial-clause",
+      "study_id": "SYNTHETIC-REFERENCE-partial-clause",
+      "split": "train",
+      "text": "Age >= 21 years and willing to attend visits",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "A complete criterion contains an unsupported conjunct.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-053",
+      "family": "partial-clause",
+      "study_id": "SYNTHETIC-REFERENCE-partial-clause",
+      "split": "train",
+      "text": "BMI < 29 kg/m2. Except pregnant participants.",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "A sentence boundary does not remove an exception.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-054",
+      "family": "mixed-logic",
+      "study_id": "SYNTHETIC-REFERENCE-mixed-logic",
+      "split": "train",
+      "text": "Age >= 21 years and BMI < 29 kg/m2 or hypertension",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Unparenthesized mixed logic is ambiguous.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-055",
+      "family": "mixed-logic",
+      "study_id": "SYNTHETIC-REFERENCE-mixed-logic",
+      "split": "train",
+      "text": "No T2DM or hypertension",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Negation scope is ambiguous.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-056",
+      "family": "mixed-logic",
+      "study_id": "SYNTHETIC-REFERENCE-mixed-logic",
+      "split": "train",
+      "text": "BMI < 29 kg/m2 and/or T2DM",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "And/or is not an executable Boolean tree.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-057",
+      "family": "missing-units",
+      "study_id": "SYNTHETIC-REFERENCE-missing-units",
+      "split": "train",
+      "text": "HbA1c >= 48",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Dual common scales make a bare threshold ambiguous.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-058",
+      "family": "missing-units",
+      "study_id": "SYNTHETIC-REFERENCE-missing-units",
+      "split": "train",
+      "text": "SBP < 130",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Pressure source unit is missing.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-059",
+      "family": "incompatible-units",
+      "study_id": "SYNTHETIC-REFERENCE-incompatible-units",
+      "split": "test",
+      "text": "Age > 21 kg/m2",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "The age unit is dimensionally incompatible.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-060",
+      "family": "incompatible-units",
+      "study_id": "SYNTHETIC-REFERENCE-incompatible-units",
+      "split": "test",
+      "text": "BMI < 29 mg/dL",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "BMI cannot use concentration units.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-061",
+      "family": "incompatible-units",
+      "study_id": "SYNTHETIC-REFERENCE-incompatible-units",
+      "split": "test",
+      "text": "HbA1c < 8 mmol/L",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Concentration and HbA1c ratio units differ.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-062",
+      "family": "unsupported-fields",
+      "study_id": "SYNTHETIC-REFERENCE-unsupported-fields",
+      "split": "test",
+      "text": "eGFR > 60 mL/min/1.73m2",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "eGFR is outside the field model.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-063",
+      "family": "unsupported-fields",
+      "study_id": "SYNTHETIC-REFERENCE-unsupported-fields",
+      "split": "test",
+      "text": "Fasting glucose >= 126 mg/dL",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Glucose is outside the field model.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-064",
+      "family": "unsupported-fields",
+      "study_id": "SYNTHETIC-REFERENCE-unsupported-fields",
+      "split": "test",
+      "text": "Females only",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Sex constraints are outside this grammar.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-065",
+      "family": "nonspecific-diagnoses",
+      "study_id": "SYNTHETIC-REFERENCE-nonspecific-diagnoses",
+      "split": "train",
+      "text": "Diabetes",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Diabetes subtype cannot be inferred.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-066",
+      "family": "nonspecific-diagnoses",
+      "study_id": "SYNTHETIC-REFERENCE-nonspecific-diagnoses",
+      "split": "train",
+      "text": "Renal impairment",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Severity must not be invented.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-067",
+      "family": "medications",
+      "study_id": "SYNTHETIC-REFERENCE-medications",
+      "split": "train",
+      "text": "Taking metformin 1000 mg daily",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Medication and dose reasoning is unsupported.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-068",
+      "family": "medications",
+      "study_id": "SYNTHETIC-REFERENCE-medications",
+      "split": "train",
+      "text": "Stable insulin dose for 8 weeks",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Stability and dose history are unsupported.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-069",
+      "family": "conditional-list",
+      "study_id": "SYNTHETIC-REFERENCE-conditional-list",
+      "split": "train",
+      "text": "Inclusion Criteria:\nAny of the following:\n- Age >= 21 years\n- BMI < 29 kg/m2",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "The unresolved introduction scopes the list.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-070",
+      "family": "wrapped-exception",
+      "study_id": "SYNTHETIC-REFERENCE-wrapped-exception",
+      "split": "test",
+      "text": "Inclusion Criteria:\n- Age >= 21 years\n  with investigator approval",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "Wrapped qualification is part of the criterion.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-071",
+      "family": "nested-exception",
+      "study_id": "SYNTHETIC-REFERENCE-nested-exception",
+      "split": "test",
+      "text": "Inclusion Criteria:\n- BMI < 29 kg/m2\n  - unless pregnant",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "A nested exception changes the parent rule.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-072",
+      "family": "ambiguous-quantity",
+      "study_id": "SYNTHETIC-REFERENCE-ambiguous-quantity",
+      "split": "dev",
+      "text": "Approximately age 21 years",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "An approximate threshold is not exact.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-073",
+      "family": "missing-threshold",
+      "study_id": "SYNTHETIC-REFERENCE-missing-threshold",
+      "split": "train",
+      "text": "BMI in normal range",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "No supported numeric threshold is supplied.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-074",
+      "family": "empty-source",
+      "study_id": "SYNTHETIC-REFERENCE-empty-source",
+      "split": "train",
+      "text": "",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "There is no criterion to execute.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    },
+    {
+      "case_id": "DEVREF-075",
+      "family": "heading-only",
+      "study_id": "SYNTHETIC-REFERENCE-heading-only",
+      "split": "dev",
+      "text": "Exclusion Criteria:",
+      "expected_executable": false,
+      "expected_rules": [],
+      "rationale": "A heading alone supplies no executable constraint.",
+      "source": "developer-authored synthetic sentence",
+      "label_origin": "developer_reference",
+      "reviewer": "not_expert_reviewed"
+    }
+  ]
+}

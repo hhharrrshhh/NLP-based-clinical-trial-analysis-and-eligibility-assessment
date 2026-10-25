@@ -1,0 +1,1118 @@
+{
+  "schema_version": "research-evaluation-v1",
+  "generated_at": "2026-10-18T08:49:41.564190+00:00",
+  "inputs": {
+    "studies": "data\\processed\\studies.json",
+    "studies_sha256": "55770c26d3ebb46699cb07cc740dc92ab60d3fe321aff070b65718b119361abf",
+    "references_sha256": "340333741a0446e7c573500d255ac03e27c53bdaa021f21b52f960d535caaaf3",
+    "parser_sha256": "b77a3b828acf57cd49316fa30a70146b3d55fbdc1992f2b08229a7225f0c500f"
+  },
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "packages": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.6.1",
+      "matplotlib": "3.10.3",
+      "psutil": "7.0.0"
+    }
+  },
+  "developer_reference": {
+    "label_origin": "developer_reference",
+    "expert_reviewed": false,
+    "blinded": false,
+    "scope": "Complete, unambiguous constraints expressible in the declared field/operator/unit/Boolean model, including explicit lexical generalization challenges.",
+    "split_definition": "Separately for authored executable/unsupported dispositions, sort whole families by SHA256(developer-reference-v1:family); first floor(0.6*K) families train, next through floor(0.8*K) dev, remainder test. Assign all family cases together. Splits use labels, never predictions. No model is trained on this set. Test is a developer reference holdout, not blinded external validation.",
+    "metric_definition": "Component accuracies are whole-case exact matches over ALL expected-executable cases, including abstentions; missing/extra atoms and group paths are errors. Type means inclusion versus exclusion_constraint. Negation includes lexical negated flags and NOT scope. Full match preserves tree shape, bounds, unit assumptions, and canonical units; numeric tolerance 1e-6. This is engineering reference fidelity, not clinical extraction accuracy.",
+    "training": "No model trained and no parser parameters changed using these references.",
+    "all": {
+      "case_count": 75,
+      "expected_executable_count": 45,
+      "expected_unsupported_count": 30,
+      "confusion": {
+        "positive_class": "complete executable semantic representation",
+        "TP": 43,
+        "FP": 0,
+        "TN": 30,
+        "FN": 2
+      },
+      "false_positive_rate": {
+        "numerator": 0,
+        "denominator": 30,
+        "value": 0.0
+      },
+      "false_negative_rate": {
+        "numerator": 2,
+        "denominator": 45,
+        "value": 0.044444444444444446
+      },
+      "binary_accuracy": {
+        "numerator": 73,
+        "denominator": 75,
+        "value": 0.9733333333333334
+      },
+      "precision": {
+        "numerator": 43,
+        "denominator": 43,
+        "value": 1.0
+      },
+      "recall": {
+        "numerator": 43,
+        "denominator": 45,
+        "value": 0.9555555555555556
+      },
+      "abstention_rate": {
+        "numerator": 32,
+        "denominator": 75,
+        "value": 0.4266666666666667
+      },
+      "unsupported_abstention": {
+        "numerator": 30,
+        "denominator": 30,
+        "value": 1.0
+      },
+      "full_rule_match_expected_executable": {
+        "numerator": 43,
+        "denominator": 45,
+        "value": 0.9555555555555556
+      },
+      "full_signature_match_including_unsupported": {
+        "numerator": 73,
+        "denominator": 75,
+        "value": 0.9733333333333334
+      },
+      "component_case_exact_accuracy": {
+        "field": {
+          "numerator": 43,
+          "denominator": 45,
+          "value": 0.9555555555555556
+        },
+        "operator": {
+          "numerator": 43,
+          "denominator": 45,
+          "value": 0.9555555555555556
+        },
+        "value": {
+          "numerator": 43,
+          "denominator": 45,
+          "value": 0.9555555555555556
+        },
+        "unit": {
+          "numerator": 43,
+          "denominator": 45,
+          "value": 0.9555555555555556
+        },
+        "type": {
+          "numerator": 43,
+          "denominator": 45,
+          "value": 0.9555555555555556
+        },
+        "negation": {
+          "numerator": 43,
+          "denominator": 45,
+          "value": 0.9555555555555556
+        },
+        "logical_shape": {
+          "numerator": 43,
+          "denominator": 45,
+          "value": 0.9555555555555556
+        }
+      },
+      "partial_execution_on_unsupported_count": 0,
+      "span_integrity": {
+        "numerator": 75,
+        "denominator": 75,
+        "value": 1.0
+      }
+    },
+    "by_split": {
+      "train": {
+        "case_count": 44,
+        "expected_executable_count": 26,
+        "expected_unsupported_count": 18,
+        "confusion": {
+          "positive_class": "complete executable semantic representation",
+          "TP": 26,
+          "FP": 0,
+          "TN": 18,
+          "FN": 0
+        },
+        "false_positive_rate": {
+          "numerator": 0,
+          "denominator": 18,
+          "value": 0.0
+        },
+        "false_negative_rate": {
+          "numerator": 0,
+          "denominator": 26,
+          "value": 0.0
+        },
+        "binary_accuracy": {
+          "numerator": 44,
+          "denominator": 44,
+          "value": 1.0
+        },
+        "precision": {
+          "numerator": 26,
+          "denominator": 26,
+          "value": 1.0
+        },
+        "recall": {
+          "numerator": 26,
+          "denominator": 26,
+          "value": 1.0
+        },
+        "abstention_rate": {
+          "numerator": 18,
+          "denominator": 44,
+          "value": 0.4090909090909091
+        },
+        "unsupported_abstention": {
+          "numerator": 18,
+          "denominator": 18,
+          "value": 1.0
+        },
+        "full_rule_match_expected_executable": {
+          "numerator": 26,
+          "denominator": 26,
+          "value": 1.0
+        },
+        "full_signature_match_including_unsupported": {
+          "numerator": 44,
+          "denominator": 44,
+          "value": 1.0
+        },
+        "component_case_exact_accuracy": {
+          "field": {
+            "numerator": 26,
+            "denominator": 26,
+            "value": 1.0
+          },
+          "operator": {
+            "numerator": 26,
+            "denominator": 26,
+            "value": 1.0
+          },
+          "value": {
+            "numerator": 26,
+            "denominator": 26,
+            "value": 1.0
+          },
+          "unit": {
+            "numerator": 26,
+            "denominator": 26,
+            "value": 1.0
+          },
+          "type": {
+            "numerator": 26,
+            "denominator": 26,
+            "value": 1.0
+          },
+          "negation": {
+            "numerator": 26,
+            "denominator": 26,
+            "value": 1.0
+          },
+          "logical_shape": {
+            "numerator": 26,
+            "denominator": 26,
+            "value": 1.0
+          }
+        },
+        "partial_execution_on_unsupported_count": 0,
+        "span_integrity": {
+          "numerator": 44,
+          "denominator": 44,
+          "value": 1.0
+        }
+      },
+      "dev": {
+        "case_count": 11,
+        "expected_executable_count": 7,
+        "expected_unsupported_count": 4,
+        "confusion": {
+          "positive_class": "complete executable semantic representation",
+          "TP": 7,
+          "FP": 0,
+          "TN": 4,
+          "FN": 0
+        },
+        "false_positive_rate": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "false_negative_rate": {
+          "numerator": 0,
+          "denominator": 7,
+          "value": 0.0
+        },
+        "binary_accuracy": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        },
+        "precision": {
+          "numerator": 7,
+          "denominator": 7,
+          "value": 1.0
+        },
+        "recall": {
+          "numerator": 7,
+          "denominator": 7,
+          "value": 1.0
+        },
+        "abstention_rate": {
+          "numerator": 4,
+          "denominator": 11,
+          "value": 0.36363636363636365
+        },
+        "unsupported_abstention": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "full_rule_match_expected_executable": {
+          "numerator": 7,
+          "denominator": 7,
+          "value": 1.0
+        },
+        "full_signature_match_including_unsupported": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        },
+        "component_case_exact_accuracy": {
+          "field": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "operator": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "value": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "unit": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "type": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "negation": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "logical_shape": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          }
+        },
+        "partial_execution_on_unsupported_count": 0,
+        "span_integrity": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        }
+      },
+      "test": {
+        "case_count": 20,
+        "expected_executable_count": 12,
+        "expected_unsupported_count": 8,
+        "confusion": {
+          "positive_class": "complete executable semantic representation",
+          "TP": 10,
+          "FP": 0,
+          "TN": 8,
+          "FN": 2
+        },
+        "false_positive_rate": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "false_negative_rate": {
+          "numerator": 2,
+          "denominator": 12,
+          "value": 0.16666666666666666
+        },
+        "binary_accuracy": {
+          "numerator": 18,
+          "denominator": 20,
+          "value": 0.9
+        },
+        "precision": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "recall": {
+          "numerator": 10,
+          "denominator": 12,
+          "value": 0.8333333333333334
+        },
+        "abstention_rate": {
+          "numerator": 10,
+          "denominator": 20,
+          "value": 0.5
+        },
+        "unsupported_abstention": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1.0
+        },
+        "full_rule_match_expected_executable": {
+          "numerator": 10,
+          "denominator": 12,
+          "value": 0.8333333333333334
+        },
+        "full_signature_match_including_unsupported": {
+          "numerator": 18,
+          "denominator": 20,
+          "value": 0.9
+        },
+        "component_case_exact_accuracy": {
+          "field": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "operator": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "value": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "unit": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "type": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "negation": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "logical_shape": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          }
+        },
+        "partial_execution_on_unsupported_count": 0,
+        "span_integrity": {
+          "numerator": 20,
+          "denominator": 20,
+          "value": 1.0
+        }
+      }
+    },
+    "failures": [
+      {
+        "case_id": "DEVREF-043",
+        "split": "test",
+        "text": "Age must exceed 21 years",
+        "expected_signature": [
+          {
+            "kind": "condition",
+            "field": "age",
+            "operator": "gt",
+            "unit": "years",
+            "negated": false,
+            "type": "inclusion",
+            "value": 21,
+            "unit_assumed": false
+          }
+        ],
+        "predicted_signature": []
+      },
+      {
+        "case_id": "DEVREF-044",
+        "split": "test",
+        "text": "BMI is lower than 29 kg/m2",
+        "expected_signature": [
+          {
+            "kind": "condition",
+            "field": "bmi",
+            "operator": "lt",
+            "unit": "kg/m2",
+            "negated": false,
+            "type": "inclusion",
+            "value": 29,
+            "unit_assumed": false
+          }
+        ],
+        "predicted_signature": []
+      }
+    ]
+  },
+  "synthetic_profile_reference": {
+    "label_origin": "developer_reference",
+    "expert_reviewed": false,
+    "scope": "End-to-end extraction plus three-valued synthetic profile comparison, including boundary, missingness, negation, unresolved criteria, unit and contradiction cases. No patient outcomes or clinical eligibility labels.",
+    "status_accuracy": {
+      "numerator": 18,
+      "denominator": 18,
+      "value": 1.0
+    },
+    "cases": [
+      {
+        "case_id": "PROFILE-DEVREF-001",
+        "source_text": "Age >= 21 years",
+        "profile": {
+          "is_synthetic": true,
+          "age": 21
+        },
+        "expected_status": "MATCHES_KNOWN_CRITERIA",
+        "predicted_status": "MATCHES_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-002",
+        "source_text": "Age > 21 years",
+        "profile": {
+          "is_synthetic": true,
+          "age": 21
+        },
+        "expected_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "predicted_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-003",
+        "source_text": "Age <= 70 years",
+        "profile": {
+          "is_synthetic": true,
+          "age": 70
+        },
+        "expected_status": "MATCHES_KNOWN_CRITERIA",
+        "predicted_status": "MATCHES_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-004",
+        "source_text": "Age < 70 years",
+        "profile": {
+          "is_synthetic": true,
+          "age": 70
+        },
+        "expected_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "predicted_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-005",
+        "source_text": "Age between 21 and 70 years exclusive",
+        "profile": {
+          "is_synthetic": true,
+          "age": 21
+        },
+        "expected_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "predicted_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-006",
+        "source_text": "Age >= 21 years",
+        "profile": {
+          "is_synthetic": true
+        },
+        "expected_status": "INSUFFICIENT_INFORMATION",
+        "predicted_status": "INSUFFICIENT_INFORMATION",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-007",
+        "source_text": "No T2DM",
+        "profile": {
+          "is_synthetic": true,
+          "conditions": []
+        },
+        "expected_status": "INSUFFICIENT_INFORMATION",
+        "predicted_status": "INSUFFICIENT_INFORMATION",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-008",
+        "source_text": "No T2DM",
+        "profile": {
+          "is_synthetic": true,
+          "type_2_diabetes": false
+        },
+        "expected_status": "MATCHES_KNOWN_CRITERIA",
+        "predicted_status": "MATCHES_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-009",
+        "source_text": "Exclusion Criteria:\n- Pregnancy",
+        "profile": {
+          "is_synthetic": true,
+          "pregnant": true
+        },
+        "expected_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "predicted_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-010",
+        "source_text": "Exclusion Criteria:\n- Pregnancy",
+        "profile": {
+          "is_synthetic": true,
+          "pregnant": false
+        },
+        "expected_status": "MATCHES_KNOWN_CRITERIA",
+        "predicted_status": "MATCHES_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-011",
+        "source_text": "Age >= 21 years and BMI < 29 kg/m2",
+        "profile": {
+          "is_synthetic": true,
+          "age": 23
+        },
+        "expected_status": "INSUFFICIENT_INFORMATION",
+        "predicted_status": "INSUFFICIENT_INFORMATION",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-012",
+        "source_text": "Age >= 21 years or BMI < 29 kg/m2",
+        "profile": {
+          "is_synthetic": true,
+          "age": 23
+        },
+        "expected_status": "MATCHES_KNOWN_CRITERIA",
+        "predicted_status": "MATCHES_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-013",
+        "source_text": "Age >= 21 years or BMI < 29 kg/m2",
+        "profile": {
+          "is_synthetic": true,
+          "age": 19
+        },
+        "expected_status": "INSUFFICIENT_INFORMATION",
+        "predicted_status": "INSUFFICIENT_INFORMATION",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-014",
+        "source_text": "Inclusion Criteria:\n- Age >= 21 years\n- Willing to attend visits",
+        "profile": {
+          "is_synthetic": true,
+          "age": 23
+        },
+        "expected_status": "INSUFFICIENT_INFORMATION",
+        "predicted_status": "INSUFFICIENT_INFORMATION",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-015",
+        "source_text": "Inclusion Criteria:\n- Age >= 21 years\n- Willing to attend visits",
+        "profile": {
+          "is_synthetic": true,
+          "age": 19
+        },
+        "expected_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "predicted_status": "DOES_NOT_MATCH_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-016",
+        "source_text": "Age >= 21 years",
+        "profile": {
+          "is_synthetic": true,
+          "age": {
+            "value": 252,
+            "unit": "months"
+          }
+        },
+        "expected_status": "MATCHES_KNOWN_CRITERIA",
+        "predicted_status": "MATCHES_KNOWN_CRITERIA",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-017",
+        "source_text": "Age >= 21 years",
+        "profile": {
+          "is_synthetic": true,
+          "age": {
+            "value": 23,
+            "unit": "mg/dL"
+          }
+        },
+        "expected_status": "INSUFFICIENT_INFORMATION",
+        "predicted_status": "INSUFFICIENT_INFORMATION",
+        "correct": true
+      },
+      {
+        "case_id": "PROFILE-DEVREF-018",
+        "source_text": "Age > 70 years\n\nAge <= 70 years",
+        "profile": {
+          "is_synthetic": true,
+          "age": 45
+        },
+        "expected_status": "INSUFFICIENT_INFORMATION",
+        "predicted_status": "INSUFFICIENT_INFORMATION",
+        "correct": true
+      }
+    ]
+  },
+  "regional_exploration": {
+    "study_count": 58,
+    "group_definition": "Registry country list: India-only and US-only are mutually exclusive; shared studies occur once in a separate group, even if they also recruit in other countries.",
+    "split_definition": "SHA256(UTF-8 study_id) interpreted as integer modulo 10; train <8, test >=8. No record or source study ID crosses splits.",
+    "train_study_ids": [
+      "NCT00081328",
+      "NCT00261352",
+      "NCT00309751",
+      "NCT00344370",
+      "NCT00727896",
+      "NCT00737152",
+      "NCT00901979",
+      "NCT00947557",
+      "NCT00952445",
+      "NCT00970424",
+      "NCT00995787",
+      "NCT00997152",
+      "NCT01194258",
+      "NCT01257412",
+      "NCT01523405",
+      "NCT01546844",
+      "NCT01671189",
+      "NCT01713764",
+      "NCT01969084",
+      "NCT01995539",
+      "NCT02065674",
+      "NCT02091193",
+      "NCT02175121",
+      "NCT02326129",
+      "NCT02361489",
+      "NCT02588859",
+      "NCT02786823",
+      "NCT02853630",
+      "NCT02941367",
+      "NCT03071016",
+      "NCT03374774",
+      "NCT03478202",
+      "NCT03760991",
+      "NCT03787563",
+      "NCT04072523",
+      "NCT04153981",
+      "NCT04445714",
+      "NCT06055582",
+      "NCT06370715",
+      "NCT06498284",
+      "NCT06517784",
+      "NCT06716424",
+      "NCT06851858",
+      "NCT07282743",
+      "NCT07321678",
+      "NCT07361341",
+      "NCT07385547",
+      "NCT07495787",
+      "NCT07549373"
+    ],
+    "test_study_ids": [
+      "NCT00726505",
+      "NCT00929539",
+      "NCT00960791",
+      "NCT01252524",
+      "NCT01406717",
+      "NCT03529123",
+      "NCT05659537",
+      "NCT07029009",
+      "NCT07340320"
+    ],
+    "train_count": 49,
+    "test_count": 9,
+    "duplicate_eligibility_text_study_groups": [],
+    "textual_leakage_limitation": "Study-ID grouping prevents identical-study leakage. Exact normalized-text duplicates are audited; sponsor/protocol-family or near-duplicate prose is not clustered, so this is not proof of protocol independence.",
+    "tfidf": {
+      "fit_scope": "training study eligibility texts only",
+      "vocabulary_size": 2190,
+      "stop_words": null,
+      "negation_retained": true,
+      "stemming": false,
+      "lemmatization": false,
+      "normalization": "NFKC; casefold; offset-preserving tokens filtered to tokens with an alphanumeric character",
+      "ngram_range": [
+        1,
+        1
+      ]
+    },
+    "jsd_definition": "JSD(P,Q)=0.5 KL2(P||M)+0.5 KL2(Q||M), M=(P+Q)/2; empirical unigram token counts, no smoothing, union of observed vocabulary. All-descriptive JSD uses full text solely as a descriptive distribution comparison; test-only JSD uses test studies. It is not a fitted predictive feature or accuracy.",
+    "groups": {
+      "India_only": {
+        "study_count": 28,
+        "split_counts": {
+          "train": 25,
+          "test": 3
+        },
+        "criteria": 387,
+        "parsed_rules": 9,
+        "micro_criterion_coverage": {
+          "numerator": 9,
+          "denominator": 387,
+          "value": 0.023255813953488372
+        },
+        "mean_study_coverage": 0.026596615929322696,
+        "studies_with_at_least_one_rule": 8,
+        "studies_requiring_human_validation": 28,
+        "token_oov_vs_train_vocabulary": {
+          "numerator": 29,
+          "denominator": 6409,
+          "value": 0.004524886877828055
+        },
+        "top_mean_tfidf_terms": [
+          {
+            "term": "of",
+            "weight": 0.165215365713446
+          },
+          {
+            "term": "or",
+            "weight": 0.15824265978724794
+          },
+          {
+            "term": "the",
+            "weight": 0.1373195482247855
+          },
+          {
+            "term": "to",
+            "weight": 0.10263905877963028
+          },
+          {
+            "term": "with",
+            "weight": 0.10221700629816599
+          },
+          {
+            "term": "patients",
+            "weight": 0.10030122941752137
+          },
+          {
+            "term": "and",
+            "weight": 0.08339201777076048
+          },
+          {
+            "term": "in",
+            "weight": 0.07108655105297192
+          },
+          {
+            "term": "criteria",
+            "weight": 0.06221264153687709
+          },
+          {
+            "term": "have",
+            "weight": 0.061774000721638814
+          },
+          {
+            "term": "any",
+            "weight": 0.06024929740475706
+          },
+          {
+            "term": "insulin",
+            "weight": 0.059301591481058895
+          },
+          {
+            "term": "for",
+            "weight": 0.05930110635565152
+          },
+          {
+            "term": "study",
+            "weight": 0.05469142415111543
+          },
+          {
+            "term": "a",
+            "weight": 0.053307985946155566
+          }
+        ],
+        "extraction_accuracy": null,
+        "accuracy_unavailable_reason": "No independently adjudicated regional rule labels exist."
+      },
+      "US_only": {
+        "study_count": 26,
+        "split_counts": {
+          "train": 20,
+          "test": 6
+        },
+        "criteria": 503,
+        "parsed_rules": 5,
+        "micro_criterion_coverage": {
+          "numerator": 5,
+          "denominator": 503,
+          "value": 0.009940357852882704
+        },
+        "mean_study_coverage": 0.01159833755987602,
+        "studies_with_at_least_one_rule": 4,
+        "studies_requiring_human_validation": 26,
+        "token_oov_vs_train_vocabulary": {
+          "numerator": 84,
+          "denominator": 7514,
+          "value": 0.011179132286398722
+        },
+        "top_mean_tfidf_terms": [
+          {
+            "term": "of",
+            "weight": 0.1826302925525175
+          },
+          {
+            "term": "or",
+            "weight": 0.179835729047919
+          },
+          {
+            "term": "the",
+            "weight": 0.13473873722949162
+          },
+          {
+            "term": "to",
+            "weight": 0.11289061977305326
+          },
+          {
+            "term": "and",
+            "weight": 0.09746637678659113
+          },
+          {
+            "term": "criteria",
+            "weight": 0.06957821456421505
+          },
+          {
+            "term": "in",
+            "weight": 0.0610715286282032
+          },
+          {
+            "term": "within",
+            "weight": 0.060338773619686564
+          },
+          {
+            "term": "at",
+            "weight": 0.05849220422091468
+          },
+          {
+            "term": "with",
+            "weight": 0.058457053668521435
+          },
+          {
+            "term": "have",
+            "weight": 0.055019146693972835
+          },
+          {
+            "term": "a",
+            "weight": 0.05445715436060195
+          },
+          {
+            "term": "use",
+            "weight": 0.051370967896000166
+          },
+          {
+            "term": "disease",
+            "weight": 0.05068556868449026
+          },
+          {
+            "term": "2",
+            "weight": 0.05062056020936663
+          }
+        ],
+        "extraction_accuracy": null,
+        "accuracy_unavailable_reason": "No independently adjudicated regional rule labels exist."
+      },
+      "shared": {
+        "study_count": 4,
+        "split_counts": {
+          "train": 4
+        },
+        "criteria": 93,
+        "parsed_rules": 4,
+        "micro_criterion_coverage": {
+          "numerator": 4,
+          "denominator": 93,
+          "value": 0.043010752688172046
+        },
+        "mean_study_coverage": 0.09895833333333333,
+        "studies_with_at_least_one_rule": 3,
+        "studies_requiring_human_validation": 4,
+        "token_oov_vs_train_vocabulary": {
+          "numerator": 0,
+          "denominator": 1798,
+          "value": 0.0
+        },
+        "top_mean_tfidf_terms": [
+          {
+            "term": "inclusive",
+            "weight": 0.25744634440415437
+          },
+          {
+            "term": "to",
+            "weight": 0.17354727675280684
+          },
+          {
+            "term": "or",
+            "weight": 0.13331252348720807
+          },
+          {
+            "term": "mellitus",
+            "weight": 0.12808875191156704
+          },
+          {
+            "term": "48",
+            "weight": 0.11439780586346115
+          },
+          {
+            "term": "1",
+            "weight": 0.11024952564651945
+          },
+          {
+            "term": "85",
+            "weight": 0.10715756271425117
+          },
+          {
+            "term": "type",
+            "weight": 0.0966874044727673
+          },
+          {
+            "term": "diabetes",
+            "weight": 0.09237599251036775
+          },
+          {
+            "term": "3",
+            "weight": 0.09233045099815332
+          },
+          {
+            "term": "screening",
+            "weight": 0.09199343892002863
+          },
+          {
+            "term": "10.0",
+            "weight": 0.09190755644380974
+          },
+          {
+            "term": "of",
+            "weight": 0.09000817948480504
+          },
+          {
+            "term": "the",
+            "weight": 0.08883369794628376
+          },
+          {
+            "term": "7.0",
+            "weight": 0.08784013402135749
+          }
+        ],
+        "extraction_accuracy": null,
+        "accuracy_unavailable_reason": "No independently adjudicated regional rule labels exist."
+      }
+    },
+    "comparisons": [
+      {
+        "scope": "all_descriptive",
+        "left": "India_only",
+        "right": "US_only",
+        "left_studies": 28,
+        "right_studies": 26,
+        "unigram_js_divergence_base2": 0.20259488330137068,
+        "vocabulary_jaccard": 0.3331792975970425,
+        "train_fitted_tfidf_centroid_cosine": 0.8574778086017462
+      },
+      {
+        "scope": "all_descriptive",
+        "left": "India_only",
+        "right": "shared",
+        "left_studies": 28,
+        "right_studies": 4,
+        "unigram_js_divergence_base2": 0.27266444807062956,
+        "vocabulary_jaccard": 0.2880470280862182,
+        "train_fitted_tfidf_centroid_cosine": 0.6066153133602892
+      },
+      {
+        "scope": "all_descriptive",
+        "left": "US_only",
+        "right": "shared",
+        "left_studies": 26,
+        "right_studies": 4,
+        "unigram_js_divergence_base2": 0.2518930056775822,
+        "vocabulary_jaccard": 0.2808413871517908,
+        "train_fitted_tfidf_centroid_cosine": 0.6190246480206771
+      },
+      {
+        "scope": "test_only",
+        "left": "India_only",
+        "right": "US_only",
+        "left_studies": 3,
+        "right_studies": 6,
+        "unigram_js_divergence_base2": 0.39553657291667177,
+        "vocabulary_jaccard": 0.2608,
+        "train_fitted_tfidf_centroid_cosine": 0.597219554845703
+      },
+      {
+        "scope": "test_only",
+        "left": "India_only",
+        "right": "shared",
+        "left_studies": 3,
+        "right_studies": 0,
+        "unigram_js_divergence_base2": null,
+        "vocabulary_jaccard": null,
+        "train_fitted_tfidf_centroid_cosine": null
+      },
+      {
+        "scope": "test_only",
+        "left": "US_only",
+        "right": "shared",
+        "left_studies": 6,
+        "right_studies": 0,
+        "unigram_js_divergence_base2": null,
+        "vocabulary_jaccard": null,
+        "train_fitted_tfidf_centroid_cosine": null
+      }
+    ],
+    "interpretation": "Small convenience registry sample; coverage and lexical differences are descriptive, confounded by protocol mix, geography, study age and document style. These analyses implement no learned domain adaptation and cannot demonstrate regional extraction accuracy or generalization."
+  },
+  "parser_performance_registry": {
+    "documents": 58,
+    "timing_repetitions": 3,
+    "timed_calls": 174,
+    "warmed_wall_latency_ms": {
+      "mean": 2.5497683905661854,
+      "median": 1.6925500094657764,
+      "p95": 7.7762950139003735,
+      "max": 12.84110001870431
+    },
+    "memory_separate_traced_pass": {
+      "rss_before_bytes": 182562816,
+      "max_observed_rss_bytes": 184692736,
+      "observed_rss_delta_bytes": 2129920,
+      "tracemalloc_peak_bytes": 978355,
+      "tracemalloc_retained_bytes": 42313
+    },
+    "limitations": "Single process CPU wall time, serial warmed calls, no network/model retrieval/UI, not a load test. Memory tracing runs separately from latency. RSS is sampled after calls and includes interpreter/libraries; it is not a true OS peak or exclusive parser allocation. Tracemalloc observes Python allocations, not all native buffers."
+  },
+  "limitations": [
+    "Developer-authored, not blinded, not expert-adjudicated references; no clinical accuracy or external validity estimate.",
+    "No regional labeled gold: regional extraction accuracy, FPR/FNR, patient eligibility accuracy and clinical utility remain unavailable.",
+    "Small nonrandom English-language CTgov sample; country of recruitment is not participant ethnicity, healthcare system, or a national corpus.",
+    "Descriptive vocabulary shift and parser coverage are not learned domain adaptation or a causal regional effect.",
+    "Profile results concern explicit synthetic inputs only. Real-world review is always required."
+  ]
+}

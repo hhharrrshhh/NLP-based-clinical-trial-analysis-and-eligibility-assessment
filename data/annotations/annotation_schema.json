@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Eligibility criterion annotation CSV row",
+  "description": "All CSV cells are strings. Empty labels in an unannotated queue are missing labels, never negatives. Exact spans are zero-based Python Unicode code-point offsets with an exclusive end. One row per condition atom; repeat the complete context span and logical signature for compound criteria.",
+  "type": "object",
+  "required": ["annotation_id", "case_id", "study_id", "split", "source", "label_origin", "reviewer", "text", "span_start", "span_end", "exact_span", "entity", "category", "operator", "value", "unit", "negation", "type", "logical_signature", "executable", "rationale"],
+  "additionalProperties": false,
+  "properties": {
+    "annotation_id": {"type": "string", "minLength": 1},
+    "case_id": {"type": "string", "description": "Local criterion or synthetic reference ID."},
+    "study_id": {"type": "string", "description": "Registry study ID, or explicit SYNTHETIC-REFERENCE prefix. Never split one study across train/dev/test."},
+    "split": {"enum": ["train", "dev", "test"]},
+    "source": {"type": "string", "description": "Registry source URL or explicit synthetic authoring provenance."},
+    "label_origin": {"enum": ["unannotated", "developer_reference", "expert_annotation", "expert_adjudicated"]},
+    "reviewer": {"type": "string", "description": "Reviewer ID(s) and adjudicator ID; unassigned or not_expert_reviewed when applicable."},
+    "text": {"type": "string", "description": "Immutable full source document for the offset coordinate system."},
+    "span_start": {"type": "string", "pattern": "^[0-9]+$"},
+    "span_end": {"type": "string", "pattern": "^[0-9]+$"},
+    "exact_span": {"type": "string", "description": "Must equal text[int(span_start):int(span_end)]. Retain negation, visit, exceptions and list scope in this evidence span."},
+    "entity": {"type": "string", "description": "Normalized field such as age, hba1c, type_2_diabetes; outside-model entities may be named explicitly. This is a semantic field label, not a minimal lexical mention boundary."},
+    "category": {"enum": ["", "measurement", "condition", "unsupported_criterion", "medication", "demographic", "temporal", "other"]},
+    "operator": {"type": "string", "description": "gt/gte/lt/lte/equals/between_inclusive/between_exclusive, or blank if not annotated/representable."},
+    "value": {"type": "string", "description": "JSON object with value or lower/upper and endpoint inclusion flags; use true/false booleans for diagnosis constraints. Preserve null versus false."},
+    "unit": {"type": "string", "description": "Canonical unit; source unit remains visible in exact_span. Empty for Boolean diagnoses."},
+    "negation": {"enum": ["", "True", "False"], "description": "Lexical negation. Section exclusion scope is separately represented by NOT in logical_signature."},
+    "type": {"enum": ["", "inclusion", "exclusion_constraint", "unsupported"]},
+    "logical_signature": {"type": "string", "description": "JSON rule forest with complete AND/OR/NOT tree. The empty string means unannotated; [] means reviewed unsupported/no executable representation."},
+    "executable": {"enum": ["", "True", "False"], "description": "True means unambiguous and fully representable under the declared field/operator/unit model, not clinical eligibility. False requires an explicit reviewer rationale."},
+    "rationale": {"type": "string", "description": "Scope/ambiguity decisions, unsupported parts, conversions and disagreements."}
+  }
+}

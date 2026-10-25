@@ -1,0 +1,37 @@
+{
+  "run_at_utc": "2026-10-18T08:46:11.041861+00:00",
+  "python": "3.11.9",
+  "rss_after_mib": 683.914,
+  "result": {
+    "model": "google/flan-t5-small",
+    "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+    "backend": "local",
+    "device": "cpu",
+    "verified": false,
+    "reason": "Experimental generated draft. Exact source citations are supplied separately; they do not verify generated claims. Human review required.",
+    "status": "generated_draft",
+    "text": "Glycated hemoglobin",
+    "latency_ms": 9813.032,
+    "input_tokens": 201,
+    "max_new_tokens": 96,
+    "prompt_format": "Source excerpt followed by question and answer cue; prompt development is not a held-out quality evaluation",
+    "question_truncated": false,
+    "evidence_truncated": true,
+    "source_context": [
+      {
+        "study_id": "NCT03760991",
+        "source_url": "https://clinicaltrials.gov/study/NCT03760991",
+        "text": "Inclusion criteria :\n\n* Participants with type 2 diabetes mellitus.\n* Participants on \"standard of care\" basal insulin therapy administered once or twice daily, as per labeling for at least 6 months prior to screening visit, with or without other antidiabetics approved for using with insulin.\n* Glycated hemoglobin (HbA1c) between 7.5% (58 mmol/mol) and 10% (86 mmol/mol) inclusive, during screening.\n* Fasting plasma glucose values above 130 mg/dL.\n\nExclusion criteria:\n\n* Unstable basal insulin regimen in the last 8 weeks prior to screening visit (ie, type of insulin and time/frequency of the injection, insulin doses \\[variation more than ±20%\\]).\n* Treatment with insulin other than basal",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 695
+      }
+    ],
+    "guard": {
+      "unsupported_numeric_tokens": [],
+      "entailment_verified": false
+    }
+  },
+  "status": "passed",
+  "scope": "Inference execution only; no claim of answer correctness or clinical validation."
+}

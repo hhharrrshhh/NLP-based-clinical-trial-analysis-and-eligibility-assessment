@@ -1,0 +1,7 @@
+{
+  "source": "Audited supplied synthetic demo generator",
+  "seed": 2026,
+  "count": 30,
+  "real_patient_data": false,
+  "changes": "Canonical field aliases; removed geographic cohort label. No medical thresholds added."
+}

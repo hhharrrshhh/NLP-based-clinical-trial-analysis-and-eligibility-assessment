@@ -1,0 +1,1317 @@
+{
+  "run_id": "20261017T083822512361Z",
+  "started_at": "2026-10-17T08:38:22.512361+00:00",
+  "source_api": "https://clinicaltrials.gov/api/v2/studies",
+  "source_documentation": "https://clinicaltrials.gov/data-api/api",
+  "condition_query": "Type 2 Diabetes",
+  "per_region_requested": 30,
+  "selection": "API relevance order, all recruitment statuses; convenience sample, not representative",
+  "pages": [
+    {
+      "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+      "source_api": "https://clinicaltrials.gov/api/v2/studies",
+      "query": {
+        "format": "json",
+        "query.cond": "Type 2 Diabetes",
+        "query.locn": "India",
+        "sort": "@relevance",
+        "countTotal": "true",
+        "pageSize": 20
+      },
+      "query_region": "India",
+      "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+      "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+    },
+    {
+      "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+      "source_api": "https://clinicaltrials.gov/api/v2/studies",
+      "query": {
+        "format": "json",
+        "query.cond": "Type 2 Diabetes",
+        "query.locn": "India",
+        "sort": "@relevance",
+        "countTotal": "true",
+        "pageSize": 10,
+        "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+      },
+      "query_region": "India",
+      "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+      "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+    },
+    {
+      "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+      "source_api": "https://clinicaltrials.gov/api/v2/studies",
+      "query": {
+        "format": "json",
+        "query.cond": "Type 2 Diabetes",
+        "query.locn": "United States",
+        "sort": "@relevance",
+        "countTotal": "true",
+        "pageSize": 20
+      },
+      "query_region": "United States",
+      "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+      "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+    },
+    {
+      "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+      "source_api": "https://clinicaltrials.gov/api/v2/studies",
+      "query": {
+        "format": "json",
+        "query.cond": "Type 2 Diabetes",
+        "query.locn": "United States",
+        "sort": "@relevance",
+        "countTotal": "true",
+        "pageSize": 10,
+        "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+      },
+      "query_region": "United States",
+      "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+      "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+    }
+  ],
+  "queries": {
+    "India": {
+      "query": {
+        "format": "json",
+        "query.cond": "Type 2 Diabetes",
+        "query.locn": "India",
+        "sort": "@relevance",
+        "countTotal": "true",
+        "pageSize": 20
+      },
+      "total_available_reported": 445,
+      "selected_count": 30,
+      "selected_study_ids": [
+        "NCT00261352",
+        "NCT00309751",
+        "NCT00344370",
+        "NCT00727896",
+        "NCT00737152",
+        "NCT01257412",
+        "NCT01406717",
+        "NCT01523405",
+        "NCT01995539",
+        "NCT02065674",
+        "NCT02588859",
+        "NCT02786823",
+        "NCT02853630",
+        "NCT02941367",
+        "NCT03071016",
+        "NCT03374774",
+        "NCT03529123",
+        "NCT03760991",
+        "NCT03787563",
+        "NCT04072523",
+        "NCT04153981",
+        "NCT04445714",
+        "NCT05659537",
+        "NCT06055582",
+        "NCT06370715",
+        "NCT06517784",
+        "NCT06716424",
+        "NCT07282743",
+        "NCT07495787",
+        "NCT07549373"
+      ]
+    },
+    "United States": {
+      "query": {
+        "format": "json",
+        "query.cond": "Type 2 Diabetes",
+        "query.locn": "United States",
+        "sort": "@relevance",
+        "countTotal": "true",
+        "pageSize": 20
+      },
+      "total_available_reported": 3766,
+      "selected_count": 30,
+      "selected_study_ids": [
+        "NCT00081328",
+        "NCT00726505",
+        "NCT00737152",
+        "NCT00901979",
+        "NCT00929539",
+        "NCT00947557",
+        "NCT00952445",
+        "NCT00960791",
+        "NCT00970424",
+        "NCT00995787",
+        "NCT00997152",
+        "NCT01194258",
+        "NCT01252524",
+        "NCT01546844",
+        "NCT01671189",
+        "NCT01713764",
+        "NCT01969084",
+        "NCT02091193",
+        "NCT02175121",
+        "NCT02326129",
+        "NCT02361489",
+        "NCT03478202",
+        "NCT06498284",
+        "NCT06851858",
+        "NCT07029009",
+        "NCT07282743",
+        "NCT07321678",
+        "NCT07340320",
+        "NCT07361341",
+        "NCT07385547"
+      ]
+    }
+  },
+  "skipped": [],
+  "status": "complete",
+  "completed_at": "2026-10-17T08:38:25.276823+00:00",
+  "schema_version": 1,
+  "generated_at": "2026-10-17T08:38:25.276823+00:00",
+  "study_count": 58,
+  "country_study_counts": {
+    "Argentina": 1,
+    "Belarus": 2,
+    "Brazil": 1,
+    "Canada": 2,
+    "Colombia": 2,
+    "Czechia": 1,
+    "Denmark": 2,
+    "Egypt": 1,
+    "Finland": 1,
+    "France": 1,
+    "Germany": 4,
+    "Hong Kong": 2,
+    "Hungary": 3,
+    "India": 32,
+    "Indonesia": 2,
+    "Israel": 1,
+    "Italy": 1,
+    "Kuwait": 1,
+    "Lebanon": 1,
+    "Lithuania": 2,
+    "Malaysia": 2,
+    "Netherlands": 3,
+    "Norway": 1,
+    "Peru": 2,
+    "Philippines": 2,
+    "Poland": 4,
+    "Portugal": 1,
+    "Puerto Rico": 1,
+    "Romania": 2,
+    "Russia": 2,
+    "Saudi Arabia": 1,
+    "Singapore": 1,
+    "South Africa": 2,
+    "Switzerland": 1,
+    "Taiwan": 1,
+    "Thailand": 1,
+    "Turkey (Türkiye)": 2,
+    "United Kingdom": 2,
+    "United States": 30
+  },
+  "india_us_overlap": 4,
+  "registry_counts": {
+    "ClinicalTrials.gov": 58
+  },
+  "missing_eligibility_count": 0,
+  "record_provenance": {
+    "NCT00081328": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT00261352": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT00309751": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT00344370": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT00726505": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT00727896": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT00737152": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      },
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT00901979": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT00929539": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT00947557": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT00952445": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT00960791": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT00970424": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT00995787": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT00997152": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT01194258": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT01252524": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT01257412": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT01406717": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT01523405": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT01546844": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT01671189": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT01713764": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT01969084": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT01995539": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT02065674": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT02091193": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT02175121": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT02326129": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT02361489": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT02588859": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT02786823": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT02853630": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT02941367": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT03071016": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT03374774": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT03478202": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT03529123": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT03760991": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT03787563": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT04072523": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT04153981": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT04445714": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.921533+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxtZO-j2fMTmzqr5Pc5LHrJE_Td"
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_002.json",
+        "sha256": "4776cafc5a6d6dbab0e01ee1a007a237f5680897cfe9de69bbf475318f04f1f0"
+      }
+    ],
+    "NCT05659537": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT06055582": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT06370715": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT06498284": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT06517784": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT06716424": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT06851858": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT07029009": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT07282743": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      },
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT07321678": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT07340320": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT07361341": [
+      {
+        "retrieved_at": "2026-10-17T08:38:25.260702+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=10&pageToken=ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 10,
+          "pageToken": "ZVNj7o2Elu8o3lpzXcinvarumpOQLJxubO-t1PMTlD2r5Pc9KXPLEPXT-w"
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_002.json",
+        "sha256": "d2ce3c487d7edd6347c82db1787640229f2e9bd09681a98b42e78a0c17b70347"
+      }
+    ],
+    "NCT07385547": [
+      {
+        "retrieved_at": "2026-10-17T08:38:24.637583+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=United+States&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "United States",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "United States",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/united_states_001.json",
+        "sha256": "7895ac64b9d4add23e36e9f944718f631e8dee9e594e624d041f9a33962914fe"
+      }
+    ],
+    "NCT07495787": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ],
+    "NCT07549373": [
+      {
+        "retrieved_at": "2026-10-17T08:38:23.419914+00:00",
+        "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes&query.locn=India&sort=%40relevance&countTotal=true&pageSize=20",
+        "source_api": "https://clinicaltrials.gov/api/v2/studies",
+        "query": {
+          "format": "json",
+          "query.cond": "Type 2 Diabetes",
+          "query.locn": "India",
+          "sort": "@relevance",
+          "countTotal": "true",
+          "pageSize": 20
+        },
+        "query_region": "India",
+        "raw_file": "raw/clinicaltrials/20261017T083822512361Z/india_001.json",
+        "sha256": "04f6064a368aa98725c1558210807964c07478449c1c77ea7a83c708677dfd1a"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_at_utc": "2026-10-18T08:46:57.5822634Z",
+  "status": "passed",
+  "full_integration": true,
+  "study_count": 58,
+  "checks": [
+    {
+      "name": "backend_health",
+      "url": "http://127.0.0.1:8000/health",
+      "http_status": 200,
+      "latency_ms": 74.82
+    },
+    {
+      "name": "studies",
+      "url": "http://127.0.0.1:8000/studies",
+      "http_status": 200,
+      "latency_ms": 62.12
+    },
+    {
+      "name": "dashboard",
+      "url": "http://127.0.0.1:8000/dashboard",
+      "http_status": 200,
+      "latency_ms": 828.48
+    },
+    {
+      "name": "openapi",
+      "url": "http://127.0.0.1:8000/openapi.json",
+      "http_status": 200,
+      "latency_ms": 10.9
+    },
+    {
+      "name": "frontend_health",
+      "url": "http://127.0.0.1:8501/_stcore/health",
+      "http_status": 200,
+      "latency_ms": 4.02
+    },
+    {
+      "name": "frontend_page",
+      "url": "http://127.0.0.1:8501",
+      "http_status": 200,
+      "latency_ms": 25.22
+    }
+  ]
+}

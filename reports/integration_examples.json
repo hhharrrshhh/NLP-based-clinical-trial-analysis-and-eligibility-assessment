@@ -1,0 +1,2328 @@
+{
+  "india_study": "NCT00261352",
+  "us_study": "NCT00081328",
+  "extraction": {
+    "baseline": {
+      "study_id": "NCT00261352",
+      "normalized_text": "Inclusion Criteria:\n\n* Provision of a written informed consent\n* Men or women who are \\>=18 years of age\n* Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control\n* Diagnosed with type 2 diabetes\n* Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents\n\nExclusion Criteria:\n\n* Type 1 diabetes\n* New York Heart Association heart failure Class III or IV\n* Treatment with chronic insulin\n* History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)\n* History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)\n* Creatinine levels above the normal range\n* Received any investigational product in other clinical studies within 12 weeks\n* Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+      "entities": [
+        {
+          "label": "quantity",
+          "text": "18 years",
+          "source_text": "18 years",
+          "source_start": 89,
+          "source_end": 97,
+          "study_id": "NCT00261352"
+        },
+        {
+          "label": "measurement",
+          "field": "age",
+          "text": "age",
+          "negated": false,
+          "source_text": "age",
+          "source_start": 101,
+          "source_end": 104,
+          "study_id": "NCT00261352"
+        },
+        {
+          "label": "condition",
+          "field": "type_2_diabetes",
+          "text": "type 2 diabetes",
+          "negated": false,
+          "source_text": "type 2 diabetes",
+          "source_start": 248,
+          "source_end": 263,
+          "study_id": "NCT00261352"
+        },
+        {
+          "label": "quantity",
+          "text": "2",
+          "source_text": "2",
+          "source_start": 253,
+          "source_end": 254,
+          "study_id": "NCT00261352"
+        },
+        {
+          "label": "condition",
+          "field": "type_1_diabetes",
+          "text": "Type 1 diabetes",
+          "negated": false,
+          "source_text": "Type 1 diabetes",
+          "source_start": 410,
+          "source_end": 425,
+          "study_id": "NCT00261352"
+        },
+        {
+          "label": "quantity",
+          "text": "1",
+          "source_text": "1",
+          "source_start": 415,
+          "source_end": 416,
+          "study_id": "NCT00261352"
+        },
+        {
+          "label": "quantity",
+          "text": "3",
+          "source_text": "3",
+          "source_start": 672,
+          "source_end": 673,
+          "study_id": "NCT00261352"
+        },
+        {
+          "label": "quantity",
+          "text": "3",
+          "source_text": "3",
+          "source_start": 682,
+          "source_end": 683,
+          "study_id": "NCT00261352"
+        },
+        {
+          "label": "quantity",
+          "text": "12",
+          "source_text": "12",
+          "source_start": 993,
+          "source_end": 995,
+          "study_id": "NCT00261352"
+        }
+      ],
+      "rules": [
+        {
+          "kind": "condition",
+          "field": "type_2_diabetes",
+          "operator": "equals",
+          "value": true,
+          "unit": null,
+          "negated": false,
+          "source_text": "Diagnosed with type 2 diabetes",
+          "source_start": 233,
+          "source_end": 263,
+          "study_id": "NCT00261352",
+          "id": "rule-4",
+          "validated": true,
+          "validation_basis": "supported_grammar",
+          "type": "inclusion"
+        },
+        {
+          "kind": "group",
+          "logic": "NOT",
+          "children": [
+            {
+              "kind": "condition",
+              "field": "type_1_diabetes",
+              "operator": "equals",
+              "value": true,
+              "unit": null,
+              "negated": false,
+              "source_text": "Type 1 diabetes",
+              "source_start": 410,
+              "source_end": 425,
+              "study_id": "NCT00261352",
+              "id": "rule-6.1",
+              "validated": true,
+              "validation_basis": "supported_grammar",
+              "type": "exclusion_constraint"
+            }
+          ],
+          "source_text": "Type 1 diabetes",
+          "source_start": 410,
+          "source_end": 425,
+          "study_id": "NCT00261352",
+          "id": "rule-6",
+          "validated": true,
+          "validation_basis": "supported_grammar",
+          "type": "exclusion_constraint"
+        },
+        {
+          "id": "metadata_minimum_age",
+          "kind": "condition",
+          "field": "age",
+          "operator": "gte",
+          "value": 18.0,
+          "unit": "years",
+          "type": "inclusion",
+          "validated": true,
+          "validation_basis": "structured_registry_field",
+          "source_text": "18 Years",
+          "source_field": "minimum_age",
+          "source_start": null,
+          "source_end": null,
+          "study_id": "NCT00261352"
+        }
+      ],
+      "unresolved": [
+        {
+          "source_text": "Provision of a written informed consent",
+          "source_start": 23,
+          "source_end": 62,
+          "study_id": "NCT00261352",
+          "type": "inclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+        },
+        {
+          "source_text": "Men or women who are \\>=18 years of age",
+          "source_start": 65,
+          "source_end": 104,
+          "study_id": "NCT00261352",
+          "type": "inclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+        },
+        {
+          "source_text": "Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control",
+          "source_start": 107,
+          "source_end": 230,
+          "study_id": "NCT00261352",
+          "type": "inclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "Conditional, ambiguous or investigator-dependent wording requires review."
+        },
+        {
+          "source_text": "Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents",
+          "source_start": 266,
+          "source_end": 385,
+          "study_id": "NCT00261352",
+          "type": "inclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+        },
+        {
+          "source_text": "New York Heart Association heart failure Class III or IV",
+          "source_start": 428,
+          "source_end": 484,
+          "study_id": "NCT00261352",
+          "type": "exclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+        },
+        {
+          "source_text": "Treatment with chronic insulin",
+          "source_start": 487,
+          "source_end": 517,
+          "study_id": "NCT00261352",
+          "type": "exclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+        },
+        {
+          "source_text": "History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)",
+          "source_start": 520,
+          "source_end": 738,
+          "study_id": "NCT00261352",
+          "type": "exclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "Temporal, historical, stability or visit qualification requires review."
+        },
+        {
+          "source_text": "History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)",
+          "source_start": 741,
+          "source_end": 877,
+          "study_id": "NCT00261352",
+          "type": "exclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "Temporal, historical, stability or visit qualification requires review."
+        },
+        {
+          "source_text": "Creatinine levels above the normal range",
+          "source_start": 880,
+          "source_end": 920,
+          "study_id": "NCT00261352",
+          "type": "exclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+        },
+        {
+          "source_text": "Received any investigational product in other clinical studies within 12 weeks",
+          "source_start": 923,
+          "source_end": 1001,
+          "study_id": "NCT00261352",
+          "type": "exclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "Temporal, historical, stability or visit qualification requires review."
+        },
+        {
+          "source_text": "Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+          "source_start": 1004,
+          "source_end": 1247,
+          "study_id": "NCT00261352",
+          "type": "exclusion",
+          "status": "NEEDS_REVIEW",
+          "reason": "Conditional, ambiguous or investigator-dependent wording requires review."
+        }
+      ],
+      "contradictions": [],
+      "requires_human_validation": true,
+      "real_world_review_required": true,
+      "stats": {
+        "criterion_count": 13,
+        "parsed_count": 2,
+        "unresolved_count": 11,
+        "entity_count": 9,
+        "latency_ms": 14.1418999992311,
+        "supported_rules_with_metadata": 3
+      },
+      "preprocessing": {
+        "tokens": [
+          {
+            "text": "Inclusion",
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Criteria",
+            "start": 10,
+            "end": 18
+          },
+          {
+            "text": ":",
+            "start": 18,
+            "end": 19
+          },
+          {
+            "text": "*",
+            "start": 21,
+            "end": 22
+          },
+          {
+            "text": "Provision",
+            "start": 23,
+            "end": 32
+          },
+          {
+            "text": "of",
+            "start": 33,
+            "end": 35
+          },
+          {
+            "text": "a",
+            "start": 36,
+            "end": 37
+          },
+          {
+            "text": "written",
+            "start": 38,
+            "end": 45
+          },
+          {
+            "text": "informed",
+            "start": 46,
+            "end": 54
+          },
+          {
+            "text": "consent",
+            "start": 55,
+            "end": 62
+          },
+          {
+            "text": "*",
+            "start": 63,
+            "end": 64
+          },
+          {
+            "text": "Men",
+            "start": 65,
+            "end": 68
+          },
+          {
+            "text": "or",
+            "start": 69,
+            "end": 71
+          },
+          {
+            "text": "women",
+            "start": 72,
+            "end": 77
+          },
+          {
+            "text": "who",
+            "start": 78,
+            "end": 81
+          },
+          {
+            "text": "are",
+            "start": 82,
+            "end": 85
+          },
+          {
+            "text": "\\",
+            "start": 86,
+            "end": 87
+          },
+          {
+            "text": ">=",
+            "start": 87,
+            "end": 89
+          },
+          {
+            "text": "18",
+            "start": 89,
+            "end": 91
+          },
+          {
+            "text": "years",
+            "start": 92,
+            "end": 97
+          },
+          {
+            "text": "of",
+            "start": 98,
+            "end": 100
+          },
+          {
+            "text": "age",
+            "start": 101,
+            "end": 104
+          },
+          {
+            "text": "*",
+            "start": 105,
+            "end": 106
+          },
+          {
+            "text": "Female",
+            "start": 107,
+            "end": 113
+          },
+          {
+            "text": "patients",
+            "start": 114,
+            "end": 122
+          },
+          {
+            "text": ":",
+            "start": 122,
+            "end": 123
+          },
+          {
+            "text": "postmenopausal",
+            "start": 124,
+            "end": 138
+          },
+          {
+            "text": ",",
+            "start": 138,
+            "end": 139
+          },
+          {
+            "text": "hysterectomized",
+            "start": 140,
+            "end": 155
+          },
+          {
+            "text": ",",
+            "start": 155,
+            "end": 156
+          },
+          {
+            "text": "or",
+            "start": 157,
+            "end": 159
+          },
+          {
+            "text": "if",
+            "start": 160,
+            "end": 162
+          },
+          {
+            "text": "of",
+            "start": 163,
+            "end": 165
+          },
+          {
+            "text": "childbearing",
+            "start": 166,
+            "end": 178
+          },
+          {
+            "text": "potential",
+            "start": 179,
+            "end": 188
+          },
+          {
+            "text": ",",
+            "start": 188,
+            "end": 189
+          },
+          {
+            "text": "using",
+            "start": 190,
+            "end": 195
+          },
+          {
+            "text": "a",
+            "start": 196,
+            "end": 197
+          },
+          {
+            "text": "reliable",
+            "start": 198,
+            "end": 206
+          },
+          {
+            "text": "method",
+            "start": 207,
+            "end": 213
+          },
+          {
+            "text": "of",
+            "start": 214,
+            "end": 216
+          },
+          {
+            "text": "birth",
+            "start": 217,
+            "end": 222
+          },
+          {
+            "text": "control",
+            "start": 223,
+            "end": 230
+          },
+          {
+            "text": "*",
+            "start": 231,
+            "end": 232
+          },
+          {
+            "text": "Diagnosed",
+            "start": 233,
+            "end": 242
+          },
+          {
+            "text": "with",
+            "start": 243,
+            "end": 247
+          },
+          {
+            "text": "type",
+            "start": 248,
+            "end": 252
+          },
+          {
+            "text": "2",
+            "start": 253,
+            "end": 254
+          },
+          {
+            "text": "diabetes",
+            "start": 255,
+            "end": 263
+          },
+          {
+            "text": "*",
+            "start": 264,
+            "end": 265
+          },
+          {
+            "text": "Treated",
+            "start": 266,
+            "end": 273
+          },
+          {
+            "text": "with",
+            "start": 274,
+            "end": 278
+          },
+          {
+            "text": "diet",
+            "start": 279,
+            "end": 283
+          },
+          {
+            "text": "alone",
+            "start": 284,
+            "end": 289
+          },
+          {
+            "text": "or",
+            "start": 290,
+            "end": 292
+          },
+          {
+            "text": "treatment",
+            "start": 293,
+            "end": 302
+          },
+          {
+            "text": "with",
+            "start": 303,
+            "end": 307
+          },
+          {
+            "text": "a",
+            "start": 308,
+            "end": 309
+          },
+          {
+            "text": "single",
+            "start": 310,
+            "end": 316
+          },
+          {
+            "text": "oral",
+            "start": 317,
+            "end": 321
+          },
+          {
+            "text": "antidiabetic",
+            "start": 322,
+            "end": 334
+          },
+          {
+            "text": "agent",
+            "start": 335,
+            "end": 340
+          },
+          {
+            "text": "or",
+            "start": 341,
+            "end": 343
+          },
+          {
+            "text": "low",
+            "start": 344,
+            "end": 347
+          },
+          {
+            "text": "doses",
+            "start": 348,
+            "end": 353
+          },
+          {
+            "text": "of",
+            "start": 354,
+            "end": 356
+          },
+          {
+            "text": "two",
+            "start": 357,
+            "end": 360
+          },
+          {
+            "text": "oral",
+            "start": 361,
+            "end": 365
+          },
+          {
+            "text": "antidiabetic",
+            "start": 366,
+            "end": 378
+          },
+          {
+            "text": "agents",
+            "start": 379,
+            "end": 385
+          },
+          {
+            "text": "Exclusion",
+            "start": 387,
+            "end": 396
+          },
+          {
+            "text": "Criteria",
+            "start": 397,
+            "end": 405
+          },
+          {
+            "text": ":",
+            "start": 405,
+            "end": 406
+          },
+          {
+            "text": "*",
+            "start": 408,
+            "end": 409
+          },
+          {
+            "text": "Type",
+            "start": 410,
+            "end": 414
+          },
+          {
+            "text": "1",
+            "start": 415,
+            "end": 416
+          },
+          {
+            "text": "diabetes",
+            "start": 417,
+            "end": 425
+          },
+          {
+            "text": "*",
+            "start": 426,
+            "end": 427
+          },
+          {
+            "text": "New",
+            "start": 428,
+            "end": 431
+          },
+          {
+            "text": "York",
+            "start": 432,
+            "end": 436
+          },
+          {
+            "text": "Heart",
+            "start": 437,
+            "end": 442
+          },
+          {
+            "text": "Association",
+            "start": 443,
+            "end": 454
+          },
+          {
+            "text": "heart",
+            "start": 455,
+            "end": 460
+          },
+          {
+            "text": "failure",
+            "start": 461,
+            "end": 468
+          },
+          {
+            "text": "Class",
+            "start": 469,
+            "end": 474
+          },
+          {
+            "text": "III",
+            "start": 475,
+            "end": 478
+          },
+          {
+            "text": "or",
+            "start": 479,
+            "end": 481
+          },
+          {
+            "text": "IV",
+            "start": 482,
+            "end": 484
+          },
+          {
+            "text": "*",
+            "start": 485,
+            "end": 486
+          },
+          {
+            "text": "Treatment",
+            "start": 487,
+            "end": 496
+          },
+          {
+            "text": "with",
+            "start": 497,
+            "end": 501
+          },
+          {
+            "text": "chronic",
+            "start": 502,
+            "end": 509
+          },
+          {
+            "text": "insulin",
+            "start": 510,
+            "end": 517
+          },
+          {
+            "text": "*",
+            "start": 518,
+            "end": 519
+          },
+          {
+            "text": "History",
+            "start": 520,
+            "end": 527
+          },
+          {
+            "text": "of",
+            "start": 528,
+            "end": 530
+          },
+          {
+            "text": "hypersensitivity",
+            "start": 531,
+            "end": 547
+          },
+          {
+            "text": "or",
+            "start": 548,
+            "end": 550
+          },
+          {
+            "text": "intolerance",
+            "start": 551,
+            "end": 562
+          },
+          {
+            "text": "to",
+            "start": 563,
+            "end": 565
+          },
+          {
+            "text": "any",
+            "start": 566,
+            "end": 569
+          },
+          {
+            "text": "peroxisome",
+            "start": 570,
+            "end": 580
+          },
+          {
+            "text": "proliferator-activated",
+            "start": 581,
+            "end": 603
+          },
+          {
+            "text": "receptor",
+            "start": 604,
+            "end": 612
+          },
+          {
+            "text": "agonist",
+            "start": 613,
+            "end": 620
+          },
+          {
+            "text": "(",
+            "start": 621,
+            "end": 622
+          },
+          {
+            "text": "like",
+            "start": 622,
+            "end": 626
+          },
+          {
+            "text": "Actos",
+            "start": 627,
+            "end": 632
+          },
+          {
+            "text": "or",
+            "start": 633,
+            "end": 635
+          },
+          {
+            "text": "Avandia",
+            "start": 636,
+            "end": 643
+          },
+          {
+            "text": ")",
+            "start": 643,
+            "end": 644
+          },
+          {
+            "text": ",",
+            "start": 644,
+            "end": 645
+          },
+          {
+            "text": "fenofibrate",
+            "start": 646,
+            "end": 657
+          },
+          {
+            "text": ",",
+            "start": 657,
+            "end": 658
+          },
+          {
+            "text": "metformin",
+            "start": 659,
+            "end": 668
+          },
+          {
+            "text": "or",
+            "start": 669,
+            "end": 671
+          },
+          {
+            "text": "3",
+            "start": 672,
+            "end": 673
+          },
+          {
+            "text": "-",
+            "start": 673,
+            "end": 674
+          },
+          {
+            "text": "hydroxy-3-methylglutaryl",
+            "start": 674,
+            "end": 698
+          },
+          {
+            "text": "coenzyme",
+            "start": 699,
+            "end": 707
+          },
+          {
+            "text": "A",
+            "start": 708,
+            "end": 709
+          },
+          {
+            "text": "reductase",
+            "start": 710,
+            "end": 719
+          },
+          {
+            "text": "inhibitor",
+            "start": 720,
+            "end": 729
+          },
+          {
+            "text": "(",
+            "start": 730,
+            "end": 731
+          },
+          {
+            "text": "statin",
+            "start": 731,
+            "end": 737
+          },
+          {
+            "text": ")",
+            "start": 737,
+            "end": 738
+          },
+          {
+            "text": "*",
+            "start": 739,
+            "end": 740
+          },
+          {
+            "text": "History",
+            "start": 741,
+            "end": 748
+          },
+          {
+            "text": "of",
+            "start": 749,
+            "end": 751
+          },
+          {
+            "text": "drug-induced",
+            "start": 752,
+            "end": 764
+          },
+          {
+            "text": "myopathy",
+            "start": 765,
+            "end": 773
+          },
+          {
+            "text": "or",
+            "start": 774,
+            "end": 776
+          },
+          {
+            "text": "drug-induced",
+            "start": 777,
+            "end": 789
+          },
+          {
+            "text": "creatine",
+            "start": 790,
+            "end": 798
+          },
+          {
+            "text": "kinase",
+            "start": 799,
+            "end": 805
+          },
+          {
+            "text": "elevation",
+            "start": 806,
+            "end": 815
+          },
+          {
+            "text": ",",
+            "start": 815,
+            "end": 816
+          },
+          {
+            "text": "liver",
+            "start": 817,
+            "end": 822
+          },
+          {
+            "text": "enzyme",
+            "start": 823,
+            "end": 829
+          },
+          {
+            "text": "elevations",
+            "start": 830,
+            "end": 840
+          },
+          {
+            "text": ",",
+            "start": 840,
+            "end": 841
+          },
+          {
+            "text": "neutropenia",
+            "start": 842,
+            "end": 853
+          },
+          {
+            "text": "(",
+            "start": 854,
+            "end": 855
+          },
+          {
+            "text": "low",
+            "start": 855,
+            "end": 858
+          },
+          {
+            "text": "white",
+            "start": 859,
+            "end": 864
+          },
+          {
+            "text": "blood",
+            "start": 865,
+            "end": 870
+          },
+          {
+            "text": "cells",
+            "start": 871,
+            "end": 876
+          },
+          {
+            "text": ")",
+            "start": 876,
+            "end": 877
+          },
+          {
+            "text": "*",
+            "start": 878,
+            "end": 879
+          },
+          {
+            "text": "Creatinine",
+            "start": 880,
+            "end": 890
+          },
+          {
+            "text": "levels",
+            "start": 891,
+            "end": 897
+          },
+          {
+            "text": "above",
+            "start": 898,
+            "end": 903
+          },
+          {
+            "text": "the",
+            "start": 904,
+            "end": 907
+          },
+          {
+            "text": "normal",
+            "start": 908,
+            "end": 914
+          },
+          {
+            "text": "range",
+            "start": 915,
+            "end": 920
+          },
+          {
+            "text": "*",
+            "start": 921,
+            "end": 922
+          },
+          {
+            "text": "Received",
+            "start": 923,
+            "end": 931
+          },
+          {
+            "text": "any",
+            "start": 932,
+            "end": 935
+          },
+          {
+            "text": "investigational",
+            "start": 936,
+            "end": 951
+          },
+          {
+            "text": "product",
+            "start": 952,
+            "end": 959
+          },
+          {
+            "text": "in",
+            "start": 960,
+            "end": 962
+          },
+          {
+            "text": "other",
+            "start": 963,
+            "end": 968
+          },
+          {
+            "text": "clinical",
+            "start": 969,
+            "end": 977
+          },
+          {
+            "text": "studies",
+            "start": 978,
+            "end": 985
+          },
+          {
+            "text": "within",
+            "start": 986,
+            "end": 992
+          },
+          {
+            "text": "12",
+            "start": 993,
+            "end": 995
+          },
+          {
+            "text": "weeks",
+            "start": 996,
+            "end": 1001
+          },
+          {
+            "text": "*",
+            "start": 1002,
+            "end": 1003
+          },
+          {
+            "text": "Any",
+            "start": 1004,
+            "end": 1007
+          },
+          {
+            "text": "clinically",
+            "start": 1008,
+            "end": 1018
+          },
+          {
+            "text": "significant",
+            "start": 1019,
+            "end": 1030
+          },
+          {
+            "text": "abnormality",
+            "start": 1031,
+            "end": 1042
+          },
+          {
+            "text": "identified",
+            "start": 1043,
+            "end": 1053
+          },
+          {
+            "text": "on",
+            "start": 1054,
+            "end": 1056
+          },
+          {
+            "text": "physical",
+            "start": 1057,
+            "end": 1065
+          },
+          {
+            "text": "examination",
+            "start": 1066,
+            "end": 1077
+          },
+          {
+            "text": ",",
+            "start": 1077,
+            "end": 1078
+          },
+          {
+            "text": "laboratory",
+            "start": 1079,
+            "end": 1089
+          },
+          {
+            "text": "tests",
+            "start": 1090,
+            "end": 1095
+          },
+          {
+            "text": "or",
+            "start": 1096,
+            "end": 1098
+          },
+          {
+            "text": "electrocardiogram",
+            "start": 1099,
+            "end": 1116
+          },
+          {
+            "text": ",",
+            "start": 1116,
+            "end": 1117
+          },
+          {
+            "text": "which",
+            "start": 1118,
+            "end": 1123
+          },
+          {
+            "text": "in",
+            "start": 1124,
+            "end": 1126
+          },
+          {
+            "text": "the",
+            "start": 1127,
+            "end": 1130
+          },
+          {
+            "text": "judgment",
+            "start": 1131,
+            "end": 1139
+          },
+          {
+            "text": "of",
+            "start": 1140,
+            "end": 1142
+          },
+          {
+            "text": "the",
+            "start": 1143,
+            "end": 1146
+          },
+          {
+            "text": "investigator",
+            "start": 1147,
+            "end": 1159
+          },
+          {
+            "text": "would",
+            "start": 1160,
+            "end": 1165
+          },
+          {
+            "text": "compromise",
+            "start": 1166,
+            "end": 1176
+          },
+          {
+            "text": "the",
+            "start": 1177,
+            "end": 1180
+          },
+          {
+            "text": "patient's",
+            "start": 1181,
+            "end": 1190
+          },
+          {
+            "text": "safety",
+            "start": 1191,
+            "end": 1197
+          },
+          {
+            "text": "or",
+            "start": 1198,
+            "end": 1200
+          },
+          {
+            "text": "successful",
+            "start": 1201,
+            "end": 1211
+          },
+          {
+            "text": "participation",
+            "start": 1212,
+            "end": 1225
+          },
+          {
+            "text": "in",
+            "start": 1226,
+            "end": 1228
+          },
+          {
+            "text": "the",
+            "start": 1229,
+            "end": 1232
+          },
+          {
+            "text": "clinical",
+            "start": 1233,
+            "end": 1241
+          },
+          {
+            "text": "study",
+            "start": 1242,
+            "end": 1247
+          }
+        ],
+        "sentences": [
+          {
+            "text": "Inclusion Criteria:",
+            "start": 0,
+            "end": 19
+          },
+          {
+            "text": "* Provision of a written informed consent",
+            "start": 21,
+            "end": 62
+          },
+          {
+            "text": "* Men or women who are \\>=18 years of age",
+            "start": 63,
+            "end": 104
+          },
+          {
+            "text": "* Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control",
+            "start": 105,
+            "end": 230
+          },
+          {
+            "text": "* Diagnosed with type 2 diabetes",
+            "start": 231,
+            "end": 263
+          },
+          {
+            "text": "* Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents",
+            "start": 264,
+            "end": 385
+          },
+          {
+            "text": "Exclusion Criteria:",
+            "start": 387,
+            "end": 406
+          },
+          {
+            "text": "* Type 1 diabetes",
+            "start": 408,
+            "end": 425
+          },
+          {
+            "text": "* New York Heart Association heart failure Class III or IV",
+            "start": 426,
+            "end": 484
+          },
+          {
+            "text": "* Treatment with chronic insulin",
+            "start": 485,
+            "end": 517
+          },
+          {
+            "text": "* History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)",
+            "start": 518,
+            "end": 738
+          },
+          {
+            "text": "* History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)",
+            "start": 739,
+            "end": 877
+          },
+          {
+            "text": "* Creatinine levels above the normal range",
+            "start": 878,
+            "end": 920
+          },
+          {
+            "text": "* Received any investigational product in other clinical studies within 12 weeks",
+            "start": 921,
+            "end": 1001
+          },
+          {
+            "text": "* Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+            "start": 1002,
+            "end": 1247
+          }
+        ],
+        "clauses": [
+          {
+            "text": "Provision of a written informed consent",
+            "start": 23,
+            "end": 62,
+            "section": "inclusion"
+          },
+          {
+            "text": "Men or women who are \\>=18 years of age",
+            "start": 65,
+            "end": 104,
+            "section": "inclusion"
+          },
+          {
+            "text": "Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control",
+            "start": 107,
+            "end": 230,
+            "section": "inclusion"
+          },
+          {
+            "text": "Diagnosed with type 2 diabetes",
+            "start": 233,
+            "end": 263,
+            "section": "inclusion"
+          },
+          {
+            "text": "Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents",
+            "start": 266,
+            "end": 385,
+            "section": "inclusion"
+          },
+          {
+            "text": "Type 1 diabetes",
+            "start": 410,
+            "end": 425,
+            "section": "exclusion"
+          },
+          {
+            "text": "New York Heart Association heart failure Class III or IV",
+            "start": 428,
+            "end": 484,
+            "section": "exclusion"
+          },
+          {
+            "text": "Treatment with chronic insulin",
+            "start": 487,
+            "end": 517,
+            "section": "exclusion"
+          },
+          {
+            "text": "History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)",
+            "start": 520,
+            "end": 738,
+            "section": "exclusion"
+          },
+          {
+            "text": "History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)",
+            "start": 741,
+            "end": 877,
+            "section": "exclusion"
+          },
+          {
+            "text": "Creatinine levels above the normal range",
+            "start": 880,
+            "end": 920,
+            "section": "exclusion"
+          },
+          {
+            "text": "Received any investigational product in other clinical studies within 12 weeks",
+            "start": 923,
+            "end": 1001,
+            "section": "exclusion"
+          },
+          {
+            "text": "Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+            "start": 1004,
+            "end": 1247,
+            "section": "exclusion"
+          }
+        ],
+        "negation_preserved": true,
+        "method": "NFKC + offset tokenizer + full-clause grammar"
+      },
+      "parser_version": "conservative-grammar-v1",
+      "extraction_hash": "18c77d82da8a744d5576ebd6b66cd50ece9a0b1a133e1b176377ade0027f07a5",
+      "source_url": "https://clinicaltrials.gov/study/NCT00261352",
+      "notice": "Research demonstration using synthetic profiles. Not a clinical decision or full eligibility determination.",
+      "reviews": []
+    },
+    "transformer": {
+      "model_id": "d4data/biomedical-ner-all",
+      "version": "015a4050c9ac99722e61c547aa9b4282bcbedc7f",
+      "device": "cpu",
+      "entities": [
+        {
+          "start": 65,
+          "end": 68,
+          "label": "Sex",
+          "text": "Men",
+          "score": 0.986961
+        },
+        {
+          "start": 72,
+          "end": 77,
+          "label": "Sex",
+          "text": "women",
+          "score": 0.991385
+        },
+        {
+          "start": 89,
+          "end": 104,
+          "label": "Age",
+          "text": "18 years of age",
+          "score": 0.817813
+        },
+        {
+          "start": 107,
+          "end": 113,
+          "label": "Sex",
+          "text": "Female",
+          "score": 0.850686
+        },
+        {
+          "start": 124,
+          "end": 137,
+          "label": "History",
+          "text": "postmenopausa",
+          "score": 0.906116
+        },
+        {
+          "start": 141,
+          "end": 144,
+          "label": "History",
+          "text": "yst",
+          "score": 0.50051
+        },
+        {
+          "start": 147,
+          "end": 149,
+          "label": "History",
+          "text": "ct",
+          "score": 0.867335
+        },
+        {
+          "start": 198,
+          "end": 206,
+          "label": "Detailed_description",
+          "text": "reliable",
+          "score": 0.995719
+        },
+        {
+          "start": 223,
+          "end": 230,
+          "label": "History",
+          "text": "control",
+          "score": 0.500534
+        },
+        {
+          "start": 248,
+          "end": 265,
+          "label": "Disease_disorder",
+          "text": "type 2 diabetes\n*",
+          "score": 0.77849
+        },
+        {
+          "start": 279,
+          "end": 283,
+          "label": "Therapeutic_procedure",
+          "text": "diet",
+          "score": 0.812762
+        },
+        {
+          "start": 317,
+          "end": 321,
+          "label": "Administration",
+          "text": "oral",
+          "score": 0.998573
+        },
+        {
+          "start": 322,
+          "end": 340,
+          "label": "Medication",
+          "text": "antidiabetic agent",
+          "score": 0.984951
+        },
+        {
+          "start": 344,
+          "end": 353,
+          "label": "Dosage",
+          "text": "low doses",
+          "score": 0.841585
+        },
+        {
+          "start": 361,
+          "end": 365,
+          "label": "Administration",
+          "text": "oral",
+          "score": 0.99932
+        },
+        {
+          "start": 366,
+          "end": 385,
+          "label": "Medication",
+          "text": "antidiabetic agents",
+          "score": 0.994903
+        },
+        {
+          "start": 410,
+          "end": 425,
+          "label": "Disease_disorder",
+          "text": "Type 1 diabetes",
+          "score": 0.79573
+        },
+        {
+          "start": 437,
+          "end": 454,
+          "label": "Disease_disorder",
+          "text": "Heart Association",
+          "score": 0.965187
+        },
+        {
+          "start": 455,
+          "end": 468,
+          "label": "Disease_disorder",
+          "text": "heart failure",
+          "score": 0.999202
+        },
+        {
+          "start": 469,
+          "end": 474,
+          "label": "Severity",
+          "text": "Class",
+          "score": 0.78401
+        },
+        {
+          "start": 475,
+          "end": 478,
+          "label": "Lab_value",
+          "text": "III",
+          "score": 0.492194
+        },
+        {
+          "start": 482,
+          "end": 484,
+          "label": "Lab_value",
+          "text": "IV",
+          "score": 0.53283
+        },
+        {
+          "start": 502,
+          "end": 509,
+          "label": "Detailed_description",
+          "text": "chronic",
+          "score": 0.998062
+        },
+        {
+          "start": 510,
+          "end": 517,
+          "label": "Medication",
+          "text": "insulin",
+          "score": 0.997936
+        },
+        {
+          "start": 531,
+          "end": 536,
+          "label": "Sign_symptom",
+          "text": "hyper",
+          "score": 0.75688
+        },
+        {
+          "start": 551,
+          "end": 555,
+          "label": "Sign_symptom",
+          "text": "into",
+          "score": 0.695168
+        },
+        {
+          "start": 575,
+          "end": 578,
+          "label": "Detailed_description",
+          "text": "iso",
+          "score": 0.430719
+        },
+        {
+          "start": 581,
+          "end": 584,
+          "label": "Medication",
+          "text": "pro",
+          "score": 0.426178
+        },
+        {
+          "start": 584,
+          "end": 620,
+          "label": "Diagnostic_procedure",
+          "text": "liferator-activated receptor agonist",
+          "score": 0.761275
+        },
+        {
+          "start": 627,
+          "end": 632,
+          "label": "Medication",
+          "text": "Actos",
+          "score": 0.93175
+        },
+        {
+          "start": 636,
+          "end": 642,
+          "label": "Medication",
+          "text": "Avandi",
+          "score": 0.547242
+        },
+        {
+          "start": 646,
+          "end": 649,
+          "label": "Medication",
+          "text": "fen",
+          "score": 0.99973
+        },
+        {
+          "start": 649,
+          "end": 657,
+          "label": "Medication",
+          "text": "ofibrate",
+          "score": 0.929143
+        },
+        {
+          "start": 659,
+          "end": 668,
+          "label": "Medication",
+          "text": "metformin",
+          "score": 0.998686
+        },
+        {
+          "start": 672,
+          "end": 698,
+          "label": "Medication",
+          "text": "3-hydroxy-3-methylglutaryl",
+          "score": 0.998525
+        },
+        {
+          "start": 699,
+          "end": 709,
+          "label": "Medication",
+          "text": "coenzyme A",
+          "score": 0.893664
+        },
+        {
+          "start": 713,
+          "end": 729,
+          "label": "Medication",
+          "text": "uctase inhibitor",
+          "score": 0.854263
+        },
+        {
+          "start": 770,
+          "end": 773,
+          "label": "History",
+          "text": "thy",
+          "score": 0.562851
+        },
+        {
+          "start": 794,
+          "end": 805,
+          "label": "Diagnostic_procedure",
+          "text": "tine kinase",
+          "score": 0.930785
+        },
+        {
+          "start": 817,
+          "end": 822,
+          "label": "Diagnostic_procedure",
+          "text": "liver",
+          "score": 0.998506
+        },
+        {
+          "start": 842,
+          "end": 853,
+          "label": "Sign_symptom",
+          "text": "neutropenia",
+          "score": 0.912034
+        },
+        {
+          "start": 880,
+          "end": 882,
+          "label": "Diagnostic_procedure",
+          "text": "Cr",
+          "score": 0.999959
+        },
+        {
+          "start": 882,
+          "end": 890,
+          "label": "Diagnostic_procedure",
+          "text": "eatinine",
+          "score": 0.857721
+        },
+        {
+          "start": 898,
+          "end": 920,
+          "label": "Lab_value",
+          "text": "above the normal range",
+          "score": 0.999593
+        },
+        {
+          "start": 936,
+          "end": 949,
+          "label": "Diagnostic_procedure",
+          "text": "investigation",
+          "score": 0.970425
+        },
+        {
+          "start": 952,
+          "end": 959,
+          "label": "Diagnostic_procedure",
+          "text": "product",
+          "score": 0.966198
+        },
+        {
+          "start": 986,
+          "end": 1003,
+          "label": "Date",
+          "text": "within 12 weeks\n*",
+          "score": 0.985883
+        },
+        {
+          "start": 1031,
+          "end": 1042,
+          "label": "Sign_symptom",
+          "text": "abnormality",
+          "score": 0.977704
+        },
+        {
+          "start": 1079,
+          "end": 1095,
+          "label": "Diagnostic_procedure",
+          "text": "laboratory tests",
+          "score": 0.999887
+        },
+        {
+          "start": 1099,
+          "end": 1110,
+          "label": "Diagnostic_procedure",
+          "text": "electrocard",
+          "score": 0.909571
+        },
+        {
+          "start": 1233,
+          "end": 1247,
+          "label": "Diagnostic_procedure",
+          "text": "clinical study",
+          "score": 0.760279
+        }
+      ],
+      "status": "ok",
+      "input_characters": 1247,
+      "role": "Biomedical entity detection only; not an eligibility-rule parser.",
+      "windows": 1,
+      "tokens_processed": 275,
+      "truncated": false,
+      "latency_ms": 89.664
+    },
+    "notice": "Research demonstration using synthetic profiles. Not a clinical decision or full eligibility determination."
+  },
+  "synthetic_evaluation": {
+    "profile_id": "SYN-E2E-001",
+    "status": "INSUFFICIENT_INFORMATION",
+    "rule_results": [],
+    "unresolved": [
+      {
+        "source_text": "Provision of a written informed consent",
+        "source_start": 23,
+        "source_end": 62,
+        "study_id": "NCT00261352",
+        "type": "inclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "Men or women who are \\>=18 years of age",
+        "source_start": 65,
+        "source_end": 104,
+        "study_id": "NCT00261352",
+        "type": "inclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "Female patients: postmenopausal, hysterectomized, or if of childbearing potential, using a reliable method of birth control",
+        "source_start": 107,
+        "source_end": 230,
+        "study_id": "NCT00261352",
+        "type": "inclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Conditional, ambiguous or investigator-dependent wording requires review."
+      },
+      {
+        "source_text": "Treated with diet alone or treatment with a single oral antidiabetic agent or low doses of two oral antidiabetic agents",
+        "source_start": 266,
+        "source_end": 385,
+        "study_id": "NCT00261352",
+        "type": "inclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "New York Heart Association heart failure Class III or IV",
+        "source_start": 428,
+        "source_end": 484,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "Treatment with chronic insulin",
+        "source_start": 487,
+        "source_end": 517,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "History of hypersensitivity or intolerance to any peroxisome proliferator-activated receptor agonist (like Actos or Avandia), fenofibrate, metformin or 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitor (statin)",
+        "source_start": 520,
+        "source_end": 738,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Temporal, historical, stability or visit qualification requires review."
+      },
+      {
+        "source_text": "History of drug-induced myopathy or drug-induced creatine kinase elevation, liver enzyme elevations, neutropenia (low white blood cells)",
+        "source_start": 741,
+        "source_end": 877,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Temporal, historical, stability or visit qualification requires review."
+      },
+      {
+        "source_text": "Creatinine levels above the normal range",
+        "source_start": 880,
+        "source_end": 920,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "The entire criterion is not covered by the supported grammar; no fragment was executed."
+      },
+      {
+        "source_text": "Received any investigational product in other clinical studies within 12 weeks",
+        "source_start": 923,
+        "source_end": 1001,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Temporal, historical, stability or visit qualification requires review."
+      },
+      {
+        "source_text": "Any clinically significant abnormality identified on physical examination, laboratory tests or electrocardiogram, which in the judgment of the investigator would compromise the patient's safety or successful participation in the clinical study",
+        "source_start": 1004,
+        "source_end": 1247,
+        "study_id": "NCT00261352",
+        "type": "exclusion",
+        "status": "NEEDS_REVIEW",
+        "reason": "Conditional, ambiguous or investigator-dependent wording requires review."
+      },
+      {
+        "rule_id": "rule-4",
+        "source_text": "Diagnosed with type 2 diabetes",
+        "reason": "Supported rule awaits synthetic-demo review",
+        "status": "NEEDS_REVIEW"
+      },
+      {
+        "rule_id": "rule-6",
+        "source_text": "Type 1 diabetes",
+        "reason": "Supported rule awaits synthetic-demo review",
+        "status": "NEEDS_REVIEW"
+      },
+      {
+        "rule_id": "metadata_minimum_age",
+        "source_text": "18 Years",
+        "reason": "Supported rule awaits synthetic-demo review",
+        "status": "NEEDS_REVIEW"
+      }
+    ],
+    "contradictions": [],
+    "explanation": "Missing measurements, unsupported criteria or an empty rule set prevent a complete known-criteria match.",
+    "is_synthetic": true,
+    "real_world_review_required": true,
+    "counts": {
+      "true": 0,
+      "false": 0,
+      "unknown": 0,
+      "unresolved": 14
+    },
+    "study_id": "NCT00261352",
+    "source_url": "https://clinicaltrials.gov/study/NCT00261352",
+    "extraction_hash": "18c77d82da8a744d5576ebd6b66cd50ece9a0b1a133e1b176377ade0027f07a5",
+    "notice": "Research demonstration using synthetic profiles. Not a clinical decision or full eligibility determination.",
+    "review_scope": "Local synthetic demonstration, not expert or clinical validation"
+  },
+  "assistant": {
+    "status": "EVIDENCE_FOUND",
+    "answer": "Verified source excerpts follow. They describe the selected registry records; unresolved criteria still require review.",
+    "evidence": [
+      {
+        "study_id": "NCT00997152",
+        "chunk_id": "NCT00997152:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT00997152",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 654,
+        "text": "Inclusion Criteria:\n\n1. Have type 2 diabetes;\n2. Body mass index (BMI) of ≤ 45.0 kg/m2;\n3. Are either untreated with respect to hypoglycemic agents OR are currently being treated with a stable dose of metformin alone.\n\nExclusion Criteria:\n\n1. Females who are pregnant or breast-feeding;\n2. Known medical history or presence of type 1 diabetes or pancreatitis, acute metabolic diabetic complications, presence of unstable or rapidly progressing retinopathy, nephropathy or neuropathy;\n3. Acute coronary syndrome or uncontrolled hypertension;\n4. Does not meet all diet or previous/concomitant medication restrictions criteria, as described in the protocol.",
+        "title": "Efficacy and Safety Study of JTT-654 in Type 2 Diabetic Patients",
+        "countries": [
+          "United States"
+        ],
+        "status": "TERMINATED",
+        "conditions": [
+          "Type II Diabetes Mellitus"
+        ],
+        "score": 0.0325225,
+        "actual_mode": "hybrid",
+        "bm25_score": 8.2787246,
+        "semantic_score": 0.6544195,
+        "fallback_reason": null
+      },
+      {
+        "study_id": "NCT02853630",
+        "chunk_id": "NCT02853630:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT02853630",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 694,
+        "text": "Inclusion Criteria:\n\n* Newly Diagnosed Type 2 Diabetes Mellitus patients not receiving any medication for diabetes\n* HbA1c ranging from 7.0% to ≤ 8.5%\n* Body Mass Index (BMI) ≥ 19.0 to ≤ 25.0 kg/m2\n* Male and female subjects of age between 20 - 60 years shall be selected\n* Adult subjects willing to give informed consent\n* Subject must be available for and willing to attend all evaluation visits\n* Willingness to follow the protocol requirements as evidenced by written informed consent\n* Subject must have access to telephone for calling into the clinical center as part of test product compliance\n\nExclusion Criteria:\n\n* Type 1 diabetes\n* BMI ≤18.99 kg/m2 or\\> 25 kg/m2\n* Presence of severe",
+        "title": "A Clinical Trial to Study the Effects of Two Drugs, Vildagliptin and Metformin in Patients With Type 2 Diabetes Mellitus",
+        "countries": [
+          "India"
+        ],
+        "status": "COMPLETED",
+        "conditions": [
+          "TYpe 2 Diabetes Mellitus"
+        ],
+        "score": 0.0299107,
+        "actual_mode": "hybrid",
+        "bm25_score": 5.0093019,
+        "semantic_score": 0.6533611,
+        "fallback_reason": null
+      },
+      {
+        "study_id": "NCT00947557",
+        "chunk_id": "NCT00947557:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT00947557",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 311,
+        "text": "Inclusion Criteria:\n\n* Type 2 diabetes mellitus, diagnosed at least 3 months prior to Screening (Visit 1)\n* BMI 20 to 48 kg/m2, inclusive\n* HbA1c 7.0% - 10.0%, inclusive\n* Age 18 to 85 years, inclusive\n\nExclusion Criteria:\n\n* Currently on 3 or more oral antidiabetic drugs or insulin.\n* Type 1 diabetes mellitus",
+        "title": "Safety and Efficacy of Dutogliptin in Patients With Type 2 Diabetes Mellitus (T2DM) on Background Therapy With Glimepiride With or Without Metformin",
+        "countries": [
+          "Belarus",
+          "Colombia",
+          "Hungary",
+          "India",
+          "Lithuania",
+          "Peru",
+          "Romania",
+          "United States"
+        ],
+        "status": "TERMINATED",
+        "conditions": [
+          "Diabetes Mellitus, Type II"
+        ],
+        "score": 0.0297619,
+        "actual_mode": "hybrid",
+        "bm25_score": 4.9467573,
+        "semantic_score": 0.6541668,
+        "fallback_reason": null
+      },
+      {
+        "study_id": "NCT00970424",
+        "chunk_id": "NCT00970424:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT00970424",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 307,
+        "text": "Inclusion Criteria:\n\n* Type 2 diabetes mellitus, diagnosed at least 3 months prior to Screening (Visit 1)\n* BMI 20 to 48 kg/m2, inclusive\n* HbA1c 7.0% - 10.0%, inclusive\n* Age 18 to 85 years, inclusive\n\nExclusion Criteria:\n\n* Currently taking more than one oral hypoglycemic agent\n* Type 1 diabetes mellitus",
+        "title": "Safety and Efficacy of Dutogliptin in Patients With Type 2 Diabetes Mellitus (T2DM) on Background Therapy With Pioglitazone",
+        "countries": [
+          "Belarus",
+          "Germany",
+          "India",
+          "Lithuania",
+          "Romania",
+          "United States"
+        ],
+        "status": "TERMINATED",
+        "conditions": [
+          "Diabetes Mellitus, Type II"
+        ],
+        "score": 0.0290099,
+        "actual_mode": "hybrid",
+        "bm25_score": 5.0054068,
+        "semantic_score": 0.6362011,
+        "fallback_reason": null
+      },
+      {
+        "study_id": "NCT03478202",
+        "chunk_id": "NCT03478202:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT03478202",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 697,
+        "text": "Inclusion Criteria:\n\n* Age ≥ 18 years and ≤ 69 years\n* Diagnosis of type 2 diabetes mellitus at least six months prior to enrollment\n* Currently being treated for type 2 diabetes mellitus with oral medication or diet therapy\n* Oral medications or diet therapy for diabetes stable for at least three months prior to enrollment\n* Body mass index (BMI) ≥ 30 and ≤ 45 kg/m2\n* Have the ability to engage in at least 15 minutes of moderate physical activity such as brisk walking\n* Willing to comply with study procedures described herein\n\nExclusion Criteria:\n\n* Current uncontrolled type 2 diabetes (clinically significant increases in FBG or HbA1c in the past 6 months, as determined by a physician or",
+        "title": "GOLO Open-Label Pilot 1",
+        "countries": [
+          "United States"
+        ],
+        "status": "COMPLETED",
+        "conditions": [
+          "Diabetes Mellitus, Type II"
+        ],
+        "score": 0.0275797,
+        "actual_mode": "hybrid",
+        "bm25_score": 4.1395352,
+        "semantic_score": 0.6498138,
+        "fallback_reason": null
+      }
+    ],
+    "tool_result": null,
+    "interpretation": {
+      "study_ids": [],
+      "country": null,
+      "status": null
+    },
+    "retrieval": {
+      "requested_mode": "hybrid",
+      "actual_mode": "hybrid",
+      "status": "ok",
+      "latency_ms": 10.983,
+      "result_count": 25,
+      "verified_result_count": 5
+    },
+    "review_required": true,
+    "notice": "Research demonstration using synthetic profiles. Not a clinical decision or full eligibility determination.",
+    "generation": {
+      "status": "not_requested",
+      "verified": false
+    },
+    "trace": [
+      {
+        "node": "interpret",
+        "tool": "parse_typed_query",
+        "status": "ok",
+        "latency_ms": 0.001
+      },
+      {
+        "node": "retrieve_extract",
+        "tool": "search_studies",
+        "status": "ok",
+        "latency_ms": 11.011
+      },
+      {
+        "node": "verify",
+        "tool": "verify_source_offsets",
+        "status": "ok",
+        "latency_ms": 21.204
+      },
+      {
+        "node": "report_review",
+        "tool": "compile_report",
+        "status": "ok",
+        "latency_ms": 0.004
+      }
+    ],
+    "execution_limit": 6,
+    "latency_ms": 40.018
+  },
+  "experimental_generated_draft": {
+    "status": "EVIDENCE_FOUND",
+    "answer": "Verified source excerpts follow. They describe the selected registry records; unresolved criteria still require review.",
+    "evidence": [
+      {
+        "study_id": "NCT00997152",
+        "chunk_id": "NCT00997152:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT00997152",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 654,
+        "text": "Inclusion Criteria:\n\n1. Have type 2 diabetes;\n2. Body mass index (BMI) of ≤ 45.0 kg/m2;\n3. Are either untreated with respect to hypoglycemic agents OR are currently being treated with a stable dose of metformin alone.\n\nExclusion Criteria:\n\n1. Females who are pregnant or breast-feeding;\n2. Known medical history or presence of type 1 diabetes or pancreatitis, acute metabolic diabetic complications, presence of unstable or rapidly progressing retinopathy, nephropathy or neuropathy;\n3. Acute coronary syndrome or uncontrolled hypertension;\n4. Does not meet all diet or previous/concomitant medication restrictions criteria, as described in the protocol.",
+        "title": "Efficacy and Safety Study of JTT-654 in Type 2 Diabetic Patients",
+        "countries": [
+          "United States"
+        ],
+        "status": "TERMINATED",
+        "conditions": [
+          "Type II Diabetes Mellitus"
+        ],
+        "score": 0.0325225,
+        "actual_mode": "hybrid",
+        "bm25_score": 8.2787246,
+        "semantic_score": 0.6544195,
+        "fallback_reason": null
+      },
+      {
+        "study_id": "NCT02853630",
+        "chunk_id": "NCT02853630:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT02853630",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 694,
+        "text": "Inclusion Criteria:\n\n* Newly Diagnosed Type 2 Diabetes Mellitus patients not receiving any medication for diabetes\n* HbA1c ranging from 7.0% to ≤ 8.5%\n* Body Mass Index (BMI) ≥ 19.0 to ≤ 25.0 kg/m2\n* Male and female subjects of age between 20 - 60 years shall be selected\n* Adult subjects willing to give informed consent\n* Subject must be available for and willing to attend all evaluation visits\n* Willingness to follow the protocol requirements as evidenced by written informed consent\n* Subject must have access to telephone for calling into the clinical center as part of test product compliance\n\nExclusion Criteria:\n\n* Type 1 diabetes\n* BMI ≤18.99 kg/m2 or\\> 25 kg/m2\n* Presence of severe",
+        "title": "A Clinical Trial to Study the Effects of Two Drugs, Vildagliptin and Metformin in Patients With Type 2 Diabetes Mellitus",
+        "countries": [
+          "India"
+        ],
+        "status": "COMPLETED",
+        "conditions": [
+          "TYpe 2 Diabetes Mellitus"
+        ],
+        "score": 0.0299107,
+        "actual_mode": "hybrid",
+        "bm25_score": 5.0093019,
+        "semantic_score": 0.6533611,
+        "fallback_reason": null
+      },
+      {
+        "study_id": "NCT00947557",
+        "chunk_id": "NCT00947557:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT00947557",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 311,
+        "text": "Inclusion Criteria:\n\n* Type 2 diabetes mellitus, diagnosed at least 3 months prior to Screening (Visit 1)\n* BMI 20 to 48 kg/m2, inclusive\n* HbA1c 7.0% - 10.0%, inclusive\n* Age 18 to 85 years, inclusive\n\nExclusion Criteria:\n\n* Currently on 3 or more oral antidiabetic drugs or insulin.\n* Type 1 diabetes mellitus",
+        "title": "Safety and Efficacy of Dutogliptin in Patients With Type 2 Diabetes Mellitus (T2DM) on Background Therapy With Glimepiride With or Without Metformin",
+        "countries": [
+          "Belarus",
+          "Colombia",
+          "Hungary",
+          "India",
+          "Lithuania",
+          "Peru",
+          "Romania",
+          "United States"
+        ],
+        "status": "TERMINATED",
+        "conditions": [
+          "Diabetes Mellitus, Type II"
+        ],
+        "score": 0.0297619,
+        "actual_mode": "hybrid",
+        "bm25_score": 4.9467573,
+        "semantic_score": 0.6541668,
+        "fallback_reason": null
+      },
+      {
+        "study_id": "NCT00970424",
+        "chunk_id": "NCT00970424:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT00970424",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 307,
+        "text": "Inclusion Criteria:\n\n* Type 2 diabetes mellitus, diagnosed at least 3 months prior to Screening (Visit 1)\n* BMI 20 to 48 kg/m2, inclusive\n* HbA1c 7.0% - 10.0%, inclusive\n* Age 18 to 85 years, inclusive\n\nExclusion Criteria:\n\n* Currently taking more than one oral hypoglycemic agent\n* Type 1 diabetes mellitus",
+        "title": "Safety and Efficacy of Dutogliptin in Patients With Type 2 Diabetes Mellitus (T2DM) on Background Therapy With Pioglitazone",
+        "countries": [
+          "Belarus",
+          "Germany",
+          "India",
+          "Lithuania",
+          "Romania",
+          "United States"
+        ],
+        "status": "TERMINATED",
+        "conditions": [
+          "Diabetes Mellitus, Type II"
+        ],
+        "score": 0.0290099,
+        "actual_mode": "hybrid",
+        "bm25_score": 5.0054068,
+        "semantic_score": 0.6362011,
+        "fallback_reason": null
+      },
+      {
+        "study_id": "NCT03478202",
+        "chunk_id": "NCT03478202:eligibility_text:0",
+        "source_url": "https://clinicaltrials.gov/study/NCT03478202",
+        "source_field": "eligibility_text",
+        "start": 0,
+        "end": 697,
+        "text": "Inclusion Criteria:\n\n* Age ≥ 18 years and ≤ 69 years\n* Diagnosis of type 2 diabetes mellitus at least six months prior to enrollment\n* Currently being treated for type 2 diabetes mellitus with oral medication or diet therapy\n* Oral medications or diet therapy for diabetes stable for at least three months prior to enrollment\n* Body mass index (BMI) ≥ 30 and ≤ 45 kg/m2\n* Have the ability to engage in at least 15 minutes of moderate physical activity such as brisk walking\n* Willing to comply with study procedures described herein\n\nExclusion Criteria:\n\n* Current uncontrolled type 2 diabetes (clinically significant increases in FBG or HbA1c in the past 6 months, as determined by a physician or",
+        "title": "GOLO Open-Label Pilot 1",
+        "countries": [
+          "United States"
+        ],
+        "status": "COMPLETED",
+        "conditions": [
+          "Diabetes Mellitus, Type II"
+        ],
+        "score": 0.0275797,
+        "actual_mode": "hybrid",
+        "bm25_score": 4.1395352,
+        "semantic_score": 0.6498138,
+        "fallback_reason": null
+      }
+    ],
+    "tool_result": null,
+    "interpretation": {
+      "study_ids": [],
+      "country": null,
+      "status": null
+    },
+    "retrieval": {
+      "requested_mode": "hybrid",
+      "actual_mode": "hybrid",
+      "status": "ok",
+      "latency_ms": 9.079,
+      "result_count": 25,
+      "verified_result_count": 5
+    },
+    "review_required": true,
+    "notice": "Research demonstration using synthetic profiles. Not a clinical decision or full eligibility determination.",
+    "generation": {
+      "model": "google/flan-t5-small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "backend": "local",
+      "device": "cpu",
+      "verified": false,
+      "reason": "Experimental generated draft. Exact source citations are supplied separately; they do not verify generated claims. Human review required.",
+      "status": "generated_draft",
+      "text": "None",
+      "latency_ms": 75.575,
+      "input_tokens": 172,
+      "max_new_tokens": 96,
+      "prompt_format": "Source excerpt followed by question and answer cue; prompt development is not a held-out quality evaluation",
+      "question_truncated": false,
+      "evidence_truncated": true,
+      "source_context": [
+        {
+          "study_id": "NCT00997152",
+          "source_url": "https://clinicaltrials.gov/study/NCT00997152",
+          "text": "Inclusion Criteria:\n\n1. Have type 2 diabetes;\n2. Body mass index (BMI) of ≤ 45.0 kg/m2;\n3. Are either untreated with respect to hypoglycemic agents OR are currently being treated with a stable dose of metformin alone.\n\nExclusion Criteria:\n\n1. Females who are pregnant or breast-feeding;\n2. Known medical history or presence of type 1 diabetes or pancreatitis, acute metabolic diabetic complications, presence of unstable or rapidly progressing retinopathy, nephropathy or neuropathy;\n3. Acute coronary syndrome or uncontrolled hypertension;\n4. Does not meet all diet or previous/concomitant medication restrictions criteria, as described in the protocol.",
+          "source_field": "eligibility_text",
+          "start": 0,
+          "end": 654
+        }
+      ],
+      "guard": {
+        "unsupported_numeric_tokens": [],
+        "entailment_verified": false
+      }
+    },
+    "trace": [
+      {
+        "node": "interpret",
+        "tool": "parse_typed_query",
+        "status": "ok",
+        "latency_ms": 0.002
+      },
+      {
+        "node": "retrieve_extract",
+        "tool": "search_studies",
+        "status": "ok",
+        "latency_ms": 9.109
+      },
+      {
+        "node": "verify",
+        "tool": "verify_source_offsets",
+        "status": "ok",
+        "latency_ms": 21.794
+      },
+      {
+        "node": "report_review",
+        "tool": "compile_report",
+        "status": "ok",
+        "latency_ms": 75.649
+      }
+    ],
+    "execution_limit": 6,
+    "latency_ms": 114.397
+  }
+}

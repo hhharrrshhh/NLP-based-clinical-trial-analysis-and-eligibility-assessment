@@ -1,0 +1,126 @@
+{
+  "generated_at_utc": "2026-10-18T09:13:11.856398+00:00",
+  "source_sha256": "54d25a21ccf23f54dd223fe367bee9905c6b5fbaa3740d19c4b4081070d7c0c1",
+  "software_verification": "passed",
+  "live_integration": "passed",
+  "live_ui": "passed",
+  "scientific_validation": "Exploratory measurements; regional expert labels and clinical validation unavailable",
+  "docker": "blocked_by_local_engine",
+  "items": [
+    {
+      "requirement": "Supplied prototype audit",
+      "status": "VERIFIED",
+      "evidence": "docs/prototype_audit.md; separate legacy command in reports/test_results.json"
+    },
+    {
+      "requirement": "Real API v2 corpus/provenance/normalized tables",
+      "status": "VERIFIED",
+      "evidence": "58 studies, raw hashes, tests/test_ingestion.py, data/processed/study_metadata.json"
+    },
+    {
+      "requirement": "Native CTRI automated access",
+      "status": "ACCESS CONSTRAINED",
+      "evidence": "Security-code search observed; zero native CTRI records claimed"
+    },
+    {
+      "requirement": "Permitted CTRI manual JSON/CSV import",
+      "status": "VERIFIED",
+      "evidence": "scripts/import_ctri.py; isolated import/provenance tests"
+    },
+    {
+      "requirement": "Classical NLP and supported rules",
+      "status": "VERIFIED, NARROW SCOPE",
+      "evidence": "75 developer references; 18/983 real segments fully parsed; unsupported text retained"
+    },
+    {
+      "requirement": "Real biomedical model inference",
+      "status": "VERIFIED",
+      "evidence": "reports/model_smoke.json; live /extract; long-input coverage"
+    },
+    {
+      "requirement": "Published-label entity evaluation",
+      "status": "EXPERIMENTAL, EXECUTED",
+      "evidence": "reports/entity_benchmark.json; independent CHIA labels and exact spans"
+    },
+    {
+      "requirement": "Supervised adapted extractor",
+      "status": "EXPERIMENTAL, EXECUTED",
+      "evidence": "reports/adaptation_benchmark.json; frozen encoder + trained head; same held-out test"
+    },
+    {
+      "requirement": "Regional comparison",
+      "status": "VERIFIED DESCRIPTIVE",
+      "evidence": "Actual paired sources; disjoint country groups, vocabulary/JSD and coverage"
+    },
+    {
+      "requirement": "Regional labeled accuracy/adaptation",
+      "status": "SCIENTIFIC BLOCKER",
+      "evidence": "No expert labels for newly retrieved regional study criteria; no learned regional claim"
+    },
+    {
+      "requirement": "Synthetic rule engine and review checkpoint",
+      "status": "VERIFIED",
+      "evidence": "Strict synthetic flag, three-valued logic, review hashes/conflicts/revocation tests"
+    },
+    {
+      "requirement": "MiniLM/FAISS/BM25/hybrid retrieval",
+      "status": "VERIFIED",
+      "evidence": "426 source-preserving chunks; actual nine smoke searches and twelve-query ablation"
+    },
+    {
+      "requirement": "Bounded workflow and citations",
+      "status": "VERIFIED",
+      "evidence": "Typed tools, six-step limit, source offsets, filter/abstention/injection regressions"
+    },
+    {
+      "requirement": "Local generated draft",
+      "status": "EXPERIMENTAL, EXECUTED",
+      "evidence": "reports/generation_smoke.json; incomplete answer retained; no entailment/eligibility claim"
+    },
+    {
+      "requirement": "Optional Ollama provider",
+      "status": "ADAPTER TESTED; INFERENCE UNVERIFIED",
+      "evidence": "Configuration and outage tests; no actual Ollama model claimed"
+    },
+    {
+      "requirement": "FastAPI endpoints and eight UI pages",
+      "status": "VERIFIED LOCALLY",
+      "evidence": "Active tests, separate live HTTP run and 17 UI actions"
+    },
+    {
+      "requirement": "JSON/CSV/HTML source reports",
+      "status": "VERIFIED",
+      "evidence": "Live endpoints/download preparation; source text, unknowns and citations retained"
+    },
+    {
+      "requirement": "Local startup/reuse/shutdown",
+      "status": "VERIFIED",
+      "evidence": "Main service health and separate 8100/8601 lifecycle test"
+    },
+    {
+      "requirement": "Dockerfiles and Compose configuration",
+      "status": "IMPLEMENTED; CONFIG VERIFIED",
+      "evidence": "docker compose config --quiet exit 0"
+    },
+    {
+      "requirement": "Docker image build/container startup",
+      "status": "EXTERNAL BLOCKER",
+      "evidence": "Actual build exited 1: Docker Desktop engine/socket runtime failure"
+    },
+    {
+      "requirement": "Automated QA",
+      "status": "VERIFIED",
+      "evidence": "150 passed; 0 skipped; legacy independently visible"
+    },
+    {
+      "requirement": "Academic report, demo and viva material",
+      "status": "DELIVERED",
+      "evidence": "README.md; docs/technical_report.md/.html; docs/demo_and_viva.md"
+    },
+    {
+      "requirement": "Real-patient/expert clinical validation",
+      "status": "UNPERFORMED",
+      "evidence": "Educational synthetic pre-screening only; no clinical authorization or safety claim"
+    }
+  ]
+}

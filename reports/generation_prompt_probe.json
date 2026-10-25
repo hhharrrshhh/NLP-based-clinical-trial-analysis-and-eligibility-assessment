@@ -1,0 +1,25 @@
+{
+  "recorded_at_utc": "2026-10-18T08:56:28.685015+00:00",
+  "purpose": "Prompt-development observations, not an independent quality benchmark",
+  "model": "google/flan-t5-small",
+  "original_real_source_answer": "Glycated hemoglobin",
+  "real_source_study_id": "NCT03760991",
+  "question": "What HbA1c requirement is explicitly written in this source excerpt?",
+  "synthetic_context": "Participants with type 2 diabetes. Glycated hemoglobin (HbA1c) between 7.5% and 10% inclusive during screening.",
+  "synthetic_question": "What HbA1c range is required?",
+  "synthetic_prompt_observations": [
+    {
+      "format": "question/context",
+      "answer": "7.5%"
+    },
+    {
+      "format": "context/question/answer",
+      "answer": "7.5% and 10% inclusive"
+    },
+    {
+      "format": "instruction/context/question",
+      "answer": "7.5% and 10% inclusive"
+    }
+  ],
+  "limitation": "Prompt format affects these illustrative outputs. The real-source response remained incomplete. No answer accuracy score is inferred."
+}

@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-10-18T09:09:13.883047+00:00",
+  "status": "passed",
+  "browser": "Codex in-app browser",
+  "application_url": "http://127.0.0.1:8501/",
+  "checks": {
+    "overview_real_counts_visible": true,
+    "evaluation_dashboard_three_models_and_reference_counts_visible": true,
+    "actual_json_download": {
+      "study_id": "NCT00081328",
+      "filename": "NCT00081328.json",
+      "bytes": 200555,
+      "sha256": "45c0e5014414783a7c1b11868a2878639c145760f1999c5fbffe487521bc5a8e"
+    },
+    "academic_html_figures_loaded": 4,
+    "academic_html_horizontal_overflow": false
+  },
+  "screenshots": {
+    "dashboard.jpg": {
+      "dimensions": [
+        998,
+        720
+      ],
+      "bytes": 64943
+    },
+    "evaluation_dashboard.jpg": {
+      "dimensions": [
+        998,
+        720
+      ],
+      "bytes": 61826
+    }
+  },
+  "scope": "Read-only visual QA and an actual public-source JSON download. No clinical review approval or real patient data.",
+  "responsive_horizontal_overflow_check": {
+    "width_998": "none observed",
+    "width_390": "none observed",
+    "scope": "Layout width only; full mobile interaction testing not claimed",
+    "temporary_viewport_reset": true
+  }
+}

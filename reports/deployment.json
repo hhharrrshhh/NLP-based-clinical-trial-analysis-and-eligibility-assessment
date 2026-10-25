@@ -1,0 +1,119 @@
+{
+  "checked_at_utc": "2026-10-18T08:48:39.0029141Z",
+  "local_status": "passed",
+  "python_version": "3.11.9",
+  "api_url": "http://127.0.0.1:8000",
+  "ui_url": "http://127.0.0.1:8501",
+  "study_count": 58,
+  "local_verification": {
+    "startup_reused_existing_healthy_services": "passed",
+    "unowned_stop_preserved_original_services": "passed",
+    "isolated_launch_ports": [
+      8100,
+      8601
+    ],
+    "isolated_launch": "passed",
+    "isolated_owned_reuse": "passed",
+    "isolated_smoke": "passed",
+    "isolated_stop_identity_and_descendants": "passed",
+    "isolated_ports_closed_after_stop": true,
+    "original_services_healthy_after_test": true,
+    "powershell_parse": "passed",
+    "full_http_smoke": {
+      "run_at_utc": "2026-10-18T08:46:57.5822634Z",
+      "status": "passed",
+      "full_integration": true,
+      "study_count": 58,
+      "checks": [
+        {
+          "name": "backend_health",
+          "url": "http://127.0.0.1:8000/health",
+          "http_status": 200,
+          "latency_ms": 74.82
+        },
+        {
+          "name": "studies",
+          "url": "http://127.0.0.1:8000/studies",
+          "http_status": 200,
+          "latency_ms": 62.12
+        },
+        {
+          "name": "dashboard",
+          "url": "http://127.0.0.1:8000/dashboard",
+          "http_status": 200,
+          "latency_ms": 828.48
+        },
+        {
+          "name": "openapi",
+          "url": "http://127.0.0.1:8000/openapi.json",
+          "http_status": 200,
+          "latency_ms": 10.9
+        },
+        {
+          "name": "frontend_health",
+          "url": "http://127.0.0.1:8501/_stcore/health",
+          "http_status": 200,
+          "latency_ms": 4.02
+        },
+        {
+          "name": "frontend_page",
+          "url": "http://127.0.0.1:8501",
+          "http_status": 200,
+          "latency_ms": 25.22
+        }
+      ]
+    },
+    "integration": {
+      "report": "reports/integration_smoke.json",
+      "status": "passed",
+      "transformer_status": "ok",
+      "retrieval_modes": [
+        "hybrid"
+      ],
+      "source_offsets_verified": 5,
+      "http_calls": 11
+    }
+  },
+  "docker": {
+    "status": "blocked_by_local_engine",
+    "executable": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+    "client_version": "29.7.2",
+    "compose_version": "v5.5.0",
+    "context": "desktop-linux",
+    "config": {
+      "command": "docker compose config --quiet",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    "build": {
+      "command": "docker compose build",
+      "exit_code": 1,
+      "images_built": false,
+      "containers_started": false,
+      "output": "Image trialops-backend Building; Image trialops-frontend Building; failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified."
+    },
+    "installed_desktop_start": {
+      "attempted": true,
+      "hidden": true,
+      "result": "Backend exited; engine remained unavailable",
+      "backend_log": "C:\\Users\\LENOVO\\AppData\\Local\\Docker\\log\\host\\com.docker.backend.exe.log",
+      "error_at_utc": "2026-10-18T08:42:47.0939547Z",
+      "error": "starting services: initializing Inference manager: listening on unix://C:/Users/LENOVO/AppData/Local/Docker/run/dockerInference: rename C:/Users/LENOVO/AppData/Local/Docker/run/dockerInference C:/Users/LENOVO/AppData/Local/Docker/run/dockerInference.stale: The file cannot be accessed by the system. (listener: The file cannot be accessed by the system.)"
+    },
+    "next_command_after_engine_recovery": "docker compose build; docker compose up -d --wait"
+  },
+  "deployment_files": [
+    "backend/Dockerfile",
+    "frontend/Dockerfile",
+    "docker-compose.yml",
+    ".dockerignore",
+    "scripts/start.ps1",
+    "scripts/stop.ps1",
+    "scripts/smoke.ps1",
+    "docs/deployment.md"
+  ],
+  "limits": [
+    "Container image builds and running containers are not verified because the installed Docker Desktop engine cannot start.",
+    "HTTP smoke checks execution and source preservation; it does not establish clinical validity or generation answer quality."
+  ]
+}
