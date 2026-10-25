@@ -10,6 +10,23 @@ This is an academic research demonstration for synthetic profiles, not medical a
 
 The current source snapshot has **58 real ClinicalTrials.gov studies**, including 32 with Indian sites, 30 with US sites, and four with both. Country groups records; all cutoffs come from the selected source protocol. Location does not determine ethnicity, nationality, risk, or medical suitability. The supplied fictional demo remains under `legacy/` and is excluded from the application corpus.
 
+## Hosted demo
+
+- **Streamlit application:** [Open TrialOps](https://nlp-based-clinical-trial-analysis-and-eligibility-assessment-u.streamlit.app/)
+- **FastAPI backend:** [Backend service](https://nlp-based-clinical-trial-analysis-and.onrender.com)
+- **Backend health check:** [`/health`](https://nlp-based-clinical-trial-analysis-and.onrender.com/health)
+- **Interactive API docs:** [`/docs`](https://nlp-based-clinical-trial-analysis-and.onrender.com/docs)
+
+The Streamlit frontend calls the separately hosted FastAPI backend. To configure the frontend on Streamlit Community Cloud, open **App settings → Secrets** and add:
+
+```toml
+API_BASE_URL = "https://nlp-based-clinical-trial-analysis-and.onrender.com"
+```
+
+The frontend reads this value from `st.secrets` (and falls back to the `API_BASE_URL` environment variable for other deployments). After saving the secret, reboot the Streamlit app. The backend may take a little while to wake after inactivity; if the app cannot load data, check the health endpoint above first.
+
+**Deployment note:** these are hosted demonstration endpoints, not a production clinical service. Do not submit real patient information. Eligibility outputs are limited research pre-screening signals and do not establish full clinical eligibility.
+
 ## Start the existing workspace
 
 From this repository in PowerShell:
